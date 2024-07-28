@@ -1,0 +1,15 @@
+form div {
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #5a0c30;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #af470c;
+}

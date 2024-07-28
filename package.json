@@ -1,0 +1,12 @@
+{
+  "name": "s3-fsjs-finalsprint-vinovault",
+  "version": "1.0.0",
+  "description": "VinoVault S3 Final Sprint - Build a secure search engine using Node.js with data that is stored in PostgreSQL and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "SD10 - Group 5: Brenda Armstrong & Ethan Murphy",
+  "license": "ISC"
+}
