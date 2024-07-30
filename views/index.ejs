@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    <header>
-        <%- include('partials/header') %>
-    </header>
-    <main>
-        <h1>Welcome to VinoVault</h1>
+    <%- include('partials/header') %>
+    <%- include('partials/nav') %>
+    <main class="background">
         <div class="auth-buttons">
-            <a href="/register" class="button">Register</a
+            <a href="/register" class="button">Register</a>
+            <a href="/login" class="button">Login</a>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

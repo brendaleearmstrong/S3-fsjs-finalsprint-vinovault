@@ -1,6 +1,27 @@
 footer {
-    background-color: #5a0c30;
-    color: white;
+    background-color: #Af470c; /* Wine */
+    color: #5a0c30;
     padding: 1em;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media .social-icon {
+    font-size: 36px;
+    color: #5a0c30;
+    transition: color 0.3s ease;
+}
+
+footer .social-media .social-icon:hover {
+    color: #ffffff; 
 }
