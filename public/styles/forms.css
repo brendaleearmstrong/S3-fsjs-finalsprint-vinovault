@@ -13,3 +13,114 @@ button {
 button:hover {
     background-color: #af470c;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  header, nav, main, footer {
+    padding: 20px;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-message h1 {
+    color: #5a0c30;
+  }
+  
+  .welcome-message p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .auth-buttons, .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  .auth-form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 20px;
+    color: #5a0c30;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a0c30;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #AF470c;
+  }
+  
+  .alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer .social-media img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(100%);
+  }
+  
+  footer .social-media img:hover {
+    filter: invert(50%);
+  }
+  
