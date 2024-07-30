@@ -1,4 +1,4 @@
-// config/db.js
+// config/pgdb.js
 const { Pool } = require('pg');
 
 const pool = new Pool({
