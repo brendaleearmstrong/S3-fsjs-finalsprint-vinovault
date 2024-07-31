@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "66a0e12766e680aa875eb895"
+  },
+  "username": "sue",
+  "email": "sue@sue",
+  "password": "$2b$10$GJFpLmSPbO2oZGYleKOnE.WIbAOLYBylIMlUbDJZQ2PpnaVbQzs1u",
+  "uuid": "4264e0b8-c868-4855-8ce2-e6458a743edf",
+  "last_updated": {
+    "$date": "2024-07-24T11:10:40.907Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a0e9a7a425545d6983ba4e"
+  },
+  "username": "bob",
+  "email": "bob@bob",
+  "password": "$2b$10$1p5cIcz1xaPJZltntl3EEun9gGIf7CMhGVAeVZnKz5XP/QFN30vvK",
+  "uuid": "774c6b61-2560-4f60-b45c-5cd417f34874",
+  "last_updated": {
+    "$date": "2024-07-24T11:46:57.184Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a0ef0ba425545d6983ba4f"
+  },
+  "username": "greg",
+  "email": "greg@greg",
+  "password": "$2b$10$t9XTuTxDzTji2Kp8zeHGB.hFsjM.z5bL7htBSnYeSsJ64cItyIffm",
+  "uuid": "e438603c-7744-4608-ace9-11e509cf927a",
+  "last_updated": {
+    "$date": "2024-07-24T12:10:00.453Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66a0f109a425545d6983ba50"
+  },
+  "username": "bobby",
+  "email": "bobby@bobby",
+  "password": "$2b$10$6oi6MFtHMRgYpoRwuHZ2SeIDd1AhLqJu990ZzFzl.jcwdtlD0VW7.",
+  "uuid": "9af42c6f-5a92-4352-be39-7f1e45107b85",
+  "last_updated": {
+    "$date": "2024-07-24T12:18:27.426Z"
+  }
+}]

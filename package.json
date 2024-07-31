@@ -1,38 +1,27 @@
 {
-  "name": "s3-fsjs-finalsprint-vinovault",
+  "name": "final",
   "version": "1.0.0",
-  "description": "VinoVault S3 Final Sprint - Build a secure search engine using Node.js with data that is stored in PostgreSQL and MongoDB.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "SD10 - Group 5: Brenda Armstrong & Ethan Murphy",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "-": "^0.0.1",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.2",
-    "bootstrap": "^5.3.3",
-    "connect-flash": "^0.1.1",
-    "data": "^0.6.1",
-    "date": "^2.0.5",
+    "bcrypt": "^5.1.1",
     "date-fns": "^3.6.0",
-    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "jsonwebtoken": "^9.0.2",
     "method-override": "^3.0.0",
-    "moments": "^0.0.2",
-    "mongo-sanitize": "^1.1.0",
-    "mongoose": "^8.5.1",
-    "nodemon": "^3.1.4",
-    "passport": "^0.7.0",
-    "passport-local": "^1.0.0",
+    "mongodb": "^6.8.0",
     "pg": "^8.12.0",
-    "supertest": "^7.0.0",
-    "uuid": "^10.0.0",
-    "y": "^0.3.2"
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
   }
 }
