@@ -2,14 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
-const passport = require('passport');
 const path = require('path');
 require('dotenv').config();
 
 const app = express();
-
-// Passport config
-require('./config/passport')(passport);
 
 // EJS
 app.set('view engine', 'ejs');
@@ -27,11 +23,7 @@ app.use(
   })
 );
 
-// Passport middleware
-app.use(passport.initialize());
-app.use(passport.session());
-
-// Connect flash
+de// Connect flash
 app.use(flash());
 
 // Global variables
