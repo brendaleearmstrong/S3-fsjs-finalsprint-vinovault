@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - VinoVault</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/auth.css">
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class="main-content">
+        <div class="form-container">
+            <h1>Login to Your Vault</h1>
+            <form action="/auth" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="form-button">Login</button>
+            </form>
+            <% if (typeof status !== 'undefined' && status) { %>
+                <div class="alert alert-danger"><%= status %></div>
+            <% } %>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <%- include('./partials/footer.ejs') %>
+    </div>
+</body>
+</html>

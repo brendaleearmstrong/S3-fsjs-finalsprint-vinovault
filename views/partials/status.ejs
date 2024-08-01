@@ -1,0 +1,7 @@
+<status>
+    <% if (typeof status !== 'undefined' && status !== null) { %>
+        <div class="alert <%= status.success ? 'alert-success' : 'alert-danger' %>">
+            <%= status.message %>
+        </div>
+    <% } %>
+</status>

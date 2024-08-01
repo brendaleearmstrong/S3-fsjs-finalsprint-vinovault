@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VinoVault - Register</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/auth.css">
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <%- include('./partials/nav.ejs') %>
+    <div class="main-content">
+        <div class="form-container">
+            <h1>Register</h1>
+            <p>Create an account to start your journey through the world of wines. Explore, rate, and curate your collection of favorite wines in VinoVault.</p>
+            <form action="/auth/new" method="POST">
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="form-button">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <%- include('./partials/footer.ejs') %>
+    </div>
+</body>
+</html>
