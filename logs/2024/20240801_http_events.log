@@ -1,0 +1,238 @@
+20240801	00:01:50	INFO	app.get	landing page (index.ejs) was displayed.	7bf80493-cbcf-43f7-a1f7-0ac8b6850bb9
+20240801	00:01:57	INFO	app.get	landing page (index.ejs) was displayed.	cc9315af-e975-4f9f-bc57-7568e7842978
+20240801	00:02:12	INFO	app.get	landing page (index.ejs) was displayed.	4e7f5e33-dc4a-49db-8a16-21333fb8d41e
+20240801	00:02:14	INFO	app.get	landing page (index.ejs) was displayed.	683bf79b-5b2e-4319-bcb9-57c2eb77b28c
+20240801	00:03:12	INFO	app.get	landing page (index.ejs) was displayed.	7dfca9d1-49de-42a4-8ad0-8ce127c1141b
+20240801	00:03:14	INFO	app.get	landing page (index.ejs) was displayed.	f1069d41-3f6b-4524-8ded-6b4d92f9b6e5
+20240801	00:03:28	INFO	app.get	landing page (index.ejs) was displayed.	5b32de21-5faa-4f54-a003-2a6d3fcaefda
+20240801	00:04:42	INFO	app.get	landing page (index.ejs) was displayed.	7e1c2b9f-e147-4bd4-9a1d-5129095f2f14
+20240801	00:05:33	INFO	app.get	landing page (index.ejs) was displayed.	c17d99f2-ccd8-4994-9b5a-0f236603722b
+20240801	00:05:35	INFO	app.get	landing page (index.ejs) was displayed.	6c525be0-b490-49c0-b4c3-11ea5c0fcdf2
+20240801	00:09:18	INFO	app.get	landing page (index.ejs) was displayed.	9388f47f-8a0a-4d96-af74-101ad05e1f22
+20240801	00:09:48	INFO	app.get	landing page (index.ejs) was displayed.	76e849d6-5e7f-4b80-bba7-2a4af1673796
+20240801	00:11:53	INFO	app.get	landing page (index.ejs) was displayed.	7befe490-2807-431c-8abf-a483defec43b
+20240801	00:11:56	INFO	app.get	landing page (index.ejs) was displayed.	ac5fdb0b-df06-4f6e-9c96-41993e39353b
+20240801	00:13:16	INFO	app.get	landing page (index.ejs) was displayed.	2fd40860-8d5f-4911-aeb1-29fa9350fb38
+20240801	00:16:22	INFO	app.get	landing page (index.ejs) was displayed.	3fef8e65-48fc-4720-b0d3-f5ba0c6db122
+20240801	00:17:24	INFO	app.get	landing page (index.ejs) was displayed.	485eccc2-3d45-4345-8040-f195c0d05c34
+20240801	00:23:31	INFO	app.get	landing page (index.ejs) was displayed.	47bb9322-d30c-40f9-a621-f1cbb5d60daf
+20240801	00:26:38	INFO	app.get	landing page (index.ejs) was displayed.	34d29ff6-9c77-4183-bc6a-9d692a2e051f
+20240801	00:27:44	INFO	app.get	landing page (index.ejs) was displayed.	a9b0c594-7615-45a7-91c2-e8083f2ac359
+20240801	00:30:41	INFO	app.get	landing page (index.ejs) was displayed.	49154fe8-6ad4-4726-bb2a-4d2707534da5
+20240801	08:03:28	INFO	app.get	landing page (index.ejs) was displayed.	fdca993b-c388-48a3-86a4-47825cdd86b3
+20240801	08:03:40	INFO	app.get	landing page (index.ejs) was displayed.	cda752d9-cbfd-4423-949c-de2436fdc509
+20240801	10:25:26	INFO	app.get	landing page (index.ejs) was displayed.	fb2523bf-6555-4dd6-9f7b-e8e5a9b537ea
+20240801	10:26:37	INFO	app.get	landing page (index.ejs) was displayed.	3317faac-3a60-45f3-8dd6-7c0c0df92613
+20240801	10:31:52	INFO	app.get /about	about page (about.ejs) was displayed.	cbc50384-0548-4854-95c7-302ccfd852f9
+20240801	10:32:21	INFO	app.get	landing page (index.ejs) was displayed.	944eb69a-226e-4f56-93e2-55e75fc8abf4
+20240801	10:43:14	INFO	app.get /about	about page (about.ejs) was displayed.	34a86354-9506-46ef-bd29-8c8c1ec525ab
+20240801	11:08:01	INFO	app.get	landing page (index.ejs) was displayed.	7e4aeef6-ade5-41fe-b3cd-87e9ba7962d6
+20240801	11:08:07	INFO	app.get /about	about page (about.ejs) was displayed.	dbe5854b-10d9-4e83-8b39-7d41dfb1e94f
+20240801	11:30:55	INFO	app.get	landing page (index.ejs) was displayed.	efa45f66-3383-43ea-a3a9-4116a17ed6ef
+20240801	11:31:38	INFO	app.get	landing page (index.ejs) was displayed.	0bf2649c-db62-44b4-be8c-3df292d7c8de
+20240801	11:31:51	INFO	app.get	landing page (index.ejs) was displayed.	2f1d506e-cd99-4ecf-a834-37c44b3d1b32
+20240801	11:35:30	INFO	app.get	landing page (index.ejs) was displayed.	158b6427-9219-4d99-b589-a3976b219bf2
+20240801	11:36:06	INFO	app.get	landing page (index.ejs) was displayed.	ec08bcf9-7e4f-4229-aa21-619f6d8a6b48
+20240801	11:36:23	INFO	app.get	landing page (index.ejs) was displayed.	f13821a3-d36a-41db-b126-d98dfe0af9a0
+20240801	11:36:53	INFO	app.get	landing page (index.ejs) was displayed.	402b8994-32b1-4651-be9d-60226a0f9847
+20240801	11:37:20	INFO	app.get	landing page (index.ejs) was displayed.	63d3d753-e982-4967-ac17-a87d65363ad2
+20240801	11:38:00	INFO	app.get	landing page (index.ejs) was displayed.	dc9688d7-859e-4930-8bc6-7d16716e470b
+20240801	11:39:57	INFO	app.get	landing page (index.ejs) was displayed.	67ace11c-8e27-4893-98b6-d4a29e9182fd
+20240801	11:40:57	INFO	app.get	landing page (index.ejs) was displayed.	f040b40b-c9c4-40f4-aa80-1026b6aaf17c
+20240801	11:41:13	INFO	app.get	landing page (index.ejs) was displayed.	a1fad2e9-7b0c-48aa-bf3b-0eb585621ee2
+20240801	11:58:14	INFO	app.get	landing page (index.ejs) was displayed.	208e47ef-41fa-4d09-8c8f-0fcb5d016322
+20240801	11:59:35	INFO	app.get	landing page (index.ejs) was displayed.	ed7de512-eca5-4328-8d73-ed1f50cc1f51
+20240801	11:59:41	INFO	app.get	landing page (index.ejs) was displayed.	5b63bb00-90d5-427e-a6bc-dd0593e8c932
+20240801	12:00:25	INFO	app.get	landing page (index.ejs) was displayed.	47fe8597-c7dd-40f1-9da7-bac556e84a09
+20240801	12:00:32	INFO	app.get	landing page (index.ejs) was displayed.	f67e0382-ad6a-4f64-a8e3-77f4ece6743b
+20240801	12:00:56	INFO	app.get	landing page (index.ejs) was displayed.	8bdab359-3da7-4f72-847d-3c98d4daf284
+20240801	12:01:46	INFO	app.get	landing page (index.ejs) was displayed.	e86ee178-8af5-4ffd-a907-da6ecd1dff04
+20240801	12:03:53	INFO	app.get	landing page (index.ejs) was displayed.	d084d342-c340-4726-a666-56dac48fbfbd
+20240801	12:51:31	INFO	app.get	landing page (index.ejs) was displayed.	a152c958-c9b5-4916-81bf-75aaf839306b
+20240801	13:03:21	INFO	app.get /about	about page (about.ejs) was displayed.	cdb3f431-434e-4a1a-bcf1-d1ef9e296b25
+20240801	13:06:41	INFO	app.get	landing page (index.ejs) was displayed.	72181ce3-a7e6-4149-9e4b-5acb1a549758
+20240801	13:06:51	INFO	app.get /about	about page (about.ejs) was displayed.	5663eb26-9525-4908-ba10-e3b9bdb2d5ef
+20240801	13:10:14	INFO	app.get /about	about page (about.ejs) was displayed.	efbaaa73-eb4b-485a-9373-d002cf0afe98
+20240801	13:11:21	SUCCESS	app.listen	HTTP server successfully started.	5be2c7c9-ab43-4ac1-8c84-c7df7fe5696b
+20240801	13:20:41	SUCCESS	app.listen	HTTP server successfully started.	93b1c828-6ead-4f89-ad6d-3db9826f795c
+20240801	13:21:34	INFO	HTTP GET	/	c118fff8-28a2-4b2e-acd1-75edc7c31560
+20240801	13:21:34	INFO	app.get /	Home page (index.ejs) was displayed.	e8501bdd-0fd1-4b4a-a00f-54fbcb6db31a
+20240801	13:21:37	INFO	HTTP GET	/list-your-business	6aa8503e-c6ca-4759-924f-162e6801bd4e
+20240801	13:21:37	ERROR	app.use 404	Page not found: /list-your-business	c2d2dfc7-7063-4a4e-aa32-6ef8c2fc16eb
+20240801	13:21:39	INFO	HTTP GET	/contact	26bcd2e6-c971-4f5a-b9c7-19f06f7a29de
+20240801	13:21:39	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	442e96d4-fec8-485a-b3df-a8cdd86e6eb0
+20240801	13:21:44	INFO	HTTP GET	/contact	b7f0c758-5dc3-4d70-9ed1-204f949616c3
+20240801	13:21:44	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	55cf4f34-1bc5-45cf-91e9-cef3743efe57
+20240801	13:21:47	INFO	HTTP GET	/about	79a5bc72-3b08-4c32-a954-e40c765c4665
+20240801	13:21:47	INFO	app.get /about	About page (about.ejs) was displayed.	60b2dbf6-98c4-4313-8f94-2a3c08a59765
+20240801	13:21:49	INFO	HTTP GET	/contact	2e21c035-4c67-4b82-bdd0-722e838e032e
+20240801	13:21:49	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	64b605d2-9d51-4569-83c2-4005c8d520aa
+20240801	13:24:58	INFO	HTTP GET	/list-your-business	f7489b20-a9f5-4d57-9790-9ebc12fe0a39
+20240801	13:24:58	ERROR	app.use 404	Page not found: /list-your-business	9095861c-cca6-48e5-a4a8-a02e95843c2e
+20240801	13:25:03	INFO	HTTP GET	/contact	c456a37c-8794-45a0-bbfd-b47bf7c54e50
+20240801	13:25:03	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	9d5c5e9e-8611-4407-b339-fbbdec9d96fd
+20240801	13:25:05	INFO	HTTP GET	/list-your-business	ae0c13e5-b67f-4b90-b37a-068621360f36
+20240801	13:25:05	ERROR	app.use 404	Page not found: /list-your-business	ba697a98-1665-4cba-b3dc-ed4dea6ec191
+20240801	13:25:06	INFO	HTTP GET	/about	66385c63-61c6-4365-afec-a0ff6345a868
+20240801	13:25:06	INFO	app.get /about	About page (about.ejs) was displayed.	482cb761-82ad-420e-b748-00b70789fe01
+20240801	13:25:07	INFO	HTTP GET	/list-your-business	26fdb276-304e-469b-8d07-06c0fcbf0e13
+20240801	13:25:07	ERROR	app.use 404	Page not found: /list-your-business	a6d729e9-c86a-4891-b5cd-316edd973a19
+20240801	13:25:11	INFO	HTTP GET	/contact	effd338e-d0e1-48a4-8c8b-04be30a44a47
+20240801	13:25:11	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	a8c70046-0b47-4078-9ae4-0aae307323b4
+20240801	13:25:17	INFO	HTTP GET	/list-your-business	d08909a5-bef5-47b7-ad00-536b414847eb
+20240801	13:25:17	ERROR	app.use 404	Page not found: /list-your-business	17e517c3-9e8b-46da-9e3a-a8b719d5673d
+20240801	13:26:23	INFO	HTTP GET	/about	00cb6c66-087b-43e4-92b9-fc160fbdaafa
+20240801	13:26:23	INFO	app.get /about	About page (about.ejs) was displayed.	7f0356ed-29f3-4306-b568-4be656203cf3
+20240801	13:26:24	INFO	HTTP GET	/list-your-business	3999be80-24a3-49ca-b8f5-52440b586503
+20240801	13:26:24	ERROR	app.use 404	Page not found: /list-your-business	5b3bd998-d8d8-4fed-a34b-37597c662560
+20240801	13:26:25	INFO	HTTP GET	/contact	80e151dd-406b-456a-8282-2907d9b07410
+20240801	13:26:25	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	db1410b4-e92f-4afa-9a88-c2d124efe947
+20240801	13:26:29	INFO	HTTP GET	/list-your-business	ddaebab9-a99b-4182-b9d0-6111e2a6d206
+20240801	13:26:29	ERROR	app.use 404	Page not found: /list-your-business	833e6452-4d6e-4f49-9fd7-3a85d0cd92ee
+20240801	13:26:31	INFO	HTTP GET	/list-your-business	e628d8c5-3ebf-4d8e-9944-3fc644cb7847
+20240801	13:26:31	ERROR	app.use 404	Page not found: /list-your-business	b72a25c2-a3a1-408d-bf2b-ceefa6e6d3f2
+20240801	13:26:33	INFO	HTTP GET	/list-your-business	bf0e7830-f358-4b2f-ad03-4fc4465bf84e
+20240801	13:26:33	ERROR	app.use 404	Page not found: /list-your-business	4373cc3d-2ad9-4ab1-b796-ba1a44265002
+20240801	13:26:52	INFO	HTTP GET	/list-your-business	f0a1d4c4-80ca-4668-8ef9-d0aad6eadf54
+20240801	13:26:52	ERROR	app.use 404	Page not found: /list-your-business	f481060d-fe59-461e-8860-4cc8914367e4
+20240801	13:26:53	INFO	HTTP GET	/list-your-business	eb4e4e2a-1dd1-4908-996a-0eb05300ad32
+20240801	13:26:53	ERROR	app.use 404	Page not found: /list-your-business	707e4507-4881-4c5d-8e2c-190c45e405d6
+20240801	13:26:54	INFO	HTTP GET	/about	b92899cc-efef-40dd-b369-24ff0ff2ae0c
+20240801	13:26:54	INFO	app.get /about	About page (about.ejs) was displayed.	521602e5-df93-4950-8786-e75e99c377ea
+20240801	13:26:55	INFO	HTTP GET	/contact	e5910207-ff7d-4439-9c7d-e0fed3762cf4
+20240801	13:26:55	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	ae28ddd8-d396-43a2-9be3-6c776e78044b
+20240801	13:27:01	INFO	HTTP GET	/list-your-business	5fd4cd46-41bf-4b4a-84cb-f9540f412995
+20240801	13:27:01	ERROR	app.use 404	Page not found: /list-your-business	5f04500d-fc13-40fc-b90a-8b20ab3ef32f
+20240801	13:27:53	INFO	HTTP GET	/about	69feef20-9561-4f17-9042-10a8add993c3
+20240801	13:27:53	INFO	app.get /about	About page (about.ejs) was displayed.	c445abbe-940b-4022-aa8c-9372f0181561
+20240801	13:27:54	INFO	HTTP GET	/list-your-business	49be6a34-eb47-45fb-818a-e69a660f9bd8
+20240801	13:27:54	ERROR	app.use 404	Page not found: /list-your-business	11ae3c81-c87d-4777-b0cc-ae55126f1646
+20240801	13:27:56	INFO	HTTP GET	/contact	8a27d2b1-2cc1-4cf9-b0ae-f06cbe4625ec
+20240801	13:27:56	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	84c0c19e-d146-4197-aa6e-86e7b1784f6c
+20240801	13:28:02	INFO	HTTP GET	/list-your-business	79f753e8-3ac7-40ce-822f-e5da31987c23
+20240801	13:28:02	ERROR	app.use 404	Page not found: /list-your-business	3e56d0cb-8393-4974-8388-85dab9768247
+20240801	13:28:56	INFO	HTTP GET	/about	ed7910d4-ae13-498f-aa65-59d0f7cd6d58
+20240801	13:28:56	INFO	app.get /about	About page (about.ejs) was displayed.	78d5ec04-7f07-432c-922f-d79a967f3f1f
+20240801	13:28:58	INFO	HTTP GET	/contact	54958157-adef-429f-8de9-ff04debbeacb
+20240801	13:28:58	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	eb49548f-97b3-42c9-9415-f8437b75cb2f
+20240801	13:28:59	INFO	HTTP GET	/about	93d4e7e9-5601-4cd3-9cf2-1a728cad4ce6
+20240801	13:28:59	INFO	app.get /about	About page (about.ejs) was displayed.	f267c69a-c9b5-46eb-96dc-ef3453854b00
+20240801	13:29:26	INFO	HTTP GET	/about	9f01c3ce-862f-42d4-aca1-c2088bdd6b84
+20240801	13:29:26	INFO	app.get /about	About page (about.ejs) was displayed.	00bbccfd-0106-45c0-88f2-6edf2d02a011
+20240801	13:29:30	INFO	HTTP GET	/contact	b7430469-bfc1-4efa-b19a-74986e4b21d9
+20240801	13:29:30	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	9db55bfd-c99e-4a6c-81e8-84a8f737015b
+20240801	13:29:38	INFO	HTTP GET	/auth/new	d3c9d4ff-cb7b-4f9b-85ba-048a6a2fb8fc
+20240801	13:29:38	INFO	auth.get /new	Registration page displayed.	bebabbd5-ea5e-4d65-8817-1d9f90b19e3c
+20240801	13:29:42	INFO	HTTP GET	/auth/login	37ef8d7b-3bf4-4305-af47-215a4354aeb9
+20240801	13:29:42	ERROR	app.use 404	Page not found: /auth/login	29722b06-9c92-43bc-b7b1-f12549f2015a
+20240801	13:29:43	INFO	HTTP GET	/auth/login	9280e01c-1f72-414c-bec7-151f78c14ed8
+20240801	13:29:43	ERROR	app.use 404	Page not found: /auth/login	92c81f48-4202-475e-bc1c-3954135cf969
+20240801	13:29:44	INFO	HTTP GET	/auth/login	c3e6e9b1-9d18-4cab-b30c-e636e9c72680
+20240801	13:29:44	ERROR	app.use 404	Page not found: /auth/login	cc8a7521-85bc-427d-8ed9-0a4f29a0fc56
+20240801	13:29:45	INFO	HTTP GET	/auth/login	a30061a8-a65e-47b7-b812-3bcb3988183b
+20240801	13:29:45	ERROR	app.use 404	Page not found: /auth/login	30e3cbbd-d209-4220-ab34-e8f56464fe57
+20240801	13:29:50	INFO	HTTP GET	/auth/login	3a72649c-e62f-44e5-bf34-644a916e8301
+20240801	13:29:50	ERROR	app.use 404	Page not found: /auth/login	b49a881b-37e2-4d00-bed3-eba765c1eb9f
+20240801	13:29:52	INFO	HTTP GET	/auth/	460325f8-54af-4eee-975d-9ca5f55f4b59
+20240801	13:29:52	INFO	auth.get /	Login page displayed.	4b39d9a8-e007-466b-ab33-2b9661701a9b
+20240801	13:31:19	INFO	HTTP GET	/about	e924f015-8673-4f75-b7d0-579f0349ec17
+20240801	13:31:19	INFO	app.get /about	About page (about.ejs) was displayed.	f0f07251-1c4c-4d37-b0f4-9e9bc98bf7a4
+20240801	13:31:20	INFO	HTTP GET	/auth/	aa67d1e7-025f-4026-a791-12edf431e401
+20240801	13:31:20	INFO	auth.get /	Login page displayed.	d1e93693-f250-4a63-bff8-679aca67e60a
+20240801	13:31:34	INFO	HTTP POST	/auth	57a030f0-8436-4d79-bdf5-993542a57aea
+20240801	13:31:34	ERROR	auth.post /	Login error: dal.close is not a function	f09d174c-538f-4ae0-9ea0-272c13f45669
+20240801	13:31:51	INFO	HTTP POST	/auth	7b422317-d287-450a-906e-501c99ceb3a1
+20240801	13:31:51	ERROR	auth.post /	Login error: dal.close is not a function	22e32bad-39be-4d58-af30-7ee1b528e72c
+20240801	13:32:02	INFO	HTTP GET	/auth/new	728b27c5-9da3-40fc-a0c0-4aae0c0dc076
+20240801	13:32:02	INFO	auth.get /new	Registration page displayed.	776ef88d-4ab4-4d24-9ecc-5933530ebb21
+20240801	13:32:05	INFO	HTTP POST	/auth/new	43387ce9-70f5-41f3-8a5a-2d1147dfaa6b
+20240801	13:32:06	ERROR	auth.post /new	Registration error: dal.close is not a function	afe21467-6253-4724-ab0f-d064deaa6865
+20240801	13:32:31	INFO	HTTP GET	/auth/exit	d7102557-70c1-4c19-85cc-0ed31530b674
+20240801	13:32:31	SUCCESS	auth.get /exit	User logged out successfully.	76802194-d6f4-40e2-9829-385fc282d6f5
+20240801	13:32:31	INFO	HTTP GET	/	ffd33f94-3615-44b5-9983-d8a015b62c0a
+20240801	13:32:31	INFO	app.get /	Home page (index.ejs) was displayed.	721717d1-d751-4c71-998e-9bfc48ae03d2
+20240801	13:32:37	INFO	HTTP GET	/auth/new	98c47a1c-2834-44d9-b135-11b6423ea0b2
+20240801	13:32:37	INFO	auth.get /new	Registration page displayed.	82a01449-a553-48ad-a546-019820c8ac67
+20240801	13:34:42	INFO	HTTP POST	/auth/new	e0a99a05-d6e1-4867-bbc9-e08be78e13ea
+20240801	13:34:42	ERROR	auth.post /new	Registration error: dal.close is not a function	bbf02910-9ffd-4a9c-810e-5bccc1099381
+20240801	13:42:39	INFO	HTTP POST	/auth/new	4c7d9d93-25e6-4428-8d1a-beac5d1c0d64
+20240801	13:42:39	ERROR	auth.post /new	Registration error: dal.close is not a function	de464725-b129-45aa-b5e7-81e5b1b4a61c
+20240801	13:42:46	INFO	HTTP GET	/	943af097-683d-4a34-bb48-f195b11d881f
+20240801	13:42:46	INFO	app.get /	Home page (index.ejs) was displayed.	92d36005-6a71-40e7-bf25-69cab094fefb
+20240801	13:46:56	INFO	HTTP GET	/auth/new	876468be-7e8d-4900-947a-b68d003d5ba2
+20240801	13:46:56	INFO	auth.get /new	Registration page displayed.	a2301161-2685-4c37-8691-ae0b42e9c680
+20240801	13:47:07	INFO	HTTP POST	/auth/new	fbaeae84-de24-4e78-be58-bb0f0fd8ea8b
+20240801	13:47:07	ERROR	auth.post /new	Registration error: dal.close is not a function	45a7177d-c353-43b0-b23b-111591f589c9
+20240801	13:47:12	INFO	HTTP GET	/	dd4f7db2-a421-4739-a78d-04003b282ef7
+20240801	13:47:12	INFO	app.get /	Home page (index.ejs) was displayed.	922de473-d7b3-44c9-87a8-bfdad450eba4
+20240801	13:50:30	SUCCESS	app.listen	HTTP server successfully started.	c15412c2-fe4d-496d-8bf0-1eef4e9a7ea3
+20240801	13:50:43	INFO	HTTP GET	/	052fcaea-9105-470c-825c-a7e5dca0f3e1
+20240801	13:50:43	INFO	app.get /	Home page (index.ejs) was displayed.	77a920c7-244f-4000-8cb5-f327a93aac66
+20240801	13:50:46	INFO	HTTP GET	/auth/new	106efeb8-d0d3-4748-855e-b4cdf45faf44
+20240801	13:50:46	INFO	auth.get /new	Registration page displayed.	9ccc916e-dad8-402c-8b03-4247fc266542
+20240801	13:50:49	INFO	HTTP POST	/auth/new	d5e9368b-a6b2-4c5a-9f2d-60153e1ff22e
+20240801	13:50:50	SUCCESS	auth.post /new	User Brenda Armstrong registered successfully.	d8d61113-ec98-45f3-82aa-94234be27576
+20240801	13:50:50	INFO	HTTP GET	/auth	496d7ba5-1c62-41a7-bb18-75095a8484a1
+20240801	13:50:50	INFO	auth.get /	Login page displayed.	9c73cfc0-06a1-4def-a739-4335fd5fa1ee
+20240801	13:51:11	INFO	HTTP POST	/auth	d7a2f41d-a080-49af-ae39-05b348975a49
+20240801	13:51:12	WARN	auth.post /	Login failed: Incorrect username.	111d3a2a-befc-4eae-b8a8-c22957605880
+20240801	13:51:12	INFO	HTTP GET	/auth	0c57c11a-792e-40cc-b8ef-1007fcacab00
+20240801	13:51:12	INFO	auth.get /	Login page displayed.	598d7c09-d1cb-4234-a70e-5ca831dfb4d8
+20240801	13:51:14	INFO	HTTP POST	/auth	c35cc588-de84-4532-be60-734d59699e5d
+20240801	13:51:14	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	e9ae199f-dadb-416d-b4c9-76ae026ef349
+20240801	13:51:14	INFO	HTTP GET	/	f256a119-a322-470f-aebf-f94c06e60db5
+20240801	13:51:14	INFO	app.get /	Home page (index.ejs) was displayed.	4be75097-bc9f-4e72-afb2-354166832852
+20240801	13:54:34	INFO	HTTP GET	/auth/new	cfaf8583-efae-49c4-9e81-24ce582f3fb6
+20240801	13:54:34	INFO	auth.get /new	Registration page displayed.	537eded2-ff6d-4be9-8106-7aefb63096d3
+20240801	13:55:01	INFO	HTTP POST	/auth/new	5b799343-501b-442a-9c03-280b1f3952c5
+20240801	13:55:02	SUCCESS	auth.post /new	User Ellie Bendiksen registered successfully.	5a099bd2-3bb4-4454-8f43-d2634dff47ed
+20240801	13:55:02	INFO	HTTP GET	/auth	5fea6723-12d0-4218-aabb-9a981a646a19
+20240801	13:55:02	INFO	auth.get /	Login page displayed.	1a682ae8-cd9c-419e-b6df-ed76cb7a6ee8
+20240801	13:55:16	INFO	HTTP POST	/auth	bd0d70e1-a831-41b7-8700-3dd4577386fb
+20240801	13:55:17	SUCCESS	auth.post /	User Ellie Bendiksen logged in successfully.	22956a1f-c586-419f-9b5b-98111c942ff3
+20240801	13:55:17	INFO	HTTP GET	/	87186a84-b56c-4e6c-9f02-6ee2a99b3530
+20240801	13:55:17	INFO	app.get /	Home page (index.ejs) was displayed.	56421c2f-76ed-4506-81d6-eb99bb4bee8c
+20240801	13:57:40	INFO	HTTP GET	/auth/	ff09180f-d19d-4971-8c25-5697d78ed33d
+20240801	13:57:40	INFO	auth.get /	Login page displayed.	c0e1955c-328f-4168-bf9f-367c4f6c2ee8
+20240801	13:57:53	INFO	HTTP POST	/auth	d1bf104d-4d77-46bb-ba49-6f39ad9bbdd3
+20240801	13:57:54	SUCCESS	auth.post /	User Ellie Bendiksen logged in successfully.	d1c21a11-e9de-4bb2-8a4b-dd718d90680d
+20240801	13:57:54	INFO	HTTP GET	/	90d52321-f666-4219-b961-483bb9a05857
+20240801	13:57:54	INFO	app.get /	Home page (index.ejs) was displayed.	df6a9045-5a14-44f0-a981-9c92b5fdecda
+20240801	13:58:42	INFO	HTTP GET	/auth/	b8f3f08e-6245-445d-ace0-5f303cf170ee
+20240801	13:58:42	INFO	auth.get /	Login page displayed.	4350227d-ee8c-4c63-a008-a0a4a4eddec7
+20240801	13:58:50	INFO	HTTP POST	/auth	89910c8d-ace4-429d-a174-0a086cca7a7b
+20240801	13:58:50	WARN	auth.post /	Login failed: Incorrect username.	564bb720-6c96-42f9-bf44-b75f95576309
+20240801	13:58:50	INFO	HTTP GET	/auth	d8e7aa5f-6ec1-46bf-a69d-99c74102b89b
+20240801	13:58:50	INFO	auth.get /	Login page displayed.	ad5234f7-66ea-4e72-903f-8ceff4d4b009
+20240801	13:59:08	INFO	HTTP POST	/auth	bf6d9921-0914-45b2-ab28-0d2d6b0ce496
+20240801	13:59:09	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	f1ae9d14-b861-48da-9ab3-4545a92c3401
+20240801	13:59:09	INFO	HTTP GET	/	d2c4e95d-ce4d-4501-98a0-9bf4edaea812
+20240801	13:59:09	INFO	app.get /	Home page (index.ejs) was displayed.	45ba1b3a-b2f2-427b-adbb-054b1f13881b
+20240801	13:59:17	INFO	HTTP GET	/auth/exit	d797cebf-7f2a-4ca6-ab7a-5fe94953dfde
+20240801	13:59:17	SUCCESS	auth.get /exit	User logged out successfully.	0f24b206-a41f-48cb-9d0a-86e6369dd5df
+20240801	13:59:17	INFO	HTTP GET	/	84b56179-66df-4de5-8630-63e01136f27c
+20240801	13:59:17	INFO	app.get /	Home page (index.ejs) was displayed.	e861d779-c368-47d3-9dad-33dcbb9f6329
+20240801	13:59:19	INFO	HTTP GET	/auth/	08a4cf18-e05a-4392-a0ad-c97f40701baf
+20240801	13:59:19	INFO	auth.get /	Login page displayed.	489b0a01-0e37-45ad-a7b3-66f92e1cd479
+20240801	13:59:22	INFO	HTTP POST	/auth	62e95d01-4569-48ce-b391-9efaeec2aefb
+20240801	13:59:22	INFO	HTTP POST	/auth	125b45b8-d8e0-4a62-9d5e-b6c4ace72ed7
+20240801	13:59:22	ERROR	auth.post /	Login error: Topology is closed	9f82d5a0-e80e-4928-be63-5e489dbbb256
+20240801	13:59:22	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	70373ea4-19b9-4fe8-8bbb-258670020f47
+20240801	13:59:23	INFO	HTTP GET	/	248c5d05-66e6-445a-8ff0-48d8acc22a0f
+20240801	13:59:23	INFO	app.get /	Home page (index.ejs) was displayed.	b61d6519-1160-4567-8b40-c89fafa6d7ab
+20240801	13:59:25	INFO	HTTP GET	/auth/	9db38898-b8fc-45c9-8f55-b861c9d7e472
+20240801	13:59:25	INFO	auth.get /	Login page displayed.	bea0e6cc-46fa-4d74-931a-52d33d3fef56
+20240801	13:59:32	INFO	HTTP POST	/auth	ee14759c-9a5f-42a4-9497-a9c52c16acb5
+20240801	13:59:32	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	dec59b3f-2f85-48d9-82f9-6ce73fb2f6aa
+20240801	13:59:32	INFO	HTTP GET	/	ad0f6e9a-cec1-4c4f-aca4-890e8025d0e6
+20240801	13:59:32	INFO	app.get /	Home page (index.ejs) was displayed.	80471b7d-0d7d-4227-98dd-a46732711cfd
+20240801	13:59:38	INFO	HTTP GET	/auth/	fd1e4443-a4e9-4807-b4db-5e6a3e8f77a6
+20240801	13:59:38	INFO	auth.get /	Login page displayed.	7abfbbe1-8db5-4388-bfcd-654d52313f76
+20240801	13:59:53	INFO	HTTP POST	/auth	af64bd6e-fb45-4668-879f-9c54af6304a0
+20240801	13:59:54	WARN	auth.post /	Login failed: Incorrect username.	eb0da8b3-0b4e-447b-b718-7f25703aa424
+20240801	13:59:54	INFO	HTTP GET	/auth	479b0764-8268-4174-9117-6242f1241836
+20240801	13:59:54	INFO	auth.get /	Login page displayed.	cc4dc328-0dbf-4d04-a6af-5c33ba854190
+20240801	14:00:04	INFO	HTTP GET	/auth/new	401466a9-9c79-41ef-a55d-0db3cd9b3238
+20240801	14:00:04	INFO	auth.get /new	Registration page displayed.	075d9c09-3d7a-4245-9ecd-3a64cacf5565
+20240801	14:00:32	INFO	HTTP GET	/auth/	5692ae87-ccf4-4dfe-9852-eb68d5d74eab
+20240801	14:00:32	INFO	auth.get /	Login page displayed.	b19b9dfb-3544-4d92-a72f-d3c987294147

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search - VinoVault</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/images/wine-glass.png" type="image/png">
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <%- include('./partials/nav') %>
+    <main>
+        <div class="search-container">
+            <h2>Start Your Search Here</h2>
+            <div class="search-bar">
+                <form id="full-text-search" action="/api/search/full-text" method="POST">
+                    <input type="text" name="query" placeholder="Search for Wine" required>
+                    <button type="submit">
+                        <i class="fa-regular fa-wine-glass"></i> Search
+                    </button>
+                </form>
+            </div>
+
+            <div class="filter-section">
+                <form id="filter-search" action="/api/search/filter" method="POST">
+                    <label for="country">Narrow By Location:</label>
+                    <select id="country" name="country">
+                        <% countries.forEach(country => { %>
+                            <option value="<%= country %>"><%= country %></option>
+                        <% }) %>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="popular-categories">
+                <h2>Not sure where to start? Search popular categories:</h2>
+                <div class="categories">
+                    <form id="color-search" action="/api/search/color" method="POST">
+                        <label for="color">By Color:</label>
+                        <select id="color" name="color">
+                            <% colors.forEach(color => { %>
+                                <option value="<%= color %>"><%= color %></option>
+                            <% }) %>
+                        </select>
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <form id="type-search" action="/api/search/type" method="POST">
+                        <label for="type">By Type:</label>
+                        <select id="type" name="type">
+                            <% types.forEach(type => { %>
+                                <option value="<%= type %>"><%= type %></option>
+                            <% }) %>
+                        </select>
+                        <button type="submit">Search</button>
+                    </form>
+
+                    <form id="winery-search" action="/api/search/winery" method="POST">
+                        <label for="winery">By Vineyard:</label>
+                        <select id="winery" name="winery">
+                            <% wineries.forEach(winery => { %>
+                                <option value="<%= winery %>"><%= winery %></option>
+                            <% }) %>
+                        </select>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-results-container">
+            <% if (results && results.length > 0) { %>
+                <div class="results-grid">
+                    <% results.forEach(result => { %>
+                        <div class="result-item">
+                            <div class="result-logo">
+                                <img src="<%= result.logo %>" alt="<%= result.name %>">
+                            </div>
+                            <div class="result-details">
+                                <h3><%= result.name %></h3>
+                                <p><strong>Winery:</strong> <%= result.winery %></p>
+                                <p><strong>Type:</strong> <%= result.type %></p>
+                                <p><strong>Country:</strong> <%= result.country %></p>
+                                <p><strong>Region:</strong> <%= result.region %></p>
+                                <p><strong>Color:</strong> <%= result.color %></p>
+                                <p><strong>Price:</strong> $<%= result.price %></p>
+                                <p><strong>Description:</strong> <%= result.description %></p>
+                                <p><strong>Rating:</strong> <%= result.rating %></p>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+                <div class="pagination">
+                    <% if (currentPage > 1) { %>
+                        <a href="?page=<%= currentPage - 1 %>" class="pagination-button">Previous</a>
+                    <% } %>
+                    <% if (results.length === 15) { %>
+                        <a href="?page=<%= currentPage + 1 %>" class="pagination-button">Next</a>
+                    <% } %>
+                </div>
+            <% } else { %>
+                <p>No results found.</p>
+            <% } %>
+        </div>
+    </main>
+    <div class="footer-wrapper">
+        <%- include('./partials/footer.ejs') %>
+    </div>
+</body>
+</html>

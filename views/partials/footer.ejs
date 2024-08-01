@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VinoVault</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <!-- views/partials/footer.ejs -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/vinovaultlogo.png" alt="VinoVault Logo">
+            </div>
+            <div class="footer-links">
+                <a href="/about">About Us</a> |
+                <a href="/contact">Contact Us</a> |
+                <a href="#" id="subscribe-link">Join our Newsletter</a>
+            </div>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f social-icon"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank">
+                    <i class="fab fa-tiktok social-icon"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram social-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <%= new Date().getFullYear() %> VinoVault. All rights reserved.</p>
+        </div>
+
+        <!-- Newsletter Subscription Form -->
+        <div id="subscription-form" class="subscription-form">
+            <div class="form-container">
+                <h2>Subscribe to our Newsletter</h2>
+                <form id="subscribe-form" action="/subscribe" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="form-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Toggle the subscription form visibility
+    document.getElementById('subscribe-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('subscription-form').classList.toggle('show');
+    });
+    </script>
+</body>
+</html>
