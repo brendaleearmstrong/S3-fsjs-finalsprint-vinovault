@@ -57,16 +57,5 @@
   "last_updated": {
     "$date": "2024-07-24T11:10:40.907Z"
   }
-},
-{
-  "_id": {
-    "$oid": "66a0e9a7a425545d6983ba4f"
-  },
-  "username": "Stephan",
-  "email": "stephan@bendiksen.net",
-  "password": "stephan2024",
-  "uuid": "874c6b61-2560-4f60-b45c-5cd417f34874",
-  "last_updated": {
-    "$date": "2024-07-24T11:46:57.184Z"
-  }
+}
 }]
