@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
 }
 
 .auth-container {
@@ -32,6 +33,7 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
     width: 100%;
+    height: auto;
     margin: 20px 0;
 }
 
@@ -44,7 +46,7 @@ body {
     text-align: center;
     flex: 1;
     min-width: 250px;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .auth-box h2 {

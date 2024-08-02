@@ -1,4 +1,4 @@
--- Create Wine table
+-- Create Wine table in Postgres
 CREATE TABLE Wine (
     WineID SERIAL PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,

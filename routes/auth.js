@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
         req.session.token = token;
         req.session.status = 'Happy to have you back ' + user.username;
         myEventEmitter.emit('event', 'auth.post /', 'SUCCESS', `User ${username} logged in successfully.`);
-        res.redirect('/');
+        res.redirect('/search');  // Redirect to search page after successful login
     } catch (error) {
         console.error('Login error:', error);
         myEventEmitter.emit('event', 'auth.post /', 'ERROR', `Login error: ${error.message}`);
@@ -74,8 +74,7 @@ router.post('/new', async (req, res) => {
             req.session.status = 'Username or Email already exists, please try another.';
             res.redirect('/auth/new');
         } else {
-            console.error('Detailed error:', error);
-            res.status(500).render('error', { error: 'An error occurred during registration. ' + error.message });
+            res.status(500).render('error', { error: 'An error occurred during registration.' });
         }
     }
 });

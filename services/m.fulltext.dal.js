@@ -1,22 +1,38 @@
-// services/m.fulltext.dal.js
-const { ObjectId } = require("mongodb");
-const dal = require("./m.db");
+const { MongoClient } = require('mongodb');
+const uri = process.env.MONGO_URI;
 
-async function getFullText(fulltext) {
+async function getFullText(text) {
+  console.log('getFullText called with:', text);
+  const client = new MongoClient(uri);
   try {
-    await dal.connect();
-    const database = dal.db("Auth");
-    const collection = database.collection("wine");
-    const result = await collection.find({ $text: { $search: fulltext } }).toArray();
+    console.log('Attempting MongoDB connection');
+    await client.connect();
+    console.log('MongoDB connected successfully');
+
+    const database = client.db('vinovault');
+    const collection = database.collection('wine');
+
+    console.log('Performing MongoDB search with text:', text);
+    if (!text || typeof text !== 'string') {
+      console.error('Invalid search text provided:', text);
+      return []; // Return empty array instead of throwing an error
+    }
+
+    const result = await collection.find({
+      $text: { $search: text }
+    }).toArray();
+
+    console.log(`MongoDB search complete. Found ${result.length} results.`);
     return result;
-  } catch (err) {
-    console.error('Error occurred while connecting to MongoDB:', err);
-    throw err;
+  } catch (error) {
+    console.error('Error in MongoDB full-text search:', error);
+    throw error;  // Re-throw the error to be handled by the caller
   } finally {
-    await dal.close();
+    await client.close();
+    console.log('MongoDB connection closed');
   }
-};
+}
 
 module.exports = {
-    getFullText,
+  getFullText
 };

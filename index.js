@@ -2,32 +2,21 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 const express = require('express');
-const app = express();
 const session = require('express-session');
+const myEventEmitter = require('./services/logEvents');
+const app = express();
 const PORT = process.env.PORT || 3000;
 global.DEBUG = true;
-
-const myEventEmitter = require('./services/logEvents.js'); // Include the logger
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); // Add this line to parse JSON bodies
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false
 }));
-
-// Log server start
-app.listen(PORT, (err) => {
-    if (err) {
-        console.error('Server start error:', err);
-        myEventEmitter.emit('event', 'app.listen', 'ERROR', 'HTTP server failed to start.');
-    } else {
-        myEventEmitter.emit('event', 'app.listen', 'SUCCESS', 'HTTP server successfully started.');
-        console.log(`VinoVault is running on LocalHost:${PORT}.`);
-    }
-});
 
 // Log each request
 app.use((req, res, next) => {
@@ -50,17 +39,32 @@ app.get('/contact', async (req, res) => {
     res.render('contact', { status: req.session.status });
 });
 
+// Import routers and log their types
 const searchRouter = require('./routes/search');
-app.use('/search', searchRouter);
-
 const authRouter = require('./routes/auth');
-app.use("/auth", authRouter);
-
 const apiRouter = require('./routes/api');
+
+console.log('searchRouter:', typeof searchRouter); // Should be 'function'
+console.log('authRouter:', typeof authRouter);     // Should be 'function'
+console.log('apiRouter:', typeof apiRouter);       // Should be 'function'
+
+app.use('/search', searchRouter);
+app.use('/auth', authRouter);
 app.use('/api', apiRouter);
 
 // Log 404 errors
 app.use((req, res) => {
     myEventEmitter.emit('event', 'app.use 404', 'ERROR', `Page not found: ${req.url}`);
     res.status(404).render('404', { status: req.session.status });
+});
+
+// Start the server
+app.listen(PORT, (err) => {
+    if (err) {
+        console.error('Server start error:', err);
+        myEventEmitter.emit('event', 'app.listen', 'ERROR', 'HTTP server failed to start.');
+    } else {
+        myEventEmitter.emit('event', 'app.listen', 'SUCCESS', 'HTTP server successfully started.');
+        console.log(`VinoVault is running on LocalHost:${PORT}.`);
+    }
 });
