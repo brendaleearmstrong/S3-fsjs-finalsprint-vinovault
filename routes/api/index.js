@@ -1,4 +1,5 @@
-var router = require('express').Router();
+const express = require('express');
+const router = express.Router();
 const {setToken, authenticateJWT } = require('../../services/auth');
 
 if(DEBUG) {

@@ -236,3 +236,269 @@
 20240801	14:00:04	INFO	auth.get /new	Registration page displayed.	075d9c09-3d7a-4245-9ecd-3a64cacf5565
 20240801	14:00:32	INFO	HTTP GET	/auth/	5692ae87-ccf4-4dfe-9852-eb68d5d74eab
 20240801	14:00:32	INFO	auth.get /	Login page displayed.	b19b9dfb-3544-4d92-a72f-d3c987294147
+20240801	14:25:08	INFO	HTTP POST	/auth	e97bedc9-955d-484f-888f-c8609c0c2260
+20240801	14:25:09	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	f919f76d-3fb0-4725-991a-5d58a8ec2c1e
+20240801	14:25:09	INFO	HTTP GET	/	e489aff2-9f4e-48ea-a7d0-75add06ad090
+20240801	14:25:09	INFO	app.get /	Home page (index.ejs) was displayed.	908cb613-e979-4760-b130-e828dc649e6c
+20240801	14:25:20	INFO	HTTP GET	/auth/new	dc40fa63-5863-4044-b0b6-d378876c111f
+20240801	14:25:20	INFO	auth.get /new	Registration page displayed.	a3ccad03-05a7-45e0-89c7-9c79d6c3c335
+20240801	14:25:23	INFO	HTTP POST	/auth/new	cedf4296-08cf-48aa-b97e-852b04a36495
+20240801	14:25:24	SUCCESS	auth.post /new	User Brenda Armstrong registered successfully.	8766612a-b231-46b0-97dd-24b4c40ee5eb
+20240801	14:25:24	INFO	HTTP GET	/auth	ff1d48c6-52f3-49b4-8a0d-cfa4db0773a2
+20240801	14:25:24	INFO	auth.get /	Login page displayed.	15aaf922-f04a-45b1-96e8-adf221bfb557
+20240801	14:25:27	INFO	HTTP POST	/auth	f2d6f061-3a8a-4544-8ad4-1257c123707e
+20240801	14:25:28	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	1f4163bf-8cc9-4998-8c91-a82ae0c6011f
+20240801	14:25:28	INFO	HTTP GET	/	91e9a907-89e3-4aef-b588-4e4a3539323d
+20240801	14:25:28	INFO	app.get /	Home page (index.ejs) was displayed.	f52402b3-b59b-44d1-89eb-96098b8f06c7
+20240801	14:27:05	INFO	HTTP GET	/	4ea4991b-e1e9-42d6-a6e8-69cac0f86b0d
+20240801	14:27:05	INFO	app.get /	Home page (index.ejs) was displayed.	11b63068-7b65-48b4-afdc-aceb39bee8eb
+20240801	14:29:45	INFO	HTTP GET	/about	611f1d1c-ed1f-44ca-8d99-777b80b91645
+20240801	14:29:45	INFO	app.get /about	About page (about.ejs) was displayed.	bd7cd4ba-e27a-4403-8b68-dcf7d2da453b
+20240801	14:29:46	INFO	HTTP GET	/contact	4d1fe26a-9237-4ed2-bb21-ba42956e00de
+20240801	14:29:46	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	e89a033b-ead6-4361-acd1-e8cf90f0e53c
+20240801	14:29:52	INFO	HTTP POST	/subscribe	2a2d29b8-8d20-47bd-8f40-090a351e4ee0
+20240801	14:29:52	ERROR	app.use 404	Page not found: /subscribe	1e1f7f97-203c-4406-98b0-23c8200ef003
+20240801	14:29:55	INFO	HTTP GET	/auth/new	05547255-242c-4164-a693-49f7622790ea
+20240801	14:29:55	INFO	auth.get /new	Registration page displayed.	c1459d78-a0d9-499b-87d1-c9d0ea350aa9
+20240801	14:30:17	INFO	HTTP POST	/auth/new	8b578e92-aab5-4ac7-b251-56c4f43a11d5
+20240801	14:30:18	SUCCESS	auth.post /new	User Ethan Murphy registered successfully.	e8e1834b-8f07-43aa-bfc8-b3de7a2bf1fa
+20240801	14:30:18	INFO	HTTP GET	/auth	f5fa2e6b-5dd8-443f-80aa-238fd7b0fadc
+20240801	14:30:18	INFO	auth.get /	Login page displayed.	fd0f2105-f458-4d7f-a7c9-ba6b03ae8f1c
+20240801	14:30:30	INFO	HTTP POST	/auth	e26872a8-5aa7-4d81-8021-6267dc473a52
+20240801	14:30:31	SUCCESS	auth.post /	User Ethan Murphy logged in successfully.	88b587ca-f47d-4a09-bd6d-cf6eedad1a31
+20240801	14:30:31	INFO	HTTP GET	/	62c8714f-3950-421a-b765-90de658e0e1e
+20240801	14:30:31	INFO	app.get /	Home page (index.ejs) was displayed.	8fcfecb4-a4a0-4671-9a6e-e10358d6553b
+20240801	17:11:25	INFO	HTTP GET	/contact	1c1fa21c-ea3a-4a13-b3dc-9fd0553cca92
+20240801	17:11:25	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	28bae52b-9b73-4157-bb4e-5c6ebbb88783
+20240801	17:11:53	INFO	HTTP POST	/subscribe	23bb2594-069b-40d4-84c4-179b0f716614
+20240801	17:11:53	ERROR	app.use 404	Page not found: /subscribe	527e6695-db4a-4dc2-94cd-f3ee574a0bd7
+20240801	17:23:42	INFO	HTTP GET	/auth/new	ab68847e-d835-4827-80ca-ab6859c1bc49
+20240801	17:23:42	INFO	auth.get /new	Registration page displayed.	4a77bff5-bc05-4bf9-b6ed-1425305bfb7a
+20240801	17:23:57	INFO	HTTP POST	/auth/new	c079f940-7118-4cc0-8297-eb093082c7e7
+20240801	17:23:58	SUCCESS	auth.post /new	User Anita Armstrong registered successfully.	7b4729fe-46ff-4e7c-a4c5-3ec7d631d189
+20240801	17:23:58	INFO	HTTP GET	/auth	2d8800f1-7349-47ae-af16-8a74f8aabe5b
+20240801	17:23:58	INFO	auth.get /	Login page displayed.	10330b28-c9f0-4a9c-8975-a4dc760229d0
+20240801	17:24:07	INFO	HTTP POST	/auth	5f1f2c70-723e-4a7a-bf73-30a74fa1ddfd
+20240801	17:24:08	SUCCESS	auth.post /	User Anita Armstrong logged in successfully.	a36e0df9-e63e-46b0-828f-d5ee1a799987
+20240801	17:24:08	INFO	HTTP GET	/	b77fd810-5064-4a02-a60f-e4e8a2767b6f
+20240801	17:24:08	INFO	app.get /	Home page (index.ejs) was displayed.	69f7c6d5-ec2c-478a-bdae-bac329348753
+20240801	17:45:38	INFO	HTTP GET	/auth/new	42401879-e1cf-4ed3-89a3-e72caab84564
+20240801	17:45:38	INFO	auth.get /new	Registration page displayed.	2bd0b4ab-c288-4664-a041-a65f92f2f8f7
+20240801	17:45:56	INFO	HTTP POST	/auth/new	7c0c13db-984c-4b19-9e0a-d5a1f1d5cac1
+20240801	17:45:57	SUCCESS	auth.post /new	User Louie Armstrong registered successfully.	4f674d07-da32-4d23-9b20-f2fb02d66d97
+20240801	17:45:57	INFO	HTTP GET	/auth	da96fb4d-2785-44f1-98c0-34d37876c76f
+20240801	17:45:57	INFO	auth.get /	Login page displayed.	83ed1a9b-7196-44f5-b3b6-7961b2a852c9
+20240801	17:46:10	INFO	HTTP POST	/auth	6eea41b2-903b-451d-8d49-feffdf07f0c8
+20240801	17:46:11	SUCCESS	auth.post /	User Louie Armstrong logged in successfully.	9ba96d36-b0ec-41ac-a131-fe82a1ae93e6
+20240801	17:46:11	INFO	HTTP GET	/	6acd38cf-91ff-42f3-bf53-da3c4f010168
+20240801	17:46:11	INFO	app.get /	Home page (index.ejs) was displayed.	be34d3b4-fecc-41a4-8436-03fa29dbd206
+20240801	17:52:28	SUCCESS	app.listen	HTTP server successfully started.	a0efc96b-0bda-4313-837d-e2002eb9a259
+20240801	17:52:40	INFO	HTTP GET	/	6953994d-5329-499a-a0d7-4dcd9d2ba9e5
+20240801	17:52:40	INFO	app.get /	Home page (index.ejs) was displayed.	8ea10123-a6f9-4e6a-8056-d049ddacd954
+20240801	17:52:43	INFO	HTTP GET	/	13314464-6e97-4cdf-b13d-44783b82a606
+20240801	17:52:43	INFO	app.get /	Home page (index.ejs) was displayed.	552a7bc2-874b-4957-b913-2cff1c881f1a
+20240801	17:52:45	INFO	HTTP GET	/auth/	ef964134-3b6b-4320-aa5c-6afadf26a3d8
+20240801	17:52:45	INFO	auth.get /	Login page displayed.	73f63298-7366-4944-809d-b8086191a20c
+20240801	17:52:47	INFO	HTTP POST	/auth	fd114d01-baa4-45f7-b974-819ac89a985c
+20240801	17:52:48	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	9ce283d6-4891-49b2-9ffa-44947b52f5e1
+20240801	17:52:48	INFO	HTTP GET	/search	35851f59-9550-4178-99ea-1c366e0c2599
+20240801	17:52:48	INFO	app.get /search	search page (search.ejs) was displayed.	a60b2a84-7f98-4944-b940-1f8b9e1e5128
+20240801	17:53:00	INFO	HTTP POST	/search	83bb65c8-4224-4c29-b829-1a49b49de9e7
+20240801	17:53:00	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	85c8bc82-83be-43fe-8b40-4809f7ad31be
+20240801	17:53:03	INFO	HTTP POST	/search	3d1cf58d-ed97-4216-8ae4-4cd092f6d529
+20240801	17:53:04	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	8dbc4333-d909-4592-a749-0d0c6199a621
+20240801	17:57:53	INFO	HTTP GET	/search	7265b329-85e7-45af-af85-90e9e572c1a7
+20240801	17:57:53	INFO	app.get /search	search page (search.ejs) was displayed.	e49396cc-1286-4b8c-9e55-b7c6a93711e0
+20240801	17:58:59	INFO	HTTP POST	/search	8d80f9ff-643c-4042-8360-2a5614a9cac6
+20240801	17:59:00	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	8dbe9ddb-b890-4833-8c6d-52c78858d6e1
+20240801	17:59:06	INFO	HTTP POST	/search	e7bbfd9c-7b44-40f4-a39d-550b1084e47f
+20240801	17:59:07	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	296aa2c6-56ab-42e2-be74-389b165e9858
+20240801	18:04:33	INFO	HTTP GET	/search	2e624433-de67-4bc9-9b2a-76bc4d41e2f6
+20240801	18:04:33	INFO	app.get /search	search page (search.ejs) was displayed.	c991c80a-7ed6-4210-b134-b505e4c6165b
+20240801	18:05:02	INFO	HTTP POST	/search	a18110f6-1dc9-4767-b139-994852e517f7
+20240801	18:05:03	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	4cb8345c-07ac-4911-a6e4-acf1407441be
+20240801	18:05:05	INFO	HTTP POST	/search	a739b60c-8872-4902-97a8-68675a4d36b1
+20240801	18:05:05	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	226ab28f-56ec-4fd3-be76-8ffd90957ab0
+20240801	18:05:07	INFO	HTTP POST	/search	8c764348-8eec-4922-8d9a-2f1d7d465e2b
+20240801	18:05:08	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	6af71545-9eed-4610-a4bf-b06542ab5c53
+20240801	18:05:08	INFO	HTTP POST	/search	2ddbe055-1ee8-4d33-bed6-ea1b20daa1e4
+20240801	18:05:08	INFO	HTTP POST	/search	39fbe59d-049c-4224-b0e5-62a604c6b94f
+20240801	18:05:09	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	d6fa7b39-6263-4e30-ba02-0cfacdc2e5fe
+20240801	18:05:09	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	e6418f7f-c18d-4fd7-8bad-41133db808a3
+20240801	18:05:10	INFO	HTTP POST	/search/filter	d926027c-dfe1-4fb4-983b-b780f34d8f60
+20240801	18:05:10	ERROR	app.post /search/filter	Error in filter query: Invalid filter type	2f65713f-62ff-4089-9284-8320da18f42e
+20240801	18:06:25	INFO	HTTP GET	/search	e274ed94-d744-4605-9882-319e5c629253
+20240801	18:06:25	INFO	app.get /search	search page (search.ejs) was displayed.	0a73a19d-955f-4aa2-946c-fd5fe1f77fb9
+20240801	18:06:42	INFO	HTTP GET	/search	62689077-402e-4470-b5a2-416aa29c1e11
+20240801	18:06:42	INFO	app.get /search	search page (search.ejs) was displayed.	f9a406e2-b8c9-4e99-9fa8-da5cb18333d5
+20240801	18:10:43	INFO	HTTP GET	/search	9485362f-0aee-4b6c-907d-e22fb5165064
+20240801	18:10:43	INFO	app.get /search	search page (search.ejs) was displayed.	51625bf5-ccd7-461e-91bb-183bfdca21be
+20240801	18:13:06	INFO	HTTP GET	/search	9255a7c0-b7f1-4b78-88d0-b25e1d0241a8
+20240801	18:13:06	INFO	app.get /search	search page (search.ejs) was displayed.	696ec70e-3de7-4213-9575-3c2ab94238bf
+20240801	18:13:31	INFO	HTTP GET	/search	8e2cb93b-e6ce-4c40-900d-778a83780033
+20240801	18:13:31	INFO	app.get /search	search page (search.ejs) was displayed.	098df8a4-de2c-4336-89f7-fa55378ef021
+20240801	18:14:04	INFO	HTTP GET	/search	b7eb982e-56f3-4ee2-868a-b7e07e078768
+20240801	18:14:04	INFO	app.get /search	search page (search.ejs) was displayed.	884d7c31-64ec-4e5d-bfbf-743b3bc10183
+20240801	18:14:46	INFO	HTTP GET	/search	5540f133-cc43-4dc9-97f7-6def7504138b
+20240801	18:14:46	INFO	app.get /search	search page (search.ejs) was displayed.	d2967d41-1367-4341-aab3-0decb5d09cbb
+20240801	18:14:48	INFO	HTTP GET	/search	a63d4ee5-6275-472e-a11d-655df317ad62
+20240801	18:14:48	INFO	app.get /search	search page (search.ejs) was displayed.	523b1d73-c791-4956-a3f6-13e9a0177549
+20240801	18:15:08	INFO	HTTP GET	/search	278f27aa-25e8-43ed-b696-c8684ec63ddf
+20240801	18:15:08	INFO	app.get /search	search page (search.ejs) was displayed.	ebad9a9d-c99c-4da0-8185-028f11c70897
+20240801	18:16:00	INFO	HTTP GET	/search	e39e389b-4266-414d-8aae-58a64aa30494
+20240801	18:16:01	INFO	app.get /search	search page (search.ejs) was displayed.	d7cc2320-5f68-4797-adf1-70c6e6e941c5
+20240801	18:25:40	INFO	HTTP GET	/search	6eaca525-c51e-4017-83f6-62e1dac5fd29
+20240801	18:25:40	INFO	app.get /search	search page (search.ejs) was displayed.	27ec3e04-b61e-4fa7-9d20-78c815f13643
+20240801	18:26:21	INFO	HTTP GET	/about	2d7a6a57-c262-4b5a-a844-224f9a5c917d
+20240801	18:26:21	INFO	app.get /about	About page (about.ejs) was displayed.	854eb488-d264-496d-ac9b-5f83447c0260
+20240801	18:26:22	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	1ceadeae-32d6-474b-8541-86e689cc49ff
+20240801	18:26:22	INFO	HTTP GET	/contact	6433697f-65c6-4a82-a430-c41e252f5e43
+20240801	18:26:36	INFO	HTTP GET	/search?type=red	7b8daddf-1d9d-4123-9f03-facad2b64540
+20240801	18:26:36	INFO	app.get /search	search page (search.ejs) was displayed.	83f9e4f9-c7fa-4d4c-bc5c-c623d2401318
+20240801	18:26:39	INFO	HTTP GET	/search?type=white	f8175ecc-e645-4d56-8004-f85f89100813
+20240801	18:26:39	INFO	app.get /search	search page (search.ejs) was displayed.	dc1555e6-db81-438b-9320-a8331b7d4cb4
+20240801	18:26:40	INFO	HTTP GET	/search?type=sparkling	49e54f9d-7631-4b62-86a5-25c729ee1596
+20240801	18:26:40	INFO	app.get /search	search page (search.ejs) was displayed.	187a66d0-d090-4e85-97dc-d76d3a4967ec
+20240801	18:26:41	INFO	HTTP GET	/search?type=rose	7cd4eb37-f2f6-4b87-82bf-064ac6fab946
+20240801	18:26:41	INFO	app.get /search	search page (search.ejs) was displayed.	5717c50a-192b-4e65-8c07-80f26ea78034
+20240801	18:26:42	INFO	HTTP GET	/faq	a84f4a44-7624-4130-b812-f6a72bbef6bf
+20240801	18:26:42	ERROR	app.use 404	Page not found: /faq	96f26765-2cd8-4960-bba7-664e19777424
+20240801	18:26:43	INFO	HTTP GET	/shipping	2446e915-ccc1-4b06-8724-c5373b61b3c2
+20240801	18:26:43	ERROR	app.use 404	Page not found: /shipping	652bd2ff-67a8-41bd-98a6-a4e8d16f5740
+20240801	18:26:44	INFO	HTTP GET	/returns	43b39a02-7f74-4b45-a9ac-59908123f773
+20240801	18:26:44	ERROR	app.use 404	Page not found: /returns	07c5600a-c3ca-470b-82ed-1d180ca227d2
+20240801	18:26:44	INFO	HTTP GET	/privacy	a9d261bf-fc0f-4642-9e3e-92db204de5fa
+20240801	18:26:44	ERROR	app.use 404	Page not found: /privacy	d041e230-393a-4bbf-a697-c41e62186cd8
+20240801	18:27:05	INFO	HTTP GET	/	4320afe6-af9e-4871-bf7e-d2a544b9a76e
+20240801	18:27:05	INFO	app.get /	Home page (index.ejs) was displayed.	d1f514ae-5b3d-414b-b738-13fd9c689f30
+20240801	18:27:15	INFO	HTTP GET	/search?type=red	6693a00c-9595-4a4c-a14e-b6e9f11cd69e
+20240801	18:27:15	INFO	app.get /search	search page (search.ejs) was displayed.	ca758d74-800a-4ad1-820c-a640f6ac68c3
+20240801	18:28:56	INFO	HTTP GET	/search?type=red	626f21f1-d7af-4027-8a1c-590731c03759
+20240801	18:28:56	INFO	app.get /search	search page (search.ejs) was displayed.	81346602-709f-47e1-a851-58e5da62ad7e
+20240801	18:29:36	INFO	HTTP GET	/search?type=red	1bc90191-ba4f-4fe3-81e4-8136b28e3dd9
+20240801	18:29:36	INFO	app.get /search	search page (search.ejs) was displayed.	a30e10ea-fbd9-4a89-a697-a8db0cb72493
+20240801	18:30:58	INFO	HTTP GET	/search?type=red	59ddf6ff-92a5-4373-a441-0b8afc760df5
+20240801	18:30:59	INFO	app.get /search	search page (search.ejs) was displayed.	27589b80-d987-4027-b4d8-4754abe5bc09
+20240801	18:33:23	INFO	HTTP GET	/search?type=red	4d6b9b78-b75a-40b9-ae8e-664bd06cfdbf
+20240801	18:33:23	INFO	app.get /search	search page (search.ejs) was displayed.	7ee9cc5a-6a6b-4813-8635-d2d8b22c00e7
+20240801	18:33:36	INFO	HTTP GET	/search?type=red	7687b42d-88d1-40c1-8b00-26598b66766d
+20240801	18:33:36	INFO	app.get /search	search page (search.ejs) was displayed.	f5806a79-03e2-41c0-ae1d-c9c084ffc218
+20240801	18:36:33	INFO	HTTP GET	/search?type=red	dfd2c2cb-3a68-4f08-aac0-0ab6bfbe1b61
+20240801	18:36:33	INFO	app.get /search	search page (search.ejs) was displayed.	798734da-057c-467f-9873-8ccb109feb79
+20240801	18:37:36	INFO	HTTP GET	/search?type=red	ccb0dce8-e1e1-40fe-9d2a-0cde1556941b
+20240801	18:37:36	INFO	app.get /search	search page (search.ejs) was displayed.	cbe9da56-5255-4698-9e23-59768054f20b
+20240801	18:39:28	INFO	HTTP GET	/search?type=red	e9ffe729-a458-4cea-b519-da5b8a5449a6
+20240801	18:39:28	INFO	app.get /search	search page (search.ejs) was displayed.	770c0057-3ea1-4f83-ade1-4af82c96d3a1
+20240801	18:40:25	INFO	HTTP GET	/search?type=red	75e56865-8344-4c60-93eb-4d29a4ac18a3
+20240801	18:40:25	INFO	app.get /search	search page (search.ejs) was displayed.	2b109301-dd6e-4962-a807-e1b78b3bb769
+20240801	18:41:14	INFO	HTTP GET	/search?type=red	ee2108a9-0fce-4393-99fd-665648cd620e
+20240801	18:41:14	INFO	app.get /search	search page (search.ejs) was displayed.	9879844e-5e09-4c32-ada7-5b6ea07c73aa
+20240801	18:46:37	INFO	HTTP GET	/search?type=red	e974e7c4-cad4-46b4-93ee-59edde59c14b
+20240801	18:46:37	INFO	app.get /search	search page (search.ejs) was displayed.	2922a742-a588-4b0c-bef9-fb488dccffc2
+20240801	18:47:46	INFO	HTTP GET	/search?type=red	1057e676-2d07-4ce7-9194-92f17e7f3cea
+20240801	18:47:46	INFO	app.get /search	search page (search.ejs) was displayed.	d26cbc6a-758a-42ae-84bd-d9e42d54dcf4
+20240801	18:47:48	INFO	HTTP GET	/search?type=red	3cd18e31-9741-4d3b-a703-be5e08f55bb7
+20240801	18:47:48	INFO	app.get /search	search page (search.ejs) was displayed.	0526d282-a81e-4a79-a118-c2215d048529
+20240801	18:48:08	INFO	HTTP GET	/search?type=red	c2eb666d-7750-40af-995c-304b7a789c6e
+20240801	18:48:08	INFO	app.get /search	search page (search.ejs) was displayed.	4673ccef-c744-43c8-b4e5-cd16e632bfa5
+20240801	18:50:48	INFO	HTTP GET	/search?type=red	cea6f4ce-2f4f-40d0-b422-788d88372bb0
+20240801	18:50:48	INFO	app.get /search	search page (search.ejs) was displayed.	08624539-9b84-45aa-9931-5cb1400bb238
+20240801	18:50:53	INFO	HTTP GET	/	6eeb93f0-2d00-46e9-a012-68f4ca37bc56
+20240801	18:50:53	INFO	app.get /	Home page (index.ejs) was displayed.	dfc4a594-183d-4ac2-947e-f385decf9d91
+20240801	18:50:54	INFO	HTTP GET	/	477df49a-f251-41d5-8815-07131f19e76c
+20240801	18:50:54	INFO	app.get /	Home page (index.ejs) was displayed.	339763c2-86a6-4e42-9969-f19137de6047
+20240801	18:52:15	INFO	HTTP GET	/	0c72f796-6c20-46b7-b04f-0081c39b55ae
+20240801	18:52:15	INFO	app.get /	Home page (index.ejs) was displayed.	f35ca2eb-ac3f-4594-9be1-5d6f8cf2c166
+20240801	18:53:09	INFO	HTTP GET	/	53e8e761-6932-4409-8e34-585728bd2fe4
+20240801	18:53:09	INFO	app.get /	Home page (index.ejs) was displayed.	15b748f4-5ea6-48c5-bcae-f2e74b173efa
+20240801	18:53:13	INFO	HTTP GET	/about	fd5cfd27-4143-4650-bf34-4f7981997723
+20240801	18:53:13	INFO	app.get /about	About page (about.ejs) was displayed.	655fe186-0552-4afa-8001-6f061b71a58c
+20240801	18:53:15	INFO	HTTP GET	/contact	064834ef-feec-453c-95ea-fadf23b3487e
+20240801	18:53:15	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	3c83c530-1866-426a-8037-babbda95488c
+20240801	18:56:02	INFO	HTTP GET	/about	67bb2f22-56bc-4b2b-b385-f20b29254fb8
+20240801	18:56:02	INFO	app.get /about	About page (about.ejs) was displayed.	8a432966-2459-4704-b65b-d9d9439dad37
+20240801	18:56:02	INFO	HTTP GET	/images/vinovault-logo.png	b29f3c7a-d459-452e-a779-5ad169e87391
+20240801	18:56:02	ERROR	app.use 404	Page not found: /images/vinovault-logo.png	688c4d8d-9a03-4b04-b633-00fe6082e968
+20240801	18:56:08	INFO	HTTP GET	/	52e466a7-3ab8-4feb-9c6d-d607c7c5fbc9
+20240801	18:56:08	INFO	app.get /	Home page (index.ejs) was displayed.	86cdbf63-9497-45d8-a630-e38906d01e7e
+20240801	18:56:09	INFO	HTTP GET	/images/vinovault-logo.png	2de8f9a6-ea73-4c7c-9986-f607965bbb2c
+20240801	18:56:09	ERROR	app.use 404	Page not found: /images/vinovault-logo.png	73f9e6ef-7e44-4e6f-9b67-88f8d1b97635
+20240801	18:56:44	INFO	HTTP GET	/	a8a5b3ca-e81a-4aaf-ae24-1d62af9fa48b
+20240801	18:56:44	INFO	app.get /	Home page (index.ejs) was displayed.	2371df03-38ba-4c02-ba91-cd7b8a3a38fa
+20240801	18:57:37	INFO	HTTP GET	/	954294e4-db6c-46ad-b698-b4f5c6fe6dd9
+20240801	18:57:37	INFO	app.get /	Home page (index.ejs) was displayed.	60f3f92f-4c5a-4269-9e74-a2ca3e0a176c
+20240801	18:58:17	INFO	HTTP GET	/	6ff5c4c7-8cd5-4901-8e51-e62a253940ea
+20240801	18:58:17	INFO	app.get /	Home page (index.ejs) was displayed.	5a8add26-6703-4cdf-a22c-9c3348a15d05
+20240801	18:58:48	INFO	HTTP GET	/	ae606ab3-e850-4760-a579-894406cb51a5
+20240801	18:58:48	INFO	app.get /	Home page (index.ejs) was displayed.	c05468cb-f1bf-499f-b3bd-b235db848617
+20240801	18:59:04	INFO	HTTP GET	/	adb951e2-cd43-447a-a783-2ef237f260cc
+20240801	18:59:04	INFO	app.get /	Home page (index.ejs) was displayed.	c723084d-73da-4c67-8097-bb12daba4b57
+20240801	18:59:39	INFO	HTTP GET	/	a8f5110f-5f9c-4b5d-bf80-4bb9bb2e8d10
+20240801	18:59:39	INFO	app.get /	Home page (index.ejs) was displayed.	20e705d6-b90c-4f64-a011-f98fc4e509be
+20240801	18:59:41	INFO	HTTP GET	/	f521383c-a76f-4de9-b3ea-3d528307c8c7
+20240801	18:59:41	INFO	app.get /	Home page (index.ejs) was displayed.	609fb108-2a89-44ec-a8cc-63985a086b19
+20240801	19:00:56	INFO	HTTP GET	/	99f94447-7755-47c2-b15a-6b61860b6750
+20240801	19:00:56	INFO	app.get /	Home page (index.ejs) was displayed.	d73b0854-e3cd-4ecb-bd0d-61ffdff70231
+20240801	19:03:16	INFO	HTTP GET	/	eb7b4de0-0b44-4835-afc7-42a899933ea2
+20240801	19:03:16	INFO	app.get /	Home page (index.ejs) was displayed.	5668e91d-e112-4ec0-af49-38f0f090bef7
+20240801	19:03:44	INFO	HTTP GET	/	d38d8c5e-f2bf-40e3-adbe-df5e8c51088d
+20240801	19:03:44	INFO	app.get /	Home page (index.ejs) was displayed.	ba9ad355-58f7-456c-93b6-c16f6a134737
+20240801	19:03:52	INFO	HTTP GET	/auth/	b5f70c65-7e5d-4f76-9e5c-985cf2e12ed0
+20240801	19:03:52	INFO	auth.get /	Login page displayed.	9113becb-37b2-4a82-b0ea-7b0b7e90a854
+20240801	19:03:53	INFO	HTTP POST	/auth	da75ed2d-8c04-46d4-a307-c5c57a15c315
+20240801	19:03:54	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	0d2ce2dd-279c-4a3c-88e1-d374a9052626
+20240801	19:03:54	INFO	HTTP GET	/search	5b851dfc-bf30-4695-9bcc-f2715f6fdb56
+20240801	19:03:54	INFO	app.get /search	search page (search.ejs) was displayed.	0aed2c14-6145-4eed-8b9a-a16e1bf84af7
+20240801	19:04:27	INFO	HTTP POST	/search	a4b4ef67-5bc2-486b-b39f-dde7f7b8f5bc
+20240801	19:04:28	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	579c94ef-588e-4e15-b982-91b63f1d906a
+20240801	19:15:40	INFO	HTTP POST	/search	4ae29339-942e-45f0-8be6-e1bb64f77d09
+20240801	19:15:41	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	c738300d-1426-40b0-a1e2-4f8f9e7fb184
+20240801	19:17:58	INFO	HTTP POST	/search	5d44123c-3385-4193-b29a-0bf93781b8aa
+20240801	19:17:59	ERROR	app.post /search	Error in search query: "$search" had the wrong type. Expected string, found null	41691466-98d7-41d2-bb5a-a1bd2b9a697c
+20240801	19:34:43	INFO	HTTP POST	/search/filter	26e01eb5-7270-450a-a11b-171cb5161758
+20240801	19:34:44	ERROR	app.post /search/filter	Error in filter query: Invalid filter type	073912e2-5ade-4f47-a1d1-194b33600c9d
+20240801	19:34:48	INFO	HTTP POST	/search/filter	dc15b999-4a52-4888-8c1b-95de3f98bc6f
+20240801	19:34:48	ERROR	app.post /search/filter	Error in filter query: Invalid filter type	89089ec7-ffda-4df4-bf60-9d66801727ce
+20240801	19:34:50	INFO	HTTP POST	/search/filter	04d53f57-bc6a-4593-bc9e-c2d67d43d3a0
+20240801	19:34:50	ERROR	app.post /search/filter	Error in filter query: Invalid filter type	47ae1c9b-1d70-48b2-8dd2-d06eb191fa0a
+20240801	19:36:02	INFO	HTTP GET	/about	d63f0680-25da-4de3-9cf5-90d699382e49
+20240801	19:36:02	INFO	app.get /about	About page (about.ejs) was displayed.	12349304-e3aa-463c-9552-56bfaf0c2c5a
+20240801	19:37:06	INFO	HTTP GET	/search	9cbb110c-a038-4f72-97a8-1ce990a2c2ea
+20240801	19:37:06	INFO	app.get /search	search page (search.ejs) was displayed.	b99b0fd8-6aea-4de5-990c-dfd1517e7b12
+20240801	19:37:20	INFO	HTTP GET	/search	d713aa29-8d2f-419f-8b82-7a5ea93b5409
+20240801	19:37:21	INFO	app.get /search	search page (search.ejs) was displayed.	abc73444-aaee-4712-b055-2bc666996901
+20240801	19:37:25	INFO	HTTP GET	/	ddf353ba-f17d-466b-9569-101040f78c08
+20240801	19:37:25	INFO	app.get /	Home page (index.ejs) was displayed.	a6ef0d30-5929-48c0-af33-b0d0cbd14609
+20240801	19:37:35	INFO	HTTP GET	/auth/	aca6e2ef-526d-4ae5-b03e-8d3e8e791baf
+20240801	19:37:35	INFO	auth.get /	Login page displayed.	71aac328-0294-4747-8343-fe812b5bc334
+20240801	19:37:45	INFO	HTTP POST	/auth	20df6a9e-dfb9-47dc-af6f-a31554fd61e3
+20240801	19:37:46	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	2e646e06-bb81-49fa-9efc-c710804c93ff
+20240801	19:37:46	INFO	HTTP GET	/search	8bdea3bf-ac0a-46be-890c-849a330c24ff
+20240801	19:37:46	INFO	app.get /search	search page (search.ejs) was displayed.	0bee6043-04d0-4fda-84cc-8246edba1bce
+20240801	19:38:24	INFO	HTTP GET	/	e255cadd-8ec1-460d-bc1d-bce2f6d9128d
+20240801	19:38:24	INFO	app.get /	Home page (index.ejs) was displayed.	9e2e6a9a-ffc5-45e0-b7a7-35c4f2c23a7e
+20240801	19:39:15	INFO	HTTP GET	/auth/	1e8ecbd7-b16b-4237-bf48-24ad009e8767
+20240801	19:39:15	INFO	auth.get /	Login page displayed.	c26bec75-c95d-4fb1-abab-af0f4142335c
+20240801	19:39:16	INFO	HTTP POST	/auth	14c23e74-8d7f-4c37-9006-9f78d8deaa99
+20240801	19:39:17	SUCCESS	auth.post /	User Brenda Armstrong logged in successfully.	b44520e7-726a-4235-9bfd-0de75c334aeb
+20240801	19:39:17	INFO	HTTP GET	/search	03950fdd-981b-4276-89e6-1236503080d2
+20240801	19:39:17	INFO	app.get /search	search page (search.ejs) was displayed.	34b881f5-e211-41d4-89fb-b6a51cfc65a2
+20240801	19:55:43	INFO	HTTP GET	/api/full/m/pinot	b7389bc5-a98c-43eb-93b8-e70ecfb84823
+20240801	19:56:07	INFO	HTTP GET	/api/full/p/pinot	8e6dda85-33b6-48a1-a2f1-ff3f799300e6
+20240801	19:58:30	INFO	HTTP GET	/api/full/m/pinot	0817dfdf-1c14-4624-9a16-a06f455796e8
+20240801	19:58:52	INFO	HTTP GET	/api/full/p/rose	9b82f23c-482d-4baa-9081-30b43167d1ca
+20240801	20:00:51	INFO	HTTP GET	/api/full/m/Cabernet	172c02fe-787d-4a39-85a3-de8455e80f98
+20240801	20:00:51	INFO	HTTP GET	/auth	df88134e-8ca2-42e7-a362-09388257c587
+20240801	20:00:51	INFO	auth.get /	Login page displayed.	7d1e108e-5b53-4717-9bfc-15f61409408a
+20240801	20:00:52	INFO	HTTP GET	/api/full/p/Cabernet	3df269c7-fdd9-461b-b3a2-553f38a62645
+20240801	20:00:52	INFO	HTTP GET	/auth	267164ba-eb1d-4106-be7a-c1ff9bf12ab4
+20240801	20:00:52	INFO	auth.get /	Login page displayed.	433ac228-1c66-4e69-9fda-c05826427ff0
+20240801	20:07:25	INFO	HTTP GET	/api/full/m/Cabernet	33d506e6-a2d7-415b-8c8d-b77898d7f9b0
+20240801	20:07:25	INFO	HTTP GET	/auth	e7e6302e-1c53-4ed1-8738-f48d5b228678
+20240801	20:07:25	INFO	auth.get /	Login page displayed.	91ccb626-130f-4c25-aaf6-4125e03484ad
+20240801	20:07:25	INFO	HTTP GET	/api/full/p/Cabernet	b672a642-cd34-43ee-baac-0adc225fee56
+20240801	20:07:25	INFO	HTTP GET	/auth	8bc23ee9-dde6-420c-8a94-aa701b82cf54
+20240801	20:07:25	INFO	auth.get /	Login page displayed.	8d17beed-9431-4370-920f-ddac1fc58a1d
+20240801	20:15:38	INFO	HTTP POST	/auth	a7e3d6b5-99d6-4969-9f55-e11ee0d471ba
+20240801	20:15:39	WARN	auth.post /	Login failed: Incorrect username.	e1fc3b85-b992-4d78-af57-069f36d8e79c
+20240801	20:16:26	INFO	HTTP POST	/search	f7bdb33b-d9a3-468d-b86a-e8627d35a21f

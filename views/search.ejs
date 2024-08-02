@@ -2,113 +2,311 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search - VinoVault</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinoVault - Discover Your Perfect Wine</title>
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/search.css">
+    <link rel="stylesheet" href="/styles/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="/images/wine-glass.png" type="image/png">
+    <style>
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #searchBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #searchInput {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        #databaseSelect {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-left: none;
+        }
+        #searchButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #AF470c;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .filter-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .filter-group {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .filter-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .filter-group button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #5a0c30;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #searchResults {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wine-card {
+            width: 100%;
+            background-color: white;
+            max-width: 800px;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            transition: transform 0.2s;
+        }
+        .wine-card:hover {
+            transform: translateY(-10px);
+        }
+        .wine-card img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+        .wine-card .wine-logo {
+            max-width: 200px;
+            max-height: 150px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+        .wine-info {
+            flex: 1;
+        }
+        .wine-info h3 {
+            color: #5a0c30;
+            margin-bottom: 10px;
+        }
+        .wine-info p {
+            margin: 5px 0;
+        }
+        .wine-info .button {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #5a0c30;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .wine-info .button:hover {
+            background-color: #af470c;
+        }
+        .logo img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            object-fit: contain;
+        }
+        .section-title {
+            text-align: center;
+            color: #5a0c30;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <%- include('./partials/header') %>
     <%- include('./partials/nav') %>
-    <main>
-        <div class="search-container">
-            <h2>Start Your Search Here</h2>
-            <div class="search-bar">
-                <form id="full-text-search" action="/api/search/full-text" method="POST">
-                    <input type="text" name="query" placeholder="Search for Wine" required>
-                    <button type="submit">
-                        <i class="fa-regular fa-wine-glass"></i> Search
-                    </button>
-                </form>
+    <main class="search-container">
+        <h2 class="section-title">Uncork Your Perfect Wine</h2>
+        <div id="searchBar">
+            <input type="text" id="searchInput" placeholder="Start Your Search Here">
+            <select id="databaseSelect">
+                <option value="postgres">PostgreSQL</option>
+                <option value="mongodb">MongoDB</option>
+            </select>
+            <button id="searchButton" onclick="performSearch()">Search</button>
+        </div>
+
+        <h3 class="section-title">Not sure where to start? Narrow your search:</h3>
+        <div class="filter-row">
+            <div class="filter-group">
+                <select id="countryFilter">
+                    <option value="">Select a Country</option>
+                    <% countries.forEach(country => { %>
+                        <option value="<%= country %>"><%= country %></option>
+                    <% }); %>
+                </select>
+                <button onclick="filterByCountry()">Explore by Country</button>
             </div>
-
-            <div class="filter-section">
-                <form id="filter-search" action="/api/search/filter" method="POST">
-                    <label for="country">Narrow By Location:</label>
-                    <select id="country" name="country">
-                        <% countries.forEach(country => { %>
-                            <option value="<%= country %>"><%= country %></option>
-                        <% }) %>
-                    </select>
-                    <button type="submit">Search</button>
-                </form>
+            <div class="filter-group">
+                <select id="colorFilter">
+                    <option value="">Select a Color</option>
+                    <% colors.forEach(color => { %>
+                        <option value="<%= color %>"><%= color %></option>
+                    <% }); %>
+                </select>
+                <button onclick="filterByColor()">Discover by Color</button>
             </div>
-
-            <div class="popular-categories">
-                <h2>Not sure where to start? Search popular categories:</h2>
-                <div class="categories">
-                    <form id="color-search" action="/api/search/color" method="POST">
-                        <label for="color">By Color:</label>
-                        <select id="color" name="color">
-                            <% colors.forEach(color => { %>
-                                <option value="<%= color %>"><%= color %></option>
-                            <% }) %>
-                        </select>
-                        <button type="submit">Search</button>
-                    </form>
-
-                    <form id="type-search" action="/api/search/type" method="POST">
-                        <label for="type">By Type:</label>
-                        <select id="type" name="type">
-                            <% types.forEach(type => { %>
-                                <option value="<%= type %>"><%= type %></option>
-                            <% }) %>
-                        </select>
-                        <button type="submit">Search</button>
-                    </form>
-
-                    <form id="winery-search" action="/api/search/winery" method="POST">
-                        <label for="winery">By Vineyard:</label>
-                        <select id="winery" name="winery">
-                            <% wineries.forEach(winery => { %>
-                                <option value="<%= winery %>"><%= winery %></option>
-                            <% }) %>
-                        </select>
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
+            <div class="filter-group">
+                <select id="typeFilter">
+                    <option value="">Select a Type</option>
+                    <% types.forEach(type => { %>
+                        <option value="<%= type %>"><%= type %></option>
+                    <% }); %>
+                </select>
+                <button onclick="filterByType()">Find by Type</button>
             </div>
         </div>
 
-        <div class="search-results-container">
-            <% if (results && results.length > 0) { %>
-                <div class="results-grid">
-                    <% results.forEach(result => { %>
-                        <div class="result-item">
-                            <div class="result-logo">
-                                <img src="<%= result.logo %>" alt="<%= result.name %>">
-                            </div>
-                            <div class="result-details">
-                                <h3><%= result.name %></h3>
-                                <p><strong>Winery:</strong> <%= result.winery %></p>
-                                <p><strong>Type:</strong> <%= result.type %></p>
-                                <p><strong>Country:</strong> <%= result.country %></p>
-                                <p><strong>Region:</strong> <%= result.region %></p>
-                                <p><strong>Color:</strong> <%= result.color %></p>
-                                <p><strong>Price:</strong> $<%= result.price %></p>
-                                <p><strong>Description:</strong> <%= result.description %></p>
-                                <p><strong>Rating:</strong> <%= result.rating %></p>
-                            </div>
-                        </div>
-                    <% }) %>
-                </div>
-                <div class="pagination">
-                    <% if (currentPage > 1) { %>
-                        <a href="?page=<%= currentPage - 1 %>" class="pagination-button">Previous</a>
-                    <% } %>
-                    <% if (results.length === 15) { %>
-                        <a href="?page=<%= currentPage + 1 %>" class="pagination-button">Next</a>
-                    <% } %>
-                </div>
-            <% } else { %>
-                <p>No results found.</p>
-            <% } %>
-        </div>
+        <h2 class="section-title">Your Curated Wine Selection</h2>
+        <div id="searchResults"></div>
     </main>
-    <div class="footer-wrapper">
-        <%- include('./partials/footer.ejs') %>
-    </div>
+
+    <script>
+        function performSearch() {
+            const keyword = document.getElementById('searchInput').value;
+            const database = document.getElementById('databaseSelect').value;
+            console.log('Sending search request:', { keyword, database });
+
+            if (!keyword.trim()) {
+                console.error('Search keyword is empty');
+                alert('Please enter a search term');
+                return;
+            }
+
+            fetch('/search', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ keyword, database })
+            })
+            .then(response => response.json())
+            .then(results => {
+                console.log('Received search results:', results);
+                displayResults(results);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred during the search. Please try again.');
+            });
+        }
+
+        function filterByCountry() {
+            filterBy('country', document.getElementById('countryFilter').value);
+        }
+
+        function filterByColor() {
+            filterBy('color', document.getElementById('colorFilter').value);
+        }
+
+        function filterByType() {
+            filterBy('type', document.getElementById('typeFilter').value);
+        }
+
+        function filterBy(filterType, filterValue) {
+            console.log('Applying filter:', { filterType, filterValue });
+
+            if (!filterValue.trim()) {
+                console.error('Filter value is empty');
+                alert('Please select a filter value');
+                return;
+            }
+
+            fetch('/search/filter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filterType, filterValue })
+            })
+            .then(response => response.json())
+            .then(results => {
+                console.log('Received filter results:', results);
+                displayResults(results);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred during filtering. Please try again.');
+            });
+        }
+
+        function displayResults(results) {
+            const resultsDiv = document.getElementById('searchResults');
+            resultsDiv.innerHTML = '';
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<p>No results found.</p>';
+                return;
+            }
+            results.forEach(wine => {
+                const wineCard = document.createElement('div');
+                wineCard.classList.add('wine-card');
+                
+                const wineImage = document.createElement('img');
+                wineImage.src = wine.Logo;
+                wineImage.alt = `${wine.Name} logo`;
+                wineImage.classList.add('wine-logo');
+                
+                const wineInfo = document.createElement('div');
+                wineInfo.classList.add('wine-info');
+                
+                wineInfo.innerHTML = `
+                    <h3>${wine.Name}</h3>
+                    <p><strong>Winery:</strong> ${wine.Winery}</p>
+                    <p><strong>Type:</strong> ${wine.Type}</p>
+                    <p><strong>Color:</strong> ${wine.Color}</p>
+                    <p><strong>Country:</strong> ${wine.Country}</p>
+                    <p><strong>Region:</strong> ${wine.Region}</p>
+                    <p><strong>Price:</strong> $${wine.Price.toFixed(2)}</p>
+                    <p><strong>Rating:</strong> ${wine.Rating}/5</p>
+                    <p>${wine.Description}</p>
+                `;
+
+                const addToVaultButton = document.createElement('a');
+                addToVaultButton.href = `/vault/add/${wine.Id}`;
+                addToVaultButton.classList.add('button');
+                addToVaultButton.textContent = 'Add to Vault';
+
+                const viewReviewsButton = document.createElement('a');
+                viewReviewsButton.href = `/reviews/${wine.Id}`;
+                viewReviewsButton.classList.add('button');
+                viewReviewsButton.textContent = 'View Reviews';
+
+                wineInfo.appendChild(addToVaultButton);
+                wineInfo.appendChild(viewReviewsButton);
+
+                wineCard.appendChild(wineImage);
+                wineCard.appendChild(wineInfo);
+
+                resultsDiv.appendChild(wineCard);
+            });
+        }
+    </script>
+
+    <%- include('./partials/footer') %>
 </body>
 </html>
