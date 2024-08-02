@@ -1,3 +1,4 @@
+// This file needs to be updated 
 var router = require('express').Router();
 const mDal = require('../../services/m.fulltext.dal');
 const pDal = require('../../services/p.fulltext.dal');
