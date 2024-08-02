@@ -1,3 +1,4 @@
+// This file needs to be updated 
 const dal = require("./p.db");
 
 var getFullText = function(text) {
