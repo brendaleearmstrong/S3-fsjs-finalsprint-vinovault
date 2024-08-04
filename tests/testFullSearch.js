@@ -1,6 +1,6 @@
 require('dotenv').config(); // Ensure to load environment variables
-const { fullTextSearch: mongoFullTextSearch } = require('./services/m.wine.dal');
-const { fullTextSearch: postgresFullTextSearch } = require('./services/p.wine.dal');
+const { fullTextSearch: mongoFullTextSearch } = require('../services/m.wine.dal');
+const { fullTextSearch: postgresFullTextSearch } = require('../services/p.wine.dal');
 
 // Test search string
 const searchString = 'Cabernet';

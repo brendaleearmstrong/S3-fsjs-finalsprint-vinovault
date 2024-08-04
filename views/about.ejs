@@ -1,50 +1,13 @@
-<!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/header.ejs') %>
-<head>
-    <title>About VinoVault</title>
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-</head>
-<body>
-    <%- include('./partials/nav.ejs') %>
-    <main class="content">
-        <h2 class="section-title">About VinoVault</h2>
-        <div class="about-info">
-            <p>Welcome to VinoVault, your ultimate destination for discovering and exploring the world of wines. Our mission is to connect wine enthusiasts with the finest selections from around the globe, providing you with a comprehensive platform to search, review, and curate your personal wine collection.</p>
-            
-            <h3>Our Story</h3>
-            <p>Founded in 2023, VinoVault was born out of a passion for wine and a desire to make the vast and diverse world of wines more accessible to everyone. Our founders, a group of wine aficionados, envisioned a place where people could easily find and learn about wines, share their experiences, and build their own personalized wine vaults.</p>
-
-            <h3>Our Vision</h3>
-            <p>We aim to be the go-to resource for wine lovers of all levels, from novices to connoisseurs. Our vision is to create a vibrant community where users can discover new wines, read and write reviews, and manage their wine collections effortlessly.</p>
-
-            <h3>Our Mission</h3>
-            <p>Our mission is to democratize the wine world, making it accessible and enjoyable for everyone. We believe in the power of community and aim to foster connections among wine lovers through our platform.</p>
-
-            <h3>Our Values</h3>
-            <ul>
-                <li><strong>Inclusivity:</strong> We welcome wine lovers from all backgrounds and experience levels.</li>
-                <li><strong>Community:</strong> We believe in the power of sharing experiences and fostering connections.</li>
-                <li><strong>Quality:</strong> We are committed to providing the highest quality wines and information.</li>
-                <li><strong>Education:</strong> We aim to educate our users about the diverse world of wines.</li>
-            </ul>
-
-            <h3>Our Headquarters</h3>
-            <p>VinoVault is headquartered in the picturesque Brigus South, NL, nestled on a vineyard near the ocean. Our unique location inspires us to bring the best of the wine world to you.</p>
-            <img src="/images/vinovault-headquarters.png" alt="VinoVault Headquarters in Brigus South, NL" class="headquarters-image">
-
-            <h3>Meet the Team</h3>
-            <ul>
-                <li><strong>John Doe</strong> - Founder & CEO</li>
-                <li><strong>Jane Smith</strong> - Head of Marketing</li>
-                <li><strong>Michael Brown</strong> - Chief Sommelier</li>
-                <li><strong>Emily Davis</strong> - Community Manager</li>
-            </ul>
+    <%- include('./partials/header.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+        <div class="content">
+            <h2>About</h2>
         </div>
-    </main>
+        <%- include('./partials/status.ejs') %>
+        </br>
+        <%- include('./partials/auth.ejs') %>
+    </body>
     <%- include('./partials/footer.ejs') %>
-</body>
 </html>

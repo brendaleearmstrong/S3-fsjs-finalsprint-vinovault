@@ -195,36 +195,3 @@ footer {
 .form-button:hover {
     background-color: #af470c;
 }
-.content {
-    padding: 20px;
-}
-
-.section-title {
-    color: #5a0c30;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about-info {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #333;
-}
-
-.headquarters-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
