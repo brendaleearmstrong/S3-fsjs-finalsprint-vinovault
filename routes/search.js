@@ -1,4 +1,3 @@
-// This file needs to be updated 
 const express = require('express');
 const router = express.Router();
 const { setToken, authenticateJWT } = require('../services/auth');
@@ -64,6 +63,41 @@ router.post('/', async (req, res) => {
         console.error('Error in search query:', error);
         myEventEmitter.emit('event', 'app.post /search', 'ERROR', `Error in search query: ${error.message}`);
         res.status(500).json({ error: 'An error occurred during the search.' });
+    }
+});
+
+router.post('/filter', async (req, res) => {
+    try {
+        const { filterType, filterValue } = req.body;
+        console.log('Filter request received:', { filterType, filterValue });
+
+        if (!filterType || !filterValue) {
+            console.error('Filter type or value is null or empty');
+            return res.status(400).json({ error: 'Filter type and value are required' });
+        }
+
+        let theResults;
+        switch (filterType) {
+            case 'country':
+                theResults = await pgDal.getWinesByCountry(filterValue);
+                break;
+            case 'color':
+                theResults = await pgDal.getWinesByColor(filterValue);
+                break;
+            case 'type':
+                theResults = await pgDal.getWinesByType(filterValue);
+                break;
+            default:
+                return res.status(400).json({ error: 'Invalid filter type' });
+        }
+
+        console.log(`Filter complete. Found ${theResults.length} results.`);
+        myEventEmitter.emit('event', 'app.post /search/filter', 'INFO', 'filter results displayed.');
+        res.json(theResults);
+    } catch (error) {
+        console.error('Error in filter query:', error);
+        myEventEmitter.emit('event', 'app.post /search/filter', 'ERROR', `Error in filter query: ${error.message}`);
+        res.status(500).json({ error: 'An error occurred during filtering.' });
     }
 });
 

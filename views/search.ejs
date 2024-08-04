@@ -267,32 +267,32 @@
                 wineCard.classList.add('wine-card');
                 
                 const wineImage = document.createElement('img');
-                wineImage.src = wine.Logo;
-                wineImage.alt = `${wine.Name} logo`;
+                wineImage.src = wine.logo || wine.Logo || '/images/coming-soon.png';
+                wineImage.alt = `${wine.winery || wine.Winery} logo`;
                 wineImage.classList.add('wine-logo');
                 
                 const wineInfo = document.createElement('div');
                 wineInfo.classList.add('wine-info');
                 
                 wineInfo.innerHTML = `
-                    <h3>${wine.Name}</h3>
-                    <p><strong>Winery:</strong> ${wine.Winery}</p>
-                    <p><strong>Type:</strong> ${wine.Type}</p>
-                    <p><strong>Color:</strong> ${wine.Color}</p>
-                    <p><strong>Country:</strong> ${wine.Country}</p>
-                    <p><strong>Region:</strong> ${wine.Region}</p>
-                    <p><strong>Price:</strong> $${wine.Price.toFixed(2)}</p>
-                    <p><strong>Rating:</strong> ${wine.Rating}/5</p>
-                    <p>${wine.Description}</p>
+                    <h3>${wine.name || wine.Name}</h3>
+                    <p><strong>Winery:</strong> ${wine.winery || wine.Winery}</p>
+                    <p><strong>Region:</strong> ${wine.region || wine.Region}</p>
+                    <p><strong>Country:</strong> ${wine.country || wine.Country}</p>
+                    <p><strong>Type:</strong> ${wine.type || wine.Type}</p>
+                    <p><strong>Color:</strong> ${wine.color || wine.Color}</p>
+                    <p><strong>Price:</strong> $${parseFloat(wine.price || wine.Price).toFixed(2)}</p>
+                    <p><strong>Rating:</strong> ${wine.rating || wine.Rating}/5</p>
+                    <p>${wine.description || wine.Description}</p>
                 `;
 
                 const addToVaultButton = document.createElement('a');
-                addToVaultButton.href = `/vault/add/${wine.Id}`;
+                addToVaultButton.href = `/vault/add/${wine.wineid || wine._id}`;
                 addToVaultButton.classList.add('button');
                 addToVaultButton.textContent = 'Add to Vault';
 
                 const viewReviewsButton = document.createElement('a');
-                viewReviewsButton.href = `/reviews/${wine.Id}`;
+                viewReviewsButton.href = `/reviews/${wine.wineid || wine._id}`;
                 viewReviewsButton.classList.add('button');
                 viewReviewsButton.textContent = 'View Reviews';
 
