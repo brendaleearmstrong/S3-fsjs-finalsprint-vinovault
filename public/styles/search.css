@@ -1,6 +1,9 @@
 /* search.css */
-.container {
-    flex: 1;
+
+/* Other styles for the search page */
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
 }
 
