@@ -1,9 +1,15 @@
+import dotenv from 'dotenv';
+import express from 'express';
+import session from 'express-session';
+import { myEventEmitter } from './services/logEvents.js';
+import searchRouter from './routes/search.js';
+import authRouter from './routes/auth.js';
+import apiRouter from './routes/api.js';
+
 if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
+    dotenv.config();
 }
-const express = require('express');
-const session = require('express-session');
-const myEventEmitter = require('./services/logEvents');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 global.DEBUG = true;
@@ -11,7 +17,7 @@ global.DEBUG = true;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json()); // Add this line to parse JSON bodies
+app.use(express.json());
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -39,14 +45,10 @@ app.get('/contact', async (req, res) => {
     res.render('contact', { status: req.session.status });
 });
 
-// Import routers and log their types
-const searchRouter = require('./routes/search');
-const authRouter = require('./routes/auth');
-const apiRouter = require('./routes/api');
-
-console.log('searchRouter:', typeof searchRouter); // Should be 'function'
-console.log('authRouter:', typeof authRouter);     // Should be 'function'
-console.log('apiRouter:', typeof apiRouter);       // Should be 'function'
+// Log router types
+console.log('searchRouter:', typeof searchRouter);
+console.log('authRouter:', typeof authRouter);
+console.log('apiRouter:', typeof apiRouter);
 
 app.use('/search', searchRouter);
 app.use('/auth', authRouter);
@@ -68,3 +70,5 @@ app.listen(PORT, (err) => {
         console.log(`VinoVault is running on http://localHost:${PORT}.`);
     }
 });
+
+export default app;
