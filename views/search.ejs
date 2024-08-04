@@ -10,17 +10,83 @@
     <link rel="stylesheet" href="/styles/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         .search-container {
+            flex: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .welcome-message h1 {
+            color: #5a0c30;
+        }
+
+        .welcome-message p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        nav {
+            background-color: #9d436d;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .auth-buttons {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .auth-buttons .button {
+            background-color: #5a0c30;
+            color: white;
+            padding: 1em 2em;
+            margin: 0 1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .auth-buttons .button:hover {
+            background-color: #af470c;
+        }
+
         #searchBar {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
         }
+
         #searchInput {
             flex-grow: 1;
             padding: 10px;
@@ -28,12 +94,14 @@
             border: 1px solid #ddd;
             border-radius: 4px 0 0 4px;
         }
+
         #databaseSelect {
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ddd;
             border-left: none;
         }
+
         #searchButton {
             padding: 10px 20px;
             font-size: 16px;
@@ -43,15 +111,18 @@
             border-radius: 0 4px 4px 0;
             cursor: pointer;
         }
+
         .filter-row {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
         }
+
         .filter-group {
             flex: 1;
             margin: 0 10px;
         }
+
         .filter-group select {
             width: 100%;
             padding: 10px;
@@ -60,6 +131,7 @@
             border-radius: 4px;
             margin-bottom: 10px;
         }
+
         .filter-group button {
             width: 100%;
             padding: 10px;
@@ -70,11 +142,13 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         #searchResults {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .wine-card {
             width: 100%;
             background-color: white;
@@ -87,9 +161,11 @@
             display: flex;
             transition: transform 0.2s;
         }
+
         .wine-card:hover {
             transform: translateY(-10px);
         }
+
         .wine-card img {
             width: 200px;
             height: 150px;
@@ -97,6 +173,7 @@
             margin-right: 15px;
             border-radius: 4px;
         }
+
         .wine-card .wine-logo {
             max-width: 200px;
             max-height: 150px;
@@ -105,16 +182,20 @@
             object-fit: contain;
             margin-right: 15px;
         }
+
         .wine-info {
             flex: 1;
         }
+
         .wine-info h3 {
             color: #5a0c30;
             margin-bottom: 10px;
         }
+
         .wine-info p {
             margin: 5px 0;
         }
+
         .wine-info .button {
             display: inline-block;
             margin: 10px 5px;
@@ -125,19 +206,83 @@
             border-radius: 5px;
             transition: background-color 0.3s;
         }
+
         .wine-info .button:hover {
             background-color: #af470c;
         }
+
         .logo img {
             width: 100%;
             max-width: 150px;
             height: auto;
             object-fit: contain;
         }
+
         .section-title {
             text-align: center;
             color: #5a0c30;
             margin-bottom: 20px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #Af470c; /* burnt orange color */
+            color: #5a0c30; /* Text color */
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .footer-logo img {
+            width: 200px;
+        }
+
+        .footer-links {
+            flex: 1;
+            size: 1.4em;
+            text-align: center;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #5a0c30;
+        }
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media .social-icon {
+            font-size: 36px;
+            color: #5a0c30;
+            transition: color 0.3s ease;
+        }
+
+        .social-media .social-icon:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
         }
     </style>
 </head>

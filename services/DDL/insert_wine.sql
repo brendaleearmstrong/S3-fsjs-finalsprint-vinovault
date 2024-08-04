@@ -1,4 +1,4 @@
--- Insert data into Wine table -- Added to Postgres
+-- Insert data into Wine table
 INSERT INTO Wine (Name, Winery, Region, Country, Type, Color, Price, Rating, Description, Logo) VALUES
 ('Robert Mondavi Winery Fumé Blanc', 'Robert Mondavi', 'Napa Valley', 'USA', 'Sauvignon Blanc', 'White', 18.99, 4, 'A crisp and refreshing white wine.', '/images/logo.png'),
 ('Robert Mondavi Winery Merlot', 'Robert Mondavi', 'Napa Valley', 'USA', 'Merlot', 'Red', 22.99, 4, 'A smooth and fruity red wine.', '/images/logo.png'),

@@ -1,4 +1,5 @@
-// This file needs to be updated 
+// p.keywords.dal.js
+
 const dal = require("./p.db");
 
 async function addKeyword(login_id, keywords, source, hits) {
@@ -10,9 +11,8 @@ async function addKeyword(login_id, keywords, source, hits) {
   } catch (error) {
     console.log(error);
   } 
-};
+}
 
 module.exports = {
-//    getKeywordsByLoginId,
     addKeyword,
-  }
+}

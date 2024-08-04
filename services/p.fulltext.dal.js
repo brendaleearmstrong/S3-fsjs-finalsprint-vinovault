@@ -1,13 +1,14 @@
-// This file needs to be updated 
+// p.fulltext.dal.js
+
 const dal = require("./p.db");
 
 async function getFullText(text) {
   if(DEBUG) console.log("postgres.dal.getFullText()");
   return new Promise(function(resolve, reject) {
     const searchTerms = text.split(' ').map(term => term + ':*').join(' & ');
-    const sql = `SELECT WineID, Name, Winery, Region, Country, Type, Color, Price, Rating, Description, Logo
+    const sql = `SELECT wineid, name, winery, region, country, type, color, price, rating, description, logo
                  FROM Wine
-                 WHERE to_tsvector('english', Name || ' ' || Winery || ' ' || Region || ' ' || Country || ' ' || Type || ' ' || Color || ' ' || Description) @@ to_tsquery('english', $1)`;
+                 WHERE to_tsvector('english', name || ' ' || winery || ' ' || region || ' ' || country || ' ' || type || ' ' || color || ' ' || description) @@ to_tsquery('english', $1)`;
     if(DEBUG) console.log(sql, searchTerms);
     dal.query(sql, [searchTerms], (err, result) => {
       if (err) {
@@ -23,7 +24,7 @@ async function getFullText(text) {
 
 async function getDistinctCountries() {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT DISTINCT Country FROM Wine ORDER BY Country";
+        const sql = "SELECT DISTINCT country FROM Wine ORDER BY country";
         dal.query(sql, [], (err, result) => {
             if (err) {
                 console.error('Error fetching countries:', err);
@@ -37,7 +38,7 @@ async function getDistinctCountries() {
 
 async function getDistinctColors() {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT DISTINCT Color FROM Wine ORDER BY Color";
+        const sql = "SELECT DISTINCT color FROM Wine ORDER BY color";
         dal.query(sql, [], (err, result) => {
             if (err) {
                 console.error('Error fetching colors:', err);
@@ -51,7 +52,7 @@ async function getDistinctColors() {
 
 async function getDistinctTypes() {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT DISTINCT Type FROM Wine ORDER BY Type";
+        const sql = "SELECT DISTINCT type FROM Wine ORDER BY type";
         dal.query(sql, [], (err, result) => {
             if (err) {
                 console.error('Error fetching types:', err);
@@ -65,7 +66,7 @@ async function getDistinctTypes() {
 
 async function getDistinctWineries() {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT DISTINCT Winery FROM Wine ORDER BY Winery";
+        const sql = "SELECT DISTINCT winery FROM Wine ORDER BY winery";
         dal.query(sql, [], (err, result) => {
             if (err) {
                 console.error('Error fetching wineries:', err);
@@ -79,7 +80,7 @@ async function getDistinctWineries() {
 
 async function getWinesByCountry(country) {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT * FROM Wine WHERE Country = $1";
+        const sql = "SELECT * FROM Wine WHERE country = $1";
         dal.query(sql, [country], (err, result) => {
             if (err) {
                 reject(err);
@@ -92,7 +93,7 @@ async function getWinesByCountry(country) {
 
 async function getWinesByColor(color) {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT * FROM Wine WHERE Color = $1";
+        const sql = "SELECT * FROM Wine WHERE color = $1";
         dal.query(sql, [color], (err, result) => {
             if (err) {
                 reject(err);
@@ -105,7 +106,7 @@ async function getWinesByColor(color) {
 
 async function getWinesByType(type) {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT * FROM Wine WHERE Type = $1";
+        const sql = "SELECT * FROM Wine WHERE type = $1";
         dal.query(sql, [type], (err, result) => {
             if (err) {
                 reject(err);
@@ -118,7 +119,7 @@ async function getWinesByType(type) {
 
 async function getWinesByWinery(winery) {
     return new Promise((resolve, reject) => {
-        const sql = "SELECT * FROM Wine WHERE Winery = $1";
+        const sql = "SELECT * FROM Wine WHERE winery = $1";
         dal.query(sql, [winery], (err, result) => {
             if (err) {
                 reject(err);

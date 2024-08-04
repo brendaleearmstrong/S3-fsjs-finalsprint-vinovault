@@ -1,4 +1,4 @@
--- Create Wine table in Postgres
+-- Create Wine table
 CREATE TABLE Wine (
     WineID SERIAL PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
@@ -30,31 +30,9 @@ CREATE TABLE IF NOT EXISTS Logins (
 ALTER TABLE IF EXISTS public."Logins"
     OWNER to vinovaultadmin;
 
--- Create Favourites table
-CREATE TABLE IF NOT EXISTS Favourites (
-    FavouriteID SERIAL PRIMARY KEY,
-    LoginID INTEGER NOT NULL,
-    WineID INTEGER NOT NULL,
-    DateAdded TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT fk_login FOREIGN KEY(LoginID) REFERENCES Logins(id) ON DELETE CASCADE,
-    CONSTRAINT fk_wine FOREIGN KEY(WineID) REFERENCES Wine(WineID) ON DELETE CASCADE
-);
-
--- Create Favourites table
-CREATE TABLE IF NOT EXISTS Favourites (
-    FavouriteID SERIAL PRIMARY KEY,
-    LoginID INTEGER NOT NULL,
-    WineID INTEGER NOT NULL,
-    DateAdded TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT fk_login FOREIGN KEY(LoginID) REFERENCES Logins(id) ON DELETE CASCADE,
-    CONSTRAINT fk_wine FOREIGN KEY(WineID) REFERENCES Wine(WineID) ON DELETE CASCADE
-);
-
-
 -- Create Reviews table
 CREATE TABLE IF NOT EXISTS Reviews (
     ReviewID SERIAL PRIMARY KEY,
-    FavouriteID INTEGER NOT NULL,
     TastingNotes TEXT,
     ReviewText TEXT,
     Rating INTEGER CHECK (Rating >= 1 AND Rating <= 5),
@@ -62,10 +40,12 @@ CREATE TABLE IF NOT EXISTS Reviews (
     CONSTRAINT fk_favourite FOREIGN KEY(FavouriteID) REFERENCES Favourites(FavouriteID) ON DELETE CASCADE
 );
 
--- Add foreign key constraint for ReviewID in Favourites table
-ALTER TABLE Favourites ADD CONSTRAINT fk_review FOREIGN KEY (ReviewID) REFERENCES Reviews (ReviewID) ON DELETE SET NULL;
-
-
 -- Ensure the uuid-ossp extension is enabled
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+SELECT * FROM wine ORDER BY wineid DESC;
+
+SELECT json_agg(row_to_json(wine)) AS wines_json
+FROM wine;
+
 

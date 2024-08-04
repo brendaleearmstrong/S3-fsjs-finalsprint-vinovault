@@ -1,4 +1,3 @@
--- Filtered Search Queries 
 select * from wine;
 select * from logins;
 select * from favourites;
