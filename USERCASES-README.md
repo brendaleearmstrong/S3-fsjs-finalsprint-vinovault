@@ -71,7 +71,7 @@ VinoVault is an application designed to help users curate and manage their wine 
 To run the tests, follow these steps:
 
 1. **Set up the testing environment**: Ensure that you have the necessary dependencies installed. This might include setting up a virtual environment and installing required packages.
-2. **Run through each of the usercases above.
+2. Complete testing: Run through each of the user cases scenarios above.
 3. **View test results**: After running the tests, check the results to see which tests passed and which failed. Investigate any failures to understand the issues.
 
 ## Reporting Issues
