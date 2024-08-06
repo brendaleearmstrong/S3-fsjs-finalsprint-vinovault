@@ -93,4 +93,4 @@ To contribute to the testing process or suggest new test cases:
 
 ---
 
-This README provides a comprehensive guide for testing the VinoVault application, ensuring thorough coverage and facilitating contributions from other developers.
+This README provides a comprehensive guide for testing the VinoVault application, ensuring thorough coverage and facilitating contributions from other team members. For further questions, contact Brenda Armstrong, Project Lead.
