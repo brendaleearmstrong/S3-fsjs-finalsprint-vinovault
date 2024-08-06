@@ -1,6 +1,6 @@
 # VinoVault
 
-VinoVault is an application designed to help users manage and explore their wine collections. This README outlines the test cases for the VinoVault application, covering various aspects including user authentication, search functionality, filtering, user interface, and database interactions.
+VinoVault is an application designed to help users curate and manage their wine collections. This README outlines the test cases for the VinoVault application, covering various aspects including user authentication, search functionality, filtering, user interface, and database interactions.
 
 ## Table of Contents
 
