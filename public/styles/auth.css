@@ -74,34 +74,6 @@ body {
     background-color: #af470c;
 }
 
-/* Footer styling */
-footer {
-    background-color: #Af470c; /* burnt orange color */
-    color: #5a0c30; /* Text color */
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-footer .social-media {
-    margin-top: 10px;
-}
-
-footer .social-media a {
-    margin: 0 10px;
-}
-
-footer .social-media .social-icon {
-    font-size: 36px;
-    color: #5a0c30;
-    transition: color 0.3s ease;
-}
-
-footer .social-media .social-icon:hover {
-    color: #ffffff;
-}
 
 /* Form styling for consistency */
 .main-content {

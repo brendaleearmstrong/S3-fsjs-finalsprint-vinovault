@@ -15,12 +15,13 @@ main {
 
 /* Footer styling */
 footer {
-    background-color: #Af470c;
+    background-color: #af470c;
     color: #5a0c30;
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: relative;
+    position: relative; /* Ensure it is positioned relative to the body */
+    margin-top: auto; /* Push the footer to the bottom */
 }
 
 .footer-content {
@@ -37,7 +38,7 @@ footer {
 
 .footer-links {
     flex: 1;
-    size: 1.4em;
+    font-size: 1em;
     text-align: center;
 }
 
