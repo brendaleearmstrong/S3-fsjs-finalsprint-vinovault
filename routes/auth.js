@@ -4,11 +4,14 @@ const uuid = require('uuid');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 const myEventEmitter = require('../services/logEvents');
-
 const { addLogin, getLoginByEmail } = require('../services/m.auth.dal');
+
+// Correct import path for the middleware
+const { authenticateJWT } = require('../services/authMiddleware');
 
 // Display login page
 router.get('/', (req, res) => {
+    console.log('Displaying login page');
     myEventEmitter.emit('event', 'auth.get /', 'INFO', 'Login page displayed.');
     res.render('login', { status: req.session.status });
 });
@@ -17,6 +20,7 @@ router.get('/', (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const { email, password } = req.body;
+        console.log(`Login attempt for email: ${email}`);
         const user = await getLoginByEmail(email);
 
         if (!user) {
@@ -37,6 +41,10 @@ router.post('/', async (req, res) => {
         req.session.token = token;
         req.session.status = 'Happy to have you back ' + user.username;
         myEventEmitter.emit('event', 'auth.post /', 'SUCCESS', `User ${email} logged in successfully.`);
+
+        // Set token in a cookie
+        res.cookie('token', token, { httpOnly: true });
+
         res.redirect('/search');  // Redirect to search page after successful login
     } catch (error) {
         console.error('Login error:', error);
@@ -47,6 +55,7 @@ router.post('/', async (req, res) => {
 
 // Display registration page
 router.get('/new', (req, res) => {
+    console.log('Displaying registration page');
     myEventEmitter.emit('event', 'auth.get /new', 'INFO', 'Registration page displayed.');
     res.render('register', { status: req.session.status });
 });
@@ -89,6 +98,7 @@ router.get('/exit', (req, res) => {
             return res.status(500).send('Could not log out.');
         }
         myEventEmitter.emit('event', 'auth.get /exit', 'SUCCESS', 'User logged out successfully.');
+        res.clearCookie('token');
         res.redirect('/');
     });
 });

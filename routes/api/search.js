@@ -1,4 +1,3 @@
-// This file needs to be updated 
 const express = require('express');
 const router = express.Router();
 const { setToken, authenticateJWT } = require('../services/auth');
@@ -14,14 +13,14 @@ router.use(authenticateJWT);
 
 router.get('/', async (req, res) => {
     try {
+        console.log('Loading search page data');
         const countries = await pgDal.getDistinctCountries();
         const colors = await pgDal.getDistinctColors();
         const types = await pgDal.getDistinctTypes();
         const wineries = await pgDal.getDistinctWineries();
 
         console.log('Fetched data:', { countries, colors, types, wineries });
-
-        myEventEmitter.emit('event', 'app.get /search', 'INFO', 'search page (search.ejs) was displayed.');
+        myEventEmitter.emit('event', 'get /search', 'INFO', 'search page (search.ejs) was displayed.');
         res.render('search', {
             status: req.session.status,
             user: req.session.user,
@@ -33,7 +32,7 @@ router.get('/', async (req, res) => {
         });
     } catch (error) {
         console.error('Error loading search page:', error);
-        myEventEmitter.emit('event', 'app.get /search', 'ERROR', `Error loading search page: ${error.message}`);
+        myEventEmitter.emit('event', 'get /search', 'ERROR', `Error loading search page: ${error.message}`);
         res.status(500).render('error', { error: 'An error occurred while loading the search page.' });
     }
 });
@@ -58,11 +57,11 @@ router.post('/', async (req, res) => {
         }
 
         console.log(`Search complete. Found ${theResults.length} results.`);
-        myEventEmitter.emit('event', 'app.post /search', 'INFO', 'search results displayed.');
+        myEventEmitter.emit('event', 'post /search', 'INFO', 'search results displayed.');
         res.json(theResults);
     } catch (error) {
         console.error('Error in search query:', error);
-        myEventEmitter.emit('event', 'app.post /search', 'ERROR', `Error in search query: ${error.message}`);
+        myEventEmitter.emit('event', 'post /search', 'ERROR', `Error in search query: ${error.message}`);
         res.status(500).json({ error: 'An error occurred during the search.' });
     }
 });
@@ -88,19 +87,16 @@ router.post('/filter', async (req, res) => {
             case 'type':
                 theResults = await pgDal.getWinesByType(filterValue);
                 break;
-            case 'winery':
-                theResults = await pgDal.getWinesByWinery(filterValue);
-                break;
             default:
                 return res.status(400).json({ error: 'Invalid filter type' });
         }
 
         console.log(`Filter complete. Found ${theResults.length} results.`);
-        myEventEmitter.emit('event', 'app.post /search/filter', 'INFO', 'filter results displayed.');
+        myEventEmitter.emit('event', 'post /search/filter', 'INFO', 'filter results displayed.');
         res.json(theResults);
     } catch (error) {
         console.error('Error in filter query:', error);
-        myEventEmitter.emit('event', 'app.post /search/filter', 'ERROR', `Error in filter query: ${error.message}`);
+        myEventEmitter.emit('event', 'post /search/filter', 'ERROR', `Error in filter query: ${error.message}`);
         res.status(500).json({ error: 'An error occurred during filtering.' });
     }
 });

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wine Vault</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/vault.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        function initMap() {
+            const map = L.map('map').setView([20, 0], 2);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            const wineryLocations = <%= JSON.stringify(vault.map(wine => ({
+                lat: wine.latitude,
+                lng: wine.longitude,
+                winery: wine.winery || wine.Winery,
+                region: wine.region || wine.Region,
+                country: wine.country || wine.Country
+            }))) %>;
+
+            wineryLocations.forEach(location => {
+                const marker = L.marker([location.lat, location.lng]).addTo(map);
+                marker.bindPopup(`<div><strong>${location.winery}</strong><br>${location.region}, ${location.country}</div>`);
+            });
+        }
+    </script>
+</head>
+<body onload="initMap()">
+    <%- include('./partials/header') %>
+    <%- include('./partials/nav') %>
+    <main class="vault-container">
+        <div class="profile-banner">
+            <div class="user-details">
+                <h2>Welcome, <%= user.username %>!</h2>
+                <p>Discover and manage your curated wine collection. VinoVault helps you explore the world of wine, one bottle at a time.</p>
+            </div>
+        </div>
+        <div class="statistics">
+            <h3>Your Collection</h3>
+            <p>You have <%= vault.length %> exquisite wines in your vault. Enhance your collection by discovering more!</p>
+        </div>
+        <h2 class="section-title">Your Personalized Wine Vault</h2>
+        <div id="vault">
+            <% if (vault && vault.length > 0) { %>
+                <% vault.forEach(function(wine) { %>
+                    <div class="wine-card">
+                        <img src="<%= wine.logo || wine.Logo || '/images/coming-soon.png' %>" alt="<%= wine.winery || wine.Winery %> logo" class="wine-logo">
+                        <div class="wine-info">
+                            <h3><%= wine.name || wine.Name %></h3>
+                            <p><strong>Winery:</strong> <%= wine.winery || wine.Winery %></p>
+                            <p><strong>Region:</strong> <%= wine.region || wine.Region %></p>
+                            <p><strong>Country:</strong> <%= wine.country || wine.Country %></p>
+                            <p><strong>Type:</strong> <%= wine.type || wine.Type %></p>
+                            <p><strong>Color:</strong> <%= wine.color || wine.Color %></p>
+                            <p><strong>Price:</strong> $<%= parseFloat(wine.price || wine.Price).toFixed(2) %></p>
+                            <p><strong>Rating:</strong> <%= wine.rating || wine.Rating %>/5</p>
+                            <p><%= wine.description || wine.Description %></p>
+                            <div class="button-container">
+                                <a href="#" class="button">Where to Buy</a>
+                                <a href="#" class="button">Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>Your vault is empty. Start adding your favorite wines to create a personalized collection!</p>
+            <% } %>
+        </div>
+        <h2 class="section-title">Explore Winery Regions</h2>
+        <div id="map" class="map-container"></div>
+        
+    </main>
+    <%- include('./partials/footer') %>
+</body>
+</html>

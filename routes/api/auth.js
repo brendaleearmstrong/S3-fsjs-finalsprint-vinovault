@@ -1,58 +1,29 @@
-const bcrypt = require('bcrypt');
-const uuid = require('uuid');
-var router = require('express').Router();
-const dal = require('../../services/m.auth.dal');
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const router = express.Router();
+const myEventEmitter = require('../../services/logEvents');
 
-router.get('/:id', async (req, res) => {
-    console.log('Fetching login by id:', req.params.id);
-    try {
-        let aLogin = await dal.getLoginById(req.params.id);
-        if (!aLogin) {
-            res.statusCode = 404;
-            res.json({message: "Not Found", status: 404});
-        } else {
-            res.json(aLogin);
-        }
-    } catch {
-        res.statusCode = 503;
-        res.json({message: "Service Unavailable", status: 503});
-    }
-});
+// Correct import path for the middleware
+const { authenticateJWT } = require('../../services/authMiddleware'); // Correct destructuring
 
-router.patch('/:id', async (req, res) => {
-    console.log('Password reset for id:', req.params.id);
-    try {
-        let aLogin = await dal.getLoginById(req.params.id);
-        if (!aLogin) {
-            res.statusCode = 404;
-            res.json({message: "Not Found", status: 404});
-        } else {
-            try {
-                const hashedPassword = await bcrypt.hash(req.body.password, 10);
-                await dal.patchLogin(req.params.id, aLogin.username, hashedPassword, aLogin.email);
-                res.statusCode = 200;
-                res.json({message: "OK", status: 200});
-            } catch (error) {
-                res.statusCode = 500;
-                res.json({message: "Internal Server Error", status: 500});
-            }
-        }
-    } catch {
-        res.statusCode = 503;
-        res.json({message: "Service Unavailable", status: 503});
+// Middleware to set the token from session
+const setToken = (req, res, next) => {
+    if (req.session && req.session.token) {
+        console.log('Setting JWT token from session');
+        req.headers['authorization'] = `Bearer ${req.session.token}`;
+        myEventEmitter.emit('event', 'auth.api.setToken', 'INFO', 'JWT token set from session');
+    } else {
+        console.log('No token found in session');
+        myEventEmitter.emit('event', 'auth.api.setToken', 'WARN', 'No token found in session');
     }
-});
+    next();
+};
 
-router.delete('/:id', async (req, res) => {
-    console.log('Deleting login for id:', req.params.id);
-    try {
-        await dal.deleteLogin(req.params.id);
-        res.statusCode = 200;
-        res.json({message: "OK", status: 200});
-    } catch {
-        res.statusCode = 503;
-        res.json({message: "Service Unavailable", status: 503});
-    }
+// Sample route for API authentication
+router.get('/status', authenticateJWT, (req, res) => {
+    console.log('API Status Check');
+    myEventEmitter.emit('event', 'api.auth.get /status', 'INFO', 'API status checked.');
+    res.json({ status: 'API is running' });
 });
 
 module.exports = router;

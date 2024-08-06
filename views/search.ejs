@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/styles/search.css">
     <link rel="stylesheet" href="/styles/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
 </head>
 <body>
     <%- include('./partials/header') %>
@@ -156,23 +155,62 @@
                     <p>${wine.description || wine.Description}</p>
                 `;
 
-                const addToVaultButton = document.createElement('a');
-                addToVaultButton.href = `/vault/add/${wine.wineid || wine._id}`;
-                addToVaultButton.classList.add('button');
+                const buttonContainer = document.createElement('div');
+                buttonContainer.classList.add('button-container');
+
+                const addToVaultButton = document.createElement('button');
                 addToVaultButton.textContent = 'Add to Vault';
+                addToVaultButton.classList.add('button');
+                const wineId = wine._id ? (wine._id.$oid || wine._id) : wine.wineid || wine.WineID;
+                const source = wine._id ? 'mongodb' : 'postgres';
+                addToVaultButton.onclick = () => addToVault(wineId, source);
 
                 const viewReviewsButton = document.createElement('a');
-                viewReviewsButton.href = `/reviews/${wine.wineid || wine._id}`;
+                viewReviewsButton.href = `/reviews/${wineId}`;
                 viewReviewsButton.classList.add('button');
                 viewReviewsButton.textContent = 'View Reviews';
 
-                wineInfo.appendChild(addToVaultButton);
-                wineInfo.appendChild(viewReviewsButton);
+                buttonContainer.appendChild(addToVaultButton);
+                buttonContainer.appendChild(viewReviewsButton);
+
+                wineInfo.appendChild(buttonContainer);
 
                 wineCard.appendChild(wineImage);
                 wineCard.appendChild(wineInfo);
 
                 resultsDiv.appendChild(wineCard);
+            });
+        }
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        function addToVault(wineId, source) {
+            const token = getCookie('token');
+            fetch(`/vault/add/${wineId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}` // Ensure the token is set
+                },
+                body: JSON.stringify({ source: source })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => { throw err; });
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Wine added to vault:', data);
+                alert('Wine added to your vault successfully!');
+            })
+            .catch(error => {
+                console.error('Error adding wine to vault:', error);
+                alert(`Error adding wine to vault: ${error.message || 'Unknown error'}`);
             });
         }
     </script>

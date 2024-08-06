@@ -1,6 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
+
 const express = require('express');
 const session = require('express-session');
 const myEventEmitter = require('./services/logEvents');
@@ -11,7 +12,7 @@ global.DEBUG = true;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json()); // Add this line to parse JSON bodies
+app.use(express.json());
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -43,14 +44,17 @@ app.get('/contact', async (req, res) => {
 const searchRouter = require('./routes/search');
 const authRouter = require('./routes/auth');
 const apiRouter = require('./routes/api');
+const vaultRouter = require('./routes/vault');
 
-console.log('searchRouter:', typeof searchRouter); // Should be 'function'
-console.log('authRouter:', typeof authRouter);     // Should be 'function'
-console.log('apiRouter:', typeof apiRouter);       // Should be 'function'
+console.log('searchRouter:', typeof searchRouter);
+console.log('authRouter:', typeof authRouter);
+console.log('apiRouter:', typeof apiRouter);
+console.log('vaultRouter:', typeof vaultRouter);
 
 app.use('/search', searchRouter);
 app.use('/auth', authRouter);
 app.use('/api', apiRouter);
+app.use('/vault', vaultRouter);
 
 // Log 404 errors
 app.use((req, res) => {
@@ -65,6 +69,6 @@ app.listen(PORT, (err) => {
         myEventEmitter.emit('event', 'app.listen', 'ERROR', 'HTTP server failed to start.');
     } else {
         myEventEmitter.emit('event', 'app.listen', 'SUCCESS', 'HTTP server successfully started.');
-        console.log(`VinoVault is running on http://localHost:${PORT}.`);
+        console.log(`VinoVault is running on http://localhost:${PORT}.`);
     }
 });
