@@ -81,7 +81,7 @@ To report issues found during testing, follow these steps:
 1. **Document the issue**: Provide detailed information about the issue, including steps to reproduce it, expected behavior, and actual behavior.
 2. **Submit the issue**: Use the project's issue tracking system (e.g., GitHub Issues, JIRA) to submit the documented issue. Include any relevant logs, screenshots, or other supporting information.
 
-## Contributing
+## Contributing Team Members
 
 To contribute to the testing process or suggest new test cases:
 
