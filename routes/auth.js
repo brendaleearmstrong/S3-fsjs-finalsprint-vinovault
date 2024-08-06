@@ -3,9 +3,9 @@ const bcrypt = require('bcrypt');
 const uuid = require('uuid');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
-const myEventEmitter = require('../services/logEvents.js');
+const myEventEmitter = require('../services/logEvents');
 
-const { addLogin, getLoginByUsername } = require('../services/m.auth.dal');
+const { addLogin, getLoginByEmail } = require('../services/m.auth.dal');
 
 // Display login page
 router.get('/', (req, res) => {
@@ -16,12 +16,12 @@ router.get('/', (req, res) => {
 // Handle login
 router.post('/', async (req, res) => {
     try {
-        const { username, password } = req.body;
-        const user = await getLoginByUsername(username);
+        const { email, password } = req.body;
+        const user = await getLoginByEmail(email);
 
         if (!user) {
-            req.session.status = 'Incorrect username.';
-            myEventEmitter.emit('event', 'auth.post /', 'WARN', 'Login failed: Incorrect username.');
+            req.session.status = 'Incorrect email.';
+            myEventEmitter.emit('event', 'auth.post /', 'WARN', 'Login failed: Incorrect email.');
             return res.redirect('/auth');
         }
 
@@ -32,11 +32,11 @@ router.post('/', async (req, res) => {
             return res.redirect('/auth');
         }
 
-        const token = jwt.sign({ username: user.username }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ email: user.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
         req.session.user = user;
         req.session.token = token;
         req.session.status = 'Happy to have you back ' + user.username;
-        myEventEmitter.emit('event', 'auth.post /', 'SUCCESS', `User ${username} logged in successfully.`);
+        myEventEmitter.emit('event', 'auth.post /', 'SUCCESS', `User ${email} logged in successfully.`);
         res.redirect('/search');  // Redirect to search page after successful login
     } catch (error) {
         console.error('Login error:', error);
@@ -64,18 +64,19 @@ router.post('/new', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
         const result = await addLogin(username, email, hashedPassword, uuid.v4());
 
+        if (result.error) {
+            req.session.status = result.error;
+            myEventEmitter.emit('event', 'auth.post /new', 'WARN', `Registration failed: ${result.error}`);
+            return res.redirect('/auth/new');
+        }
+
         req.session.status = 'New account created, please login.';
-        myEventEmitter.emit('event', 'auth.post /new', 'SUCCESS', `User ${username} registered successfully.`);
+        myEventEmitter.emit('event', 'auth.post /new', 'SUCCESS', `User ${email} registered successfully.`);
         res.redirect('/auth');
     } catch (error) {
         console.error('Registration error:', error);
         myEventEmitter.emit('event', 'auth.post /new', 'ERROR', `Registration error: ${error.message}`);
-        if (error.code === 11000) { // MongoDB unique constraint violation
-            req.session.status = 'Username or Email already exists, please try another.';
-            res.redirect('/auth/new');
-        } else {
-            res.status(500).render('error', { error: 'An error occurred during registration.' });
-        }
+        res.status(500).render('error', { error: 'An error occurred during registration.' });
     }
 });
 

@@ -12,11 +12,11 @@
     <%- include('./partials/nav.ejs') %>
     <div class="main-content">
         <div class="form-container">
-            <h1>Register</h1>
+            <h1>Register for VinoVault</h1>
             <p>Create an account to start your journey through the world of wines. Explore, rate, and curate your collection of favorite wines in VinoVault.</p>
             <form action="/auth/new" method="POST">
                 <div class="form-group">
-                    <label for="username">Name</label>
+                    <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="form-group">
@@ -29,6 +29,10 @@
                 </div>
                 <button type="submit" class="form-button">Register</button>
             </form>
+            <% if (typeof status !== 'undefined' && status) { %>
+                <div class="alert alert-danger"><%= status %></div>
+            <% } %>
+            <p class="login-link">Already have an account? <a href="/auth">Login here</a></p>
         </div>
     </div>
     <div class="footer-wrapper">
