@@ -1,4 +1,4 @@
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 const { Pool } = require('pg');
 const myEventEmitter = require('./logEvents');
 
@@ -30,7 +30,7 @@ async function getWineFromMongo(wineId) {
     try {
         await client.connect();
         const database = client.db('vinovault');
-        const wine = await database.collection('wines').findOne({ _id: wineId });
+        const wine = await database.collection('wine').findOne({ _id: new ObjectId(wineId) });
         return wine;
     } catch (error) {
         console.error('Error fetching wine from MongoDB:', error);

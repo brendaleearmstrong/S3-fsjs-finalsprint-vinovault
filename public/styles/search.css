@@ -47,12 +47,16 @@ main {
 #searchButton {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #A1791D;
+    background-color: #5a0c30;
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
+
+#searchButton:hover {
+    background-color: #Af470c;
+}   
 
 .filter-row {
     display: flex;
@@ -83,6 +87,10 @@ main {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.filter-group button:hover {
+    background-color: #Af470c;
 }
 
 #searchResults {
@@ -174,5 +182,5 @@ main {
 }
 
 .button:hover {
-    background-color: #A1791D;
+    background-color: #Af470c;
 }

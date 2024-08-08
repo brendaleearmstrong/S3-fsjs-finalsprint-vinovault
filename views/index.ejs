@@ -14,15 +14,25 @@
     <%- include('./partials/nav') %>
     <main>
         <br><br>
-        <div class="hero-image">
-            <img src="images/winery.png" alt="Winery">
-        </div>
+       
         <div class="welcome-message">
             <h1>Welcome to VinoVault</h1>
             <p>Your ultimate destination for discovering and exploring wines from around the world. <br>
-                Whether you are a connoisseur or a casual enthusiast, VinoVault offers a vast collection of wines to suit every palate.<br> <br>
-                If you are a new vino here, you must register to access the vault. <br> 
-                If you have already registered, log in to continue your journey through our curated wine selections.<br>
+            Whether you're a seasoned wine enthusiast or a curious beginner, VinoVault is your gateway to a world of exquisite flavors and aromas.<br><br>
+            Discover the rich flavors, aromas, and stories behind each bottle. <br>
+            Our curated collection features a diverse range of wines, from classic varietals to unique blends, each carefully selected to showcase the best of their respective regions. <br>
+            </p>
+            
+            <div class="hero-image">
+                <img src="images/winery.png" alt="Winery">
+            </div>
+            
+            <h1>Your Personal Wine Vault</h1>  
+            <p>      
+            If you are a new vino here, you must register to access the vault. <br>         
+            Register to explore our extensive collection of wines, from classic varietals to unique blends, and embark on a journey of discovery. <br>
+            <br>
+            If you have already registered, log in to continue your journey through our curated wine selections. Remember to add your favourites to your vault!<br>
             </p>
         </div>
         <div class="auth-main">
@@ -42,7 +52,7 @@
                     <p>We hope to see you again soon. Safe travels!</p>
                     <a href="/auth/exit" class="auth-button">Exit</a>
                 </div>
-            </div>
+                </div>
         </div>
         <% if (typeof success_msg !== 'undefined' && success_msg) { %>
             <div class="alert alert-success"><%= success_msg %></div>
