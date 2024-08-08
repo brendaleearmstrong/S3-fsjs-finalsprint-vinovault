@@ -3,19 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VinoVault - Discover Your Perfect Wine</title>
+    <title>VinoVault - About Us</title>
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/search.css">
     <link rel="stylesheet" href="/styles/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero-section {
+            background-image: url('/images/winery.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .hero-content {
+            background-color: rgba(90, 12, 48, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .section-image {
+            flex: 1;
+            max-width: 50%;
+        }
+        .section-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section-content {
+            flex: 1;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .feature-item {
+            background-color: #f8f4f1;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature-item i {
+            font-size: 2rem;
+            color: #5a0c30;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
-    <%- include('./partials/header.ejs') %>
-    <body>
-        <%- include('./partials/nav.ejs') %>
-        <div class="content">
-            <h2>About VinoVault</h2>
-        </div>
-    </body>
+<body>
+    <header>
+        <img src="/images/vinovaultlogo.png" alt="VinoVault Logo" class="logo">
+        <% if (locals.user && locals.user.email) { %>
+            <div class="user-links">
+                <a href="/vault">My Vault</a>
+                <a href="/auth/logout">Logout</a>
+            </div>
+        <% } %>
+    </header>
+    <main class="about-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Discover the World of Wine</h1>
+                <p>Your journey through exquisite flavors and aromas begins here</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-image">
+                <img src="/images/wine-tasting.jpg" alt="Wine Tasting">
+            </div>
+            <div class="section-content">
+                <h2>Our Passion for Wine</h2>
+                <p>At VinoVault, we believe that every bottle tells a story. Our mission is to help you discover the rich flavors, aromas, and histories behind each wine. Whether you're a seasoned connoisseur or just beginning your wine journey, VinoVault is here to enhance your appreciation of the world's finest vintages.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-content">
+                <h2>Curated Collection</h2>
+                <p>Our expertly curated collection features a diverse range of wines, from classic varietals to unique blends, each carefully selected to showcase the best of their respective regions. Explore an extensive database of wines from across the globe and embark on a journey of flavor and discovery.</p>
+            </div>
+            <div class="section-image">
+                <img src="/images/wine-cellar.jpg" alt="Wine Cellar">
+            </div>
+        </section>
+
+        <section>
+            <h2>What VinoVault Offers</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-wine-bottle"></i>
+                    <h3>Extensive Database</h3>
+                    <p>Explore wines from around the world</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Wine Education</h3>
+                    <p>Learn about regions, grapes, and techniques</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Personalized Recommendations</h3>
+                    <p>Discover new wines tailored to your taste</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Connect with fellow wine enthusiasts</p>
+                </div>
+            </div>
+        </section>
+</main>
+    
     <%- include('./partials/footer.ejs') %>
+</body>
 </html>

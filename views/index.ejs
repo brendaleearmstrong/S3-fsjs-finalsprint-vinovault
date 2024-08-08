@@ -8,25 +8,48 @@
         <link rel="stylesheet" href="/styles/search.css">
         <link rel="stylesheet" href="/styles/auth.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-       </head>
+        <style>
+            .hero-section {
+                background-image: url('/images/winery.png');
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .hero-content {
+                background-color: rgba(90, 12, 48, 0.7);
+                padding: 2rem;
+                border-radius: 10px;
+            }
+            .hero-content h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
 <body>
     <%- include('./partials/header') %>
     <%- include('./partials/nav') %>
     <main>
-        <br><br>
-       
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to VinoVault</h1>
+                <p>Your ultimate destination for discovering and exploring wines from around the world.</p>
+            </div>
+        </section>
+        
         <div class="welcome-message">
-            <h1>Welcome to VinoVault</h1>
-            <p>Your ultimate destination for discovering and exploring wines from around the world. <br>
-            Whether you're a seasoned wine enthusiast or a curious beginner, VinoVault is your gateway to a world of exquisite flavors and aromas.<br><br>
+            <h1>Curated Wines from Around the World</h1>  
+            <p>Whether you're a seasoned wine enthusiast or a curious beginner, VinoVault is your gateway to a world of exquisite flavors and aromas.<br>
             Discover the rich flavors, aromas, and stories behind each bottle. <br>
             Our curated collection features a diverse range of wines, from classic varietals to unique blends, each carefully selected to showcase the best of their respective regions. <br>
             </p>
-            
-            <div class="hero-image">
-                <img src="images/winery.png" alt="Winery">
-            </div>
-            
+            <br>
             <h1>Your Personal Wine Vault</h1>  
             <p>      
             If you are a new vino here, you must register to access the vault. <br>         
@@ -47,12 +70,8 @@
                     <p>Login to your vault to view your curated collection of your favorite wines.</p>
                     <a href="/auth/" class="auth-button">Login</a>
                 </div>
-                <div class="auth-box">
-                    <h2>Leaving so soon?</h2>
-                    <p>We hope to see you again soon. Safe travels!</p>
-                    <a href="/auth/exit" class="auth-button">Exit</a>
-                </div>
-                </div>
+                
+            </div>
         </div>
         <% if (typeof success_msg !== 'undefined' && success_msg) { %>
             <div class="alert alert-success"><%= success_msg %></div>

@@ -12,3 +12,20 @@ header .logo {
     width: 20%; /* Adjust the size as needed */
     margin-bottom: 10px;
 }
+
+.user-links {
+    margin-top: 10px;
+}
+.user-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.user-links a:hover {
+    background-color: white;
+    color: #5a0c30;
+}

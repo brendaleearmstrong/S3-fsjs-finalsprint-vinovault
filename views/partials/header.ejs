@@ -6,8 +6,14 @@
     <link rel="stylesheet" href="/styles/header.css">
 </head>
 <body>
-<header>
-    <img src="/images/vinovaultlogo.png" alt="VinoVault Logo" class="logo">
-</header>
-</body>
-</html>
+    <header>
+        <img src="/images/vinovaultlogo.png" alt="VinoVault Logo" class="logo">
+        <% if (locals.user && locals.user.email) { %>
+            <div class="user-links">
+                <a href="/vault">My Vault</a>
+                <a href="/auth/exit">Logout</a>
+            </div>
+        <% } %>
+    </header>
+    </body>
+    </html>
