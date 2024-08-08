@@ -47,7 +47,7 @@ main {
 #searchButton {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #AF470c;
+    background-color: #A1791D;
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
@@ -174,5 +174,5 @@ main {
 }
 
 .button:hover {
-    background-color: #AF470c;
+    background-color: #A1791D;
 }

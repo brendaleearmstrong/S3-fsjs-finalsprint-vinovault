@@ -13,9 +13,17 @@ main {
     flex: 1;
 }
 
+.hero-image img {
+    width: 75%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* Footer styling */
 footer {
-    background-color: #af470c;
+    background-color: #A1791D;
     color: #5a0c30;
     text-align: center;
     padding: 10px;
