@@ -584,3 +584,83 @@
 20240809	13:45:32	INFO	auth.api.authenticateJWT	JWT verified successfully	18f893d5-d8ed-4a28-bead-50808c02ee2d
 20240809	13:45:32	INFO	post /search	Search initiated	ec38f8fa-3f52-4adc-af25-e54aaac5413c	Search Keyword: "fruity and spicy"	Database: postgres
 20240809	13:45:32	INFO	post /search	Search completed	12de52e6-17de-4fe1-a7b9-6452ec83196e	Search Keyword: "fruity and spicy"	Database: postgres	Results: 3
+20240809	15:34:46	SUCCESS	app.listen	HTTP server successfully started.	5f033ef2-6cc0-4dc2-b00c-5d316d0e82c8
+20240809	15:34:51	INFO	HTTP GET	/	3828cf37-6776-48dd-989f-87f15f3c65f6
+20240809	15:34:51	INFO	app.get /	Home page (index.ejs) was displayed.	036c017d-7be5-4875-a311-255f134031fc
+20240809	15:47:32	INFO	HTTP GET	/auth/new	0f0637e5-9e2b-4ab8-82cc-f29e6c139149
+20240809	15:47:32	INFO	auth.get /new	Registration page displayed.	73500d5b-6d11-4ea3-8724-8bc29b4eb1aa
+20240809	15:47:32	INFO	HTTP GET	/styles/footer.css	752a24b8-f013-4578-b753-301c71bfd589
+20240809	15:47:32	ERROR	app.use 404	Page not found: /styles/footer.css	308bf646-9641-48d2-a50b-dc4140a434c7
+20240809	15:47:58	INFO	HTTP POST	/auth/new	048dc76a-b064-468f-8dfa-4d03a2628950
+20240809	15:47:59	INFO	addLogin	New login added for email: tester@vinovault.ca	82737899-afce-41c0-8ad0-c65ba57777f3
+20240809	15:47:59	SUCCESS	auth.post /new	User tester@vinovault.ca registered successfully.	a3eddf73-dbe8-44c1-b1bf-f4718fa98ad5
+20240809	15:47:59	INFO	HTTP GET	/auth	1ed81325-a51b-4501-aef7-f68e243caa2d
+20240809	15:47:59	INFO	auth.get /	Login page displayed.	46209951-7084-4aa5-b5eb-10f0cd9afe3e
+20240809	15:47:59	INFO	HTTP GET	/styles/footer.css	f245cdba-a85d-44a2-b470-9da2df0c44ce
+20240809	15:47:59	ERROR	app.use 404	Page not found: /styles/footer.css	a57c18ca-f458-4f31-87ed-2778c5d8638a
+20240809	15:48:05	INFO	HTTP POST	/auth	27d1c7ab-1c3d-42f0-bed8-ec1bf78ea4cf
+20240809	15:48:05	INFO	getLoginByEmail	Login retrieval attempt for email: tester@vinovault.ca	1ac6df4b-e760-46d5-9b0f-9bb221bbb8e1
+20240809	15:48:05	SUCCESS	auth.post /	User tester@vinovault.ca logged in successfully.	bccd9d94-4112-43a6-a19d-88705af044a9
+20240809	15:48:05	INFO	HTTP GET	/search	82867829-e2d6-456d-8402-576275b61475
+20240809	15:48:05	INFO	auth.api.setToken	JWT token set from session	b485aa1e-474c-4b65-a108-d5c6577c52db
+20240809	15:48:05	INFO	auth.api.authenticateJWT	JWT verified successfully	7d492d86-717d-414a-97ea-023f350cae79
+20240809	15:48:05	INFO	get /search	Loading search page data	7ee53694-7777-49ea-8ac6-a55b95706162
+20240809	15:48:05	INFO	get /search	Search page data loaded	1566d6ac-9300-40f4-a521-ac84c195f481	Results: [object Object]
+20240809	15:48:22	INFO	HTTP POST	/search	07b9d554-c271-489d-9d35-3bbccc283382
+20240809	15:48:22	INFO	auth.api.setToken	JWT token set from session	427799e9-5a34-460a-a569-72eba864abeb
+20240809	15:48:22	INFO	auth.api.authenticateJWT	JWT verified successfully	01914504-97fe-4400-b113-80dc15a62b9e
+20240809	15:48:22	INFO	post /search	Search initiated	a50c8f80-7d20-4cee-accc-3ed2f3795462	Search Keyword: "Rose France"	Database: mongodb
+20240809	15:48:23	INFO	post /search	Search completed	59893836-973c-4748-a8cc-2713306fdd25	Search Keyword: "Rose France"	Database: mongodb	Results: 19
+20240809	15:48:50	INFO	HTTP POST	/search	de98c996-bb8e-4cfe-aa1c-210559aa855c
+20240809	15:48:50	INFO	auth.api.setToken	JWT token set from session	1ba4577a-9a9a-43a0-bff7-6caa1246af58
+20240809	15:48:50	INFO	auth.api.authenticateJWT	JWT verified successfully	b9c350b4-9779-4047-91bf-f3c3dfeb5a3f
+20240809	15:48:50	INFO	post /search	Search initiated	d3311d1e-eae2-432d-8f45-d5298a8c237c	Search Keyword: "Rose"	Database: mongodb
+20240809	15:48:50	INFO	post /search	Search completed	2e69f95a-637d-4b7b-acd5-dd83edf6e0f1	Search Keyword: "Rose"	Database: mongodb	Results: 8
+20240809	15:50:23	INFO	HTTP POST	/search	748aee2e-89ff-4218-9b6a-be61125ecd60
+20240809	15:50:23	INFO	auth.api.setToken	JWT token set from session	72ccc60d-cbec-4a9d-b979-c518abc6228c
+20240809	15:50:23	INFO	auth.api.authenticateJWT	JWT verified successfully	ef7157d0-9a6f-4baa-9f85-6052ca8466f2
+20240809	15:50:23	INFO	post /search	Search initiated	eca64325-eff2-4c88-868f-0a8cb8d24be8	Search Keyword: "Fruity and Spicy"	Database: postgres
+20240809	15:50:23	INFO	post /search	Search completed	956d3386-8380-48ae-b2e8-48477f9a3ad8	Search Keyword: "Fruity and Spicy"	Database: postgres	Results: 3
+20240809	15:50:58	INFO	HTTP GET	/search	6267f3a5-333c-412d-9e7e-76fd2b0f9197
+20240809	15:50:58	INFO	auth.api.setToken	JWT token set from session	2e1bd5bb-d03f-40b2-9a31-03500f7974c6
+20240809	15:50:58	INFO	auth.api.authenticateJWT	JWT verified successfully	79e979e2-9a30-41d1-8206-6781e2a0a7df
+20240809	15:50:58	INFO	get /search	Loading search page data	dbff87b2-f25f-450f-b1af-e6f44d3d3bb8
+20240809	15:50:58	INFO	get /search	Search page data loaded	daae65cd-1275-4e09-8b53-f2b0e57c44f0	Results: [object Object]
+20240809	15:51:06	INFO	HTTP POST	/search/filter	4cf4db5d-0b48-45e1-9649-e59ae1700b1a
+20240809	15:51:06	INFO	auth.api.setToken	JWT token set from session	49c69d78-c14b-439b-821f-497adf057ee1
+20240809	15:51:06	INFO	post /search/filter	Filter applied	65d1c6fd-7234-4ac6-8c4a-6b0c5d6a597f	Filter Type: country	Filter Value: Canada
+20240809	15:51:06	INFO	auth.api.authenticateJWT	JWT verified successfully	d7c5eb1c-a675-4bff-bb0b-b156a726b7a1
+20240809	15:51:06	INFO	post /search/filter	Filter completed	23c605dd-30ea-4f25-b086-580a1c0e9118	Results: 25	Filter Type: country	Filter Value: Canada
+20240809	15:51:24	INFO	HTTP POST	/search/filter	6a4024ba-8c15-48a5-9130-951069c7512f
+20240809	15:51:24	INFO	auth.api.setToken	JWT token set from session	3da4c8aa-20db-4fe4-81a7-138694f3cc71
+20240809	15:51:24	INFO	auth.api.authenticateJWT	JWT verified successfully	9ee061b2-5f33-40d6-94b4-ee70e9d0778b
+20240809	15:51:24	INFO	post /search/filter	Filter applied	62ec0486-d9e2-42d5-9e31-98c651bbb6f8	Filter Type: color	Filter Value: Sparkling
+20240809	15:51:24	INFO	post /search/filter	Filter completed	1f69b306-0010-4e3a-934f-68cfa8d6458b	Results: 38	Filter Type: color	Filter Value: Sparkling
+20240809	15:51:39	INFO	HTTP POST	/search/filter	2edb3786-be28-4f87-8f76-11f73a93e6df
+20240809	15:51:39	INFO	auth.api.setToken	JWT token set from session	37575c4e-6afa-4bac-840d-1cfcff9f7a0c
+20240809	15:51:39	INFO	auth.api.authenticateJWT	JWT verified successfully	05c8bacd-402f-42c8-83e9-2cd1d6ed8c5b
+20240809	15:51:39	INFO	post /search/filter	Filter applied	5871b8c2-cfe8-4c5a-bb60-687567a31d7c	Filter Type: type	Filter Value: Barbera
+20240809	15:51:39	INFO	post /search/filter	Filter completed	18e8d5d1-078c-4e8b-adaf-4ba92cc35b22	Results: 1	Filter Type: type	Filter Value: Barbera
+20240809	15:51:45	INFO	HTTP POST	/search/filter	d76e3daf-482e-4061-a724-23b1608537f1
+20240809	15:51:45	INFO	auth.api.setToken	JWT token set from session	ffaa4bb6-6b55-4aba-a158-636e5d847fba
+20240809	15:51:45	INFO	auth.api.authenticateJWT	JWT verified successfully	450a9462-6603-40fc-b8ee-72d492e80299
+20240809	15:51:45	INFO	post /search/filter	Filter applied	55eee431-2fa6-4bfd-a9e8-734b3483cd89	Filter Type: type	Filter Value: Cabernet Sauvignon
+20240809	15:51:45	INFO	post /search/filter	Filter completed	703569c1-3fd0-4168-ab35-9abdc37b46f1	Results: 23	Filter Type: type	Filter Value: Cabernet Sauvignon
+20240809	15:51:45	INFO	HTTP GET	/images/montelena.png	232903f4-d138-44c0-8126-6d4f17f4ccef
+20240809	15:51:45	ERROR	app.use 404	Page not found: /images/montelena.png	bd16e116-835a-45fc-a663-77893c827f0c
+20240809	15:51:45	INFO	HTTP GET	/images/caymus.png	946f3612-2da4-4c89-a767-3bacaaebc8c5
+20240809	15:51:45	ERROR	app.use 404	Page not found: /images/caymus.png	4cf0ba90-71aa-4299-bb3f-cdbdbc78044e
+20240809	15:52:00	INFO	HTTP POST	/search/filter	375c5951-2e35-4d64-b623-44c02bb52085
+20240809	15:52:00	INFO	auth.api.setToken	JWT token set from session	09b264e1-dcc7-49f0-bff4-afd60b51f36b
+20240809	15:52:00	INFO	auth.api.authenticateJWT	JWT verified successfully	3c37487e-a0a5-401e-bc8a-1a813f585508
+20240809	15:52:00	INFO	post /search/filter	Filter applied	3a65812e-bcba-4587-a769-8a7e257f1950	Filter Type: type	Filter Value: Chardonnay
+20240809	15:52:00	INFO	post /search/filter	Filter completed	fdf7320c-8400-4147-b8a4-5b3090ee4724	Results: 30	Filter Type: type	Filter Value: Chardonnay
+20240809	15:52:00	INFO	HTTP GET	/images/montelena.png	68e90cf5-146e-4906-94e9-c8fda5cbc6a1
+20240809	15:52:00	ERROR	app.use 404	Page not found: /images/montelena.png	16b5137e-f54d-4b0b-aedc-0c265e8373d4
+20240809	16:39:49	SUCCESS	app.listen	HTTP server successfully started.	add6fcda-be68-4c5d-8835-082cd48ddd9e
+20240809	16:41:55	INFO	HTTP GET	/api/full/m/Cabernet	829bde5b-9e82-4230-93d2-60a58163fb9b
+20240809	16:41:55	WARN	authMiddleware.setToken	No token found in session	b4b7eadc-30ab-41bb-a3d2-a178f9a7b68d
+20240809	16:41:55	WARN	authMiddleware.authenticateJWT	No authorization header found	5f107608-6d17-4874-a520-e98ec0d2060c
+20240809	16:41:55	INFO	HTTP GET	/api/full/p/Cabernet	b204ac37-3a9e-47d7-9c4e-0a0a6b2f9be5
+20240809	16:41:55	WARN	authMiddleware.setToken	No token found in session	c8c02d2c-c87e-4fe9-aa9c-60909d2c1a41
+20240809	16:41:55	WARN	authMiddleware.authenticateJWT	No authorization header found	630037b3-73f7-43ef-9e21-843bee3837a5

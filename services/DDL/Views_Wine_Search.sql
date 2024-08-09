@@ -52,7 +52,7 @@ FROM
 JOIN 
     Wine ON Reviews.WineID = Wine.WineID
 WHERE 
-    Wine.Winery = 'WineryNameHere';
+    Wine.Winery = 'Penfolds';
 
 -- Create view for ReviewsByWineName
 CREATE VIEW ReviewsByWineName AS
@@ -77,7 +77,7 @@ FROM
 JOIN 
     Wine ON Reviews.WineID = Wine.WineID
 WHERE 
-    Wine.Name = 'WineNameHere';
+    Wine.Name = 'Penfolds Grange 2016';
 
 -- Create view for WineByType
 CREATE VIEW WineByType AS
@@ -140,4 +140,4 @@ FROM
 	
 -- Select statement to view wines by country
 -- Replace 'CountryNameHere' with the actual country name
-SELECT * FROM WineByCountry WHERE Country = 'Australia';
+SELECT * FROM WineByCountry WHERE Country = 'Canada';
