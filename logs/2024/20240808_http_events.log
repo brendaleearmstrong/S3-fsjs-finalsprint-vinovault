@@ -1,0 +1,608 @@
+20240808	21:35:08	SUCCESS	app.listen	HTTP server successfully started.	dedc3ef5-f8a4-4c15-96d9-563f998e57fa
+20240808	21:35:14	INFO	HTTP GET	/	766acb0e-119a-4dc2-983e-759c7a64400c
+20240808	21:35:14	INFO	app.get /	Home page (index.ejs) was displayed.	261470e0-c926-48da-99fd-3596157ab058
+20240808	21:35:59	INFO	HTTP GET	/	19aa6b65-74b5-4623-9383-e7018dc9646a
+20240808	21:35:59	INFO	app.get /	Home page (index.ejs) was displayed.	80b42571-0388-47f4-9fe8-4c6fbea4e2ca
+20240808	21:41:09	INFO	HTTP GET	/auth/exit	9e12def3-25d7-46f8-b972-9dd21f28b51a
+20240808	21:41:09	SUCCESS	auth.get /exit	User logged out successfully.	699a777f-4a71-49db-a8a5-913d1818538c
+20240808	21:41:09	INFO	HTTP GET	/	42166acb-94bd-4c55-9076-dedcf2c289a0
+20240808	21:41:09	INFO	app.get /	Home page (index.ejs) was displayed.	c0307145-e7b8-42ad-8288-8181a3d5c973
+20240808	21:42:00	INFO	HTTP GET	/auth/	076eddcc-a09a-478c-9282-c2ee281a9623
+20240808	21:42:00	INFO	auth.get /	Login page displayed.	cd93ed9a-f7e8-402e-b693-87d53479e38a
+20240808	21:42:02	INFO	HTTP POST	/auth	c4dfbd52-3879-4ff7-aae6-853da3771ce6
+20240808	21:42:02	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	13bec37d-04a7-4e8d-a186-14f591643225
+20240808	21:42:02	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	51730507-1891-4251-9016-4267d1a35e7c
+20240808	21:42:02	INFO	HTTP GET	/search	71ad05d0-09d0-41b5-8212-dd21d673347e
+20240808	21:42:02	INFO	auth.api.setToken	JWT token set from session	94df11ca-3a62-4db7-9422-3c46ae2094e0
+20240808	21:42:02	INFO	auth.api.authenticateJWT	JWT verified successfully	0cb295c1-31ea-436d-949d-f4db829e9fba
+20240808	21:42:02	INFO	get /search	search page (search.ejs) was displayed.	c543ebe6-1f1f-4cea-958f-5277d32e49e4
+20240808	21:42:06	INFO	HTTP GET	/auth/exit	b19c516a-644b-4205-b311-29c51a76f452
+20240808	21:42:06	SUCCESS	auth.get /exit	User logged out successfully.	22ff3eaf-2ea9-4312-a4f2-768374343228
+20240808	21:42:06	INFO	HTTP GET	/	29f7046e-f6d2-429d-aafc-ee472273ac64
+20240808	21:42:06	INFO	app.get /	Home page (index.ejs) was displayed.	1cc8f5be-a915-434f-a852-df8cb9db692c
+20240808	21:42:11	INFO	HTTP GET	/auth/	42f24da6-8387-4eee-985f-13a6ed374b24
+20240808	21:42:11	INFO	auth.get /	Login page displayed.	5839b198-c24c-4222-91a1-50907344759a
+20240808	21:42:12	INFO	HTTP POST	/auth	9896b4fe-e58d-408f-8bcb-1947079f1c6e
+20240808	21:42:14	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	bf67bab7-453d-4ea5-9697-e3787f9f9afc
+20240808	21:42:14	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	d2d4371a-bd7d-48f1-b048-311483c652e9
+20240808	21:42:14	INFO	HTTP GET	/search	4f4bb06a-4729-4728-9d41-4667033c9ae8
+20240808	21:42:14	INFO	auth.api.setToken	JWT token set from session	00b4374d-9a45-4b7f-a493-6d03f74a8625
+20240808	21:42:14	INFO	auth.api.authenticateJWT	JWT verified successfully	fb99e493-6a04-47b4-ae28-0d6c30a21792
+20240808	21:42:14	INFO	get /search	search page (search.ejs) was displayed.	f61e8f94-df56-4931-99ce-0b99ac419691
+20240808	21:42:16	INFO	HTTP GET	/vault	1ebaa6ba-7725-4032-910c-71cb92298222
+20240808	21:42:16	INFO	authMiddleware.setToken	JWT token set from session	97ee605e-3116-49bc-a375-aed929ea1132
+20240808	21:42:16	INFO	authMiddleware.authenticateJWT	JWT verified successfully	ed71559a-47f3-492f-a2cb-e5f566587d80
+20240808	21:42:16	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	c7c67f17-b61b-4349-b9f7-757a2131de1c
+20240808	21:42:16	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	77bd0709-5692-47fc-a2fa-27e0250ebdb4
+20240808	21:42:16	INFO	HTTP GET	/images/chateau_desclans.png	cb906d86-7162-45cb-96db-c008cbe71dc4
+20240808	21:42:16	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	f2678cbc-8106-4117-83bf-a4d3fecb4e8f
+20240808	21:42:21	INFO	HTTP GET	/auth/exit	58554db4-55f0-4297-ba9c-587358b7c2fb
+20240808	21:42:21	SUCCESS	auth.get /exit	User logged out successfully.	36b76cb9-b8bc-4059-a7b3-d387be84ee03
+20240808	21:42:21	INFO	HTTP GET	/	d007151e-8d0f-4837-afd5-e2304c8c71ba
+20240808	21:42:21	INFO	app.get /	Home page (index.ejs) was displayed.	d0c576eb-d249-4937-8800-31d83d4120d2
+20240808	21:42:23	INFO	HTTP GET	/auth/	da378cb6-1398-4ad9-8429-776861e24bb5
+20240808	21:42:23	INFO	auth.get /	Login page displayed.	837a970c-b541-42b7-898b-486d4e7d9424
+20240808	21:42:24	INFO	HTTP POST	/auth	0692f146-26a3-4689-96ac-f32ff96580b0
+20240808	21:42:25	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	c382d891-a88f-4f7d-bffa-9cad6fe8777e
+20240808	21:42:25	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	7f03e7d1-d1c7-4642-96c7-ba153e810a6d
+20240808	21:42:25	INFO	HTTP GET	/search	16b98469-f96c-48c8-ba0a-f4c613836335
+20240808	21:42:25	INFO	auth.api.setToken	JWT token set from session	a12e73e0-6193-443b-a159-794fabe171b9
+20240808	21:42:25	INFO	auth.api.authenticateJWT	JWT verified successfully	f0f6a3e2-33b6-4802-8a1f-5af5b3b426a4
+20240808	21:42:25	INFO	get /search	search page (search.ejs) was displayed.	fba7bd69-a5bc-436d-a091-53d83a783e20
+20240808	21:42:46	INFO	HTTP GET	/about	379f78ae-e44c-438d-9738-192b3a638fba
+20240808	21:42:46	INFO	app.get /about	About page (about.ejs) was displayed.	38b1b0b4-1a15-4f90-a248-1ddad15bc214
+20240808	21:42:51	INFO	HTTP GET	/contact	389c10ab-1ab9-4459-867b-99d09ce38bcb
+20240808	21:42:51	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	172e1ac5-87d2-4940-9496-38c02ede3b2b
+20240808	21:42:53	INFO	HTTP GET	/	87108421-2712-4567-ba6e-cdcb206dfcff
+20240808	21:42:53	INFO	app.get /	Home page (index.ejs) was displayed.	82a4b750-f823-4fb1-b114-013953985140
+20240808	21:43:25	INFO	HTTP GET	/auth/	21405506-31bf-4fdb-a922-ae820b446651
+20240808	21:43:25	INFO	auth.get /	Login page displayed.	6a5cb737-3ede-443d-92ff-e21341951b17
+20240808	21:43:26	INFO	HTTP GET	/about	fb17c1af-8709-4cae-a59f-02613164406a
+20240808	21:43:26	INFO	app.get /about	About page (about.ejs) was displayed.	6eada9ec-486f-4d7f-81ac-50149de2aedb
+20240808	21:43:28	INFO	HTTP GET	/	447af53e-e0eb-4957-9263-c44ff03e9971
+20240808	21:43:28	INFO	app.get /	Home page (index.ejs) was displayed.	173b52b3-7a9e-4c49-bcff-45f41d535ac5
+20240808	21:43:29	INFO	HTTP GET	/contact	eba18776-6eee-4cf3-b626-13307d7202ba
+20240808	21:43:29	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	bd18afa0-6796-4d11-b7b1-535a06abe436
+20240808	21:43:33	INFO	HTTP GET	/	acaa84e6-35cc-4c6e-829e-9b237c1da72f
+20240808	21:43:33	INFO	app.get /	Home page (index.ejs) was displayed.	abbafbee-41ee-4357-b004-ad860bb2e30e
+20240808	21:43:34	INFO	HTTP GET	/auth/	b28e4552-67d1-4e35-856c-eb38336c12c6
+20240808	21:43:34	INFO	auth.get /	Login page displayed.	6dd19af3-3e17-42ac-9e13-cc09d668906f
+20240808	21:43:36	INFO	HTTP POST	/auth	4269ec24-a82a-422e-bd12-c6772f84a99b
+20240808	21:43:36	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	defa9aa3-8356-4ab9-9b86-43fdd1483499
+20240808	21:43:36	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	5b483ea4-a23b-416c-a798-f52259af64f8
+20240808	21:43:36	INFO	HTTP GET	/search	ce220850-ab09-4591-9fa3-5527cff33eda
+20240808	21:43:36	INFO	auth.api.setToken	JWT token set from session	44b2fe6e-41c5-440c-aa0d-ae55fc9a6fa5
+20240808	21:43:36	INFO	auth.api.authenticateJWT	JWT verified successfully	0b32bc93-7de7-42e6-b221-48a8d9424305
+20240808	21:43:37	INFO	get /search	search page (search.ejs) was displayed.	cc4c6d13-f196-4987-aea1-8d8c1cd201e6
+20240808	21:46:48	INFO	HTTP GET	/contact	cef10162-3a8e-474b-9e20-d31d737edf43
+20240808	21:46:48	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	7073de56-7b80-48d4-b14a-3181989914c9
+20240808	21:47:08	INFO	HTTP GET	/contact	02053c79-d839-4451-b397-bbcfa9bf8279
+20240808	21:47:08	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	7a887337-5c65-45f2-b259-5c8045851a79
+20240808	21:47:12	INFO	HTTP GET	/about	49d4c71b-3f59-4fbd-8626-6c5d3f6838d9
+20240808	21:47:12	INFO	app.get /about	About page (about.ejs) was displayed.	3934d25c-d21e-4588-9785-caf18efa86c9
+20240808	21:47:14	INFO	HTTP GET	/contact	3899c75f-96a8-4306-95ba-9870b5920224
+20240808	21:47:14	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	35977220-294f-4c8e-80dc-c79ca080825c
+20240808	21:53:10	INFO	HTTP GET	/contact	72183f97-5e63-41f4-8143-46438782606e
+20240808	21:53:10	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	4e151f39-168c-4695-97d6-982988a56d7f
+20240808	21:53:12	INFO	HTTP GET	/	f8ab6886-8cd4-4c4f-a486-2f1843b689b3
+20240808	21:53:12	INFO	app.get /	Home page (index.ejs) was displayed.	d9b592f6-f24b-4efc-b368-c7d745c45ecd
+20240808	21:53:14	INFO	HTTP GET	/auth/	bce67419-e154-490b-a441-9f305cfb7947
+20240808	21:53:14	INFO	auth.get /	Login page displayed.	87755b46-5e86-4fc7-aaab-a96205660ccf
+20240808	21:53:15	INFO	HTTP POST	/auth	6662a49b-8737-4b13-a344-8abf331eede8
+20240808	21:53:16	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	c404889c-35e3-4ba2-8161-e94764543196
+20240808	21:53:16	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	318a8be7-c81e-430d-86f5-82d482abf16b
+20240808	21:53:16	INFO	HTTP GET	/search	930538cb-7d4c-465b-8575-147c32adedb9
+20240808	21:53:16	INFO	auth.api.setToken	JWT token set from session	7a8bc62c-4a6f-4cfe-9772-e05ad2bc36fc
+20240808	21:53:16	INFO	auth.api.authenticateJWT	JWT verified successfully	caa2430a-6fb3-4598-a5a5-9def8af9631d
+20240808	21:53:16	INFO	get /search	search page (search.ejs) was displayed.	bc672d7a-feca-4185-9727-9951fa90e268
+20240808	21:53:18	INFO	HTTP GET	/about	159025be-c0d3-49f7-b714-8b4370418950
+20240808	21:53:18	INFO	app.get /about	About page (about.ejs) was displayed.	327172b9-11be-4438-a7de-75c76de1ce84
+20240808	21:53:20	INFO	HTTP GET	/contact	797180bf-a338-4215-99ac-01eae4bc87b9
+20240808	21:53:20	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	420bb00d-7ce9-485d-95f9-c7ffc8f53743
+20240808	21:54:09	INFO	HTTP GET	/contact	f959ae49-4310-4681-8eb6-055f57b10a4c
+20240808	21:54:09	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	cb15b02d-7f8e-47d7-b82c-3a8315ef6584
+20240808	21:55:18	INFO	HTTP GET	/about	6fb24960-334f-41a4-b153-3bd27b255a8c
+20240808	21:55:18	INFO	app.get /about	About page (about.ejs) was displayed.	9ddbfb8c-b6fa-41cf-89dc-59ed5e01f4e6
+20240808	21:55:45	INFO	HTTP GET	/about	7ea87044-8ad2-4bf4-b0c4-914e86ec8c2c
+20240808	21:55:45	INFO	app.get /about	About page (about.ejs) was displayed.	8520125c-6f96-44b1-8ebb-05d5c46b7d2b
+20240808	21:55:48	INFO	HTTP GET	/contact	639c0fb3-92ef-4e28-953c-5405ae2da2e7
+20240808	21:55:48	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	1bd0a677-ee46-4915-a888-03f5bffbee59
+20240808	21:55:51	INFO	HTTP GET	/about	a96bed71-4c7b-4178-9183-b02ab77d1221
+20240808	21:55:51	INFO	app.get /about	About page (about.ejs) was displayed.	72121f78-0896-4f32-874f-802a71650d4b
+20240808	21:56:01	INFO	HTTP GET	/contact	aa69e24c-fb78-471c-a10f-e72ef6b489cd
+20240808	21:56:01	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	80b7342e-6ad2-47e2-8fb1-2ba7fc703866
+20240808	21:56:04	INFO	HTTP GET	/	7c2382b5-b765-4ca4-b885-f80b515d525e
+20240808	21:56:04	INFO	app.get /	Home page (index.ejs) was displayed.	c9ae1f8c-eee5-4e76-adcd-ef07508efb50
+20240808	21:56:17	INFO	HTTP GET	/	e8efb5de-215e-48b8-92bb-502d2477843c
+20240808	21:56:17	INFO	app.get /	Home page (index.ejs) was displayed.	f81c0396-6dd6-41e6-af4c-3d3db0030eb1
+20240808	21:56:19	INFO	HTTP GET	/contact	b3432ac0-b8be-4b82-a088-05955607d29e
+20240808	21:56:19	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	783ea6db-c9dc-42cf-b758-1d2fe1cb3f03
+20240808	21:56:37	INFO	HTTP GET	/contact	7e2c06f1-34c6-4ac1-bdb8-f46a3e340b46
+20240808	21:56:37	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	08e7ab80-ea98-4dbe-bd41-1242ffee3016
+20240808	21:58:36	INFO	HTTP GET	/about	e1e4ec1b-4a3d-42cc-ab72-15b4df82c094
+20240808	21:58:36	INFO	app.get /about	About page (about.ejs) was displayed.	85fd1dfb-dafe-43a2-ae2e-89edafb672a7
+20240808	21:58:36	INFO	HTTP GET	/images/wine-tasting.jpg	739eafec-8e38-40b8-83fa-b862ca280d25
+20240808	21:58:36	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	c1e7b62b-0c6e-45ba-bcc9-fd4bd6edd000
+20240808	21:58:36	INFO	HTTP GET	/images/wine-cellar.jpg	92059c6a-d60e-4e81-a440-41fb05e4407d
+20240808	21:58:36	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	cd159750-8e42-4211-805c-9262068a5aa7
+20240808	21:58:36	INFO	HTTP GET	/images/vineyard-hero.jpg	a7a08d57-ea8e-45c9-812b-4a4c53eeb89a
+20240808	21:58:36	ERROR	app.use 404	Page not found: /images/vineyard-hero.jpg	95e5fc3c-08cd-48ea-9478-1c65ca537d38
+20240808	21:58:51	INFO	HTTP GET	/auth/new	a97c9d6e-2e0a-4937-9553-e92af1b5c465
+20240808	21:58:51	INFO	auth.get /new	Registration page displayed.	f7d3f570-ad4d-480f-8f89-9b763e589d46
+20240808	21:59:38	INFO	HTTP GET	/about	8c5778b2-cf55-4ea5-a1e0-1e69a99a99f0
+20240808	21:59:38	INFO	app.get /about	About page (about.ejs) was displayed.	a93da93c-78bd-4654-9b1b-d3e0787adedf
+20240808	21:59:38	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	373baa75-78c5-4c4a-b530-0eb07f4b8b02
+20240808	21:59:38	INFO	HTTP GET	/images/wine-tasting.jpg	c3b6ff59-2f1e-4304-a6c0-baa58de8d96c
+20240808	21:59:38	INFO	HTTP GET	/images/wine-cellar.jpg	2e34b744-316d-40bf-b6a7-320cdec859db
+20240808	21:59:38	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	12d0dc72-cf57-4e5a-802d-8ee2188d1404
+20240808	21:59:38	INFO	HTTP GET	/images/vineyard-hero.jpg	bc6ab083-b4c4-4556-ba14-1b49c4a14bad
+20240808	21:59:38	ERROR	app.use 404	Page not found: /images/vineyard-hero.jpg	dd05292a-d2b8-4d6d-b827-f722c253abf8
+20240808	22:01:07	INFO	HTTP GET	/about	42b950fd-961a-49f4-8bd5-7b266e6702ab
+20240808	22:01:07	INFO	app.get /about	About page (about.ejs) was displayed.	7fc268a8-fe63-40d3-b830-e8db698ec688
+20240808	22:01:07	INFO	HTTP GET	/images/wine-tasting.jpg	3bfe797a-5972-461c-9937-3c6a82e6a273
+20240808	22:01:07	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	3b5ebd4c-405f-413b-ad85-27b2aeee4012
+20240808	22:01:07	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	1d7a313f-a753-42bb-9f4c-cd712e61f1dd
+20240808	22:01:07	INFO	HTTP GET	/images/wine-cellar.jpg	a65ce347-d867-44fd-acb3-155cdda5fe8f
+20240808	22:03:56	INFO	HTTP GET	/about	7e6a955b-bf2f-41c8-9a80-adf5abfef5e5
+20240808	22:03:56	INFO	app.get /about	About page (about.ejs) was displayed.	876b5630-ecb7-4712-a1fe-dd877e0773e2
+20240808	22:03:56	INFO	HTTP GET	/images/wine-tasting.jpg	bb1623b3-d398-4ff4-a4dc-0a6bd685d193
+20240808	22:03:56	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	7b344825-f356-4857-9636-5bd30df1343c
+20240808	22:03:56	INFO	HTTP GET	/images/wine-cellar.jpg	c0fb7a10-3be4-472d-8adb-78048519fe06
+20240808	22:03:56	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	4b7b6af8-d1d4-43ff-90b2-3e872a776381
+20240808	22:03:58	INFO	HTTP GET	/	09f5e41a-099e-44d1-861c-620ace406ad6
+20240808	22:03:58	INFO	app.get /	Home page (index.ejs) was displayed.	870041c2-c748-483a-ae98-20b8f5e99eaa
+20240808	22:05:00	INFO	HTTP GET	/	d88dd303-3871-4daf-898e-9b4aa03d470d
+20240808	22:05:00	INFO	app.get /	Home page (index.ejs) was displayed.	ad0c77bf-ab77-4f90-b439-8082d790ccd3
+20240808	22:06:31	INFO	HTTP GET	/	1c619b4f-adce-4cc3-88de-4ae5c856686c
+20240808	22:06:31	INFO	app.get /	Home page (index.ejs) was displayed.	6678b1ad-0303-42ee-a552-aa6b01702805
+20240808	22:07:09	INFO	HTTP GET	/	14325786-bb2c-46bd-84d6-1a9ea057a127
+20240808	22:07:09	INFO	app.get /	Home page (index.ejs) was displayed.	e7c03025-277f-4e51-9a5a-6fb2b4db9aa7
+20240808	22:07:15	INFO	HTTP GET	/auth/	c654623d-48b6-4b0c-8292-cbc0d70d740d
+20240808	22:07:15	INFO	auth.get /	Login page displayed.	a8bb9a1c-a888-4dfa-8b9f-11915512e2ca
+20240808	22:07:16	INFO	HTTP POST	/auth	e89437ac-49c4-4a2f-82d4-f51dd62766e4
+20240808	22:07:17	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	00ad8c07-7753-41bd-ac51-b6aa36b5c6c9
+20240808	22:07:17	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	c98adc97-ea4f-42c3-acce-513208d92a13
+20240808	22:07:17	INFO	HTTP GET	/search	14958a84-617b-4a0b-8c1d-aaccca8234cd
+20240808	22:07:17	INFO	auth.api.setToken	JWT token set from session	57f771c7-241a-4d2f-b104-720270c7982b
+20240808	22:07:17	INFO	auth.api.authenticateJWT	JWT verified successfully	3074663c-1859-4fcc-afe9-187409979c8d
+20240808	22:07:17	INFO	get /search	search page (search.ejs) was displayed.	91964a52-d4ba-4818-aa22-a6be1e55daa5
+20240808	22:07:22	INFO	HTTP GET	/vault	2d5c7ed3-1cc1-4005-9183-12da7e834d86
+20240808	22:07:22	INFO	authMiddleware.setToken	JWT token set from session	17743b44-f291-44d6-9df6-f21f6471feb3
+20240808	22:07:22	INFO	authMiddleware.authenticateJWT	JWT verified successfully	0aca4961-924c-403e-922e-645962e7b00f
+20240808	22:07:23	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	fc968461-b5fb-448b-94b1-81d7b78615c9
+20240808	22:07:23	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	3f330648-cbcd-467c-93c0-49bbb052c9c7
+20240808	22:07:23	INFO	HTTP GET	/images/chateau_desclans.png	d54e2571-afdf-4a2c-817d-a8e03eac80b9
+20240808	22:07:23	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	822e8855-ec63-4f37-9627-e6b413d7a859
+20240808	22:08:11	INFO	HTTP GET	/vault	a2022165-7250-4210-9c28-589914efa442
+20240808	22:08:11	INFO	authMiddleware.setToken	JWT token set from session	9b6fbe3c-e9e4-412a-9772-ea02a7ea9d23
+20240808	22:08:11	INFO	authMiddleware.authenticateJWT	JWT verified successfully	9ab8674d-853a-42f9-857a-d22ff9073682
+20240808	22:08:11	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	4d8a277a-7efc-4a39-807d-3b6acf821c5c
+20240808	22:08:11	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	eec31d97-644f-4f3a-9b06-63eb0794333c
+20240808	22:08:11	INFO	HTTP GET	/images/chateau_desclans.png	3f3233c4-cb0f-44e6-9cb5-00ce38d6a3c6
+20240808	22:08:11	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	12bcfc02-46db-454b-a78b-257e8dbedda4
+20240808	22:09:20	INFO	HTTP GET	/about	37731dea-7f71-4d7e-9c89-b1646a932616
+20240808	22:09:20	INFO	app.get /about	About page (about.ejs) was displayed.	d6fe16c6-c30d-46c4-b889-57d905bbf03a
+20240808	22:09:20	INFO	HTTP GET	/images/wine-tasting.jpg	fc3d693c-fb5d-4f32-b588-e05888ba2707
+20240808	22:09:20	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	2d6c90ac-c4ab-4f77-b99c-6efae3da60c1
+20240808	22:09:20	INFO	HTTP GET	/images/wine-cellar.jpg	3fef5e96-d06b-49c0-8eb5-bba16bf74be2
+20240808	22:09:20	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	db8b9cb9-f70b-4cb5-bf92-2fa2e1e3d4e2
+20240808	22:09:24	INFO	HTTP GET	/contact	3882bab7-e2b0-4894-8018-3c888e99d5a1
+20240808	22:09:24	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	261b4f88-569a-4b34-bf2a-c67f0f96ffe1
+20240808	22:09:26	INFO	HTTP GET	/	0faccb82-69f5-4a84-9b19-bfc2875709cb
+20240808	22:09:26	INFO	app.get /	Home page (index.ejs) was displayed.	b92b7ccf-9907-48cc-8de3-a3164ec7375d
+20240808	22:09:29	INFO	HTTP GET	/about	e810e6a1-b197-4cba-8afb-b58308639f74
+20240808	22:09:29	INFO	app.get /about	About page (about.ejs) was displayed.	40892a82-d4cb-4831-94a2-605938518c74
+20240808	22:09:29	INFO	HTTP GET	/images/wine-tasting.jpg	d0983d09-b5da-4868-917d-96eee8c41ffc
+20240808	22:09:29	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	aee392ce-8909-4a47-94c4-234846247882
+20240808	22:09:29	INFO	HTTP GET	/images/wine-cellar.jpg	5f35d805-b6ef-41c9-90f1-82cf0097b9df
+20240808	22:09:29	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	918fd9e3-df7b-464a-874c-9d61f1715958
+20240808	22:09:31	INFO	HTTP GET	/contact	f76c84e3-2cd0-4160-b066-ed2c71ae0220
+20240808	22:09:31	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	ff6b7fa4-581a-4663-9ce0-eace2658a5a7
+20240808	22:09:33	INFO	HTTP GET	/	43c9b939-668a-47f4-9e4f-e027ca23f6a9
+20240808	22:09:33	INFO	app.get /	Home page (index.ejs) was displayed.	e2b5953d-9117-405a-93e8-166808556a64
+20240808	22:09:36	INFO	auth.get /	Login page displayed.	5f60748f-cb03-4f1a-a492-fe3bd5e45fc6
+20240808	22:09:36	INFO	HTTP GET	/auth/	bf1e80dc-a5c4-4234-9267-0e1cb1a3a5e2
+20240808	22:09:37	INFO	HTTP POST	/auth	d7598c7f-44fa-4f05-afc4-5d233596fefe
+20240808	22:09:37	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	852142b5-6258-4f57-a59f-32ed70519aba
+20240808	22:09:37	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	4e5c812d-225b-4037-b162-cb3ff3bd0107
+20240808	22:09:37	INFO	HTTP GET	/search	10f47c27-b406-4f39-8f69-e5ba40e09268
+20240808	22:09:37	INFO	auth.api.setToken	JWT token set from session	7984a46c-0916-412c-b774-19589583e9da
+20240808	22:09:37	INFO	auth.api.authenticateJWT	JWT verified successfully	fed358e6-464b-4df3-b38b-4a2d96b01909
+20240808	22:09:38	INFO	get /search	search page (search.ejs) was displayed.	ca23ac12-7a02-49d4-9783-dfde790b239d
+20240808	22:09:44	INFO	HTTP GET	/vault	f0c14514-d87e-4b19-aadc-d23a3c64fe1c
+20240808	22:09:44	INFO	authMiddleware.setToken	JWT token set from session	576032f7-cf4b-4d6b-839d-f74d93e77659
+20240808	22:09:44	INFO	authMiddleware.authenticateJWT	JWT verified successfully	dfa6da2c-1dd7-48b5-9a51-8812d49a4d2f
+20240808	22:09:44	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	8635ea72-bfe2-4e10-a444-0de38d1e5bf6
+20240808	22:09:44	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	408ca480-4199-4371-9658-a8682e6bdfa1
+20240808	22:09:45	INFO	HTTP GET	/images/chateau_desclans.png	5ac68388-b47b-496b-bcc8-2244fb5c6a87
+20240808	22:09:45	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	394336ac-370a-4249-9373-e096d8b01a91
+20240808	22:11:17	INFO	HTTP GET	/vault	ac5dd16a-47aa-4231-b52b-2de5ee15c358
+20240808	22:11:17	INFO	authMiddleware.authenticateJWT	JWT verified successfully	b092d387-427e-4572-a2e8-b034a4d87414
+20240808	22:11:17	INFO	authMiddleware.setToken	JWT token set from session	240ee499-e6f5-4631-a1a2-d9b1ccc2a101
+20240808	22:11:18	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	cc761d8e-e7f9-4337-9901-537c187cc2ff
+20240808	22:11:18	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	94c112d4-897a-4df5-9891-e78daefdcfaf
+20240808	22:11:18	INFO	HTTP GET	/images/chateau_desclans.png	23a02886-3853-4217-879b-e207e2b27c64
+20240808	22:11:18	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	16308500-4720-45e1-ae7d-da34d3ba51a8
+20240808	22:11:22	INFO	HTTP GET	/vault	b76fa4b3-a5e1-418e-a7dd-c7f48b4e02e7
+20240808	22:11:22	INFO	authMiddleware.setToken	JWT token set from session	a4113324-61e8-46ef-9a19-9eaba85db639
+20240808	22:11:22	INFO	authMiddleware.authenticateJWT	JWT verified successfully	2df4a2f8-9c8b-4a94-b810-37da8e5ed061
+20240808	22:11:22	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	88d06526-70bc-408a-b83f-b010010d8a18
+20240808	22:11:22	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	3616c5dd-debc-4d6e-b3dd-54519d0aeb48
+20240808	22:11:22	INFO	HTTP GET	/images/chateau_desclans.png	7b73c911-a340-42a6-9bd2-125e46bbb94f
+20240808	22:11:22	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	3d922ec4-8d1c-48ff-a8ea-9082ed8acd06
+20240808	22:11:23	INFO	HTTP GET	/auth/exit	68e3f82f-b542-40a5-b86c-cbd67fe4c924
+20240808	22:11:23	SUCCESS	auth.get /exit	User logged out successfully.	bcbcc528-e9e3-45da-ade0-60c871437a92
+20240808	22:11:23	INFO	HTTP GET	/	0c2ca064-7f30-4708-8c96-03908cae49d6
+20240808	22:11:23	INFO	app.get /	Home page (index.ejs) was displayed.	ea9d5dd3-b908-4258-9b94-7d2b446586d8
+20240808	22:12:52	INFO	HTTP GET	/	8e334af2-8c20-4414-865b-8aff6a52d7f3
+20240808	22:12:52	INFO	app.get /	Home page (index.ejs) was displayed.	af15112b-5887-4a69-95f2-f63e0569045c
+20240808	22:12:53	INFO	HTTP GET	/favicon.ico	0d7ed40b-3678-49f6-8c57-0f7b75f18bbe
+20240808	22:12:53	ERROR	app.use 404	Page not found: /favicon.ico	7a85563a-b605-4054-9c16-09161a2f1e4b
+20240808	22:12:55	INFO	HTTP GET	/auth/	ede529ef-9808-4c4b-a166-f28dfb70993d
+20240808	22:12:55	INFO	auth.get /	Login page displayed.	29cd9383-4d96-4004-9b20-4962b7a26f3b
+20240808	22:12:57	INFO	HTTP POST	/auth	36c481bf-c019-449b-900b-bba2e7824872
+20240808	22:12:58	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	21d1b3b5-dafd-488d-99bf-e6175358d05b
+20240808	22:12:58	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	e97675bc-48ce-4109-810a-0c38c42cae80
+20240808	22:12:58	INFO	HTTP GET	/search	609b35fb-2923-430e-8661-44e27af7cbe6
+20240808	22:12:58	INFO	auth.api.setToken	JWT token set from session	2a7635c1-ea8b-45bd-b803-77f86c52c8cb
+20240808	22:12:58	INFO	auth.api.authenticateJWT	JWT verified successfully	91b54d72-d46a-4b14-88ac-7ef8d72074ae
+20240808	22:12:58	INFO	get /search	search page (search.ejs) was displayed.	445f423a-5d05-4284-8e9b-16c96948ce54
+20240808	22:13:03	INFO	HTTP GET	/vault	176469d4-a07c-47ff-a3b3-c739fa504f83
+20240808	22:13:03	INFO	authMiddleware.setToken	JWT token set from session	c02624a8-8e7d-49a6-abdc-001ccd86ee1d
+20240808	22:13:03	INFO	authMiddleware.authenticateJWT	JWT verified successfully	b7030271-f7f5-458a-923f-3255452ffc26
+20240808	22:13:04	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	a9535a70-6888-4fd7-a251-8762118bdaa8
+20240808	22:13:04	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	354016d3-9ccf-45f6-b7f1-1c40b502e4aa
+20240808	22:13:04	INFO	HTTP GET	/images/chateau_desclans.png	25dcd551-5e01-4ab1-9fcc-ff1395a52192
+20240808	22:13:04	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	ef0adc26-f358-47ee-8c56-d2602824c3fa
+20240808	22:16:06	INFO	HTTP GET	/vault	2d53fe4f-5d34-4422-a030-27af0d6b89a6
+20240808	22:16:06	INFO	authMiddleware.setToken	JWT token set from session	63a834b9-c828-4910-90dd-822542c0e65c
+20240808	22:16:06	INFO	authMiddleware.authenticateJWT	JWT verified successfully	04ad6aaa-150f-466b-9455-331b6d004292
+20240808	22:16:07	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	243d52b4-5205-43f3-9a05-837dbd01972c
+20240808	22:16:07	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	7d7aac66-d05a-4e46-928d-856fcfc6c059
+20240808	22:16:07	INFO	HTTP GET	/images/chateau_desclans.png	7d84ae18-b876-477b-b7ff-6eff58b616c9
+20240808	22:16:07	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	84c79bde-7ae0-4515-840c-e270885fc311
+20240808	22:17:43	INFO	HTTP GET	/vault	cac8e2a5-c562-4040-9a06-1a395dc98899
+20240808	22:17:43	INFO	authMiddleware.setToken	JWT token set from session	02aa100d-d4f6-4c0a-82f9-1d4fe81c017c
+20240808	22:17:43	INFO	authMiddleware.authenticateJWT	JWT verified successfully	e0b83102-bcf6-457d-8528-0e73b8740c6e
+20240808	22:17:44	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	83b9ecf5-94fd-43af-af84-ddd2571cc9b3
+20240808	22:17:44	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	c4dd65d1-db8a-42e6-9c00-64dc27892a60
+20240808	22:17:44	INFO	HTTP GET	/images/chateau_desclans.png	af5d6346-7c37-4bae-9739-396f213444ad
+20240808	22:17:44	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	3b152076-2119-4ac3-97b8-89c0a8ec6124
+20240808	22:18:25	INFO	HTTP GET	/vault	e523fb28-2ba3-47c9-9c48-7c28677e176f
+20240808	22:18:25	INFO	authMiddleware.setToken	JWT token set from session	9f986dbb-f1eb-49ad-9b63-ebf1c5cd9f00
+20240808	22:18:25	INFO	authMiddleware.authenticateJWT	JWT verified successfully	fba49129-9f6b-4ca5-8ea1-dd95013cfd59
+20240808	22:18:26	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	35a4eb96-6ba0-40b7-b371-e81c68620f2d
+20240808	22:18:26	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	6d1d5e11-6f0b-4805-ba6d-abc6583b6772
+20240808	22:18:26	INFO	HTTP GET	/images/chateau_desclans.png	8ea5bdcb-810a-4a79-adf8-25755d0e0721
+20240808	22:18:26	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	94e542d8-ba98-4aa7-87ff-7c269baae363
+20240808	22:20:12	INFO	HTTP GET	/vault	fd9e527c-c7ff-422a-9951-8faf4ece3ef2
+20240808	22:20:12	INFO	authMiddleware.setToken	JWT token set from session	73741747-b981-40e0-bc7d-a4c41cb9df11
+20240808	22:20:12	INFO	authMiddleware.authenticateJWT	JWT verified successfully	5633b6d9-4e56-4a56-9f90-040a72ffdc81
+20240808	22:20:13	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	cb4af0a4-a631-42c2-ae74-d819f43e10fd
+20240808	22:20:13	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	2675db51-13bf-46e9-bee8-c3ab57e8d482
+20240808	22:20:13	INFO	HTTP GET	/images/chateau_desclans.png	99013ebb-80a7-454e-b889-3360192b6b5c
+20240808	22:20:13	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	6c57183a-ed56-4f83-8964-36ed27e90e2a
+20240808	22:20:15	INFO	HTTP GET	/vault	2a79da6a-9c94-4b63-98ce-e85f907487f1
+20240808	22:20:15	INFO	authMiddleware.authenticateJWT	JWT verified successfully	3bd1e770-9175-4e9a-8fbd-8dc99eb42eb3
+20240808	22:20:15	INFO	authMiddleware.setToken	JWT token set from session	10511867-47ae-4e75-89c3-c52ff91b6f58
+20240808	22:20:15	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	abd955ed-4a85-467b-9ec0-271d6c02df30
+20240808	22:20:15	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	fb53d3cb-09f2-442a-8588-2bdb2d6eb9ba
+20240808	22:20:15	INFO	HTTP GET	/images/chateau_desclans.png	bda7c94e-92b1-4753-aa06-46978cba2872
+20240808	22:20:15	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	fd8ce57f-c824-4e34-a05b-db36210d288c
+20240808	22:20:46	INFO	HTTP GET	/vault	e27ef5c2-1b61-4da6-9ec4-2a5823646973
+20240808	22:20:46	INFO	authMiddleware.setToken	JWT token set from session	953b2716-6120-4b1e-834e-4b82251528e1
+20240808	22:20:46	INFO	authMiddleware.authenticateJWT	JWT verified successfully	35d3dcfd-f5fe-4b87-9054-8d34d3aab8cc
+20240808	22:20:46	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	a0fcdcbb-3e22-4da6-8669-b936cf29dd27
+20240808	22:20:46	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	a64aef9a-0450-49b0-965e-3a7f303d4195
+20240808	22:20:46	INFO	HTTP GET	/images/chateau_desclans.png	ee3b6c1d-d6d9-4ea7-a4ca-c2e7dc026621
+20240808	22:20:46	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	468ad08e-394e-45c4-85fc-89eea208ddd7
+20240808	22:22:58	INFO	HTTP GET	/vault	550b2af0-1c71-411f-a79a-68126fae002b
+20240808	22:22:58	INFO	authMiddleware.setToken	JWT token set from session	029060b2-663b-4f61-9154-8917fc2e9570
+20240808	22:22:58	INFO	authMiddleware.authenticateJWT	JWT verified successfully	840dea53-23c0-42bc-94ad-0249b3be0609
+20240808	22:22:58	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	095be9b8-148f-47e6-bafa-5f81475a3422
+20240808	22:22:58	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	356efafb-26d4-49f8-bf01-be41ac561cf6
+20240808	22:22:59	INFO	HTTP GET	/images/chateau_desclans.png	222e3b18-4b75-44bf-8d36-50cedb91eaa8
+20240808	22:22:59	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	9e21e90d-9487-4c17-b144-a64542407dc8
+20240808	22:23:27	INFO	HTTP GET	/vault	0c8c79e9-afd6-4d93-9119-be41edaea54f
+20240808	22:23:27	INFO	authMiddleware.setToken	JWT token set from session	f6dbd4bf-3159-4dda-80aa-04982e72a26a
+20240808	22:23:27	INFO	authMiddleware.authenticateJWT	JWT verified successfully	61cb383e-77ba-49fd-a6e0-ad6a81d83ebc
+20240808	22:23:27	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	c307a06d-53f2-4b88-936d-2c851a51e5f6
+20240808	22:23:27	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	2dc0d9fa-a0fe-41eb-8477-c423d4d67ff5
+20240808	22:23:27	INFO	HTTP GET	/images/chateau_desclans.png	e3b48cb7-3a8d-43dd-8436-bd1845aa2ed7
+20240808	22:23:27	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	fe117ecf-3966-447b-b81d-2f7bc02805b5
+20240808	22:24:25	INFO	HTTP GET	/vault	e3d89b0c-c2fd-4804-8c17-a52ba7e71c23
+20240808	22:24:25	INFO	authMiddleware.setToken	JWT token set from session	6b85670c-cbd3-4535-9741-a0e622c83dd2
+20240808	22:24:25	INFO	authMiddleware.authenticateJWT	JWT verified successfully	1ef68aec-33b1-431c-8bd7-13801635e476
+20240808	22:24:26	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	6d3ef81e-458f-428f-8f35-226dd7dac708
+20240808	22:24:26	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	c94b4512-63ef-4c1d-82d3-a28bfc999903
+20240808	22:24:26	INFO	HTTP GET	/images/chateau_desclans.png	64186a54-8335-4ddf-9839-82b5e0477c27
+20240808	22:24:26	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	c0ebab48-6ec5-4274-ac6f-26730c70f82e
+20240808	22:24:56	SUCCESS	app.listen	HTTP server successfully started.	60e53159-9998-48ed-8567-1bde8fbe95bb
+20240808	22:25:00	INFO	HTTP GET	/	bc34fff3-6912-4690-b527-0d75d05aaf96
+20240808	22:25:00	INFO	app.get /	Home page (index.ejs) was displayed.	9dedb57c-99eb-4afe-a756-67f3e26a7503
+20240808	22:25:04	INFO	HTTP GET	/auth/	5ed8fde9-740a-4259-9103-8843fa1af626
+20240808	22:25:04	INFO	auth.get /	Login page displayed.	cc36d744-fd61-4744-896e-8206f17242ad
+20240808	22:25:06	INFO	HTTP POST	/auth	e13e90ba-d8b2-4090-9b9b-5bbe2be4d521
+20240808	22:25:06	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	188ccd1a-6893-4743-97ab-bab82ade232f
+20240808	22:25:06	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	c90e6fc6-9c67-423f-ac1b-0fd8c71908dd
+20240808	22:25:06	INFO	HTTP GET	/search	d826eec3-4b09-498a-9f76-178fa35518b7
+20240808	22:25:06	INFO	auth.api.setToken	JWT token set from session	84748ab3-ea22-4b7c-9f25-dbdda4b8a32f
+20240808	22:25:06	INFO	auth.api.authenticateJWT	JWT verified successfully	db99ab2d-e3e8-4a87-a9a1-132556ed7534
+20240808	22:25:06	INFO	get /search	search page (search.ejs) was displayed.	83cfcaaa-4314-4cb0-881c-03e12c15d059
+20240808	22:25:15	INFO	HTTP GET	/vault	c32880cc-2b79-43d2-bcb0-4d69ff38277b
+20240808	22:25:15	INFO	authMiddleware.setToken	JWT token set from session	bfb3dac6-859d-4189-a89e-3f11a70adc16
+20240808	22:25:15	INFO	authMiddleware.authenticateJWT	JWT verified successfully	eb536047-7608-4b0e-9978-11614acf1efe
+20240808	22:25:15	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	5aa9e09d-fd9f-40d9-a284-ff116d8371cd
+20240808	22:25:15	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	e799b633-7e69-4beb-a867-423588273354
+20240808	22:25:15	INFO	HTTP GET	/images/chateau_desclans.png	10c17db9-8ac5-4903-bea9-fa1ea4cf7269
+20240808	22:25:15	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	e6f71e6a-a31c-47da-8122-78ae2c04bb09
+20240808	22:25:55	INFO	HTTP GET	/auth/exit	efed68c5-3583-409e-82cf-6c70688efbc3
+20240808	22:25:55	SUCCESS	auth.get /exit	User logged out successfully.	b55019e4-9888-4a79-90a9-e1588b802e6f
+20240808	22:25:55	INFO	HTTP GET	/	1d35a12f-6f9c-44cb-86c6-0dee26b276c3
+20240808	22:25:55	INFO	app.get /	Home page (index.ejs) was displayed.	55640a18-3c5f-4845-bb83-cdbe1a32625b
+20240808	22:26:02	INFO	HTTP GET	/auth/new	a6c044a4-09e7-4b51-8ba7-0abac409b953
+20240808	22:26:02	INFO	auth.get /new	Registration page displayed.	045463d3-6a6f-422c-85ff-36bbbb894450
+20240808	22:44:54	INFO	HTTP GET	/about	c2d49c7b-9e8d-4bc7-aaed-164c8e1ef369
+20240808	22:44:54	INFO	app.get /about	About page (about.ejs) was displayed.	11e5c8bc-3325-42a6-aed4-bf2612480fdd
+20240808	22:44:54	INFO	HTTP GET	/images/wine-tasting.jpg	cdab2c45-38cc-45fc-9739-f61837c03424
+20240808	22:44:54	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	ae6f32ac-cb83-47d0-9f76-5e4370819b52
+20240808	22:44:54	INFO	HTTP GET	/images/wine-cellar.jpg	3e16a98f-5792-4c52-b846-120cfbc9efe9
+20240808	22:44:54	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	af10caf0-c165-4e2f-ad91-9986da6350d2
+20240808	22:44:58	INFO	HTTP GET	/contact	ad46a1be-4f01-418e-9c93-fd9294cd80d4
+20240808	22:44:58	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	00a646b1-5580-4028-9bef-93a5b895aaa4
+20240808	22:45:02	INFO	HTTP GET	/about	ca3075a3-adc1-42f5-b4b8-f020579f594b
+20240808	22:45:02	INFO	app.get /about	About page (about.ejs) was displayed.	0240a26e-796c-4d9c-8f2f-c804c78a3444
+20240808	22:45:02	INFO	HTTP GET	/images/wine-tasting.jpg	4598011a-b2d7-4b5c-9fd4-967aa69359cf
+20240808	22:45:02	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	38608bcf-003a-4e8f-906e-e5e3e184e052
+20240808	22:45:02	INFO	HTTP GET	/images/wine-cellar.jpg	517a83c4-a875-496a-b44c-b6b1c32a6392
+20240808	22:45:02	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	94292a41-98bb-41c3-808c-51e599f00fa7
+20240808	22:45:05	INFO	HTTP GET	/contact	cac9b808-b0b2-4081-aa36-8e48accc30da
+20240808	22:45:05	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	7268b916-9d4d-478b-a91c-c13da8cca961
+20240808	22:45:08	INFO	HTTP GET	/about	ac86ddf3-379a-4127-8081-f70eac7afbac
+20240808	22:45:08	INFO	app.get /about	About page (about.ejs) was displayed.	238b8d1f-967e-4791-ae8b-bf366230b81d
+20240808	22:45:08	INFO	HTTP GET	/images/wine-tasting.jpg	9009c2c0-37e0-49f8-83e7-99382104091b
+20240808	22:45:08	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	15c2aec0-0525-4155-83e4-4fc1550cd3f8
+20240808	22:45:08	INFO	HTTP GET	/images/wine-cellar.jpg	37e7b03b-e376-49ac-a258-706fc6b4d220
+20240808	22:45:08	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	7d195deb-32d7-403f-b188-08b229b1b759
+20240808	22:47:25	INFO	HTTP GET	/contact	952490e7-c001-4733-9110-09c871268e3d
+20240808	22:47:25	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	f19b0a6e-7595-455d-9b4d-65ff6f45cfc3
+20240808	22:47:29	INFO	HTTP GET	/	733022d3-6720-4159-bbfc-31b98e260d72
+20240808	22:47:29	INFO	app.get /	Home page (index.ejs) was displayed.	c89cc0a3-825e-4d33-8b08-b7310a119ab0
+20240808	22:47:32	INFO	HTTP GET	/auth/	0f9b1d40-207c-46ed-9e6a-2a29c1e7b52f
+20240808	22:47:32	INFO	auth.get /	Login page displayed.	1f092701-6401-44d4-8daf-ded1ead6c4bd
+20240808	22:49:04	INFO	HTTP GET	/auth/	b8d9c66a-b68f-4ce7-bebf-9665438ae095
+20240808	22:49:04	INFO	auth.get /	Login page displayed.	44f8fa93-1b06-4e14-97d9-32b9f35d7460
+20240808	22:49:10	INFO	HTTP GET	/auth/	827ac3a6-a2a3-450a-811c-998230331908
+20240808	22:49:10	INFO	auth.get /	Login page displayed.	b9873e69-4160-49ae-a29d-ff8018fa9806
+20240808	22:50:32	INFO	HTTP GET	/auth/	b9e62da0-2463-4deb-b5fc-531c7ec1c647
+20240808	22:50:32	INFO	auth.get /	Login page displayed.	ff34c0ea-cd78-4798-bf29-e8058001b092
+20240808	22:50:34	INFO	HTTP GET	/	25c7f57b-3801-4137-a1e4-e985f79c3667
+20240808	22:50:34	INFO	app.get /	Home page (index.ejs) was displayed.	28e02e06-c5d5-43ee-ad6a-200b9430b89e
+20240808	22:50:37	INFO	app.get /about	About page (about.ejs) was displayed.	95c16c40-32e1-430d-a166-77ab522c8ae1
+20240808	22:50:37	INFO	HTTP GET	/about	7cfe65c8-dbe9-43fb-a53b-761848655cb9
+20240808	22:50:37	INFO	HTTP GET	/images/wine-tasting.jpg	9c2383a3-2504-45aa-b9f9-b60ab420eaf8
+20240808	22:50:37	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	5219fa9e-cc48-4515-87c4-eaf1becd664d
+20240808	22:50:37	INFO	HTTP GET	/images/wine-cellar.jpg	ff4da85b-d636-4199-aac3-394fa7f68932
+20240808	22:50:37	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	b62930f6-90fa-4525-9c1d-77222c5a9369
+20240808	22:50:39	INFO	HTTP GET	/contact	477bcd45-45a8-4faa-ad8a-b3f071c36b8e
+20240808	22:50:39	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	d03a0433-5bb7-40f3-91bc-e925b1fcee92
+20240808	22:50:47	INFO	HTTP GET	/about	916b8a7e-c973-448d-8b72-f6745979d61d
+20240808	22:50:47	INFO	app.get /about	About page (about.ejs) was displayed.	b9b69068-1fbe-4174-8224-0b18e38c0748
+20240808	22:50:47	INFO	HTTP GET	/images/wine-tasting.jpg	cbbe73bb-ff0e-4891-b77f-9f73917b811a
+20240808	22:50:47	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	424121c1-26e2-4357-b1d5-b0026fa4b084
+20240808	22:50:47	INFO	HTTP GET	/images/wine-cellar.jpg	34acca27-4a6f-4aeb-9d66-e331edf092c5
+20240808	22:50:47	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	85b4426e-36b6-4fd5-a442-a7940d384373
+20240808	22:50:50	INFO	HTTP GET	/	9167c9c2-607f-4a5c-b426-ec0a6c3db2c0
+20240808	22:50:50	INFO	app.get /	Home page (index.ejs) was displayed.	e74b5048-9170-492f-b46c-f8ba6b852e1e
+20240808	22:50:52	INFO	HTTP GET	/auth/	bad0d0f5-8277-4806-b6f0-8262b0b1dfcd
+20240808	22:50:52	INFO	auth.get /	Login page displayed.	a64ebfb8-3fc4-4571-8614-834239122e3d
+20240808	22:53:16	INFO	HTTP GET	/	e703dbd7-b465-4e54-ac88-c73a29b92571
+20240808	22:53:16	INFO	app.get /	Home page (index.ejs) was displayed.	49278009-9061-465b-9efb-f14c9e33489d
+20240808	22:53:18	INFO	HTTP GET	/about	5f636d47-fb37-4dae-aeee-dc9a438b2641
+20240808	22:53:18	INFO	app.get /about	About page (about.ejs) was displayed.	69057c9e-0a39-4804-9f86-ff4c5eaac021
+20240808	22:53:18	INFO	HTTP GET	/images/wine-tasting.jpg	3384ccd4-fef1-4c1c-9a31-5406fb28e4bf
+20240808	22:53:18	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	b8d0268a-013d-4aea-a296-ca4308c77eef
+20240808	22:53:18	INFO	HTTP GET	/images/wine-cellar.jpg	e5af85df-52ef-4bad-9f37-b88bcd7ac36e
+20240808	22:53:18	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	37a15249-6f56-49d3-b1ee-5e54504fcd98
+20240808	22:53:20	INFO	HTTP GET	/contact	400956d8-2e6b-4d6c-800c-b27289e91013
+20240808	22:53:20	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	b6c7157d-697d-4040-8012-e5bc7e88af59
+20240808	22:53:28	INFO	HTTP GET	/	3e668503-423f-481d-8457-b3b449e5bc11
+20240808	22:53:28	INFO	app.get /	Home page (index.ejs) was displayed.	56e3fa41-ca2c-446c-be99-6d2591cfecac
+20240808	22:53:30	INFO	HTTP GET	/auth/	623d5e69-3e9f-47f6-8f1e-b1e1df9f9904
+20240808	22:53:30	INFO	auth.get /	Login page displayed.	e16a4850-40a0-4dbc-915c-8a8d4938dbe2
+20240808	22:53:31	INFO	HTTP POST	/auth	eaca1e58-c7a4-432f-954b-b1683fcb5501
+20240808	22:53:31	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	1220241b-c0fc-4629-9073-ac66b54b3e5a
+20240808	22:53:32	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	31493ced-5657-499a-90bc-9a8e0b73abbc
+20240808	22:53:32	INFO	HTTP GET	/search	54049550-118d-4737-82f3-1c0295a80777
+20240808	22:53:32	INFO	auth.api.setToken	JWT token set from session	58b2ea2f-cd5d-431c-ae67-cb17a6f69c44
+20240808	22:53:32	INFO	auth.api.authenticateJWT	JWT verified successfully	37bd1510-4eaf-4841-af1a-30eab3b83455
+20240808	22:53:32	INFO	get /search	search page (search.ejs) was displayed.	d8095bd5-a6db-406a-a015-27aedbfdd04f
+20240808	22:53:36	INFO	HTTP GET	/vault	9821a419-6fe5-41d3-b221-977f31ef32c5
+20240808	22:53:36	INFO	authMiddleware.setToken	JWT token set from session	1c120a96-b256-4f5a-96d2-65479c548f64
+20240808	22:53:36	INFO	authMiddleware.authenticateJWT	JWT verified successfully	c5839c79-e891-4374-ba00-e3ec30384171
+20240808	22:53:37	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	6102fdd8-fa7f-4b76-97c2-d13ede9a7e91
+20240808	22:53:37	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	67caa998-7636-43ef-ab04-36855d611de5
+20240808	22:53:37	INFO	HTTP GET	/images/chateau_desclans.png	bfc4e63b-3b44-4f80-8e7f-7d7b6b7a5fd4
+20240808	22:53:37	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	79661f52-fba2-4d41-b990-f237a8b86d60
+20240808	22:53:54	INFO	HTTP GET	/about	653a832d-7784-4ee2-afff-79cb1ab54d89
+20240808	22:53:54	INFO	app.get /about	About page (about.ejs) was displayed.	b68b58d3-b264-4507-aa8f-07e86d4f9c24
+20240808	22:53:54	INFO	HTTP GET	/images/wine-tasting.jpg	93286ab4-fe94-4e97-902f-f13477ba2c7a
+20240808	22:53:54	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	976e7931-003d-44bf-ae54-ab8af932b9fa
+20240808	22:53:54	INFO	HTTP GET	/images/wine-cellar.jpg	15691136-5a60-4a0c-8ae5-a114837648a5
+20240808	22:53:54	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	2b926fac-3c7f-47c8-8611-fa158aa358b8
+20240808	22:53:56	INFO	HTTP GET	/contact	bbf0b9ba-2160-42ac-820e-206e88065d67
+20240808	22:53:56	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	95853b85-db13-4c44-86e6-04215b5b8ada
+20240808	22:53:57	INFO	HTTP GET	/contact	841f8a39-edcd-4978-9718-297d5bb4c0b7
+20240808	22:53:57	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	16fca339-ee2d-4022-9cfd-8d413f4418fa
+20240808	22:53:58	INFO	HTTP GET	/	10f3ddad-c5ac-45d7-99e7-25ec6844b7dc
+20240808	22:53:58	INFO	app.get /	Home page (index.ejs) was displayed.	5614268c-57d9-49bd-a91d-08f2d6298a85
+20240808	22:54:01	INFO	HTTP GET	/auth/	ebe10f4a-fcca-4371-a78d-5a8ae56507a7
+20240808	22:54:01	INFO	auth.get /	Login page displayed.	93340de5-4591-4332-ac8c-aa608522d174
+20240808	22:54:40	INFO	HTTP GET	/auth/	7d108b0e-ee36-4e7e-85f7-4013a9de60fc
+20240808	22:54:40	INFO	auth.get /	Login page displayed.	d2b93d89-9e34-439d-adcd-0e921410c1d9
+20240808	22:55:16	INFO	HTTP GET	/auth/	231a0bac-b3f9-4c26-b220-6b330b2d71c7
+20240808	22:55:16	INFO	auth.get /	Login page displayed.	f34a2988-2eeb-422e-9837-fc305296ee4a
+20240808	22:55:18	INFO	HTTP GET	/auth/	feaa5174-88fc-4a68-9722-3fc2370ce3e0
+20240808	22:55:18	INFO	auth.get /	Login page displayed.	dad1e54f-2edd-406d-9a2b-b34e5beb53e8
+20240808	22:56:07	INFO	HTTP GET	/auth/	f6445f6f-6aac-47e2-b0a9-c3dea2e6e3f3
+20240808	22:56:07	INFO	auth.get /	Login page displayed.	10a45942-566f-442e-9728-0aaf4aeb35f9
+20240808	22:57:22	INFO	HTTP GET	/auth/	cb993342-f537-4ace-9f17-03987f28f10c
+20240808	22:57:22	INFO	auth.get /	Login page displayed.	3836bab8-99cc-4cb3-b63d-5632796aa55e
+20240808	22:57:27	INFO	HTTP GET	/auth/	6cc5663b-da0c-4d33-ba84-0cac36fab02a
+20240808	22:57:27	INFO	auth.get /	Login page displayed.	e3e2d903-6c99-4344-aa8b-37e42cc0c586
+20240808	22:57:33	INFO	HTTP GET	/auth/new	ae721433-6a56-4e5b-a010-2047b3fc365a
+20240808	22:57:33	INFO	auth.get /new	Registration page displayed.	f6642c6c-ba47-42ef-b079-2116bc1b6339
+20240808	22:57:45	INFO	HTTP GET	/about	ef1906dc-6a5f-473e-8ee5-aaac99e62980
+20240808	22:57:45	INFO	app.get /about	About page (about.ejs) was displayed.	90e0daeb-93c5-4e9d-8f70-24bf506b52e5
+20240808	22:57:45	INFO	HTTP GET	/images/wine-tasting.jpg	6d23b470-cd4b-4495-a057-27e9bf688080
+20240808	22:57:45	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	bb279272-ffb9-4a92-a5f9-d0a660a7a5f9
+20240808	22:57:45	INFO	HTTP GET	/images/wine-cellar.jpg	40ff0699-4740-41c7-8602-c0da1d709ffa
+20240808	22:57:45	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	04f4d960-c11c-4118-abc6-f8346d1a3231
+20240808	22:59:57	INFO	HTTP GET	/auth/new	51174e15-0e56-4a02-b1cb-293fa5949066
+20240808	22:59:57	INFO	auth.get /new	Registration page displayed.	ca18bbe2-66a7-4a34-af38-f657c72d1a0b
+20240808	23:00:01	INFO	HTTP GET	/auth/	975eb928-9cd8-4a84-9448-4d65da84c6b3
+20240808	23:00:01	INFO	auth.get /	Login page displayed.	2989d0aa-c47a-4ceb-9727-f75fe1a04bb9
+20240808	23:01:15	INFO	HTTP GET	/auth/	4f211ad4-8f01-4e35-b7b5-49e288d9e429
+20240808	23:01:16	INFO	auth.get /	Login page displayed.	007415f3-77b4-4981-a830-d1076e2e8f3f
+20240808	23:02:48	INFO	HTTP GET	/auth/	b136b9f8-4195-4902-a806-8181c4713249
+20240808	23:02:48	INFO	auth.get /	Login page displayed.	734f1f4b-8ecc-4627-9b2b-640418c8ac40
+20240808	23:02:48	INFO	HTTP GET	/styles/footer.css	9997d310-f48e-4ca8-87e2-29f6d0397c5a
+20240808	23:02:48	ERROR	app.use 404	Page not found: /styles/footer.css	427e0cd8-0c12-45d4-b18c-d54bad515c9e
+20240808	23:04:30	INFO	HTTP GET	/auth/	179fc539-e1db-4690-90cf-902fe4437539
+20240808	23:04:30	INFO	auth.get /	Login page displayed.	c5b91bed-df6d-4331-a357-0fd9cc42fefa
+20240808	23:04:30	INFO	HTTP GET	/styles/footer.css	49a6c39c-012b-4a90-b3df-0f82cb7f3668
+20240808	23:04:30	ERROR	app.use 404	Page not found: /styles/footer.css	62b463a5-7965-4baa-8ec2-e7b3df32dab7
+20240808	23:04:37	INFO	HTTP GET	/	87057ba7-c4f2-4e1c-9f1c-f6ed8a0ade61
+20240808	23:04:37	INFO	app.get /	Home page (index.ejs) was displayed.	9a20e65f-8dc2-4f19-8036-6a4a285ba8a1
+20240808	23:04:41	INFO	HTTP GET	/auth/new	cecc8e6d-4984-453f-94c9-101b926a6b98
+20240808	23:04:41	INFO	auth.get /new	Registration page displayed.	cd334310-92f2-4e3e-85b0-c9bdfa4cbba7
+20240808	23:04:41	INFO	HTTP GET	/styles/footer.css	20003c1a-9995-45e7-b756-fdf772db3c72
+20240808	23:04:41	ERROR	app.use 404	Page not found: /styles/footer.css	010a7d81-e63b-4f9b-97b5-9e018d4c643b
+20240808	23:04:58	INFO	HTTP GET	/auth/	389b6bd2-af3c-49f4-b2bd-bdac49f8e444
+20240808	23:04:58	INFO	auth.get /	Login page displayed.	b50a74b3-ef76-4e76-9262-400f0cec7df0
+20240808	23:04:58	INFO	HTTP GET	/styles/footer.css	e8748496-ee28-42e5-a626-584be69e0221
+20240808	23:04:58	ERROR	app.use 404	Page not found: /styles/footer.css	439b91c7-6509-44f8-835c-1c733621c476
+20240808	23:05:02	INFO	HTTP GET	/auth/	149848ed-04af-43db-9327-d6db6055d07b
+20240808	23:05:02	INFO	auth.get /	Login page displayed.	80f5ab2a-af68-42e0-99df-73b7f4527e9c
+20240808	23:05:02	INFO	HTTP GET	/styles/footer.css	8b147103-33f2-437f-89c0-4b50e6800880
+20240808	23:05:02	ERROR	app.use 404	Page not found: /styles/footer.css	aa594fa9-c212-438e-a3cd-0bb59f8e9945
+20240808	23:05:03	INFO	HTTP POST	/auth	4aede3ed-e8be-442f-8ca5-50aac7e92dd1
+20240808	23:05:04	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	ab243191-34f1-4d18-abc3-78fd3864e6c7
+20240808	23:05:04	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	f7035813-325b-44de-a42b-13623d86d626
+20240808	23:05:04	INFO	HTTP GET	/search	5bacca2e-ed1e-48f8-bb19-6187ece822fa
+20240808	23:05:04	INFO	auth.api.setToken	JWT token set from session	b98c9b77-2297-4bf5-9b4f-08e90a62d852
+20240808	23:05:04	INFO	auth.api.authenticateJWT	JWT verified successfully	7dcd7118-3d5f-4889-886b-55f5a7e57f3e
+20240808	23:05:04	INFO	get /search	search page (search.ejs) was displayed.	a8adc07c-ff72-4da4-900a-bf6f57cc08d7
+20240808	23:05:08	INFO	HTTP GET	/vault	0df46630-bb97-44b8-9e4a-79c44cbe5636
+20240808	23:05:08	INFO	authMiddleware.setToken	JWT token set from session	ab324d43-a3e5-40da-ad7f-1879a259919d
+20240808	23:05:08	INFO	authMiddleware.authenticateJWT	JWT verified successfully	b783fcc0-4bd1-404e-83b0-1cfe6e9e15b2
+20240808	23:05:09	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	4e168ccf-fc8e-414a-93dd-cfff1c0b3881
+20240808	23:05:09	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	1021d6f5-6431-4449-bc71-d4aec6a19004
+20240808	23:05:09	INFO	HTTP GET	/images/chateau_desclans.png	e61e04f6-9b4a-432f-a9e9-946372cf478c
+20240808	23:05:09	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	f887e5b5-6faf-4ad3-a087-cd1457e69db9
+20240808	23:06:07	INFO	HTTP GET	/	e372aee9-e66d-4f18-b224-b426999cc8af
+20240808	23:06:07	INFO	app.get /	Home page (index.ejs) was displayed.	8d5ad699-fcb1-4463-956a-c0b3b08bab79
+20240808	23:06:13	INFO	HTTP GET	/auth/new	502ef67d-b2bf-41ad-ab72-b1df8ac3ef74
+20240808	23:06:13	INFO	auth.get /new	Registration page displayed.	d5e969d2-7bfa-45c6-b5c2-1a584de07b9e
+20240808	23:06:13	INFO	HTTP GET	/styles/footer.css	70ed5115-0089-4f3a-ba33-3fb3bfd49424
+20240808	23:06:13	ERROR	app.use 404	Page not found: /styles/footer.css	8ba4c5b8-4a5d-49b1-91d2-b4f94454e390
+20240808	23:06:20	INFO	HTTP GET	/auth/	2af2c40f-f0dd-4001-91cc-5e86688adef8
+20240808	23:06:20	INFO	auth.get /	Login page displayed.	a825e351-f287-475b-9f93-7465b96b0d6d
+20240808	23:06:20	INFO	HTTP GET	/styles/footer.css	732353b3-e345-49b8-8ae8-de2bd4719e7a
+20240808	23:06:20	ERROR	app.use 404	Page not found: /styles/footer.css	287ede67-2eae-4f4e-973e-df5f71789512
+20240808	23:06:23	INFO	HTTP POST	/auth	d5d8b897-d955-4209-89a6-838f2d9cb064
+20240808	23:06:23	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	ee52ed46-961b-4c88-9e09-5a2e2330a9fe
+20240808	23:06:23	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	8e9fb1bc-bc6f-4ff7-ac31-10b4057c283f
+20240808	23:06:23	INFO	HTTP GET	/search	d7f8f17a-d3af-4d7c-8ab1-9ecf16799f93
+20240808	23:06:23	INFO	auth.api.setToken	JWT token set from session	578619d0-22e8-4877-b20d-562360584497
+20240808	23:06:23	INFO	auth.api.authenticateJWT	JWT verified successfully	8110e519-0853-4ac4-bb9c-b86bcf159783
+20240808	23:06:23	INFO	get /search	search page (search.ejs) was displayed.	14785f9b-4556-4ead-87d9-37ac714e2db0
+20240808	23:06:34	INFO	HTTP GET	/about	cc4725f7-e73b-40d9-82ef-701f2148024a
+20240808	23:06:34	INFO	app.get /about	About page (about.ejs) was displayed.	e4582fb4-58d7-46be-a507-80fd97d2575e
+20240808	23:06:34	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	dd0e4503-844d-48ff-aa17-2fb234fed219
+20240808	23:06:34	INFO	HTTP GET	/images/wine-tasting.jpg	d1491352-403b-44e4-b1ff-7fbc11ee67b3
+20240808	23:06:34	INFO	HTTP GET	/images/wine-cellar.jpg	58f1563c-e42c-4a10-9f7c-a8db0854e471
+20240808	23:06:34	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	1ec8549f-0cb7-4849-8374-61911e0bc3f6
+20240808	23:06:41	INFO	HTTP GET	/vault	58081ff8-3d4a-44d8-bb31-1cde79984472
+20240808	23:06:41	INFO	authMiddleware.authenticateJWT	JWT verified successfully	a63345fb-4587-45cf-905b-0169e8c6e477
+20240808	23:06:41	INFO	authMiddleware.setToken	JWT token set from session	8e35248d-2bc1-42ab-8f4a-744dc73e59db
+20240808	23:06:42	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	0d2bde55-8c6b-42d1-b805-0c7be1a14b70
+20240808	23:06:42	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	df7317b4-ffa3-4bc9-af43-75d0c55497e8
+20240808	23:06:42	INFO	HTTP GET	/images/chateau_desclans.png	c426b5f8-019b-4421-92a7-e189d5a2a8b5
+20240808	23:06:42	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	9663dc0c-1a78-4264-a188-52dda2c7b9ef
+20240808	23:06:47	INFO	HTTP GET	/about	ccc334f3-4850-4664-9a08-8fc183a55597
+20240808	23:06:47	INFO	app.get /about	About page (about.ejs) was displayed.	4e77c3a7-e615-4f6b-9478-b284009dd33e
+20240808	23:06:47	INFO	HTTP GET	/images/wine-tasting.jpg	ba113db8-e294-4338-9312-c4fe4d8a75ba
+20240808	23:06:47	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	c9ec3036-09be-49c1-96cb-2a3050cdae06
+20240808	23:06:47	INFO	HTTP GET	/images/wine-cellar.jpg	3068cfcd-ca1e-4d4a-879a-249b5cef0618
+20240808	23:06:47	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	bd0e8164-1b86-4525-ab6a-c930520b73aa
+20240808	23:06:52	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	d5315f4b-6326-47bc-a2b7-ac8a8b5f41cc
+20240808	23:06:52	INFO	HTTP GET	/contact	36490515-51b1-4e6d-8ffa-5801ea85f4dc
+20240808	23:07:04	INFO	HTTP POST	/search/filter	65dd0cd7-00cc-43f8-9158-4b925f2b8262
+20240808	23:07:04	INFO	auth.api.setToken	JWT token set from session	b98db92c-a8aa-4bf1-a233-37d9d2739ba4
+20240808	23:07:04	INFO	auth.api.authenticateJWT	JWT verified successfully	d38b7e22-eba6-488b-ad13-79d7cdfc66bd
+20240808	23:07:04	INFO	post /search/filter	filter results displayed.	d4c2f7bb-134b-45ce-b643-ce125a5b00f2
+20240808	23:07:04	INFO	HTTP GET	/images/montelena.png	d73e282e-aa0d-4cfc-9eaa-a694153aa76a
+20240808	23:07:04	ERROR	app.use 404	Page not found: /images/montelena.png	dc1081dc-ea61-447f-b5f4-7bf74168ab24
+20240808	23:07:09	INFO	HTTP GET	/vault	99f09f80-a6c4-45d8-be1f-2b3151537cfe
+20240808	23:07:09	INFO	authMiddleware.setToken	JWT token set from session	879c0a89-f578-4202-90a7-b02efcaeb1e1
+20240808	23:07:09	INFO	authMiddleware.authenticateJWT	JWT verified successfully	9ad4f139-cc7e-450f-a393-7fd2e222b937
+20240808	23:07:10	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	abe3e11b-d50c-4be7-92c1-7dcdeb037ff3
+20240808	23:07:10	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	0df60652-2871-411a-9aa8-b9fd61833911
+20240808	23:07:10	INFO	HTTP GET	/images/chateau_desclans.png	edd606d7-386e-4f0c-bfdf-99f7e995116e
+20240808	23:07:10	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	93fd58a6-d642-40d4-b122-d967fdcdc9fa
+20240808	23:07:45	INFO	HTTP POST	/auth	2788c378-b8aa-4bdd-8e36-c7546c7fdf50
+20240808	23:07:46	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	35392584-420a-4f7a-802a-42ebef3c3180
+20240808	23:07:46	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	29d25eaa-ebf2-4156-b7eb-65daef4ea134
+20240808	23:07:46	INFO	HTTP GET	/search	a07fe115-887c-47a0-a485-168db23c78df
+20240808	23:07:46	INFO	auth.api.setToken	JWT token set from session	273d54eb-ead8-4077-8c5a-c0b7bc69847a
+20240808	23:07:46	INFO	auth.api.authenticateJWT	JWT verified successfully	888978e9-496f-4f11-b98c-12f758243b2f
+20240808	23:07:46	INFO	get /search	search page (search.ejs) was displayed.	f60aaae2-e26d-48d5-9c1e-9fce62206679
+20240808	23:09:15	INFO	HTTP GET	/vault	484314af-6a2b-474b-acb7-2ea3a3e8410b
+20240808	23:09:15	INFO	authMiddleware.setToken	JWT token set from session	1207c4c3-21ed-418e-b226-0de1a151fab8
+20240808	23:09:15	INFO	authMiddleware.authenticateJWT	JWT verified successfully	b30e7643-6daf-4ac7-8c35-4130904f00d2
+20240808	23:09:16	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	5fee88b8-9392-47b3-a62f-4c4682882879
+20240808	23:09:16	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	7ee8a065-4322-4c5e-9c77-944c677dd873
+20240808	23:09:16	INFO	HTTP GET	/images/chateau_desclans.png	15447eb1-e401-47c5-ac55-daa74c6257a4
+20240808	23:09:16	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	592105c8-f9b5-4cd4-a704-7f3d9d7974e8
+20240808	23:16:40	INFO	HTTP POST	/search/filter	e427ea8a-4b1c-4a42-99ec-b8506666f176
+20240808	23:16:40	INFO	auth.api.setToken	JWT token set from session	0d27e009-de23-425b-b871-13dbe2f4e542
+20240808	23:16:40	INFO	auth.api.authenticateJWT	JWT verified successfully	b72f5e08-b6d5-49df-bed6-47a5a7f69ed5
+20240808	23:16:40	INFO	post /search/filter	filter results displayed.	863c5037-d096-461c-b40c-115cf84bacdf
+20240808	23:52:32	SUCCESS	app.listen	HTTP server successfully started.	ffd8fcc5-f57d-46a6-aa49-5dcb3174f15b
+20240808	23:52:37	INFO	HTTP GET	/	59a3fef7-ee3c-4a17-9dc0-8072ee3483d6
+20240808	23:52:37	INFO	app.get /	Home page (index.ejs) was displayed.	74906018-92fb-4b16-bd5c-a2dfcda14071
+20240808	23:52:38	INFO	HTTP GET	/favicon.ico	c88bb8a9-9057-427a-9924-505ed80fb7ea
+20240808	23:52:38	ERROR	app.use 404	Page not found: /favicon.ico	a82b9978-8765-4c17-862b-3266dff479d9
+20240808	23:52:40	INFO	HTTP GET	/auth/	83a1fb45-9ca6-428f-94ac-24000707395b
+20240808	23:52:40	INFO	auth.get /	Login page displayed.	40f1526c-03ba-480e-97dd-c64fbac22611
+20240808	23:52:40	INFO	HTTP GET	/styles/footer.css	4625d052-af8f-432d-b7b0-04749af6249f
+20240808	23:52:40	ERROR	app.use 404	Page not found: /styles/footer.css	0cb8a153-9fa0-406b-a8d9-ada813fea03d
+20240808	23:52:42	INFO	HTTP POST	/auth	8318ff44-1a4e-4650-84f8-e6d49921249b
+20240808	23:52:42	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	0f85f9bf-7dec-4c37-8811-0553873c3b9c
+20240808	23:52:43	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	1fc043b5-efd4-4dfe-af86-b203f284989c
+20240808	23:52:43	INFO	HTTP GET	/search	df67ba21-17f9-49f4-a46e-30ac82e5d72d
+20240808	23:52:43	INFO	auth.api.setToken	JWT token set from session	3be4cda8-3c6e-4c49-926a-2f1e4bd91859
+20240808	23:52:43	INFO	auth.api.authenticateJWT	JWT verified successfully	e57ee2e6-e24d-4b79-b5c6-471bafb5d978
+20240808	23:52:43	INFO	get /search	search page (search.ejs) was displayed.	b0fbbf05-3831-4862-9b39-418e90c33b36
+20240808	23:52:47	INFO	HTTP POST	/search/filter	9e3215f7-5370-4b44-8912-4683af13498d
+20240808	23:52:47	INFO	auth.api.setToken	JWT token set from session	228cf807-228a-45cd-bec6-e57d22412794
+20240808	23:52:47	INFO	auth.api.authenticateJWT	JWT verified successfully	d2333517-3143-48b8-a4f0-ee8a0eb8cb6d
+20240808	23:52:47	INFO	post /search/filter	filter results displayed.	6f21f993-97db-42b9-9f56-6ad3bf8ae70d
+20240808	23:52:48	INFO	HTTP GET	/reviews/340	4a42cbfc-74cc-4e4a-92d1-d55c33d0f9c8
+20240808	23:52:48	ERROR	app.use 404	Page not found: /reviews/340	2423df86-9b55-46eb-801f-9be73c0aa960
+20240808	23:53:13	INFO	HTTP GET	/vault	7f94f9ca-8dd3-45e9-a39d-1f3a9f3cb985
+20240808	23:53:13	INFO	authMiddleware.setToken	JWT token set from session	cf5619a6-bdf4-45f6-b695-bbc9a3224b76
+20240808	23:53:13	INFO	authMiddleware.authenticateJWT	JWT verified successfully	52869c00-220a-460b-b988-ad195f2962b1
+20240808	23:53:14	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	fc64126b-cae0-4fcc-b796-d2cfa1703c73
+20240808	23:53:14	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	4998960e-7f9e-476c-bbad-5579909056d4
+20240808	23:53:14	INFO	HTTP GET	/images/chateau_desclans.png	ced7df61-c072-46e4-9d59-426da36328c3
+20240808	23:53:14	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	aaf0dfc5-f02f-4cd5-b743-d7cd85dc6b3c
+20240808	23:53:40	INFO	HTTP GET	/reviews/340	756ac304-f106-4363-a2bf-eb72dc97cc24
+20240808	23:53:40	ERROR	app.use 404	Page not found: /reviews/340	5f890229-61b8-4c27-9b9d-d9760fe34f33
+20240808	23:56:35	INFO	HTTP GET	/reviews/340	af753a27-03b0-451a-9415-ee75e84dd316
+20240808	23:56:35	ERROR	app.use 404	Page not found: /reviews/340	d8f34160-a70c-4ac5-af89-d9c73cb91b00
+20240808	23:57:17	INFO	HTTP GET	/reviews/340	5ec17306-a546-47ef-be29-2a696a118a0c
+20240808	23:57:17	ERROR	app.use 404	Page not found: /reviews/340	7082f900-363d-4f4a-90f6-f5bada83267d
+20240808	23:58:44	INFO	HTTP GET	/reviews/340	b629d5ba-fee8-463f-b9f7-c2d597e7eabe
+20240808	23:58:44	ERROR	app.use 404	Page not found: /reviews/340	941a129b-7398-4804-8830-f6d408504a47

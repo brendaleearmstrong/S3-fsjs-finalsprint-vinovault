@@ -1,0 +1,131 @@
+20240809	00:00:02	INFO	HTTP GET	/auth/exit	e3d2ddfb-5ef9-4e31-ad6b-5300b9edc1f6
+20240809	00:00:02	SUCCESS	auth.get /exit	User logged out successfully.	3b46af9b-9c35-49e8-a15b-5b5405480636
+20240809	00:00:02	INFO	HTTP GET	/	e253f356-4fe8-43d9-b313-dac05dfc617f
+20240809	00:00:02	INFO	app.get /	Home page (index.ejs) was displayed.	83b9309a-710f-4d94-9ad6-24701d512b46
+20240809	00:00:18	INFO	HTTP GET	/auth/	443e5582-70c0-408f-a250-da82e0ea17ef
+20240809	00:00:18	INFO	auth.get /	Login page displayed.	9be986f1-eff3-45e6-a579-add32c41e2a0
+20240809	00:00:18	INFO	HTTP GET	/styles/footer.css	c96a217f-f6da-4999-a86b-01aa3390a5d6
+20240809	00:00:18	ERROR	app.use 404	Page not found: /styles/footer.css	b776c9ce-2c5b-481c-a519-8a5b423b5a91
+20240809	00:00:20	INFO	HTTP POST	/auth	8299c437-1b1e-4f12-b777-6e62b26a2cb2
+20240809	00:00:21	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	31bf7eeb-3422-4abe-a31e-814bfe80de64
+20240809	00:00:21	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	2ccfd513-76ca-4e46-863d-b0996633f243
+20240809	00:00:21	INFO	HTTP GET	/search	d989e84e-3a63-4347-998f-b2736465c620
+20240809	00:00:21	INFO	auth.api.setToken	JWT token set from session	5b63808a-c0d8-4dc9-b9e7-862c4a07241b
+20240809	00:00:21	INFO	auth.api.authenticateJWT	JWT verified successfully	07fa3c19-900d-47f9-85d7-0ec8aa0d4c3b
+20240809	00:00:21	INFO	get /search	search page (search.ejs) was displayed.	c553d3bc-68a2-4c8b-b657-8ae217b3f51b
+20240809	00:00:24	INFO	HTTP GET	/vault	c3411b4b-7a72-44d2-b9c8-bfd2491e1285
+20240809	00:00:24	INFO	authMiddleware.authenticateJWT	JWT verified successfully	bece98ae-8a3c-41e7-a91e-ed3852b94ad5
+20240809	00:00:24	INFO	authMiddleware.setToken	JWT token set from session	ed2bc713-d6c0-4511-a881-16d384ff5e39
+20240809	00:00:24	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	3ee2bddf-1d23-43e9-a188-01d98680d799
+20240809	00:00:24	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	787c2159-82b1-441d-ba90-8bb0bed93921
+20240809	00:00:24	INFO	HTTP GET	/images/chateau_desclans.png	c995c657-cdcc-4980-831a-8d3abf567edf
+20240809	00:00:24	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	b38ad2b6-8ad0-4dc6-ab1d-fcf49c225f28
+20240809	00:00:33	INFO	HTTP POST	/search/filter	42b7d67b-ae3c-4cbf-88ae-512e09bebcdc
+20240809	00:00:33	INFO	auth.api.setToken	JWT token set from session	c274e57c-7337-4d4e-bdc5-6b274e52e49f
+20240809	00:00:33	INFO	auth.api.authenticateJWT	JWT verified successfully	7dd6c1f4-e300-4701-a90f-969e671d178f
+20240809	00:00:33	INFO	post /search/filter	filter results displayed.	bdd96400-35a4-4d7a-82c0-952bd019be49
+20240809	00:00:34	INFO	HTTP GET	/reviews/301	f9a426c5-0220-4614-b22a-9ffbde1d2f3d
+20240809	00:00:34	ERROR	app.use 404	Page not found: /reviews/301	b7ca593d-74c3-4c73-aee4-0c7fb49013ab
+20240809	00:05:20	INFO	HTTP GET	/vault	31959ff0-d037-437d-bb82-c62df82a643b
+20240809	00:05:20	INFO	authMiddleware.setToken	JWT token set from session	e44fae96-8968-497a-9c00-ba1e15b2633a
+20240809	00:05:20	INFO	authMiddleware.authenticateJWT	JWT verified successfully	df5b5fbb-cbfb-462e-b61b-70a6c3d1ae68
+20240809	00:05:21	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	ee5bdfa6-6898-4530-9a0e-ef375f186ac0
+20240809	00:05:21	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	854b2a19-02e3-4078-a9c1-78ee51bf1656
+20240809	00:05:21	INFO	HTTP GET	/images/chateau_desclans.png	2eb70a19-82e1-4940-aa26-662c35ef1398
+20240809	00:05:21	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	89c9b4b5-9ff4-450f-aac6-0f982e4b0cad
+20240809	00:05:24	INFO	HTTP GET	/vault/reviews/19?source=postgres	f6592153-923d-4f50-a901-458301bccb11
+20240809	00:05:24	INFO	authMiddleware.setToken	JWT token set from session	3df20160-977d-4dbf-b551-0b03f333eb43
+20240809	00:05:24	INFO	authMiddleware.authenticateJWT	JWT verified successfully	824db3b5-cd03-4faf-968c-b8c9234e1515
+20240809	00:05:24	INFO	get /vault/reviews	Reviews for wine 19 fetched for user brendaarmstrong@outlook.com.	71849fc0-18ea-460c-abf1-ca0d9b7d4aad
+20240809	00:05:31	INFO	HTTP GET	/vault/reviews/19?source=postgres	1078eaa9-5cbc-4a73-8341-c159e5b9c23c
+20240809	00:05:31	INFO	authMiddleware.setToken	JWT token set from session	b1eb213f-0d83-4268-ac80-7d0647855feb
+20240809	00:05:31	INFO	authMiddleware.authenticateJWT	JWT verified successfully	84d6107a-232a-4969-97e6-169cdb8969ec
+20240809	00:05:31	INFO	get /vault/reviews	Reviews for wine 19 fetched for user brendaarmstrong@outlook.com.	f55bcd2b-2ba6-4e16-bdec-2c62f49602ef
+20240809	00:08:13	INFO	HTTP GET	/vault/reviews/129?source=postgres	e51cae76-013c-41df-abed-9caf4212101f
+20240809	00:08:13	INFO	authMiddleware.setToken	JWT token set from session	57088122-ea31-419c-a2a9-ec6b9750956a
+20240809	00:08:13	INFO	authMiddleware.authenticateJWT	JWT verified successfully	80950c7e-7f50-44a8-8ba0-b4fe857360fb
+20240809	00:08:14	ERROR	getWineFromMongo	Error fetching wine from MongoDB: input must be a 24 character hex string, 12 byte Uint8Array, or an integer	dd738f0a-4290-4325-8af0-652c0ff83c79
+20240809	00:08:14	ERROR	get /vault/reviews	Error fetching reviews: input must be a 24 character hex string, 12 byte Uint8Array, or an integer	1e2aaa4a-29c9-4de3-8688-5ef261bad1b3
+20240809	00:08:51	INFO	HTTP GET	/vault/reviews/13?source=postgres	c49d38e0-02aa-47c3-ad84-38a8c80a2577
+20240809	00:08:51	INFO	authMiddleware.setToken	JWT token set from session	514c3466-9de7-4cc2-ae04-db18b86aa60a
+20240809	00:08:51	INFO	authMiddleware.authenticateJWT	JWT verified successfully	d78aa204-8417-4e74-af19-8776aa1bc68b
+20240809	00:08:51	INFO	get /vault/reviews	Reviews for wine 13 fetched for user brendaarmstrong@outlook.com.	89d88246-f331-4dcf-8a09-084b82909223
+20240809	00:08:54	INFO	HTTP GET	/vault/reviews/91?source=postgres	16e25944-1e56-4924-93a0-f5087134cc08
+20240809	00:08:54	INFO	authMiddleware.setToken	JWT token set from session	6bfee8a6-9d49-48d5-b722-bebbd9adfcf9
+20240809	00:08:54	INFO	authMiddleware.authenticateJWT	JWT verified successfully	616df0fa-d259-4eda-9f40-5708a4d500d6
+20240809	00:08:54	INFO	get /vault/reviews	Reviews for wine 91 fetched for user brendaarmstrong@outlook.com.	cba16e3b-ecb2-483c-8cb3-4cc8cea608f9
+20240809	00:10:39	INFO	HTTP GET	/vault	8675e1ea-ee57-42e5-9460-2b69fa14fa1a
+20240809	00:10:39	INFO	authMiddleware.setToken	JWT token set from session	111ef112-bb4d-4f6e-b626-10f3158d7e1c
+20240809	00:10:39	INFO	authMiddleware.authenticateJWT	JWT verified successfully	1c7aed3f-1447-4611-8cd3-0fbf2f568050
+20240809	00:10:40	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	3aceeaac-5d7e-49fd-9675-39d0d1884755
+20240809	00:10:40	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	6ca02102-bdd8-4cf9-b2da-74b74aa7ae30
+20240809	00:10:40	INFO	HTTP GET	/images/chateau_desclans.png	d19dea1e-34dd-4bcf-9012-15b4966bc54a
+20240809	00:10:40	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	5d88afe6-24e8-411f-b363-fb72e51d2b4d
+20240809	00:10:46	INFO	HTTP POST	/search/filter	6f19e330-b217-4b33-a769-488d5eebf81d
+20240809	00:10:46	INFO	auth.api.authenticateJWT	JWT verified successfully	14100a89-2cc7-4f26-a81e-3e26f95dd258
+20240809	00:10:46	INFO	auth.api.setToken	JWT token set from session	39d14ab3-9352-4b27-808c-9288a941438a
+20240809	00:10:46	INFO	post /search/filter	filter results displayed.	10875022-001a-4490-b332-f0f23327e866
+20240809	00:10:48	INFO	HTTP GET	/reviews/7	c5df2c47-b8f4-45d2-93e3-ef0d12bac0e0
+20240809	00:10:48	ERROR	app.use 404	Page not found: /reviews/7	ab134ec2-6cbc-444c-9bbf-db925013d46d
+20240809	00:10:59	INFO	HTTP GET	/reviews/307	00ec5ada-8287-4d74-b66f-1372a173e559
+20240809	00:10:59	ERROR	app.use 404	Page not found: /reviews/307	e16013e0-7bee-4fdb-8ae4-27bac0b978a2
+20240809	00:16:41	INFO	HTTP POST	/auth	e26e76bb-115c-4913-9723-a81db36a811d
+20240809	00:16:42	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	d1172566-80e9-46d9-ba93-bea7605c094e
+20240809	00:16:42	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	0890ccd2-1f80-4e40-b4e5-5b22b67aeec5
+20240809	00:16:42	INFO	HTTP GET	/search	07447a5d-dfb6-49c4-98d1-2435d6ec9b36
+20240809	00:16:42	INFO	auth.api.setToken	JWT token set from session	9a294fda-6fa6-4346-99d3-59b88d544518
+20240809	00:16:42	INFO	auth.api.authenticateJWT	JWT verified successfully	3b92cb8c-b91b-485a-9b35-6cbce051c0d9
+20240809	00:16:42	INFO	get /search	search page (search.ejs) was displayed.	137ae218-f391-4b48-b1c2-990149805a9f
+20240809	00:16:47	INFO	HTTP POST	/search/filter	28ba1c93-4d2c-4258-8477-2fd53320c8a2
+20240809	00:16:47	INFO	auth.api.setToken	JWT token set from session	560789bd-d1dc-4582-a76e-e5b68e767517
+20240809	00:16:47	INFO	auth.api.authenticateJWT	JWT verified successfully	e1fbf3d7-dc52-4d55-9a40-108dda58c688
+20240809	00:16:47	INFO	post /search/filter	filter results displayed.	42a9b358-1c82-4050-b80b-11d331fd3acb
+20240809	00:16:47	INFO	HTTP GET	/images/caymus.png	9b39f07e-f565-404c-a52a-bcca9d2de5a3
+20240809	00:16:47	ERROR	app.use 404	Page not found: /images/caymus.png	b5f681c3-8b96-4585-beb6-04d4c4c0fd6c
+20240809	00:16:47	INFO	HTTP GET	/images/montelena.png	ad8cad98-e1d6-4b42-bd9a-ee9ad261928e
+20240809	00:16:47	ERROR	app.use 404	Page not found: /images/montelena.png	0ffc0d65-9176-41a9-99b9-27fd30045128
+20240809	00:16:49	INFO	HTTP GET	/vault/reviews/333?source=postgres	9f081eed-6094-467e-8719-5c6ef85942af
+20240809	00:16:49	INFO	authMiddleware.setToken	JWT token set from session	9506ac40-21da-4028-bf25-c0177418a42d
+20240809	00:16:49	INFO	authMiddleware.authenticateJWT	JWT verified successfully	df4b1684-9a1a-4b76-af5e-ced4497a67d0
+20240809	00:16:49	INFO	get /vault/reviews	Reviews for wine 333 fetched for user brendaarmstrong@outlook.com.	00da0683-fa60-4f96-bfbb-7adc421abcf4
+20240809	00:16:51	INFO	HTTP POST	/vault/add/333	f5e40168-5ffe-47eb-83ab-48b61977f836
+20240809	00:16:51	INFO	authMiddleware.setToken	JWT token set from session	b221d2dc-8fe4-4253-be44-7e38e8cb5b41
+20240809	00:16:51	INFO	authMiddleware.authenticateJWT	JWT verified successfully	6eaafe1d-d398-4dfc-8379-ae1358141924
+20240809	00:16:52	SUCCESS	addWineToVault	Wine 333 added to vault for user brendaarmstrong@outlook.com.	67f67767-4eb5-4fc1-8c42-711cf90644b8
+20240809	00:16:52	SUCCESS	post /vault/add	Wine 333 added to vault for user brendaarmstrong@outlook.com.	e9079b65-35ee-45e0-84c3-70bcb0336f03
+20240809	00:17:42	INFO	HTTP GET	/search	872e1721-cc53-4ac6-9fd7-b0127a73ce18
+20240809	00:17:42	INFO	auth.api.setToken	JWT token set from session	978b6b4f-4069-4923-bc45-8d9fc6af4329
+20240809	00:17:42	INFO	auth.api.authenticateJWT	JWT verified successfully	494d11af-577f-4268-95ff-64307cfe63e3
+20240809	00:17:42	INFO	get /search	search page (search.ejs) was displayed.	2f9e5c69-8c7d-493c-8178-de1bfa1059d3
+20240809	00:17:47	INFO	HTTP POST	/search/filter	40e262b5-49cb-4da2-b092-ca3ceebb96e2
+20240809	00:17:47	INFO	auth.api.setToken	JWT token set from session	c6df23d0-5856-4418-a960-a25e18559fdf
+20240809	00:17:47	INFO	auth.api.authenticateJWT	JWT verified successfully	116d70e1-6dca-4278-8878-3b68a60c1ac4
+20240809	00:17:47	INFO	post /search/filter	filter results displayed.	13f8f2c4-0299-4846-9c43-1677a4589150
+20240809	00:17:48	INFO	HTTP GET	/vault/reviews/358?source=postgres	6607e830-a450-4bd7-bcb2-339c6851fd09
+20240809	00:17:48	INFO	authMiddleware.setToken	JWT token set from session	d07c003a-8a14-495a-aeee-86a86019322d
+20240809	00:17:48	INFO	authMiddleware.authenticateJWT	JWT verified successfully	281631c2-4336-472b-ba3c-e19025ef27d8
+20240809	00:17:48	INFO	get /vault/reviews	Reviews for wine 358 fetched for user brendaarmstrong@outlook.com.	e0683fd1-a013-4401-98c9-4a0d44b2145e
+20240809	00:17:55	INFO	HTTP GET	/vault/reviews/358?source=postgres	f4ea3c6b-cb1d-4ee7-81ed-b4dd132f7989
+20240809	00:17:55	INFO	authMiddleware.setToken	JWT token set from session	97114de6-7e3e-4cdd-9716-9276fef088db
+20240809	00:17:55	INFO	authMiddleware.authenticateJWT	JWT verified successfully	83a805d0-cbb6-446a-b860-ac331daac30d
+20240809	00:17:55	INFO	get /vault/reviews	Reviews for wine 358 fetched for user brendaarmstrong@outlook.com.	c01e7d34-a294-49d6-8a59-55c470187675
+20240809	00:18:16	INFO	HTTP POST	/search/filter	0a47e5f4-19ff-4e0a-9ba0-4b2df28ee2f4
+20240809	00:18:16	INFO	auth.api.setToken	JWT token set from session	5fdaecb6-9411-4ae4-8db6-5171bc68dbaa
+20240809	00:18:16	INFO	auth.api.authenticateJWT	JWT verified successfully	13800e93-ebd6-4d1d-9fd7-050a8f72fdf6
+20240809	00:18:16	INFO	post /search/filter	filter results displayed.	91b04398-a79e-4e2a-b03f-b7eed4f1511d
+20240809	00:18:22	INFO	HTTP POST	/search/filter	26d06a98-12ed-485e-8e95-7390bb259b38
+20240809	00:18:22	INFO	auth.api.authenticateJWT	JWT verified successfully	10878621-7da6-4812-ad94-8112f9f8d973
+20240809	00:18:22	INFO	auth.api.setToken	JWT token set from session	10a31a96-3f9d-45f0-a728-d9b31fd415f8
+20240809	00:18:22	INFO	post /search/filter	filter results displayed.	69c95fc1-e43c-458f-8f17-9d42b44b718e
+20240809	00:18:25	INFO	HTTP GET	/vault/reviews/383?source=postgres	9418c6c7-ee3d-4d1b-a7ae-95d9a7b86634
+20240809	00:18:25	INFO	authMiddleware.setToken	JWT token set from session	e9af4d96-888c-47c6-89ff-3973e231a936
+20240809	00:18:25	INFO	authMiddleware.authenticateJWT	JWT verified successfully	c50def65-0f9f-4775-a353-71b3ab9c6ef7
+20240809	00:18:25	INFO	get /vault/reviews	Reviews for wine 383 fetched for user brendaarmstrong@outlook.com.	86aabec2-569e-4034-8309-e312519fbfd3
+20240809	00:18:35	INFO	HTTP POST	/search/filter	f4e36265-68a2-428c-b4a2-6ecc3e978232
+20240809	00:18:35	INFO	auth.api.setToken	JWT token set from session	e125d404-8092-4375-a8f1-fe94565f949c
+20240809	00:18:35	INFO	auth.api.authenticateJWT	JWT verified successfully	563f25b9-e267-49de-a4c9-d4c860cf04ae
+20240809	00:18:35	INFO	post /search/filter	filter results displayed.	818723e3-5e67-4cbd-8a37-ea9cdedcc66a
+20240809	00:18:39	INFO	HTTP GET	/vault/reviews/59?source=postgres	b7f914b0-7ba7-4ab4-a5f5-26a2253c85d6
+20240809	00:18:39	INFO	authMiddleware.setToken	JWT token set from session	de2a4f52-56cc-4921-87c0-0cd9dea517c1
+20240809	00:18:39	INFO	authMiddleware.authenticateJWT	JWT verified successfully	d269027a-cef1-48d2-a5e3-d1f9cc6168d2
+20240809	00:18:39	INFO	get /vault/reviews	Reviews for wine 59 fetched for user brendaarmstrong@outlook.com.	bcb41d52-aab4-45a9-b22c-eb10a17f3ade
