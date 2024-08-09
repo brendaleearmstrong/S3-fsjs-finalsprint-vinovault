@@ -19,22 +19,50 @@ CREATE TABLE IF NOT EXISTS Wine (
     Logo VARCHAR(255)
 );
 
+-- Preparing Wine for FullTextSearch
+-- Preparing Wine for FullTextSearch
+ALTER TABLE wine ADD COLUMN search_vector tsvector;
 
--- Create Wine table
-CREATE TABLE Wine (
-    WineID SERIAL PRIMARY KEY,
-    Name VARCHAR(100) NOT NULL,
-	Winery character varying(100),
-	Region VARCHAR(100),
-    Country VARCHAR(100),
-	Type VARCHAR(50) NOT NULL,
-    Color VARCHAR(50) NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL,
-    Rating INTEGER CHECK (Rating >= 1 AND Rating <= 5),
-    Description TEXT,
-    Logo character varying(255)
+-- Update the search_vector to include Type and Color
+UPDATE Wine
+SET search_vector = to_tsvector('english', 
+    coalesce(Name, '') || ' ' || 
+    coalesce(Winery, '') || ' ' || 
+    coalesce(Region, '') || ' ' || 
+    coalesce(Country, '') || ' ' || 
+    coalesce(Type, '') || ' ' || 
+    coalesce(Color, '') || ' ' || 
+    coalesce(Description, '')
 );
 
+-- Index for FullTextSearch
+CREATE INDEX wine_search_idx ON Wine USING GIN(search_vector);
+DROP FUNCTION IF EXISTS update_search_vector();
+
+-- Function to update search_vector including Type and Color
+CREATE FUNCTION update_search_vector() RETURNS trigger AS $$
+BEGIN
+    NEW.search_vector := to_tsvector('english', 
+        coalesce(NEW.Name, '') || ' ' || 
+        coalesce(NEW.Winery, '') || ' ' || 
+        coalesce(NEW.Region, '') || ' ' || 
+        coalesce(NEW.Country, '') || ' ' || 
+        coalesce(NEW.Type, '') || ' ' || 
+        coalesce(NEW.Color, '') || ' ' || 
+        coalesce(NEW.Description, '')
+    );
+    RETURN NEW;
+END
+$$ LANGUAGE plpgsql;
+
+-- Trigger to auto-update the search_vector column
+CREATE TRIGGER tsvectorupdate BEFORE INSERT OR UPDATE
+ON Wine FOR EACH ROW EXECUTE FUNCTION update_search_vector();
+
+-- Check the updated data
+SELECT WineID, Name, Winery, Region, Country, Type, Color, Description, search_vector
+FROM Wine
+LIMIT 10;
 
 -- Create the Reviews table
 CREATE TABLE IF NOT EXISTS Reviews (
@@ -82,6 +110,28 @@ CREATE TABLE IF NOT EXISTS Inventory (
 );
 
 
+SELECT tgname, tgrelid::regclass, tgfoid::regprocedure
+FROM pg_trigger
+WHERE tgname = 'tsvectorupdate';
+
+UPDATE Wine
+SET Name = Name  -- Setting it to itself to trigger the update
+WHERE WineID = 1;
+
+UPDATE Wine
+SET search_vector = to_tsvector('english', 
+    coalesce(Name, '') || ' ' || 
+    coalesce(Winery, '') || ' ' || 
+    coalesce(Region, '') || ' ' || 
+    coalesce(Country, '') || ' ' || 
+    coalesce(Type, '') || ' ' || 
+    coalesce(Color, '') || ' ' || 
+    coalesce(Description, '')
+);
+
+SELECT WineID, search_vector
+FROM Wine
+LIMIT 10;
 
 
 
