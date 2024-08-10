@@ -220,9 +220,9 @@ The project includes several test files:
 
 Run tests using:
 ```
-node testDBConnection.js
-node testMDBConnection.js
-node testFullSearch.js
+### node testDBConnection.js
+### node testMDBConnection.js
+### node testFullSearch.js
 ```
 
 ## Data Generation
