@@ -1,666 +1,268 @@
-20240809	00:00:02	INFO	HTTP GET	/auth/exit	e3d2ddfb-5ef9-4e31-ad6b-5300b9edc1f6
-20240809	00:00:02	SUCCESS	auth.get /exit	User logged out successfully.	3b46af9b-9c35-49e8-a15b-5b5405480636
-20240809	00:00:02	INFO	HTTP GET	/	e253f356-4fe8-43d9-b313-dac05dfc617f
-20240809	00:00:02	INFO	app.get /	Home page (index.ejs) was displayed.	83b9309a-710f-4d94-9ad6-24701d512b46
-20240809	00:00:18	INFO	HTTP GET	/auth/	443e5582-70c0-408f-a250-da82e0ea17ef
-20240809	00:00:18	INFO	auth.get /	Login page displayed.	9be986f1-eff3-45e6-a579-add32c41e2a0
-20240809	00:00:18	INFO	HTTP GET	/styles/footer.css	c96a217f-f6da-4999-a86b-01aa3390a5d6
-20240809	00:00:18	ERROR	app.use 404	Page not found: /styles/footer.css	b776c9ce-2c5b-481c-a519-8a5b423b5a91
-20240809	00:00:20	INFO	HTTP POST	/auth	8299c437-1b1e-4f12-b777-6e62b26a2cb2
-20240809	00:00:21	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	31bf7eeb-3422-4abe-a31e-814bfe80de64
-20240809	00:00:21	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	2ccfd513-76ca-4e46-863d-b0996633f243
-20240809	00:00:21	INFO	HTTP GET	/search	d989e84e-3a63-4347-998f-b2736465c620
-20240809	00:00:21	INFO	auth.api.setToken	JWT token set from session	5b63808a-c0d8-4dc9-b9e7-862c4a07241b
-20240809	00:00:21	INFO	auth.api.authenticateJWT	JWT verified successfully	07fa3c19-900d-47f9-85d7-0ec8aa0d4c3b
-20240809	00:00:21	INFO	get /search	search page (search.ejs) was displayed.	c553d3bc-68a2-4c8b-b657-8ae217b3f51b
-20240809	00:00:24	INFO	HTTP GET	/vault	c3411b4b-7a72-44d2-b9c8-bfd2491e1285
-20240809	00:00:24	INFO	authMiddleware.authenticateJWT	JWT verified successfully	bece98ae-8a3c-41e7-a91e-ed3852b94ad5
-20240809	00:00:24	INFO	authMiddleware.setToken	JWT token set from session	ed2bc713-d6c0-4511-a881-16d384ff5e39
-20240809	00:00:24	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	3ee2bddf-1d23-43e9-a188-01d98680d799
-20240809	00:00:24	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	787c2159-82b1-441d-ba90-8bb0bed93921
-20240809	00:00:24	INFO	HTTP GET	/images/chateau_desclans.png	c995c657-cdcc-4980-831a-8d3abf567edf
-20240809	00:00:24	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	b38ad2b6-8ad0-4dc6-ab1d-fcf49c225f28
-20240809	00:00:33	INFO	HTTP POST	/search/filter	42b7d67b-ae3c-4cbf-88ae-512e09bebcdc
-20240809	00:00:33	INFO	auth.api.setToken	JWT token set from session	c274e57c-7337-4d4e-bdc5-6b274e52e49f
-20240809	00:00:33	INFO	auth.api.authenticateJWT	JWT verified successfully	7dd6c1f4-e300-4701-a90f-969e671d178f
-20240809	00:00:33	INFO	post /search/filter	filter results displayed.	bdd96400-35a4-4d7a-82c0-952bd019be49
-20240809	00:00:34	INFO	HTTP GET	/reviews/301	f9a426c5-0220-4614-b22a-9ffbde1d2f3d
-20240809	00:00:34	ERROR	app.use 404	Page not found: /reviews/301	b7ca593d-74c3-4c73-aee4-0c7fb49013ab
-20240809	00:05:20	INFO	HTTP GET	/vault	31959ff0-d037-437d-bb82-c62df82a643b
-20240809	00:05:20	INFO	authMiddleware.setToken	JWT token set from session	e44fae96-8968-497a-9c00-ba1e15b2633a
-20240809	00:05:20	INFO	authMiddleware.authenticateJWT	JWT verified successfully	df5b5fbb-cbfb-462e-b61b-70a6c3d1ae68
-20240809	00:05:21	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	ee5bdfa6-6898-4530-9a0e-ef375f186ac0
-20240809	00:05:21	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	854b2a19-02e3-4078-a9c1-78ee51bf1656
-20240809	00:05:21	INFO	HTTP GET	/images/chateau_desclans.png	2eb70a19-82e1-4940-aa26-662c35ef1398
-20240809	00:05:21	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	89c9b4b5-9ff4-450f-aac6-0f982e4b0cad
-20240809	00:05:24	INFO	HTTP GET	/vault/reviews/19?source=postgres	f6592153-923d-4f50-a901-458301bccb11
-20240809	00:05:24	INFO	authMiddleware.setToken	JWT token set from session	3df20160-977d-4dbf-b551-0b03f333eb43
-20240809	00:05:24	INFO	authMiddleware.authenticateJWT	JWT verified successfully	824db3b5-cd03-4faf-968c-b8c9234e1515
-20240809	00:05:24	INFO	get /vault/reviews	Reviews for wine 19 fetched for user brendaarmstrong@outlook.com.	71849fc0-18ea-460c-abf1-ca0d9b7d4aad
-20240809	00:05:31	INFO	HTTP GET	/vault/reviews/19?source=postgres	1078eaa9-5cbc-4a73-8341-c159e5b9c23c
-20240809	00:05:31	INFO	authMiddleware.setToken	JWT token set from session	b1eb213f-0d83-4268-ac80-7d0647855feb
-20240809	00:05:31	INFO	authMiddleware.authenticateJWT	JWT verified successfully	84d6107a-232a-4969-97e6-169cdb8969ec
-20240809	00:05:31	INFO	get /vault/reviews	Reviews for wine 19 fetched for user brendaarmstrong@outlook.com.	f55bcd2b-2ba6-4e16-bdec-2c62f49602ef
-20240809	00:08:13	INFO	HTTP GET	/vault/reviews/129?source=postgres	e51cae76-013c-41df-abed-9caf4212101f
-20240809	00:08:13	INFO	authMiddleware.setToken	JWT token set from session	57088122-ea31-419c-a2a9-ec6b9750956a
-20240809	00:08:13	INFO	authMiddleware.authenticateJWT	JWT verified successfully	80950c7e-7f50-44a8-8ba0-b4fe857360fb
-20240809	00:08:14	ERROR	getWineFromMongo	Error fetching wine from MongoDB: input must be a 24 character hex string, 12 byte Uint8Array, or an integer	dd738f0a-4290-4325-8af0-652c0ff83c79
-20240809	00:08:14	ERROR	get /vault/reviews	Error fetching reviews: input must be a 24 character hex string, 12 byte Uint8Array, or an integer	1e2aaa4a-29c9-4de3-8688-5ef261bad1b3
-20240809	00:08:51	INFO	HTTP GET	/vault/reviews/13?source=postgres	c49d38e0-02aa-47c3-ad84-38a8c80a2577
-20240809	00:08:51	INFO	authMiddleware.setToken	JWT token set from session	514c3466-9de7-4cc2-ae04-db18b86aa60a
-20240809	00:08:51	INFO	authMiddleware.authenticateJWT	JWT verified successfully	d78aa204-8417-4e74-af19-8776aa1bc68b
-20240809	00:08:51	INFO	get /vault/reviews	Reviews for wine 13 fetched for user brendaarmstrong@outlook.com.	89d88246-f331-4dcf-8a09-084b82909223
-20240809	00:08:54	INFO	HTTP GET	/vault/reviews/91?source=postgres	16e25944-1e56-4924-93a0-f5087134cc08
-20240809	00:08:54	INFO	authMiddleware.setToken	JWT token set from session	6bfee8a6-9d49-48d5-b722-bebbd9adfcf9
-20240809	00:08:54	INFO	authMiddleware.authenticateJWT	JWT verified successfully	616df0fa-d259-4eda-9f40-5708a4d500d6
-20240809	00:08:54	INFO	get /vault/reviews	Reviews for wine 91 fetched for user brendaarmstrong@outlook.com.	cba16e3b-ecb2-483c-8cb3-4cc8cea608f9
-20240809	00:10:39	INFO	HTTP GET	/vault	8675e1ea-ee57-42e5-9460-2b69fa14fa1a
-20240809	00:10:39	INFO	authMiddleware.setToken	JWT token set from session	111ef112-bb4d-4f6e-b626-10f3158d7e1c
-20240809	00:10:39	INFO	authMiddleware.authenticateJWT	JWT verified successfully	1c7aed3f-1447-4611-8cd3-0fbf2f568050
-20240809	00:10:40	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	3aceeaac-5d7e-49fd-9675-39d0d1884755
-20240809	00:10:40	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	6ca02102-bdd8-4cf9-b2da-74b74aa7ae30
-20240809	00:10:40	INFO	HTTP GET	/images/chateau_desclans.png	d19dea1e-34dd-4bcf-9012-15b4966bc54a
-20240809	00:10:40	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	5d88afe6-24e8-411f-b363-fb72e51d2b4d
-20240809	00:10:46	INFO	HTTP POST	/search/filter	6f19e330-b217-4b33-a769-488d5eebf81d
-20240809	00:10:46	INFO	auth.api.authenticateJWT	JWT verified successfully	14100a89-2cc7-4f26-a81e-3e26f95dd258
-20240809	00:10:46	INFO	auth.api.setToken	JWT token set from session	39d14ab3-9352-4b27-808c-9288a941438a
-20240809	00:10:46	INFO	post /search/filter	filter results displayed.	10875022-001a-4490-b332-f0f23327e866
-20240809	00:10:48	INFO	HTTP GET	/reviews/7	c5df2c47-b8f4-45d2-93e3-ef0d12bac0e0
-20240809	00:10:48	ERROR	app.use 404	Page not found: /reviews/7	ab134ec2-6cbc-444c-9bbf-db925013d46d
-20240809	00:10:59	INFO	HTTP GET	/reviews/307	00ec5ada-8287-4d74-b66f-1372a173e559
-20240809	00:10:59	ERROR	app.use 404	Page not found: /reviews/307	e16013e0-7bee-4fdb-8ae4-27bac0b978a2
-20240809	00:16:41	INFO	HTTP POST	/auth	e26e76bb-115c-4913-9723-a81db36a811d
-20240809	00:16:42	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	d1172566-80e9-46d9-ba93-bea7605c094e
-20240809	00:16:42	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	0890ccd2-1f80-4e40-b4e5-5b22b67aeec5
-20240809	00:16:42	INFO	HTTP GET	/search	07447a5d-dfb6-49c4-98d1-2435d6ec9b36
-20240809	00:16:42	INFO	auth.api.setToken	JWT token set from session	9a294fda-6fa6-4346-99d3-59b88d544518
-20240809	00:16:42	INFO	auth.api.authenticateJWT	JWT verified successfully	3b92cb8c-b91b-485a-9b35-6cbce051c0d9
-20240809	00:16:42	INFO	get /search	search page (search.ejs) was displayed.	137ae218-f391-4b48-b1c2-990149805a9f
-20240809	00:16:47	INFO	HTTP POST	/search/filter	28ba1c93-4d2c-4258-8477-2fd53320c8a2
-20240809	00:16:47	INFO	auth.api.setToken	JWT token set from session	560789bd-d1dc-4582-a76e-e5b68e767517
-20240809	00:16:47	INFO	auth.api.authenticateJWT	JWT verified successfully	e1fbf3d7-dc52-4d55-9a40-108dda58c688
-20240809	00:16:47	INFO	post /search/filter	filter results displayed.	42a9b358-1c82-4050-b80b-11d331fd3acb
-20240809	00:16:47	INFO	HTTP GET	/images/caymus.png	9b39f07e-f565-404c-a52a-bcca9d2de5a3
-20240809	00:16:47	ERROR	app.use 404	Page not found: /images/caymus.png	b5f681c3-8b96-4585-beb6-04d4c4c0fd6c
-20240809	00:16:47	INFO	HTTP GET	/images/montelena.png	ad8cad98-e1d6-4b42-bd9a-ee9ad261928e
-20240809	00:16:47	ERROR	app.use 404	Page not found: /images/montelena.png	0ffc0d65-9176-41a9-99b9-27fd30045128
-20240809	00:16:49	INFO	HTTP GET	/vault/reviews/333?source=postgres	9f081eed-6094-467e-8719-5c6ef85942af
-20240809	00:16:49	INFO	authMiddleware.setToken	JWT token set from session	9506ac40-21da-4028-bf25-c0177418a42d
-20240809	00:16:49	INFO	authMiddleware.authenticateJWT	JWT verified successfully	df4b1684-9a1a-4b76-af5e-ced4497a67d0
-20240809	00:16:49	INFO	get /vault/reviews	Reviews for wine 333 fetched for user brendaarmstrong@outlook.com.	00da0683-fa60-4f96-bfbb-7adc421abcf4
-20240809	00:16:51	INFO	HTTP POST	/vault/add/333	f5e40168-5ffe-47eb-83ab-48b61977f836
-20240809	00:16:51	INFO	authMiddleware.setToken	JWT token set from session	b221d2dc-8fe4-4253-be44-7e38e8cb5b41
-20240809	00:16:51	INFO	authMiddleware.authenticateJWT	JWT verified successfully	6eaafe1d-d398-4dfc-8379-ae1358141924
-20240809	00:16:52	SUCCESS	addWineToVault	Wine 333 added to vault for user brendaarmstrong@outlook.com.	67f67767-4eb5-4fc1-8c42-711cf90644b8
-20240809	00:16:52	SUCCESS	post /vault/add	Wine 333 added to vault for user brendaarmstrong@outlook.com.	e9079b65-35ee-45e0-84c3-70bcb0336f03
-20240809	00:17:42	INFO	HTTP GET	/search	872e1721-cc53-4ac6-9fd7-b0127a73ce18
-20240809	00:17:42	INFO	auth.api.setToken	JWT token set from session	978b6b4f-4069-4923-bc45-8d9fc6af4329
-20240809	00:17:42	INFO	auth.api.authenticateJWT	JWT verified successfully	494d11af-577f-4268-95ff-64307cfe63e3
-20240809	00:17:42	INFO	get /search	search page (search.ejs) was displayed.	2f9e5c69-8c7d-493c-8178-de1bfa1059d3
-20240809	00:17:47	INFO	HTTP POST	/search/filter	40e262b5-49cb-4da2-b092-ca3ceebb96e2
-20240809	00:17:47	INFO	auth.api.setToken	JWT token set from session	c6df23d0-5856-4418-a960-a25e18559fdf
-20240809	00:17:47	INFO	auth.api.authenticateJWT	JWT verified successfully	116d70e1-6dca-4278-8878-3b68a60c1ac4
-20240809	00:17:47	INFO	post /search/filter	filter results displayed.	13f8f2c4-0299-4846-9c43-1677a4589150
-20240809	00:17:48	INFO	HTTP GET	/vault/reviews/358?source=postgres	6607e830-a450-4bd7-bcb2-339c6851fd09
-20240809	00:17:48	INFO	authMiddleware.setToken	JWT token set from session	d07c003a-8a14-495a-aeee-86a86019322d
-20240809	00:17:48	INFO	authMiddleware.authenticateJWT	JWT verified successfully	281631c2-4336-472b-ba3c-e19025ef27d8
-20240809	00:17:48	INFO	get /vault/reviews	Reviews for wine 358 fetched for user brendaarmstrong@outlook.com.	e0683fd1-a013-4401-98c9-4a0d44b2145e
-20240809	00:17:55	INFO	HTTP GET	/vault/reviews/358?source=postgres	f4ea3c6b-cb1d-4ee7-81ed-b4dd132f7989
-20240809	00:17:55	INFO	authMiddleware.setToken	JWT token set from session	97114de6-7e3e-4cdd-9716-9276fef088db
-20240809	00:17:55	INFO	authMiddleware.authenticateJWT	JWT verified successfully	83a805d0-cbb6-446a-b860-ac331daac30d
-20240809	00:17:55	INFO	get /vault/reviews	Reviews for wine 358 fetched for user brendaarmstrong@outlook.com.	c01e7d34-a294-49d6-8a59-55c470187675
-20240809	00:18:16	INFO	HTTP POST	/search/filter	0a47e5f4-19ff-4e0a-9ba0-4b2df28ee2f4
-20240809	00:18:16	INFO	auth.api.setToken	JWT token set from session	5fdaecb6-9411-4ae4-8db6-5171bc68dbaa
-20240809	00:18:16	INFO	auth.api.authenticateJWT	JWT verified successfully	13800e93-ebd6-4d1d-9fd7-050a8f72fdf6
-20240809	00:18:16	INFO	post /search/filter	filter results displayed.	91b04398-a79e-4e2a-b03f-b7eed4f1511d
-20240809	00:18:22	INFO	HTTP POST	/search/filter	26d06a98-12ed-485e-8e95-7390bb259b38
-20240809	00:18:22	INFO	auth.api.authenticateJWT	JWT verified successfully	10878621-7da6-4812-ad94-8112f9f8d973
-20240809	00:18:22	INFO	auth.api.setToken	JWT token set from session	10a31a96-3f9d-45f0-a728-d9b31fd415f8
-20240809	00:18:22	INFO	post /search/filter	filter results displayed.	69c95fc1-e43c-458f-8f17-9d42b44b718e
-20240809	00:18:25	INFO	HTTP GET	/vault/reviews/383?source=postgres	9418c6c7-ee3d-4d1b-a7ae-95d9a7b86634
-20240809	00:18:25	INFO	authMiddleware.setToken	JWT token set from session	e9af4d96-888c-47c6-89ff-3973e231a936
-20240809	00:18:25	INFO	authMiddleware.authenticateJWT	JWT verified successfully	c50def65-0f9f-4775-a353-71b3ab9c6ef7
-20240809	00:18:25	INFO	get /vault/reviews	Reviews for wine 383 fetched for user brendaarmstrong@outlook.com.	86aabec2-569e-4034-8309-e312519fbfd3
-20240809	00:18:35	INFO	HTTP POST	/search/filter	f4e36265-68a2-428c-b4a2-6ecc3e978232
-20240809	00:18:35	INFO	auth.api.setToken	JWT token set from session	e125d404-8092-4375-a8f1-fe94565f949c
-20240809	00:18:35	INFO	auth.api.authenticateJWT	JWT verified successfully	563f25b9-e267-49de-a4c9-d4c860cf04ae
-20240809	00:18:35	INFO	post /search/filter	filter results displayed.	818723e3-5e67-4cbd-8a37-ea9cdedcc66a
-20240809	00:18:39	INFO	HTTP GET	/vault/reviews/59?source=postgres	b7f914b0-7ba7-4ab4-a5f5-26a2253c85d6
-20240809	00:18:39	INFO	authMiddleware.setToken	JWT token set from session	de2a4f52-56cc-4921-87c0-0cd9dea517c1
-20240809	00:18:39	INFO	authMiddleware.authenticateJWT	JWT verified successfully	d269027a-cef1-48d2-a5e3-d1f9cc6168d2
-20240809	00:18:39	INFO	get /vault/reviews	Reviews for wine 59 fetched for user brendaarmstrong@outlook.com.	bcb41d52-aab4-45a9-b22c-eb10a17f3ade
-20240809	10:44:20	SUCCESS	app.listen	HTTP server successfully started.	1221fb95-333d-4d83-b352-451a8cc4925e
-20240809	10:44:25	INFO	HTTP GET	/	59212a7d-9029-445f-b705-a451a9e2dc05
-20240809	10:44:25	INFO	app.get /	Home page (index.ejs) was displayed.	bcb95c2a-7e11-430f-bf8d-e6a6d5ce55ae
-20240809	10:44:29	INFO	HTTP GET	/auth/	0966d9cd-d5ae-40a9-8d6e-2214abfe94d4
-20240809	10:44:29	INFO	auth.get /	Login page displayed.	91fc2eb8-4be3-41c4-a90c-b4654526b03a
-20240809	10:44:29	INFO	HTTP GET	/styles/footer.css	ca179524-55a6-4721-ac2c-04ea9b4954ee
-20240809	10:44:29	ERROR	app.use 404	Page not found: /styles/footer.css	0fc2a477-4896-42c4-9857-e2f70eb6bed8
-20240809	10:44:30	INFO	HTTP POST	/auth	0e36fa6e-c518-4d59-8486-f2887613a657
-20240809	10:44:31	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	3a9c9236-7f6c-4757-ab27-31e39d794059
-20240809	10:44:31	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	ee7b81d4-5d0f-4dec-9a36-50235adfe835
-20240809	10:44:31	INFO	HTTP GET	/search	4d75a6f7-e850-4330-8e0b-93e46eb52eca
-20240809	10:44:31	INFO	auth.api.setToken	JWT token set from session	1cd04dde-7693-413d-8dbb-a03b4b92eb02
-20240809	10:44:31	INFO	auth.api.authenticateJWT	JWT verified successfully	73ade8e4-fd12-40dd-aafe-86f788e2bc73
-20240809	10:44:32	INFO	get /search	search page (search.ejs) was displayed.	cc997292-4759-42d4-bcf5-aba9d5c1373d
-20240809	10:44:41	INFO	HTTP POST	/search	4e7382ac-b0ad-4ab7-8fac-da7be70bd7be
-20240809	10:44:41	INFO	auth.api.setToken	JWT token set from session	e397496c-bdc8-487f-a0d3-7347e18c139f
-20240809	10:44:41	INFO	auth.api.authenticateJWT	JWT verified successfully	6e07fc8d-e520-45a3-9350-b82be8f8f195
-20240809	10:44:41	INFO	post /search	search results displayed.	6a32f155-7cb4-46e4-ad57-d3d00f401f36
-20240809	10:44:41	INFO	HTTP GET	/ridge-vineyards.png	b8a17fb6-2c3e-4904-b650-5b905074dac0
-20240809	10:44:41	ERROR	app.use 404	Page not found: /ridge-vineyards.png	995b7fb1-7fdd-4c4c-8d56-ffb7d30e8553
-20240809	10:44:41	INFO	HTTP GET	/chateau-margaux.png	02259973-8ae7-4fd0-afe0-ef3dd30050ee
-20240809	10:44:41	ERROR	app.use 404	Page not found: /chateau-margaux.png	ae4f212e-f547-4598-ab24-8a88b808baf2
-20240809	10:44:41	INFO	HTTP GET	/images/tenuta-san-guido.png	57ec5064-e7b8-477b-b7b6-9baa302b785b
-20240809	10:44:41	ERROR	app.use 404	Page not found: /images/tenuta-san-guido.png	5a75b82e-6bbe-465f-b359-af63e0243b8b
-20240809	10:44:41	INFO	HTTP GET	/catena-zapata.png	b6b6b6bb-0032-42a9-bc7e-f1b02774650c
-20240809	10:44:41	ERROR	app.use 404	Page not found: /catena-zapata.png	15edaa3e-6b48-4d0a-81f1-aa522176d29c
-20240809	10:44:41	INFO	HTTP GET	/cloudybay.png	e87e577b-832c-419a-af3c-79b926578fc7
-20240809	10:44:41	ERROR	app.use 404	Page not found: /cloudybay.png	9d84dfdd-8cb9-4b60-9176-c7440c992492
-20240809	10:44:41	INFO	HTTP GET	/silver_oak.png	328daba3-5485-4d9d-af55-a6af605e85b5
-20240809	10:44:41	ERROR	app.use 404	Page not found: /silver_oak.png	686c7fc8-ca94-4050-9d52-6fd550d0c1e3
-20240809	10:44:41	INFO	HTTP GET	/torres.png	2eedb022-6acf-41f5-b349-e27d90acc9b9
-20240809	10:44:41	ERROR	app.use 404	Page not found: /torres.png	564de032-e34f-401a-b7b0-b61a6f9ec7fa
-20240809	10:44:41	INFO	HTTP GET	/penfolds.png	e794b822-36de-4d35-9758-eb41a32f5e08
-20240809	10:44:41	ERROR	app.use 404	Page not found: /penfolds.png	1cd7dd3a-806a-45be-bde0-04b1585c3bef
-20240809	10:44:41	INFO	HTTP GET	/antinori.png	08e36a8d-8c71-430a-94b3-f4c42e236f5a
-20240809	10:44:41	ERROR	app.use 404	Page not found: /antinori.png	88d77224-0ea2-4b5c-bf3e-1d861017d3a7
-20240809	10:44:41	INFO	HTTP GET	/henschke.png	8583ef4b-eb4f-440e-978b-cd4f3168b141
-20240809	10:44:41	ERROR	app.use 404	Page not found: /henschke.png	4cbeff1e-f1d7-4642-97c4-f171a22783a5
-20240809	10:44:41	ERROR	app.use 404	Page not found: /ornellaia.png	38251125-75ed-4b89-b3f7-54486b976b6a
-20240809	10:44:41	INFO	HTTP GET	/ornellaia.png	08bcfc72-6cde-4ad8-9096-e5f83573bd2d
-20240809	10:44:41	INFO	HTTP GET	/images/caymus.png	d77fb7ca-4940-41f1-b401-43a6d9a40f98
-20240809	10:44:41	ERROR	app.use 404	Page not found: /images/caymus.png	1018f033-7b85-4444-9c89-2293e6c57509
-20240809	10:44:41	INFO	HTTP GET	/images/chateau-montelena.png	e40645b6-2ac1-49a9-8982-5e2dcfa0d296
-20240809	10:44:41	ERROR	app.use 404	Page not found: /images/chateau-montelena.png	6543300e-60aa-408d-baeb-3c4fb2e1939e
-20240809	10:44:41	INFO	HTTP GET	/moet-chandon.png	dfb9e653-aa71-42a8-a4ef-d3fb6a1dcfa0
-20240809	10:44:41	ERROR	app.use 404	Page not found: /moet-chandon.png	6002f39d-0776-4605-90f2-2d7941ff4117
-20240809	10:44:41	INFO	HTTP GET	/veuve-clicquot.png	c9f97c6e-d370-4115-9c53-3e36336a56a6
-20240809	10:44:41	ERROR	app.use 404	Page not found: /veuve-clicquot.png	08c930e2-6bf1-43c5-bf8a-011d6d5b6276
-20240809	10:44:41	INFO	HTTP GET	/louis-roederer.png	8fc4dc2a-ebfa-4fd1-b0d6-382d10b39995
-20240809	10:44:41	ERROR	app.use 404	Page not found: /louis-roederer.png	23ec66b9-051f-4dcb-984a-d0f5d9a05f12
-20240809	10:44:41	INFO	HTTP GET	/images/chateau-dyquem.png	f5f5460f-f24d-427d-a676-989e7a6db921
-20240809	10:44:41	ERROR	app.use 404	Page not found: /images/chateau-dyquem.png	6089c646-862a-47f4-be46-115c44b2013b
-20240809	10:47:42	INFO	HTTP POST	/search	149f0693-bc17-4041-8d10-5a738b99ad6e
-20240809	10:47:42	INFO	auth.api.setToken	JWT token set from session	2111da09-4461-4b20-880a-c2217a3d739f
-20240809	10:47:42	INFO	auth.api.authenticateJWT	JWT verified successfully	910d811c-6db7-4555-8eb1-f8f2ee368565
-20240809	10:47:43	INFO	post /search	search results displayed.	226ff5e7-7481-4ac4-b623-a3723847117e
-20240809	10:47:43	INFO	HTTP GET	/penfolds.png	fa1e971c-674d-4fc9-8c65-844baff01e20
-20240809	10:47:43	ERROR	app.use 404	Page not found: /penfolds.png	6237f998-812d-4bce-98f1-faa0b2061d8b
-20240809	10:52:22	INFO	HTTP POST	/search	94a3728d-2363-4eff-bd18-b2127770f01c
-20240809	10:52:22	INFO	auth.api.setToken	JWT token set from session	2ec32327-ce8d-47aa-8ddd-2d2bb6ace647
-20240809	10:52:22	INFO	auth.api.authenticateJWT	JWT verified successfully	fbba9ee0-efa6-4ab7-8d84-18c6db7ff025
-20240809	10:52:23	INFO	post /search	search results displayed.	cd4a1b6c-7aba-4518-a92c-812ac0fa97dc
-20240809	10:52:23	INFO	HTTP GET	/veuve-clicquot.png	64bc4a68-d43a-4c9b-acef-6511cf539d7b
-20240809	10:52:23	ERROR	app.use 404	Page not found: /veuve-clicquot.png	9eb76f5d-53f4-406f-a04d-245c66ff3a30
-20240809	10:54:38	INFO	HTTP GET	/reviews/66b4bb752dc5b205e8d081f5	2de8c4fe-e9a5-4e4a-b6b1-0dc4555cd26e
-20240809	10:54:38	ERROR	app.use 404	Page not found: /reviews/66b4bb752dc5b205e8d081f5	544a65b9-398c-4b2d-becd-d7aa5f65c78d
-20240809	10:54:43	INFO	HTTP POST	/vault/add/66b4bb752dc5b205e8d081f5	3ff63b64-7a0f-404a-a91e-b5773a938ffa
-20240809	10:54:43	INFO	authMiddleware.setToken	JWT token set from session	157a77d9-170a-4453-b7a8-c5189e86295c
-20240809	10:54:43	INFO	authMiddleware.authenticateJWT	JWT verified successfully	dc028202-6922-491a-83b0-2819884d714d
-20240809	10:54:44	SUCCESS	post /vault/add	Wine 66b4bb752dc5b205e8d081f5 added to vault for user brendaarmstrong@outlook.com.	fe73b9b9-cede-4ee7-aeb5-cc98b3db0257
-20240809	10:54:44	SUCCESS	addWineToVault	Wine 66b4bb752dc5b205e8d081f5 added to vault for user brendaarmstrong@outlook.com.	6a042bae-59d7-4029-915c-1f77360428e6
-20240809	10:55:16	INFO	HTTP POST	/search	6218dda9-28f3-47de-a92b-6ae22945bf26
-20240809	10:55:16	INFO	auth.api.setToken	JWT token set from session	3d07ec80-cadd-43c3-a919-136a7bd66ed5
-20240809	10:55:16	INFO	auth.api.authenticateJWT	JWT verified successfully	9cbbc7de-031c-431f-9940-a3938fa1df1c
-20240809	10:55:18	INFO	post /search	search results displayed.	fdff4343-6693-40ab-935e-f0b345c04653
-20240809	10:55:18	INFO	HTTP GET	/moet-chandon.png	e13130cc-2fa6-41f4-81b5-6e1df674bfa0
-20240809	10:55:18	ERROR	app.use 404	Page not found: /veuve-clicquot.png	decc9368-c415-4593-9da5-583c176e27e7
-20240809	10:55:18	ERROR	app.use 404	Page not found: /moet-chandon.png	5bc8f225-b890-4545-9627-feb73b79239b
-20240809	10:55:18	INFO	HTTP GET	/veuve-clicquot.png	c4a346eb-c63e-4689-900d-5162879bca90
-20240809	10:55:18	INFO	HTTP GET	/louis-roederer.png	2d2fd9cd-50fa-47b0-9ca9-8e44542efedf
-20240809	10:55:18	ERROR	app.use 404	Page not found: /louis-roederer.png	10925c5e-c67f-4b9d-82f2-a1624168f4c7
-20240809	10:55:19	INFO	HTTP GET	/images/chateau_desclans.png	24399af2-62ab-4716-8650-5386430c73c6
-20240809	10:55:19	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	7fec0994-032f-4e84-8414-9993b3e16a92
-20240809	10:55:19	INFO	HTTP POST	/search	f4caeed0-b146-4062-917a-0c50b21fd39a
-20240809	10:55:19	INFO	auth.api.setToken	JWT token set from session	c86b7572-c507-42e2-960c-45402ca99902
-20240809	10:55:19	INFO	auth.api.authenticateJWT	JWT verified successfully	4dc303d1-8f36-4937-98f2-ddf26db245f3
-20240809	10:55:19	INFO	post /search	search results displayed.	d17fb7c5-1282-46b0-a70b-df0339247596
-20240809	10:55:19	INFO	HTTP GET	/moet-chandon.png	0492b0e2-1733-495e-9c66-433dc04f512a
-20240809	10:55:19	INFO	HTTP GET	/veuve-clicquot.png	08374ece-70a7-4a11-b027-29b7e53a5649
-20240809	10:55:19	ERROR	app.use 404	Page not found: /moet-chandon.png	86a7767b-23c6-4760-b947-85e16c5d332a
-20240809	10:55:19	ERROR	app.use 404	Page not found: /veuve-clicquot.png	ae3b838c-578a-49a9-bb18-2d71bd5f3eb4
-20240809	10:55:19	INFO	HTTP GET	/louis-roederer.png	76d9027e-acf2-4b74-aec3-ac9a67a2635b
-20240809	10:55:19	ERROR	app.use 404	Page not found: /louis-roederer.png	087b1d2b-ec81-4d21-9cec-c4ee8142b9f7
-20240809	10:55:19	INFO	HTTP GET	/images/chateau_desclans.png	46ad92c1-fcf0-4854-81c3-964e21db90af
-20240809	10:55:19	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	18d235de-4172-4289-adca-b0507cda6dcf
-20240809	10:55:43	INFO	HTTP GET	/search	5dad3307-5a63-4da0-a688-d7d1d51cc2ef
-20240809	10:55:43	INFO	auth.api.setToken	JWT token set from session	44f2499e-50e3-4a8e-ab77-4fd9547042ab
-20240809	10:55:43	INFO	auth.api.authenticateJWT	JWT verified successfully	2b2a4d23-aa3e-48f2-81df-dd62fd2541ba
-20240809	10:55:43	INFO	get /search	search page (search.ejs) was displayed.	c7ea1904-0cc8-4504-b510-f90093d3a99c
-20240809	10:55:51	INFO	HTTP POST	/search	dc59d9a9-c34c-4857-bd7a-407aa0dbbad7
-20240809	10:55:51	INFO	auth.api.setToken	JWT token set from session	50012eb7-0c01-40cc-b51d-984f4e873e05
-20240809	10:55:51	INFO	auth.api.authenticateJWT	JWT verified successfully	c5fabf49-d5f0-49b7-818e-7e8fe176bc19
-20240809	10:55:51	INFO	post /search	search results displayed.	7a27a110-b0f1-4486-ae8e-16043e7004f6
-20240809	10:55:51	INFO	HTTP GET	/veuve-clicquot.png	3b5661a5-1646-48ba-aa5a-8feef77ebf5e
-20240809	10:55:51	ERROR	app.use 404	Page not found: /veuve-clicquot.png	dfa2e2be-8015-43d4-a6ba-7e3661a1060e
-20240809	11:02:57	INFO	HTTP POST	/search	3d686bbd-c1eb-46b3-98bb-9e530d37b967
-20240809	11:02:57	INFO	auth.api.setToken	JWT token set from session	58a30a57-75bd-4318-af30-770fd8d0da04
-20240809	11:02:57	INFO	auth.api.authenticateJWT	JWT verified successfully	814bab87-da31-4720-b72b-ec57a2daa895
-20240809	11:02:58	INFO	post /search	search results displayed.	8281dc09-8d20-4bb9-b34e-6a3a15b55a76
-20240809	11:02:58	INFO	HTTP GET	/ridge-vineyards.png	c70c585a-404e-4c8e-98a9-95ac3388cd12
-20240809	11:02:58	ERROR	app.use 404	Page not found: /ridge-vineyards.png	9faafb99-b595-4525-bbed-a0802f8e9e3a
-20240809	11:02:58	INFO	HTTP GET	/chateau-margaux.png	48c01919-d66e-4393-bf08-780c8e315302
-20240809	11:02:58	ERROR	app.use 404	Page not found: /chateau-margaux.png	eac7bc43-a9ef-48d8-9a45-e473b7cf3a46
-20240809	11:02:58	INFO	HTTP GET	/images/tenuta-san-guido.png	0d8e1371-5425-4001-9cc4-a1266e55e9d1
-20240809	11:02:58	ERROR	app.use 404	Page not found: /images/tenuta-san-guido.png	734fa59a-adca-4f04-b5ea-079f8866a7f0
-20240809	11:02:58	INFO	HTTP GET	/cloudybay.png	effef517-ab78-4c2c-85c2-573d5ada5c7d
-20240809	11:02:58	ERROR	app.use 404	Page not found: /cloudybay.png	59d724cc-7962-4f0f-974f-e1925188b4a6
-20240809	11:02:58	INFO	HTTP GET	/catena-zapata.png	15c9fa28-d42e-47a4-815c-76745e58e0aa
-20240809	11:02:58	ERROR	app.use 404	Page not found: /catena-zapata.png	39d3ce66-5e05-4da8-9fd2-59cc6dacce92
-20240809	11:02:58	INFO	HTTP GET	/silver_oak.png	62322ef2-b998-43d1-92ce-c077f63bfb7a
-20240809	11:02:58	ERROR	app.use 404	Page not found: /silver_oak.png	170d98fe-0864-4b57-92f2-0ad510620d3f
-20240809	11:02:58	INFO	HTTP GET	/torres.png	a3e9e5ca-e606-47dd-9cb6-3c549c01c654
-20240809	11:02:58	ERROR	app.use 404	Page not found: /torres.png	8eb01b55-fc4b-4c5b-8e3a-f98c9aadd02d
-20240809	11:02:58	INFO	HTTP GET	/antinori.png	5f8e7263-2d79-43bc-aa5c-a920952f978b
-20240809	11:02:58	ERROR	app.use 404	Page not found: /antinori.png	2e9ef6a5-aa88-4aac-af67-535b9c6bb3ae
-20240809	11:02:58	INFO	HTTP GET	/penfolds.png	3dcff62a-6214-478e-8ba3-c8d4a91f37e5
-20240809	11:02:58	ERROR	app.use 404	Page not found: /penfolds.png	5d067b65-59b1-4a68-88ba-e396119ef965
-20240809	11:02:58	INFO	HTTP GET	/henschke.png	6496daff-fe48-4cb2-8eef-902794769956
-20240809	11:02:58	ERROR	app.use 404	Page not found: /henschke.png	8f7d2d20-366d-4824-9776-2043ba61facd
-20240809	11:02:58	INFO	HTTP GET	/ornellaia.png	425c15cd-2c36-402a-92ca-ae9c552fa99e
-20240809	11:02:58	ERROR	app.use 404	Page not found: /ornellaia.png	ea20086e-f0b8-4b8f-916f-27a2e41c60d0
-20240809	11:02:58	INFO	HTTP GET	/images/caymus.png	0340eade-ae0c-4f28-98a8-5ae52b0bbb6a
-20240809	11:02:58	ERROR	app.use 404	Page not found: /images/caymus.png	99275946-644a-40e1-9042-adbfb134fe8a
-20240809	11:02:58	INFO	HTTP GET	/images/chateau-montelena.png	6c889f56-7016-4a57-8575-82e433d2fbf6
-20240809	11:02:58	ERROR	app.use 404	Page not found: /images/chateau-montelena.png	683693f2-7869-41dd-a667-bbfad434d646
-20240809	11:02:58	INFO	HTTP GET	/louis-roederer.png	39a65373-4c1e-43f0-81a7-7b459d670e75
-20240809	11:02:58	ERROR	app.use 404	Page not found: /louis-roederer.png	2cb171d4-e708-454c-a439-7b4237090500
-20240809	11:02:58	INFO	HTTP GET	/moet-chandon.png	1fe6edd2-ec87-43ee-8c43-08e99a35fe6a
-20240809	11:02:58	ERROR	app.use 404	Page not found: /moet-chandon.png	893d0691-93fb-4997-a0fc-2bac6fbaf171
-20240809	11:02:58	INFO	HTTP GET	/veuve-clicquot.png	afb706a4-6564-4dea-a3e8-2dfe021a3a40
-20240809	11:02:58	ERROR	app.use 404	Page not found: /veuve-clicquot.png	2c4fc599-77b5-41f4-9998-414774389f40
-20240809	11:05:23	INFO	HTTP GET	/search	bb115474-fe83-42fb-8630-00ee642f2674
-20240809	11:05:23	INFO	auth.api.authenticateJWT	JWT verified successfully	3255c23c-308b-459d-a020-763f33b931c3
-20240809	11:05:23	INFO	auth.api.setToken	JWT token set from session	a9f730c3-d3ef-4ee1-989a-3bc88d7a5ca6
-20240809	11:05:24	INFO	get /search	search page (search.ejs) was displayed.	b1b09866-62e4-44e4-9105-075f67fc76aa
-20240809	11:05:30	INFO	HTTP POST	/search	a6dbe631-1a95-4296-8b7e-907678fcb547
-20240809	11:05:30	INFO	auth.api.setToken	JWT token set from session	8f96ee74-02e5-4c12-891d-f95379b54f02
-20240809	11:05:30	INFO	auth.api.authenticateJWT	JWT verified successfully	65c20878-a01c-4c6d-8be7-ea2854661e80
-20240809	11:05:31	INFO	post /search	search results displayed.	3d06a089-3b78-49fc-9121-8159b54e55f1
-20240809	11:05:31	INFO	HTTP GET	/ridge-vineyards.png	e94b097a-6134-47e8-bc4a-55e7eb5aed03
-20240809	11:05:31	ERROR	app.use 404	Page not found: /ridge-vineyards.png	47a58eac-e4f5-44b7-b9ea-27e852daa2a0
-20240809	11:05:31	INFO	HTTP GET	/chateau-margaux.png	6ba198e5-71ed-41c6-8a2e-095c452ffba0
-20240809	11:05:31	ERROR	app.use 404	Page not found: /chateau-margaux.png	fe4cf4a5-7f6b-4faa-8fa5-f84461e0f6c3
-20240809	11:05:31	INFO	HTTP GET	/images/tenuta-san-guido.png	e64ecc29-ba35-4d6f-905d-003b23cca210
-20240809	11:05:31	ERROR	app.use 404	Page not found: /images/tenuta-san-guido.png	d6243553-db97-445b-8393-622ae0dc868b
-20240809	11:05:31	INFO	HTTP GET	/cloudybay.png	92da6c0e-f85d-4865-b3ff-16f33735b29b
-20240809	11:05:31	ERROR	app.use 404	Page not found: /cloudybay.png	b958116e-2a4b-4465-bca5-8794e175f3b8
-20240809	11:05:31	INFO	HTTP GET	/catena-zapata.png	8d4bbe25-9f22-489a-bac1-2c99698e5a0e
-20240809	11:05:31	ERROR	app.use 404	Page not found: /catena-zapata.png	c459d69d-9410-4134-9145-6c6592d0b0e9
-20240809	11:05:31	INFO	HTTP GET	/torres.png	cd10931a-fa31-4c46-a486-8c0f1f78c962
-20240809	11:05:31	ERROR	app.use 404	Page not found: /torres.png	051ed975-1cf7-42be-81f5-8b3ecc858e4d
-20240809	11:05:31	INFO	HTTP GET	/antinori.png	d79104d2-88f6-4aef-8162-8623e6075709
-20240809	11:05:31	ERROR	app.use 404	Page not found: /antinori.png	2816a3c2-2e7e-4fcb-8bd9-37bdcff7bfbf
-20240809	11:05:31	INFO	HTTP GET	/silver_oak.png	0d24dd2d-13e0-444b-8d2d-dc91c0c58c29
-20240809	11:05:31	ERROR	app.use 404	Page not found: /silver_oak.png	7d174d7c-8243-49b6-bbbb-386f3d20f14a
-20240809	11:05:31	INFO	HTTP GET	/penfolds.png	bb6ed15e-9445-421b-95cd-905073ae4b7a
-20240809	11:05:31	ERROR	app.use 404	Page not found: /penfolds.png	9a2466f6-7978-4af4-9e3e-45c5a91c24d7
-20240809	11:05:31	INFO	HTTP GET	/henschke.png	5b51fa80-72f2-43fd-acd9-2a3fc84c1a8d
-20240809	11:05:31	ERROR	app.use 404	Page not found: /henschke.png	2fc36210-2dfa-45f3-8cf8-a59d41f1767c
-20240809	11:05:31	INFO	HTTP GET	/ornellaia.png	6e908c81-68b9-485b-80cb-028f3fb7c764
-20240809	11:05:31	ERROR	app.use 404	Page not found: /ornellaia.png	daae642a-3c5e-447f-a10f-4a243ab533cc
-20240809	11:05:31	INFO	HTTP GET	/images/caymus.png	51773e18-cc2e-4b12-8fca-afb274ff2018
-20240809	11:05:31	ERROR	app.use 404	Page not found: /images/caymus.png	c892f8ad-72f1-46a7-b015-cd1f5177b5e7
-20240809	11:05:31	INFO	HTTP GET	/images/chateau-montelena.png	7dd224fc-94c2-421a-af48-b0faa73ee236
-20240809	11:05:31	ERROR	app.use 404	Page not found: /images/chateau-montelena.png	0fd37bac-b325-4c76-97fb-85a609bc1c50
-20240809	11:05:31	INFO	HTTP GET	/moet-chandon.png	90863a85-a573-45e2-8c8d-b2dcb4818bdb
-20240809	11:05:31	ERROR	app.use 404	Page not found: /moet-chandon.png	ddac0f5c-7ba5-485e-8ee5-88a34b4d05b2
-20240809	11:05:31	INFO	HTTP GET	/veuve-clicquot.png	4d881f0b-bdf3-4e8e-b566-5fc950657961
-20240809	11:05:31	ERROR	app.use 404	Page not found: /veuve-clicquot.png	d7ea312e-5c54-4d64-97f2-52562bf89040
-20240809	11:05:31	INFO	HTTP GET	/louis-roederer.png	cafa7b5b-adf1-4c76-a515-a2d32dedd007
-20240809	11:05:31	ERROR	app.use 404	Page not found: /louis-roederer.png	421d7db6-9293-43bd-8b08-65a39c328987
-20240809	11:08:49	INFO	HTTP POST	/search	bc30c4d5-17b6-4f38-a0e8-cb61f2046155
-20240809	11:08:49	INFO	auth.api.setToken	JWT token set from session	e6584956-a71c-4724-a37c-7e00e13429da
-20240809	11:08:49	INFO	auth.api.authenticateJWT	JWT verified successfully	13216542-abb2-4e1e-827b-b428d081e821
-20240809	11:08:50	INFO	post /search	search results displayed.	9a397b42-b8a5-42c0-b9b8-350058e719d3
-20240809	11:08:50	INFO	HTTP GET	/ridge-vineyards.png	2a10e211-f074-47c5-8b93-d719e4cc6c83
-20240809	11:08:50	INFO	HTTP GET	/silver_oak.png	919d78ef-d06a-4637-a0c4-8a1b2dd607d2
-20240809	11:08:50	ERROR	app.use 404	Page not found: /ridge-vineyards.png	53955ece-7aa5-436d-96b1-dbdfda98259a
-20240809	11:08:50	ERROR	app.use 404	Page not found: /silver_oak.png	267d9bba-c4fb-45a9-8421-33dd0a11ff92
-20240809	11:08:50	INFO	HTTP GET	/images/caymus.png	c2f7f4b9-5b27-4f3c-9b60-3613ef383555
-20240809	11:08:50	ERROR	app.use 404	Page not found: /images/caymus.png	8d319f9d-b26b-472c-908b-53b417875daf
-20240809	11:08:50	INFO	HTTP GET	/images/chateau-montelena.png	1d7d467f-20e5-4a96-8b41-bdc0c39f92ff
-20240809	11:08:50	ERROR	app.use 404	Page not found: /images/chateau-montelena.png	73075a32-b290-40cb-81bd-6be5889b90e6
-20240809	11:17:44	INFO	HTTP POST	/search	45fb941d-7d95-4ba0-b51f-2e5c7d484388
-20240809	11:17:44	INFO	auth.api.setToken	JWT token set from session	add011cd-76fb-4a8b-8b6a-8a41ccdf290f
-20240809	11:17:44	INFO	auth.api.authenticateJWT	JWT verified successfully	3966bada-dfc1-414b-8f74-fd0e272435c9
-20240809	11:17:45	ERROR	post /search	Error in search query: text index required for $text query	eb42d81f-eabd-4722-92fd-fe463d0640d6
-20240809	11:17:49	INFO	HTTP POST	/search	cdf5753a-f96e-4019-a1eb-b5ac3b9e0db6
-20240809	11:17:49	INFO	auth.api.setToken	JWT token set from session	ebf8864c-5e35-4743-acf5-ca1e76a08830
-20240809	11:17:49	INFO	auth.api.authenticateJWT	JWT verified successfully	ba832944-3c8d-44c9-837b-e386be5a1349
-20240809	11:17:49	ERROR	post /search	Error in search query: text index required for $text query	10bf7ff0-0c2c-4fa0-a196-05169cc05dee
-20240809	11:17:54	INFO	HTTP GET	/	99a72e9a-a06d-4dcd-9027-f949c9c66b39
-20240809	11:17:54	INFO	app.get /	Home page (index.ejs) was displayed.	0bed2921-93ab-4098-8cc3-54a4481f7e4d
-20240809	11:17:56	INFO	HTTP GET	/auth/	8023740b-e25a-46c0-b377-9751a91609b9
-20240809	11:17:56	INFO	auth.get /	Login page displayed.	906e7d9e-32cc-468f-a12e-904555535862
-20240809	11:17:56	INFO	HTTP GET	/styles/footer.css	9d9010fe-8cab-453a-b063-81703282bed6
-20240809	11:17:56	ERROR	app.use 404	Page not found: /styles/footer.css	9bf42ef6-ac1e-4b71-b150-ab02531c7314
-20240809	11:17:57	INFO	HTTP POST	/auth	6f4feeb3-c17a-491b-85ed-032be179fbed
-20240809	11:17:58	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	da71f936-01a5-4b9b-9fbb-8da39e81dba4
-20240809	11:17:58	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	7f1e4849-86d2-4f9f-8252-e9c769335edd
-20240809	11:17:58	INFO	HTTP GET	/search	379396a4-8c61-4cc4-b9c3-70c792dcee99
-20240809	11:17:58	INFO	auth.api.setToken	JWT token set from session	2ac23ead-3477-45b4-96a1-bc5e70bafc24
-20240809	11:17:58	INFO	auth.api.authenticateJWT	JWT verified successfully	0c97b8bd-4011-4e43-99db-2a04c7f4a40d
-20240809	11:17:58	INFO	get /search	search page (search.ejs) was displayed.	cbd31f14-f291-4f39-ba43-464c5ccbcca5
-20240809	11:18:05	INFO	HTTP POST	/search	a84231dc-0d4e-4df0-ae88-64e9b257a538
-20240809	11:18:05	INFO	auth.api.setToken	JWT token set from session	3ba05b02-9c73-4a52-bc30-bf0cb790fe73
-20240809	11:18:05	INFO	auth.api.authenticateJWT	JWT verified successfully	6bbb9daf-f226-4bdd-b270-d29a4a3f2803
-20240809	11:18:06	ERROR	post /search	Error in search query: text index required for $text query	75308520-a301-4f37-8c80-caa1a7b7dd1f
-20240809	11:24:50	SUCCESS	app.listen	HTTP server successfully started.	5b94aef2-ef53-429c-a0a0-433b1bd241fe
-20240809	11:24:59	INFO	HTTP GET	/	6674fa1b-94a8-435c-8ff4-c44cf4b569d3
-20240809	11:24:59	INFO	app.get /	Home page (index.ejs) was displayed.	5c299519-816c-474e-a28f-004b524ed96c
-20240809	11:25:01	INFO	HTTP GET	/auth/	a45a64b3-405a-49d0-8511-36807053b31d
-20240809	11:25:01	INFO	auth.get /	Login page displayed.	42a6a698-ebd0-4989-8e33-690572dfe6b2
-20240809	11:25:01	INFO	HTTP GET	/styles/footer.css	8b8e5a47-6e91-4315-96d0-f270d189eae8
-20240809	11:25:01	ERROR	app.use 404	Page not found: /styles/footer.css	c3f8db8c-9dc4-47f7-baf3-68f58e98cfd2
-20240809	11:25:03	INFO	HTTP POST	/auth	ce9c8f62-4b6e-4d81-a5e9-369aadf1744d
-20240809	11:25:03	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	29a1f9c8-525b-46b5-820f-425f4f1dd985
-20240809	11:25:04	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	3a4cb02f-e3f1-4a69-a7c1-f6959e64ae60
-20240809	11:25:04	INFO	HTTP GET	/search	4579470e-d1c9-44f4-b30a-fe5822173184
-20240809	11:25:04	INFO	auth.api.setToken	JWT token set from session	d149b1fb-8b90-4704-b939-dd0c4e08614e
-20240809	11:25:04	INFO	auth.api.authenticateJWT	JWT verified successfully	8dc44f9f-5b70-46b6-8389-b7c2b1fe7c28
-20240809	11:25:04	INFO	get /search	search page (search.ejs) was displayed.	2b9af3f1-c0e0-4f70-a99a-643c9e25de14
-20240809	11:25:23	INFO	HTTP POST	/search	b3161df2-daf9-465c-a1fe-741bfdd85e20
-20240809	11:25:23	INFO	auth.api.setToken	JWT token set from session	8c51bcb8-1871-42b2-8fdc-12fa581da465
-20240809	11:25:23	INFO	auth.api.authenticateJWT	JWT verified successfully	6766c5b8-e84e-410d-b2d3-fac4c4f91f5b
-20240809	11:25:24	ERROR	post /search	Error in search query: text index required for $text query	daf3f8f9-3e6c-4c65-ba15-78d409e5fd19
-20240809	11:25:44	INFO	HTTP POST	/search	b8f2fc22-e51d-4ffa-8a0a-9eccfe5eedc5
-20240809	11:25:44	INFO	auth.api.setToken	JWT token set from session	a470437b-68dc-4303-b0b9-6fbbd49eba71
-20240809	11:25:44	INFO	auth.api.authenticateJWT	JWT verified successfully	e7a81d55-b8b6-4bf9-a4e8-3b9e720345cb
-20240809	11:25:45	ERROR	post /search	Error in search query: text index required for $text query	806c1590-be05-4c7c-bdbb-3b2936696e98
-20240809	11:25:54	INFO	HTTP POST	/search/filter	bd0dc983-de97-4558-b79a-60132e0164eb
-20240809	11:25:54	INFO	auth.api.setToken	JWT token set from session	0dd3a09f-a0f3-4dc9-aad7-e632152c2a7e
-20240809	11:25:54	INFO	auth.api.authenticateJWT	JWT verified successfully	825515c1-37bb-49c7-b052-aa8c875bb730
-20240809	11:25:54	INFO	post /search/filter	filter results displayed.	922a6b9f-f799-4ff9-818b-71bda85e6987
-20240809	11:29:29	INFO	HTTP POST	/search	1fd659a4-2eda-4d88-8aa4-d87ea4b4c617
-20240809	11:29:29	INFO	auth.api.setToken	JWT token set from session	c7f3cd17-c456-4beb-9956-88709122685e
-20240809	11:29:29	INFO	auth.api.authenticateJWT	JWT verified successfully	2473e5df-cb82-455c-a873-dcb5180f6bd0
-20240809	11:29:30	INFO	post /search	search results displayed.	c501c692-20f5-4e66-9f8b-3dc5af1d1513
-20240809	11:31:24	INFO	HTTP POST	/search	9f4c6f70-aed9-4dc0-a22c-a1f9f9632070
-20240809	11:31:24	INFO	auth.api.setToken	JWT token set from session	4754ee04-d454-4590-834b-5d0142ebbace
-20240809	11:31:24	INFO	auth.api.authenticateJWT	JWT verified successfully	170d39f8-c4d1-4034-a320-453a5c97d387
-20240809	11:31:25	INFO	post /search	search results displayed.	db100498-0e4d-4c14-befb-562e6949af6b
-20240809	11:31:27	INFO	HTTP POST	/search	ebae807e-3209-4fe1-9b10-28bcaf3a9588
-20240809	11:31:27	INFO	auth.api.authenticateJWT	JWT verified successfully	dfacadd4-4357-4aad-a567-1610b7d3bd1d
-20240809	11:31:27	INFO	auth.api.setToken	JWT token set from session	146be526-dcc9-42fd-8c41-48fbe77f7567
-20240809	11:31:27	INFO	post /search	search results displayed.	ff158ff2-1e3f-4033-9f25-25438c905fa5
-20240809	11:48:36	INFO	HTTP POST	/search	873142ff-2818-4e90-9d1d-5d8e28117dbe
-20240809	11:48:36	INFO	auth.api.setToken	JWT token set from session	e4c950b4-14de-459d-b117-5910ee88bb96
-20240809	11:48:36	INFO	auth.api.authenticateJWT	JWT verified successfully	694095e3-8d7e-4300-925c-e05baf7877f5
-20240809	11:48:36	INFO	post /search	search results displayed.	0ab46d01-75fb-499a-9226-dedc452f6a86
-20240809	11:48:36	INFO	HTTP GET	/images/almaviva.png	49030dfe-1acd-413b-aeff-aab739d423c4
-20240809	11:48:36	ERROR	app.use 404	Page not found: /images/almaviva.png	2d7f12fc-31d3-4123-a39d-efe9e8887bc9
-20240809	11:51:11	INFO	HTTP POST	/search	369bb461-b251-4106-ae54-c5f31673710c
-20240809	11:51:11	INFO	auth.api.setToken	JWT token set from session	f2c26023-a3be-47a4-8d09-8cc12a2af512
-20240809	11:51:11	INFO	auth.api.authenticateJWT	JWT verified successfully	e577c3e6-4953-48e7-aa81-e4b2a0c227fe
-20240809	11:51:11	INFO	post /search	search results displayed.	6efa5777-eaab-4d3c-aa82-35387330b93d
-20240809	11:51:20	INFO	HTTP POST	/search	f74dbfd3-aad0-4158-8d0a-a8211d26c56f
-20240809	11:51:20	INFO	auth.api.setToken	JWT token set from session	9654d734-78db-43fa-ac04-9ab8d21b3ed3
-20240809	11:51:20	INFO	auth.api.authenticateJWT	JWT verified successfully	5f247c52-ac4a-47c4-865f-40dfe9f92e93
-20240809	11:51:20	INFO	post /search	search results displayed.	d63ddfa7-2543-4268-ae77-bac90af60fd3
-20240809	11:55:26	INFO	HTTP POST	/search	c9bdc66c-200d-454f-b680-da93ae26051f
-20240809	11:55:26	INFO	auth.api.setToken	JWT token set from session	623326ea-b3a1-49aa-9916-a2ec7eae1a70
-20240809	11:55:26	INFO	auth.api.authenticateJWT	JWT verified successfully	3b4baef7-b441-4605-a999-2c97c4b1e7d8
-20240809	11:55:27	INFO	post /search	search results displayed.	2a13ba10-5ee2-4157-bd56-7ce8c316d5ab
-20240809	12:00:31	INFO	HTTP POST	/search	a3f11fb3-173c-49d8-9f9e-c91cde5f9830
-20240809	12:00:31	INFO	auth.api.setToken	JWT token set from session	c8ab997f-77ce-4715-a3a1-f4d912372b8f
-20240809	12:00:31	INFO	auth.api.authenticateJWT	JWT verified successfully	f4ce6a58-368d-4cd5-a631-061f1dfdd74d
-20240809	12:00:32	INFO	post /search	search results displayed.	7d1b2563-77d5-42d4-b288-5c93fb0cda07
-20240809	12:03:48	INFO	HTTP POST	/search	cc9b6846-10ba-4fc9-a9e1-faeed5cd99a2
-20240809	12:03:48	INFO	auth.api.setToken	JWT token set from session	b5f49f53-370b-46e7-9989-be7bd2a06a22
-20240809	12:03:48	INFO	auth.api.authenticateJWT	JWT verified successfully	e1ee2862-196b-443b-91ed-e0f760f7ac1d
-20240809	12:03:49	INFO	post /search	search results displayed.	e603ea30-65a2-47f8-a1ac-9880941cf455
-20240809	12:03:49	INFO	HTTP GET	/images/casa.png	8fdc770e-76bf-415f-bf24-45044f08daf7
-20240809	12:03:49	ERROR	app.use 404	Page not found: /images/casa.png	7d221dd1-63db-4a45-a0bf-a8bf5fc1df7a
-20240809	12:05:17	INFO	HTTP GET	/search	2290f87a-a68a-4553-8b63-fec82e698e8a
-20240809	12:05:17	INFO	auth.api.setToken	JWT token set from session	3f682616-6de2-408e-8ea3-44c8b9161458
-20240809	12:05:17	INFO	auth.api.authenticateJWT	JWT verified successfully	22ddc110-985c-4ebd-8958-582b26e55ce3
-20240809	12:05:17	INFO	get /search	search page (search.ejs) was displayed.	d152eb7f-fac0-4b11-bd19-0fb375049efc
-20240809	12:05:28	INFO	HTTP POST	/search	76a43a3e-5d2b-4d9c-b04d-a5cfceb12eca
-20240809	12:05:28	INFO	auth.api.setToken	JWT token set from session	7537aa97-854e-4a22-92d2-3dc83c3fca11
-20240809	12:05:28	INFO	auth.api.authenticateJWT	JWT verified successfully	13d0fccc-02d2-4e70-935a-834161f05a36
-20240809	12:05:29	INFO	post /search	search results displayed.	827c9758-50f7-4563-9d94-a09fe909827b
-20240809	12:05:34	INFO	HTTP POST	/search	66a38e67-8740-445a-8c6b-15e639e1de4e
-20240809	12:05:34	INFO	auth.api.authenticateJWT	JWT verified successfully	5895d33e-34c5-46b5-ab18-bd0ea88941a3
-20240809	12:05:34	INFO	auth.api.setToken	JWT token set from session	2ee0dd6a-e0be-41fa-afb8-353653b08460
-20240809	12:05:34	INFO	post /search	search results displayed.	ac94fde5-727f-4103-9866-d427fe0aaf42
-20240809	12:05:34	INFO	HTTP GET	/images/montelena.png	1dc1fab4-b074-4451-b345-8f4c9d151069
-20240809	12:05:34	ERROR	app.use 404	Page not found: /images/montelena.png	40c87fb1-3161-4eeb-b7c9-990bbc40e5b4
-20240809	12:05:48	INFO	HTTP GET	/vault	b3980023-0a34-4d73-a32d-3a35122dec0e
-20240809	12:05:48	INFO	authMiddleware.setToken	JWT token set from session	6ded8775-d85d-4274-ae2d-f9b54aa4b6ee
-20240809	12:05:48	INFO	authMiddleware.authenticateJWT	JWT verified successfully	bf3c5396-8c9d-4f9a-b0f8-3c5f3326f17c
-20240809	12:05:49	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	b834f8c2-fa61-47a5-aee9-7411b0bf883c
-20240809	12:05:49	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	5c388525-e15b-4dac-8770-a3d374ba4472
-20240809	12:05:49	INFO	HTTP GET	/images/chateau_desclans.png	5b14dac2-8dbe-4631-a262-d62cc188d199
-20240809	12:05:49	ERROR	app.use 404	Page not found: /veuve-clicquot.png	15f5650d-3a52-41b5-8c66-1150148d803a
-20240809	12:05:49	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	0fbc95c1-9606-44bb-a6a1-a677c88934b4
-20240809	12:05:49	INFO	HTTP GET	/veuve-clicquot.png	91bfd09e-8175-4206-869a-31fb6fab67cf
-20240809	12:06:12	INFO	HTTP GET	/auth/exit	b9572565-c08b-4979-b255-6a506df5b092
-20240809	12:06:12	SUCCESS	auth.get /exit	User logged out successfully.	4e69bb83-d68f-4525-8d9c-a5f0b59049fc
-20240809	12:06:12	INFO	HTTP GET	/	3701fbd1-44f7-47b3-8efd-c54afe7dac92
-20240809	12:06:12	INFO	app.get /	Home page (index.ejs) was displayed.	53e56812-6c6c-4acf-a8b0-88309061e546
-20240809	12:06:18	INFO	HTTP GET	/auth/	150367fa-d1d7-4b28-b971-a2dbfb3a1db2
-20240809	12:06:18	INFO	auth.get /	Login page displayed.	3535cc30-7bf8-4219-9836-ee1844035576
-20240809	12:06:18	INFO	HTTP GET	/styles/footer.css	2dc04e67-8f7f-4d14-9467-89f3176dc60b
-20240809	12:06:18	ERROR	app.use 404	Page not found: /styles/footer.css	fc752aa9-11a2-436b-b96e-54dbc86f2a4c
-20240809	12:06:21	INFO	HTTP POST	/auth	4453697f-0ad7-4f79-be75-817a8bdde228
-20240809	12:06:22	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	19b4be57-8681-412a-9417-9df2a11fabab
-20240809	12:06:22	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	cfe6049c-fe93-4a75-93f3-5a939d71b67c
-20240809	12:06:22	INFO	HTTP GET	/search	9a05c333-ffd3-4870-86d5-50570a425230
-20240809	12:06:22	INFO	auth.api.setToken	JWT token set from session	2a626040-24d4-4750-9a2b-42f875162bbe
-20240809	12:06:22	INFO	auth.api.authenticateJWT	JWT verified successfully	c248dbc2-502e-4b0e-9fd5-b6b31b134be2
-20240809	12:06:22	INFO	get /search	search page (search.ejs) was displayed.	57d3b94f-a662-4b95-a776-6eb28c5efaeb
-20240809	12:06:48	INFO	HTTP GET	/auth/exit	989ba412-2974-4b74-81e4-77a801ab7b2f
-20240809	12:06:48	SUCCESS	auth.get /exit	User logged out successfully.	4b174c66-328b-4889-98e3-5355c5944f25
-20240809	12:06:48	INFO	HTTP GET	/	e700dc98-1ab9-4eac-8f75-dbf183779294
-20240809	12:06:48	INFO	app.get /	Home page (index.ejs) was displayed.	807db105-0324-4c7a-a529-2c720298b5c0
-20240809	12:07:08	INFO	HTTP GET	/auth/new	9d6a9d0b-2322-4809-b97d-0b40b44110e1
-20240809	12:07:08	INFO	auth.get /new	Registration page displayed.	beb6cba8-d780-4a67-b71f-0ed4dacd1d75
-20240809	12:07:08	INFO	HTTP GET	/styles/footer.css	098791ef-2a18-42aa-8cf4-6a4536b73aa8
-20240809	12:07:08	ERROR	app.use 404	Page not found: /styles/footer.css	f7fab360-aeb5-4e87-8d3c-cd566f0525aa
-20240809	12:07:58	INFO	HTTP GET	/auth/	220f18d5-3dc6-4ad0-820f-c8c757ddbaf2
-20240809	12:07:58	INFO	auth.get /	Login page displayed.	e4d8c708-95a6-48bc-91fd-e5c15463da5c
-20240809	12:07:58	INFO	HTTP GET	/styles/footer.css	432e1677-32b2-450c-94c3-9e5dea301de0
-20240809	12:07:58	ERROR	app.use 404	Page not found: /styles/footer.css	200d9879-919e-4e4b-a216-4667067dd4cd
-20240809	12:08:00	INFO	HTTP POST	/auth	4abbf037-b311-454d-973c-1951ddc9b8d3
-20240809	12:08:01	INFO	getLoginByEmail	Login retrieval attempt for email: brendaarmstrong@outlook.com	f9efa41f-6958-4a5d-8968-7cd0cc9b4630
-20240809	12:08:01	SUCCESS	auth.post /	User brendaarmstrong@outlook.com logged in successfully.	b394d544-1fb1-498b-9ba8-0d0da4560161
-20240809	12:08:01	INFO	HTTP GET	/search	13c42dde-1036-4322-90e9-1817e7e26917
-20240809	12:08:01	INFO	auth.api.setToken	JWT token set from session	ed5d2af7-eab9-4444-b95a-973611df1253
-20240809	12:08:01	INFO	auth.api.authenticateJWT	JWT verified successfully	8d3217df-99a1-4de2-835c-3a62f174b7ed
-20240809	12:08:01	INFO	get /search	search page (search.ejs) was displayed.	03b427b6-3ab1-4b46-a7f6-50f2ecebcbb9
-20240809	12:08:52	INFO	HTTP POST	/search/filter	679244ca-a984-4d24-b242-820b821f8179
-20240809	12:08:52	INFO	auth.api.setToken	JWT token set from session	02208c58-6879-4713-9669-6b124b5b38eb
-20240809	12:08:52	INFO	auth.api.authenticateJWT	JWT verified successfully	2e1d18d3-9423-4cfc-8fc7-54aaf066bc8e
-20240809	12:08:52	INFO	post /search/filter	filter results displayed.	74314516-b650-4ed3-9bd8-52b38a68efba
-20240809	12:08:57	INFO	HTTP POST	/vault/add/377	0274068b-4cca-4c98-8f51-f4fd70acbd87
-20240809	12:08:57	INFO	authMiddleware.authenticateJWT	JWT verified successfully	54b89f84-be7a-40a1-91da-27e2ae19971d
-20240809	12:08:57	INFO	authMiddleware.setToken	JWT token set from session	0e6a94cc-9fbf-4d55-bdcf-cc39d7d73164
-20240809	12:08:57	SUCCESS	addWineToVault	Wine 377 added to vault for user brendaarmstrong@outlook.com.	dc931e3b-0145-433a-9b1b-d249791841c1
-20240809	12:08:57	SUCCESS	post /vault/add	Wine 377 added to vault for user brendaarmstrong@outlook.com.	77581275-b169-4ba4-932a-794bbe40c1fc
-20240809	12:09:08	INFO	HTTP POST	/search	9336f92c-b825-483e-8cef-22b8b849b207
-20240809	12:09:08	INFO	auth.api.setToken	JWT token set from session	be06ef08-1b1a-45af-91c7-c42f24df6baa
-20240809	12:09:08	INFO	auth.api.authenticateJWT	JWT verified successfully	20f0d829-ae19-491f-bf76-008fcbe8bb34
-20240809	12:09:08	INFO	post /search	search results displayed.	e7cd174a-d46d-40eb-8746-48d40dfcbe39
-20240809	12:09:08	INFO	HTTP GET	/images/caymus.png	98e73a32-daa4-4018-a641-81bf5d3d9b90
-20240809	12:09:08	ERROR	app.use 404	Page not found: /images/caymus.png	7d3e6cf0-a74b-4261-82b9-66e779218847
-20240809	12:09:08	INFO	HTTP GET	/images/montelena.png	2fdd51cf-30a2-4825-ab8e-2ba5c263d4ea
-20240809	12:09:08	ERROR	app.use 404	Page not found: /images/montelena.png	054b7597-2060-488e-9446-9ec3ae6337aa
-20240809	12:09:13	INFO	HTTP POST	/search	4571d5ab-6274-4314-9d0b-ab816890d24d
-20240809	12:09:13	INFO	auth.api.setToken	JWT token set from session	d0e0824a-9a68-4bf9-92b2-416201b6faa8
-20240809	12:09:13	INFO	auth.api.authenticateJWT	JWT verified successfully	e72d7887-d71d-4f3e-a135-ecb521b6d1e1
-20240809	12:09:14	INFO	post /search	search results displayed.	f4b313e4-7999-4705-ba69-602a1d24f21d
-20240809	12:09:15	INFO	HTTP POST	/vault/add/66b5de93f9e40ef00697daf9	2bb1126b-ec23-4554-9471-f15088d6ddb5
-20240809	12:09:15	INFO	authMiddleware.setToken	JWT token set from session	51aa2be9-e489-4220-b4e9-1eee1dba4424
-20240809	12:09:15	INFO	authMiddleware.authenticateJWT	JWT verified successfully	2f61b0fb-f598-4c72-8068-1f78aaac77a3
-20240809	12:09:16	SUCCESS	addWineToVault	Wine 66b5de93f9e40ef00697daf9 added to vault for user brendaarmstrong@outlook.com.	78b93603-b199-410b-a858-94dcd33e01f7
-20240809	12:09:16	SUCCESS	post /vault/add	Wine 66b5de93f9e40ef00697daf9 added to vault for user brendaarmstrong@outlook.com.	c1d823a7-20f9-440a-a4f4-390fb0be7bd7
-20240809	12:09:19	INFO	HTTP GET	/vault	9afdb002-042f-407b-9bdb-268fac5ed789
-20240809	12:09:19	INFO	authMiddleware.setToken	JWT token set from session	9fa62144-d863-4956-b7fb-9ad2bb28fc3f
-20240809	12:09:19	INFO	authMiddleware.authenticateJWT	JWT verified successfully	e9060ec2-54eb-4bd8-bf38-e665482ef120
-20240809	12:09:19	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	1818349a-004b-4337-afc8-337948f62fe8
-20240809	12:09:19	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	fff5334d-2925-4388-81c1-07aecc0f27d4
-20240809	12:09:19	INFO	HTTP GET	/images/chateau_desclans.png	c126cf5f-4cb5-4663-967b-a76d96c3bd7a
-20240809	12:09:19	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	a08ff5fd-15d6-4b87-996c-3f25c5dafed4
-20240809	12:09:19	INFO	HTTP GET	/veuve-clicquot.png	380cbfa7-1cc9-4131-9f34-80e634d47d86
-20240809	12:09:19	ERROR	app.use 404	Page not found: /veuve-clicquot.png	31e5d42a-563b-43f5-896d-91c40af06f21
-20240809	12:11:02	INFO	HTTP GET	/vault	e362b7a9-52be-4d2a-9ae6-a1a49b42402d
-20240809	12:11:02	INFO	authMiddleware.setToken	JWT token set from session	1f94d350-85ef-404f-93e1-9a5d886ccd1c
-20240809	12:11:02	INFO	authMiddleware.authenticateJWT	JWT verified successfully	7b4ea18c-2a44-45bc-94a7-2f166bf6bf1d
-20240809	12:11:03	INFO	getVaultByUserId	Vault for user brendaarmstrong@outlook.com was retrieved.	fb524368-e893-4278-86ed-1929a666194c
-20240809	12:11:03	INFO	get /vault	Vault for user brendaarmstrong@outlook.com was displayed.	aaa0e3cf-1133-42ef-81dd-2d405faabfc8
-20240809	12:11:03	INFO	HTTP GET	/images/chateau_desclans.png	08cc241b-8b7c-400a-a722-c14a994ca892
-20240809	12:11:03	ERROR	app.use 404	Page not found: /images/chateau_desclans.png	c5b64eef-7797-4eff-9c74-74277d3165bc
-20240809	12:11:03	INFO	HTTP GET	/veuve-clicquot.png	eb44c8ea-dc2d-4ec7-b01c-0e34b8618506
-20240809	12:11:03	ERROR	app.use 404	Page not found: /veuve-clicquot.png	d74ba5df-dabd-4876-be30-901f493f8743
-20240809	12:11:07	INFO	HTTP GET	/auth/exit	8478fbf1-45c2-457b-a4b5-277d6d035ce8
-20240809	12:11:07	SUCCESS	auth.get /exit	User logged out successfully.	8d8060e1-b032-4fba-a6f1-df2fdb507879
-20240809	12:11:07	INFO	HTTP GET	/	b69e5320-b95a-4529-ba17-20a40f3d7f8e
-20240809	12:11:07	INFO	app.get /	Home page (index.ejs) was displayed.	20111f8e-1123-4340-b3cb-fa7c716e2104
-20240809	12:11:10	INFO	HTTP GET	/auth/new	12080eb7-2f5b-45bf-a83f-3103fdd0e3c3
-20240809	12:11:10	INFO	auth.get /new	Registration page displayed.	0e4eac74-0104-41fc-8104-5c1e75072935
-20240809	12:11:10	INFO	HTTP GET	/styles/footer.css	685d22b9-8a56-47bb-a8d8-0d131a2edd9e
-20240809	12:11:10	ERROR	app.use 404	Page not found: /styles/footer.css	72e0da99-62fa-402d-a811-e7d4a05991c7
-20240809	12:11:30	INFO	HTTP POST	/auth/new	3772cd7b-91dc-484a-a176-fdf71b9b8d23
-20240809	12:11:30	INFO	addLogin	New login added for email: sally@vinovault.ca	036be269-01b4-4a24-befe-1fdc61824895
-20240809	12:11:30	SUCCESS	auth.post /new	User sally@vinovault.ca registered successfully.	e4d025cf-31da-4566-8d6a-51df86741983
-20240809	12:11:30	INFO	HTTP GET	/auth	bef8340d-7f78-4205-9234-996bca750b46
-20240809	12:11:30	INFO	auth.get /	Login page displayed.	bcc0c0fc-9c73-4db4-bf9a-6b0717066bcf
-20240809	12:11:30	INFO	HTTP GET	/styles/footer.css	e5a2f52b-d8d8-4ce4-aa8e-3199aabea5fc
-20240809	12:11:30	ERROR	app.use 404	Page not found: /styles/footer.css	667ae374-76ca-42a6-8368-96cdef3339d1
-20240809	12:11:45	INFO	HTTP POST	/auth	14a2449b-b53c-4811-8d31-49022b022301
-20240809	12:11:46	INFO	getLoginByEmail	Login retrieval attempt for email: sally@vinovault.ca	08491378-a289-4122-b735-906c12db7558
-20240809	12:11:46	SUCCESS	auth.post /	User sally@vinovault.ca logged in successfully.	244b1509-22f8-4617-8842-74e786411759
-20240809	12:11:46	INFO	HTTP GET	/search	41ae896c-9b10-4e99-88cd-630d9057f583
-20240809	12:11:46	INFO	auth.api.setToken	JWT token set from session	50b03ca5-4670-4997-a939-d9916a8b598c
-20240809	12:11:46	INFO	auth.api.authenticateJWT	JWT verified successfully	0b6e4dde-7ba8-455f-b084-02a0b4662d37
-20240809	12:11:46	INFO	get /search	search page (search.ejs) was displayed.	ead82802-fa97-443b-b21d-c9ca4e49720a
-20240809	12:12:17	INFO	HTTP POST	/search	4948dda4-c535-4bdf-9f7c-90415c189634
-20240809	12:12:17	INFO	auth.api.setToken	JWT token set from session	82400aa4-9304-43be-9a7b-8fa4215c616d
-20240809	12:12:17	INFO	auth.api.authenticateJWT	JWT verified successfully	79049110-f3e3-48bb-998e-ebca31b539a9
-20240809	12:12:18	INFO	post /search	search results displayed.	4d1016f5-1564-481a-84af-ab5c567b51e1
-20240809	12:12:35	INFO	HTTP POST	/vault/add/66b5e58bf9e40ef006a2b709	c6922907-4566-4557-a540-f57f58ef3fc5
-20240809	12:12:35	INFO	authMiddleware.setToken	JWT token set from session	28f010b2-c4dd-4cd7-ab42-bd44c364bd2f
-20240809	12:12:35	INFO	authMiddleware.authenticateJWT	JWT verified successfully	64f4eaaa-deb8-4b3b-b5c0-bf83cf880885
-20240809	12:12:36	SUCCESS	addWineToVault	Wine 66b5e58bf9e40ef006a2b709 added to vault for user sally@vinovault.ca.	7f6a358d-3336-45d1-b4b1-4552e1933006
-20240809	12:12:36	SUCCESS	post /vault/add	Wine 66b5e58bf9e40ef006a2b709 added to vault for user sally@vinovault.ca.	abe96c31-2b1b-4354-a11d-3a0aa46af389
-20240809	12:12:54	INFO	HTTP POST	/search	f582d5a0-6789-4c6f-904f-764f467b5778
-20240809	12:12:54	INFO	auth.api.setToken	JWT token set from session	fac548ea-fb13-4b32-bd50-d1957ef3e98d
-20240809	12:12:54	INFO	auth.api.authenticateJWT	JWT verified successfully	33b56cd6-a97f-43d1-a4b0-c5443400c4bf
-20240809	12:12:54	INFO	post /search	search results displayed.	9026e3f3-bd84-4782-ad63-24cc686fde17
-20240809	12:13:02	INFO	HTTP POST	/search	360966ff-f295-41f9-9062-8439ec0e90fe
-20240809	12:13:02	INFO	auth.api.setToken	JWT token set from session	af92d06f-fb49-4124-aa86-ca33e16e0963
-20240809	12:13:02	INFO	auth.api.authenticateJWT	JWT verified successfully	dec6f4e1-3151-4b28-9e6d-9eda00edaae9
-20240809	12:13:02	INFO	post /search	search results displayed.	4577e755-fa7a-493b-a218-cd4884c103a2
-20240809	12:13:20	INFO	HTTP POST	/search	b56a7489-3a39-4643-8cc1-1ae9fd21b08c
-20240809	12:13:20	INFO	auth.api.setToken	JWT token set from session	e7216ea9-d83e-43f1-9eb7-abfabbe2dd0f
-20240809	12:13:20	INFO	auth.api.authenticateJWT	JWT verified successfully	97d4867c-55b5-45d2-8d75-1180fa6fe4de
-20240809	12:13:20	INFO	post /search	search results displayed.	9f3eff84-a504-47e8-928f-09370081750c
-20240809	12:20:56	INFO	HTTP GET	/	b4fed2ad-3681-441b-baca-82e9ad0d9c31
-20240809	12:20:56	INFO	app.get /	Home page (index.ejs) was displayed.	b7278a3d-c4d8-41eb-9c63-7114740964bc
-20240809	13:43:58	SUCCESS	app.listen	HTTP server successfully started.	6b146a9e-daf4-4640-886f-9740b643a2d4
-20240809	13:44:05	INFO	HTTP GET	/	b2a508d1-b15d-43f0-888b-55a43699fa0e
-20240809	13:44:05	INFO	app.get /	Home page (index.ejs) was displayed.	a087eb79-8965-4095-bb07-53e743e2586a
-20240809	13:44:09	INFO	HTTP GET	/auth/	b114dde7-9c53-4f76-b35c-d52e7f6bf1c9
-20240809	13:44:09	INFO	auth.get /	Login page displayed.	6973c18f-0dd0-4cd9-ac24-6683c7e2164f
-20240809	13:44:09	INFO	HTTP GET	/styles/footer.css	66e06c4f-d4fd-4f78-959e-fc4d17302cfd
-20240809	13:44:09	ERROR	app.use 404	Page not found: /styles/footer.css	fff79f72-9815-45fa-8f50-f6c8aafcfc15
-20240809	13:44:10	INFO	HTTP POST	/auth	ae6b256a-3437-4172-a44d-f01956ab9035
-20240809	13:44:11	INFO	getLoginByEmail	Login retrieval attempt for email: sally@vinovault.ca	8634afb5-077d-4e2b-9fc9-4888d9ba53b5
-20240809	13:44:11	SUCCESS	auth.post /	User sally@vinovault.ca logged in successfully.	c50f6493-3102-4aa6-8b8d-ddc71eca37b6
-20240809	13:44:11	INFO	HTTP GET	/search	30ea8df1-b890-48d1-b1a0-b4b1e6c20d9b
-20240809	13:44:11	INFO	auth.api.setToken	JWT token set from session	04bd16f0-ed9f-4f95-ab03-79faeba8244c
-20240809	13:44:11	INFO	auth.api.authenticateJWT	JWT verified successfully	c2479945-4a13-4d7e-8cc7-0d4769d226d7
-20240809	13:44:11	INFO	get /search	Loading search page data	0112bfed-d70a-4593-9aa6-5e5ce2d67717
-20240809	13:44:11	INFO	get /search	Search page data loaded	4db7f819-4fdb-42c1-afe3-f94315702a7e	Results: [object Object]
-20240809	13:44:21	INFO	HTTP POST	/search	0479eedb-1082-4535-b5e3-3ab353940930
-20240809	13:44:21	INFO	auth.api.setToken	JWT token set from session	5b4ae779-fdf9-421c-acfc-3ceef5176ab7
-20240809	13:44:21	INFO	auth.api.authenticateJWT	JWT verified successfully	badd37e3-d11b-44e0-9b70-f918fc643e83
-20240809	13:44:21	INFO	post /search	Search initiated	5b230d82-ca7a-4c29-abe9-10d9b273c7b1	Search Keyword: "rose"	Database: mongodb
-20240809	13:44:22	INFO	post /search	Search completed	676f2f41-428c-43f0-a338-827b62ff7847	Search Keyword: "rose"	Database: mongodb	Results: 8
-20240809	13:45:32	INFO	HTTP POST	/search	a9e0e380-e3b2-4be9-ac9d-c85a210e15b4
-20240809	13:45:32	INFO	auth.api.setToken	JWT token set from session	2fc73037-706a-4fb2-ae8f-293ea3f63233
-20240809	13:45:32	INFO	auth.api.authenticateJWT	JWT verified successfully	18f893d5-d8ed-4a28-bead-50808c02ee2d
-20240809	13:45:32	INFO	post /search	Search initiated	ec38f8fa-3f52-4adc-af25-e54aaac5413c	Search Keyword: "fruity and spicy"	Database: postgres
-20240809	13:45:32	INFO	post /search	Search completed	12de52e6-17de-4fe1-a7b9-6452ec83196e	Search Keyword: "fruity and spicy"	Database: postgres	Results: 3
-20240809	15:34:46	SUCCESS	app.listen	HTTP server successfully started.	5f033ef2-6cc0-4dc2-b00c-5d316d0e82c8
-20240809	15:34:51	INFO	HTTP GET	/	3828cf37-6776-48dd-989f-87f15f3c65f6
-20240809	15:34:51	INFO	app.get /	Home page (index.ejs) was displayed.	036c017d-7be5-4875-a311-255f134031fc
-20240809	15:47:32	INFO	HTTP GET	/auth/new	0f0637e5-9e2b-4ab8-82cc-f29e6c139149
-20240809	15:47:32	INFO	auth.get /new	Registration page displayed.	73500d5b-6d11-4ea3-8724-8bc29b4eb1aa
-20240809	15:47:32	INFO	HTTP GET	/styles/footer.css	752a24b8-f013-4578-b753-301c71bfd589
-20240809	15:47:32	ERROR	app.use 404	Page not found: /styles/footer.css	308bf646-9641-48d2-a50b-dc4140a434c7
-20240809	15:47:58	INFO	HTTP POST	/auth/new	048dc76a-b064-468f-8dfa-4d03a2628950
-20240809	15:47:59	INFO	addLogin	New login added for email: tester@vinovault.ca	82737899-afce-41c0-8ad0-c65ba57777f3
-20240809	15:47:59	SUCCESS	auth.post /new	User tester@vinovault.ca registered successfully.	a3eddf73-dbe8-44c1-b1bf-f4718fa98ad5
-20240809	15:47:59	INFO	HTTP GET	/auth	1ed81325-a51b-4501-aef7-f68e243caa2d
-20240809	15:47:59	INFO	auth.get /	Login page displayed.	46209951-7084-4aa5-b5eb-10f0cd9afe3e
-20240809	15:47:59	INFO	HTTP GET	/styles/footer.css	f245cdba-a85d-44a2-b470-9da2df0c44ce
-20240809	15:47:59	ERROR	app.use 404	Page not found: /styles/footer.css	a57c18ca-f458-4f31-87ed-2778c5d8638a
-20240809	15:48:05	INFO	HTTP POST	/auth	27d1c7ab-1c3d-42f0-bed8-ec1bf78ea4cf
-20240809	15:48:05	INFO	getLoginByEmail	Login retrieval attempt for email: tester@vinovault.ca	1ac6df4b-e760-46d5-9b0f-9bb221bbb8e1
-20240809	15:48:05	SUCCESS	auth.post /	User tester@vinovault.ca logged in successfully.	bccd9d94-4112-43a6-a19d-88705af044a9
-20240809	15:48:05	INFO	HTTP GET	/search	82867829-e2d6-456d-8402-576275b61475
-20240809	15:48:05	INFO	auth.api.setToken	JWT token set from session	b485aa1e-474c-4b65-a108-d5c6577c52db
-20240809	15:48:05	INFO	auth.api.authenticateJWT	JWT verified successfully	7d492d86-717d-414a-97ea-023f350cae79
-20240809	15:48:05	INFO	get /search	Loading search page data	7ee53694-7777-49ea-8ac6-a55b95706162
-20240809	15:48:05	INFO	get /search	Search page data loaded	1566d6ac-9300-40f4-a521-ac84c195f481	Results: [object Object]
-20240809	15:48:22	INFO	HTTP POST	/search	07b9d554-c271-489d-9d35-3bbccc283382
-20240809	15:48:22	INFO	auth.api.setToken	JWT token set from session	427799e9-5a34-460a-a569-72eba864abeb
-20240809	15:48:22	INFO	auth.api.authenticateJWT	JWT verified successfully	01914504-97fe-4400-b113-80dc15a62b9e
-20240809	15:48:22	INFO	post /search	Search initiated	a50c8f80-7d20-4cee-accc-3ed2f3795462	Search Keyword: "Rose France"	Database: mongodb
-20240809	15:48:23	INFO	post /search	Search completed	59893836-973c-4748-a8cc-2713306fdd25	Search Keyword: "Rose France"	Database: mongodb	Results: 19
-20240809	15:48:50	INFO	HTTP POST	/search	de98c996-bb8e-4cfe-aa1c-210559aa855c
-20240809	15:48:50	INFO	auth.api.setToken	JWT token set from session	1ba4577a-9a9a-43a0-bff7-6caa1246af58
-20240809	15:48:50	INFO	auth.api.authenticateJWT	JWT verified successfully	b9c350b4-9779-4047-91bf-f3c3dfeb5a3f
-20240809	15:48:50	INFO	post /search	Search initiated	d3311d1e-eae2-432d-8f45-d5298a8c237c	Search Keyword: "Rose"	Database: mongodb
-20240809	15:48:50	INFO	post /search	Search completed	2e69f95a-637d-4b7b-acd5-dd83edf6e0f1	Search Keyword: "Rose"	Database: mongodb	Results: 8
-20240809	15:50:23	INFO	HTTP POST	/search	748aee2e-89ff-4218-9b6a-be61125ecd60
-20240809	15:50:23	INFO	auth.api.setToken	JWT token set from session	72ccc60d-cbec-4a9d-b979-c518abc6228c
-20240809	15:50:23	INFO	auth.api.authenticateJWT	JWT verified successfully	ef7157d0-9a6f-4baa-9f85-6052ca8466f2
-20240809	15:50:23	INFO	post /search	Search initiated	eca64325-eff2-4c88-868f-0a8cb8d24be8	Search Keyword: "Fruity and Spicy"	Database: postgres
-20240809	15:50:23	INFO	post /search	Search completed	956d3386-8380-48ae-b2e8-48477f9a3ad8	Search Keyword: "Fruity and Spicy"	Database: postgres	Results: 3
-20240809	15:50:58	INFO	HTTP GET	/search	6267f3a5-333c-412d-9e7e-76fd2b0f9197
-20240809	15:50:58	INFO	auth.api.setToken	JWT token set from session	2e1bd5bb-d03f-40b2-9a31-03500f7974c6
-20240809	15:50:58	INFO	auth.api.authenticateJWT	JWT verified successfully	79e979e2-9a30-41d1-8206-6781e2a0a7df
-20240809	15:50:58	INFO	get /search	Loading search page data	dbff87b2-f25f-450f-b1af-e6f44d3d3bb8
-20240809	15:50:58	INFO	get /search	Search page data loaded	daae65cd-1275-4e09-8b53-f2b0e57c44f0	Results: [object Object]
-20240809	15:51:06	INFO	HTTP POST	/search/filter	4cf4db5d-0b48-45e1-9649-e59ae1700b1a
-20240809	15:51:06	INFO	auth.api.setToken	JWT token set from session	49c69d78-c14b-439b-821f-497adf057ee1
-20240809	15:51:06	INFO	post /search/filter	Filter applied	65d1c6fd-7234-4ac6-8c4a-6b0c5d6a597f	Filter Type: country	Filter Value: Canada
-20240809	15:51:06	INFO	auth.api.authenticateJWT	JWT verified successfully	d7c5eb1c-a675-4bff-bb0b-b156a726b7a1
-20240809	15:51:06	INFO	post /search/filter	Filter completed	23c605dd-30ea-4f25-b086-580a1c0e9118	Results: 25	Filter Type: country	Filter Value: Canada
-20240809	15:51:24	INFO	HTTP POST	/search/filter	6a4024ba-8c15-48a5-9130-951069c7512f
-20240809	15:51:24	INFO	auth.api.setToken	JWT token set from session	3da4c8aa-20db-4fe4-81a7-138694f3cc71
-20240809	15:51:24	INFO	auth.api.authenticateJWT	JWT verified successfully	9ee061b2-5f33-40d6-94b4-ee70e9d0778b
-20240809	15:51:24	INFO	post /search/filter	Filter applied	62ec0486-d9e2-42d5-9e31-98c651bbb6f8	Filter Type: color	Filter Value: Sparkling
-20240809	15:51:24	INFO	post /search/filter	Filter completed	1f69b306-0010-4e3a-934f-68cfa8d6458b	Results: 38	Filter Type: color	Filter Value: Sparkling
-20240809	15:51:39	INFO	HTTP POST	/search/filter	2edb3786-be28-4f87-8f76-11f73a93e6df
-20240809	15:51:39	INFO	auth.api.setToken	JWT token set from session	37575c4e-6afa-4bac-840d-1cfcff9f7a0c
-20240809	15:51:39	INFO	auth.api.authenticateJWT	JWT verified successfully	05c8bacd-402f-42c8-83e9-2cd1d6ed8c5b
-20240809	15:51:39	INFO	post /search/filter	Filter applied	5871b8c2-cfe8-4c5a-bb60-687567a31d7c	Filter Type: type	Filter Value: Barbera
-20240809	15:51:39	INFO	post /search/filter	Filter completed	18e8d5d1-078c-4e8b-adaf-4ba92cc35b22	Results: 1	Filter Type: type	Filter Value: Barbera
-20240809	15:51:45	INFO	HTTP POST	/search/filter	d76e3daf-482e-4061-a724-23b1608537f1
-20240809	15:51:45	INFO	auth.api.setToken	JWT token set from session	ffaa4bb6-6b55-4aba-a158-636e5d847fba
-20240809	15:51:45	INFO	auth.api.authenticateJWT	JWT verified successfully	450a9462-6603-40fc-b8ee-72d492e80299
-20240809	15:51:45	INFO	post /search/filter	Filter applied	55eee431-2fa6-4bfd-a9e8-734b3483cd89	Filter Type: type	Filter Value: Cabernet Sauvignon
-20240809	15:51:45	INFO	post /search/filter	Filter completed	703569c1-3fd0-4168-ab35-9abdc37b46f1	Results: 23	Filter Type: type	Filter Value: Cabernet Sauvignon
-20240809	15:51:45	INFO	HTTP GET	/images/montelena.png	232903f4-d138-44c0-8126-6d4f17f4ccef
-20240809	15:51:45	ERROR	app.use 404	Page not found: /images/montelena.png	bd16e116-835a-45fc-a663-77893c827f0c
-20240809	15:51:45	INFO	HTTP GET	/images/caymus.png	946f3612-2da4-4c89-a767-3bacaaebc8c5
-20240809	15:51:45	ERROR	app.use 404	Page not found: /images/caymus.png	4cf0ba90-71aa-4299-bb3f-cdbdbc78044e
-20240809	15:52:00	INFO	HTTP POST	/search/filter	375c5951-2e35-4d64-b623-44c02bb52085
-20240809	15:52:00	INFO	auth.api.setToken	JWT token set from session	09b264e1-dcc7-49f0-bff4-afd60b51f36b
-20240809	15:52:00	INFO	auth.api.authenticateJWT	JWT verified successfully	3c37487e-a0a5-401e-bc8a-1a813f585508
-20240809	15:52:00	INFO	post /search/filter	Filter applied	3a65812e-bcba-4587-a769-8a7e257f1950	Filter Type: type	Filter Value: Chardonnay
-20240809	15:52:00	INFO	post /search/filter	Filter completed	fdf7320c-8400-4147-b8a4-5b3090ee4724	Results: 30	Filter Type: type	Filter Value: Chardonnay
-20240809	15:52:00	INFO	HTTP GET	/images/montelena.png	68e90cf5-146e-4906-94e9-c8fda5cbc6a1
-20240809	15:52:00	ERROR	app.use 404	Page not found: /images/montelena.png	16b5137e-f54d-4b0b-aedc-0c265e8373d4
-20240809	16:39:49	SUCCESS	app.listen	HTTP server successfully started.	add6fcda-be68-4c5d-8835-082cd48ddd9e
-20240809	16:41:55	INFO	HTTP GET	/api/full/m/Cabernet	829bde5b-9e82-4230-93d2-60a58163fb9b
-20240809	16:41:55	WARN	authMiddleware.setToken	No token found in session	b4b7eadc-30ab-41bb-a3d2-a178f9a7b68d
-20240809	16:41:55	WARN	authMiddleware.authenticateJWT	No authorization header found	5f107608-6d17-4874-a520-e98ec0d2060c
-20240809	16:41:55	INFO	HTTP GET	/api/full/p/Cabernet	b204ac37-3a9e-47d7-9c4e-0a0a6b2f9be5
-20240809	16:41:55	WARN	authMiddleware.setToken	No token found in session	c8c02d2c-c87e-4fe9-aa9c-60909d2c1a41
-20240809	16:41:55	WARN	authMiddleware.authenticateJWT	No authorization header found	630037b3-73f7-43ef-9e21-843bee3837a5
+
+20240809	17:08:39	SUCCESS	app.listen	HTTP server successfully started.	ad5fff53-54d0-4cce-a237-7d70588c1fc3
+20240809	17:09:01	INFO	HTTP GET	/	ec6c342f-e20f-4c51-8360-7382cf35b2f0
+20240809	17:09:01	INFO	app.get /	Home page (index.ejs) was displayed.	5094861c-20bb-4d87-be46-265aad276c64
+20240809	17:09:02	INFO	HTTP GET	/favicon.ico	6f22082d-41a2-4fa8-a2ae-4d225c575881
+20240809	17:09:02	ERROR	app.use 404	Page not found: /favicon.ico	990fce15-5907-4d07-b262-cf45322376bd
+20240809	17:10:19	INFO	HTTP GET	/auth/new	9a56a56d-e9a8-4dcb-81ee-ea328491a51e
+20240809	17:10:19	INFO	auth.get /new	Registration page displayed.	b6e65ed2-d81d-4493-9a27-cfd6721aeb37
+20240809	17:10:19	INFO	HTTP GET	/styles/footer.css	20ced100-9f25-4b26-a8c5-dbf7757beb54
+20240809	17:10:19	ERROR	app.use 404	Page not found: /styles/footer.css	b7def144-5017-49f0-b729-6acb0b026561
+20240809	17:10:56	INFO	HTTP POST	/auth/new	8b11032c-9385-49ad-a236-04c19d77fe4e
+20240809	17:10:57	INFO	addLogin	New login added for email: peter@vinovault.ca	7c2767a7-8862-493f-b9f5-bce6305b0aa9
+20240809	17:10:57	SUCCESS	auth.post /new	User peter@vinovault.ca registered successfully.	7412b55f-73d1-4d76-8498-ef2a3585eef4
+20240809	17:10:57	INFO	HTTP GET	/auth	5efaff7b-0a1f-4706-8703-a82ce5994233
+20240809	17:10:57	INFO	auth.get /	Login page displayed.	3e3083cf-b4d5-4fe7-ba8f-f1e8d2940985
+20240809	17:10:57	INFO	HTTP GET	/styles/footer.css	f493ba4c-3404-4d1d-a70c-06152657c9b1
+20240809	17:10:57	ERROR	app.use 404	Page not found: /styles/footer.css	d0bda6c1-c64d-44a6-af6e-8a48b6a63610
+20240809	17:11:23	INFO	HTTP POST	/auth	8059f56c-f3ba-42bc-935f-c1a180180373
+20240809	17:11:23	INFO	getLoginByEmail	Login retrieval attempt for email: peter@vinovault.ca	60d99b84-c5e4-4cd7-9040-ca425f1d0ce1
+20240809	17:11:23	SUCCESS	auth.post /	User peter@vinovault.ca logged in successfully.	4181e648-ce7d-4e21-90e8-19efee2e3a9b
+20240809	17:11:23	INFO	HTTP GET	/search	5123df27-16cf-4092-9066-54f1420fa0c9
+20240809	17:11:23	INFO	auth.api.authenticateJWT	JWT verified successfully	f83f4382-a37c-4e88-a344-e4206e55fa54
+20240809	17:11:23	INFO	get /search	Loading search page data	999e219d-15c9-41c7-8877-ada2cf3de312
+20240809	17:11:23	INFO	auth.api.setToken	JWT token set from session	18f7dec0-eeda-4082-9725-3d5058e9736d
+20240809	17:11:23	INFO	get /search	Search page data loaded	9be92b37-451a-48d6-9ce7-edb8e8746214	Results: [object Object]
+20240809	17:12:30	INFO	HTTP POST	/search	1051d2aa-87c5-49ad-ae38-13b86e11a613
+20240809	17:12:30	INFO	auth.api.setToken	JWT token set from session	b1f0e3a8-eecc-468e-b294-97df3d2096e5
+20240809	17:12:30	INFO	auth.api.authenticateJWT	JWT verified successfully	b2f16be8-6157-4c08-9b08-791ba8f0b54f
+20240809	17:12:30	INFO	post /search	Search initiated	d7858b0c-aae7-4e8f-9c2a-e4287043374f	Search Keyword: "Rose France"	Database: mongodb
+20240809	17:12:31	INFO	post /search	Search completed	2d519499-2e8f-4c81-9ae9-d37b0db20c2b	Search Keyword: "Rose France"	Database: mongodb	Results: 19
+20240809	17:13:05	INFO	HTTP POST	/search	31d0ea05-cb2f-4a37-bd02-35125ba45b50
+20240809	17:13:05	INFO	auth.api.setToken	JWT token set from session	25af1c39-1d03-4417-9e6b-f99550023e5e
+20240809	17:13:05	INFO	auth.api.authenticateJWT	JWT verified successfully	06d12fa2-256a-4134-a67b-7906541fc3c5
+20240809	17:13:05	INFO	post /search	Search initiated	f98d61bd-4100-400e-a0e4-5c455123fafd	Search Keyword: "Fruity and Spicy"	Database: postgres
+20240809	17:13:05	INFO	post /search	Search completed	ea44f4ed-3bba-423a-b93f-4bfa8a327646	Search Keyword: "Fruity and Spicy"	Database: postgres	Results: 3
+20240809	17:13:25	INFO	HTTP POST	/search	19aaa046-3c45-4835-ba82-5eeb6c29c261
+20240809	17:13:25	INFO	auth.api.authenticateJWT	JWT verified successfully	cba597a6-19d3-4647-8039-c70f2c6449ba
+20240809	17:13:25	INFO	auth.api.setToken	JWT token set from session	6cdf749c-2a2e-42c5-9775-5b127c573d8e
+20240809	17:13:25	INFO	post /search	Search initiated	2fc7163f-4e91-42d7-83f4-c43eb685dfb4	Search Keyword: "Red Wine"	Database: postgres
+20240809	17:13:25	INFO	post /search	Search completed	e1655b8f-c9a2-4e9f-92ca-fd7b0ca3ff6d	Search Keyword: "Red Wine"	Database: postgres	Results: 36
+20240809	17:13:55	INFO	HTTP POST	/search/filter	354bf0eb-e5ec-46fb-b35f-d35c7de2e1c5
+20240809	17:13:55	INFO	auth.api.setToken	JWT token set from session	26571c6a-e702-4051-8bd0-fd6a1b10d86b
+20240809	17:13:55	INFO	auth.api.authenticateJWT	JWT verified successfully	a93b18d8-697b-4da1-9706-b23224b2aaef
+20240809	17:13:55	INFO	post /search/filter	Filter applied	e007296a-99e8-4533-a22b-2c26214be133	Filter Type: country	Filter Value: Italy
+20240809	17:13:55	INFO	post /search/filter	Filter completed	63d05fa8-fdde-427d-b8a9-2fdaf5678ddc	Results: 30	Filter Type: country	Filter Value: Italy
+20240809	17:14:12	INFO	HTTP POST	/search/filter	e982737a-b21c-4451-b6b1-83ff8ac617a4
+20240809	17:14:12	INFO	auth.api.setToken	JWT token set from session	e607f282-e0b9-4d70-9941-377537d5f1a0
+20240809	17:14:12	INFO	auth.api.authenticateJWT	JWT verified successfully	3ffc5ce7-eb3a-4176-936f-e26b11fdec59
+20240809	17:14:12	INFO	post /search/filter	Filter applied	82ef243e-ad8f-4a37-ace9-10497b6ba55a	Filter Type: color	Filter Value: Sparkling
+20240809	17:14:12	INFO	post /search/filter	Filter completed	61cfb3f3-1068-4b90-ac20-525e97cbb9fa	Results: 38	Filter Type: color	Filter Value: Sparkling
+20240809	17:14:36	INFO	HTTP POST	/search/filter	d221e8c8-0d70-4ed0-ab3d-5aa31d90621c
+20240809	17:14:36	INFO	auth.api.setToken	JWT token set from session	b257926d-acb5-4ff6-bb47-6d62388b25bf
+20240809	17:14:36	INFO	auth.api.authenticateJWT	JWT verified successfully	4efd5911-d482-4634-a732-f6620b5374a1
+20240809	17:14:36	INFO	post /search/filter	Filter applied	0cdb821b-a613-4215-94cd-272075427c86	Filter Type: type	Filter Value: Cabernet Sauvignon
+20240809	17:14:36	INFO	post /search/filter	Filter completed	c445e966-c4c5-4215-b842-005a6d9fecf0	Results: 23	Filter Type: type	Filter Value: Cabernet Sauvignon
+20240809	17:14:36	INFO	HTTP GET	/images/caymus.png	75c1f44e-582c-46f7-9cca-8d6c2624e25d
+20240809	17:14:36	ERROR	app.use 404	Page not found: /images/caymus.png	2899f2a4-6945-4f29-aa68-52104aac9088
+20240809	17:14:52	INFO	HTTP POST	/vault/add/13	f5c24ad0-3307-4e2c-bb42-3f7c68293988
+20240809	17:14:52	INFO	authMiddleware.setToken	JWT token set from session	fd1b916e-8ed6-4512-969e-a1d5263dad7a
+20240809	17:14:52	INFO	authMiddleware.authenticateJWT	JWT verified successfully	7ffbd996-2991-4f02-8e96-59486b907036
+20240809	17:14:54	SUCCESS	addWineToVault	Wine 13 added to vault for user peter@vinovault.ca.	a0c567b3-adf2-44fe-821e-211797e54226
+20240809	17:14:54	SUCCESS	post /vault/add	Wine 13 added to vault for user peter@vinovault.ca.	92098cfe-92a9-4f83-a40f-eb128e7ce737
+20240809	17:15:20	INFO	HTTP POST	/search	d37a08d8-0d86-486d-8d8f-ff5d7c7e00ac
+20240809	17:15:20	INFO	auth.api.setToken	JWT token set from session	74e81ca3-c9fc-4a16-a93c-71db72743c88
+20240809	17:15:20	INFO	auth.api.authenticateJWT	JWT verified successfully	33443318-9102-4408-bae1-e40e8fe8466f
+20240809	17:15:20	INFO	post /search	Search initiated	0786abd9-8db1-41a3-910a-4543653da550	Search Keyword: "Pinot"	Database: mongodb
+20240809	17:15:20	INFO	post /search	Search completed	5ed97f1c-2033-4f28-9d21-08f2965f377b	Search Keyword: "Pinot"	Database: mongodb	Results: 0
+20240809	17:15:26	INFO	HTTP POST	/search	d4abc9d5-7ae0-459c-9234-6530f3ce70ef
+20240809	17:15:26	INFO	auth.api.authenticateJWT	JWT verified successfully	c665586a-51c8-4ff0-a368-2a835f2eb67d
+20240809	17:15:26	INFO	post /search	Search initiated	3b211d51-a4ac-47dd-8978-f542367d3836	Search Keyword: "Pinot Grigio"	Database: mongodb
+20240809	17:15:26	INFO	auth.api.setToken	JWT token set from session	9db9a075-fe43-446f-bacd-02171ec050ad
+20240809	17:15:26	INFO	post /search	Search completed	882f4bd1-2b57-43e9-b263-c5c0737e11e6	Search Keyword: "Pinot Grigio"	Database: mongodb	Results: 0
+20240809	17:15:32	INFO	HTTP POST	/search	74cc4b47-98e5-4f0b-97f5-a5ff2b3cb192
+20240809	17:15:32	INFO	auth.api.setToken	JWT token set from session	4b621466-4d6d-4e03-910a-742f6853e108
+20240809	17:15:32	INFO	auth.api.authenticateJWT	JWT verified successfully	3fc86a0c-9f13-42e3-94fc-533f4cdf1262
+20240809	17:15:32	INFO	post /search	Search initiated	cdc84ffc-e59e-45a0-bad1-abed23b3efc5	Search Keyword: "White Wine"	Database: mongodb
+20240809	17:15:33	INFO	post /search	Search completed	e9865caf-7076-4770-90d1-dd423d0edfa1	Search Keyword: "White Wine"	Database: mongodb	Results: 21
+20240809	17:15:51	INFO	HTTP POST	/vault/add/66b5e683f9e40ef006a4386f	23ac45fd-64d6-4c2e-b4cd-b11541fe7f9c
+20240809	17:15:51	INFO	authMiddleware.setToken	JWT token set from session	7f0df380-1cce-4bf4-9ec5-f6a3f36ce256
+20240809	17:15:51	INFO	authMiddleware.authenticateJWT	JWT verified successfully	31bac049-0adc-436f-974b-020109d1dc00
+20240809	17:15:52	SUCCESS	addWineToVault	Wine 66b5e683f9e40ef006a4386f added to vault for user peter@vinovault.ca.	02abe81a-7ba3-408d-80da-b56c8fecd81f
+20240809	17:15:52	SUCCESS	post /vault/add	Wine 66b5e683f9e40ef006a4386f added to vault for user peter@vinovault.ca.	9a0cadad-87b5-462f-9691-df64fb9b27b5
+20240809	17:15:58	INFO	HTTP GET	/vault	fa6847f9-8286-4e07-a774-fa654120c525
+20240809	17:15:58	INFO	authMiddleware.setToken	JWT token set from session	1d80d2ca-ad60-42a9-ada4-227c8f609de4
+20240809	17:15:58	INFO	authMiddleware.authenticateJWT	JWT verified successfully	20bff6fe-2ecc-4eb7-b4ac-76c90a082a82
+20240809	17:15:58	INFO	getVaultByUserId	Vault for user peter@vinovault.ca was retrieved.	43f836b9-ed1f-49af-a595-5fea707685f4
+20240809	17:15:58	INFO	get /vault	Vault for user peter@vinovault.ca was displayed.	752d4a27-aa56-4f4a-9964-41dabc1fad2d
+20240809	17:16:23	INFO	HTTP GET	/auth/exit	9527302e-f4fd-4246-9d7a-b706c823ddc3
+20240809	17:16:23	SUCCESS	auth.get /exit	User logged out successfully.	f3cbdb0f-8811-4945-96ab-67b49ac12558
+20240809	17:16:23	INFO	HTTP GET	/	be567210-203b-4595-8a8b-572cce9d6520
+20240809	17:16:23	INFO	app.get /	Home page (index.ejs) was displayed.	9c90968b-f4e4-4049-96b4-d0733ada587f
+20240809	17:16:29	INFO	HTTP GET	/auth/	a5010f9b-7564-4b0b-a93d-90f648bc4b9b
+20240809	17:16:29	INFO	auth.get /	Login page displayed.	250d70cb-faa2-4ef7-88d5-63d2ca9815ec
+20240809	17:16:29	INFO	HTTP GET	/styles/footer.css	1cb758fb-4ad4-46d4-83f4-aae043c78e91
+20240809	17:16:29	ERROR	app.use 404	Page not found: /styles/footer.css	e2f2f6b3-31f0-4cc5-ae48-308f7f8e3b91
+20240809	17:16:31	INFO	HTTP POST	/auth	ffe0a5b0-35c0-4ef3-b1b6-38bbe70291ce
+20240809	17:16:32	INFO	getLoginByEmail	Login retrieval attempt for email: peter@vinovault.ca	b1dab3fa-758f-4ab4-9da3-28218108739b
+20240809	17:16:32	SUCCESS	auth.post /	User peter@vinovault.ca logged in successfully.	e467c166-f9a0-4e97-93a3-4bb29307a20d
+20240809	17:16:32	INFO	HTTP GET	/search	8940ae0c-4399-40e1-b478-b579f9812ca5
+20240809	17:16:32	INFO	auth.api.setToken	JWT token set from session	3f7f3708-4759-484b-81de-eb36b40ef649
+20240809	17:16:32	INFO	auth.api.authenticateJWT	JWT verified successfully	ab6788b6-afe0-4668-b906-49753de8ca72
+20240809	17:16:32	INFO	get /search	Loading search page data	ed8f7da4-95a4-4603-88e0-f83d8bdd824c
+20240809	17:16:32	INFO	get /search	Search page data loaded	e033100d-e880-4eac-bdfb-dc8ed2edbe09	Results: [object Object]
+20240809	17:16:38	INFO	HTTP GET	/auth/exit	018ba564-55b6-4353-8e03-6c49adfd7fc3
+20240809	17:16:38	SUCCESS	auth.get /exit	User logged out successfully.	ffb63315-3e0a-44c9-9538-4e64a3fdb353
+20240809	17:16:38	INFO	HTTP GET	/	567629d6-1e5c-45c9-9799-aa5c70cc2af1
+20240809	17:16:38	INFO	app.get /	Home page (index.ejs) was displayed.	71425be5-5a70-41a7-903b-b1e57a64f9ba
+20240809	17:16:46	INFO	HTTP GET	/about	be11995f-06c3-4ff0-92b7-7c2b6e570793
+20240809	17:16:46	INFO	app.get /about	About page (about.ejs) was displayed.	ba403f59-df13-45f7-b836-7a6a5d022630
+20240809	17:16:46	INFO	HTTP GET	/images/wine-tasting.jpg	7eba9e74-43e1-4eff-90fb-1e3af9bd3287
+20240809	17:16:46	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	8e3ee7e5-00c3-47cc-9c90-c5dd14d4948d
+20240809	17:16:46	INFO	HTTP GET	/images/wine-cellar.jpg	fd189e3d-273c-4ef3-875d-ec2ececd644f
+20240809	17:16:46	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	84da6f1e-2171-41ff-861b-e9bc3d44f583
+20240809	17:16:49	INFO	HTTP GET	/contact	ee8063e5-9707-462b-a07a-851af3ae20de
+20240809	17:16:49	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	d7a12ae6-b1c1-4b17-a731-1bfef4c371f5
+20240809	17:16:51	INFO	HTTP GET	/	4b60e336-ff81-4130-9d2d-915bd36b2543
+20240809	17:16:51	INFO	app.get /	Home page (index.ejs) was displayed.	00b8a654-7757-40e1-a91d-b834d153eb5d
+20240809	18:03:35	INFO	HTTP GET	/auth/	34e9d2c9-f333-4c0e-8b9d-43aab0a2d04c
+20240809	18:03:35	INFO	auth.get /	Login page displayed.	75b1c103-b73c-4ba9-8177-48ce39358e17
+20240809	18:03:35	INFO	HTTP GET	/styles/footer.css	d5c01b4d-eeab-4ea6-9a8f-2697008f8208
+20240809	18:03:35	ERROR	app.use 404	Page not found: /styles/footer.css	6ce8d392-5d86-44bf-a42d-3a27390402a7
+20240809	18:03:36	INFO	HTTP POST	/auth	599c7eab-110d-4495-8365-0b6904b1bc44
+20240809	18:03:36	INFO	getLoginByEmail	Login retrieval attempt for email: peter@vinovault.ca	a3d50029-db0c-421e-bc89-5c0f3143f5fd
+20240809	18:03:37	SUCCESS	auth.post /	User peter@vinovault.ca logged in successfully.	df67f303-ac4d-4627-b913-292ce817ca3c
+20240809	18:03:37	INFO	HTTP GET	/search	dcd0a443-1a51-4104-b98c-8892389b6a8b
+20240809	18:03:37	INFO	auth.api.setToken	JWT token set from session	8e360b70-cc07-4d2b-9fb6-53681c860a8a
+20240809	18:03:37	INFO	auth.api.authenticateJWT	JWT verified successfully	5883086d-6e02-404d-88d7-5b31e1812684
+20240809	18:03:37	INFO	get /search	Loading search page data	a1ab3ef5-80b0-4f65-beda-4e410d53b161
+20240809	18:03:37	INFO	get /search	Search page data loaded	ba9e3087-0cff-4ddb-8bee-dba11dd65bf3	Results: [object Object]
+20240809	18:03:40	INFO	HTTP POST	/search/filter	075bf11b-2a66-4933-a4ff-2fe2be3ca5c3
+20240809	18:03:40	INFO	post /search/filter	Filter applied	b36198a5-f738-4106-b317-0d72e8d8ca7d	Filter Type: country	Filter Value: Australia
+20240809	18:03:40	INFO	auth.api.authenticateJWT	JWT verified successfully	522716d1-2e64-4f47-a336-818c0aa6f76a
+20240809	18:03:40	INFO	auth.api.setToken	JWT token set from session	d9c539b5-80f7-4088-9609-12eda4f5f4ef
+20240809	18:03:40	INFO	post /search/filter	Filter completed	a8e32a64-aa1d-4073-a3f7-65b34e663527	Results: 22	Filter Type: country	Filter Value: Australia
+20240809	18:03:41	INFO	HTTP POST	/vault/add/335	8a1aab1f-ef28-433d-aa07-7fc47a9978f8
+20240809	18:03:41	INFO	authMiddleware.setToken	JWT token set from session	a3fb6af2-0d10-43af-a2e8-2b0d4dc5d066
+20240809	18:03:41	INFO	authMiddleware.authenticateJWT	JWT verified successfully	76215ba0-99b9-4424-a96b-6ef6fb466d11
+20240809	18:03:42	SUCCESS	addWineToVault	Wine 335 added to vault for user peter@vinovault.ca.	f35c9b0f-ebfc-4337-8141-079265bb8d3c
+20240809	18:03:42	SUCCESS	post /vault/add	Wine 335 added to vault for user peter@vinovault.ca.	f57ca11b-8703-4117-8fb2-b35b147415f7
+20240809	18:03:43	INFO	HTTP GET	/vault	bf890bb5-fb1d-410a-bf01-acd43adf44b6
+20240809	18:03:43	INFO	authMiddleware.setToken	JWT token set from session	78dd6134-afb1-44dd-834e-44af33ab2d82
+20240809	18:03:43	INFO	authMiddleware.authenticateJWT	JWT verified successfully	d2fec48b-1e39-4d0c-8e13-f62130a24d4b
+20240809	18:03:44	INFO	getVaultByUserId	Vault for user peter@vinovault.ca was retrieved.	755a47a4-8a09-45e6-b947-77aba2d62e5f
+20240809	18:03:44	INFO	get /vault	Vault for user peter@vinovault.ca was displayed.	fda93213-9d73-481e-bd27-6015f93307cb
+20240809	18:03:54	INFO	HTTP GET	/vault	7e30eac6-d6e2-4840-928e-62639a6dc9b4
+20240809	18:03:54	INFO	authMiddleware.setToken	JWT token set from session	eaa86c0d-c0c6-4243-aeee-c3731f594a02
+20240809	18:03:54	INFO	authMiddleware.authenticateJWT	JWT verified successfully	2102a59f-e904-4fa2-af74-3ec0e4026628
+20240809	18:03:54	INFO	getVaultByUserId	Vault for user peter@vinovault.ca was retrieved.	0f2a67b8-8236-4aa4-8754-5df2518bc475
+20240809	18:03:54	INFO	get /vault	Vault for user peter@vinovault.ca was displayed.	e9185992-55cd-4223-92ad-319dfda5bd5b
+20240809	18:12:11	INFO	HTTP GET	/auth/exit	cc963801-6fee-43bd-8ee3-7eabbf71e622
+20240809	18:12:11	SUCCESS	auth.get /exit	User logged out successfully.	e3c45003-f791-494e-b870-b5c0044a5486
+20240809	18:12:11	INFO	HTTP GET	/	79670885-0be8-4b6e-aece-15385e5f8fbf
+20240809	18:12:11	INFO	app.get /	Home page (index.ejs) was displayed.	c341d811-102b-4b52-a14f-0fdd6cb9d907
+20240809	18:32:43	SUCCESS	app.listen	HTTP server successfully started.	a02d023b-caf2-4cbb-867d-346082c08eea
+20240809	18:32:48	INFO	HTTP GET	/	e2b2e089-f2e6-4c8d-9691-d2b9def5342f
+20240809	18:32:48	INFO	app.get /	Home page (index.ejs) was displayed.	2bc22f7b-ebab-47f9-a1c5-2a857e3218ae
+20240809	18:32:48	INFO	HTTP GET	/favicon.ico	144251e0-387e-463a-8a41-7a0b4643d975
+20240809	18:32:48	ERROR	app.use 404	Page not found: /favicon.ico	3074123e-b23e-4d19-b46e-5a3a62920ff4
+20240809	18:33:20	INFO	HTTP GET	/auth/new	2569a213-0f70-4a2c-bb07-452037a15574
+20240809	18:33:20	INFO	auth.get /new	Registration page displayed.	3ced6f8b-b05c-4513-a7b0-d527bb0e4c58
+20240809	18:33:20	INFO	HTTP GET	/styles/footer.css	5e5fb391-9444-40fb-8963-e3cd170d411b
+20240809	18:33:20	ERROR	app.use 404	Page not found: /styles/footer.css	a797700a-9381-4104-bb1c-36f837bea9cf
+20240809	18:33:51	INFO	HTTP POST	/auth/new	b86577f8-7338-427a-9b5f-dd3cff3480c3
+20240809	18:33:52	INFO	addLogin	New login added for email: tester@vino.va	4b92d4f4-2c5e-44b3-877c-05ad14102c49
+20240809	18:33:52	SUCCESS	auth.post /new	User tester@vino.va registered successfully.	d08b917e-4777-4cc2-ae94-36aeff4d89eb
+20240809	18:33:52	INFO	HTTP GET	/auth	001b3416-0e82-45f2-be98-1093baf57763
+20240809	18:33:52	INFO	auth.get /	Login page displayed.	44e8032a-3328-4800-b18a-d05143b71dae
+20240809	18:33:52	INFO	HTTP GET	/styles/footer.css	8a5f2393-be0d-44a6-a6f6-57e20c870bce
+20240809	18:33:52	ERROR	app.use 404	Page not found: /styles/footer.css	dd3284be-86d0-4a2e-90b7-988bab11459e
+20240809	18:34:04	INFO	HTTP POST	/auth	d506da3f-55b0-4867-916b-4ef02a5f1117
+20240809	18:34:04	INFO	getLoginByEmail	Login retrieval attempt for email: tester@vino.ca	c021d107-7f91-493a-9939-357b3e2c0008
+20240809	18:34:04	WARN	auth.post /	Login failed: Incorrect email.	758a264d-aec8-47f6-9d44-187b46462d21
+20240809	18:34:04	INFO	HTTP GET	/auth	962f6f05-c5f9-4d9c-9e9f-3038445800eb
+20240809	18:34:04	INFO	auth.get /	Login page displayed.	8231e201-5541-4d38-88ee-b1cc62d65dd5
+20240809	18:34:04	INFO	HTTP GET	/styles/footer.css	2a985224-db45-4a29-bb0e-2d920510e95a
+20240809	18:34:04	ERROR	app.use 404	Page not found: /styles/footer.css	dbf004b2-6f92-4b37-985b-06b2c8b1834b
+20240809	18:34:19	INFO	HTTP POST	/auth	435906da-94f0-430d-8c1a-163eca7c30ec
+20240809	18:34:19	INFO	getLoginByEmail	Login retrieval attempt for email: tester@vino.ca	715a78a0-3ca3-4b2c-968d-795495688c6c
+20240809	18:34:19	WARN	auth.post /	Login failed: Incorrect email.	01f9aa70-5aee-4b2c-a72c-4841f16e269a
+20240809	18:34:19	INFO	HTTP GET	/auth	8e7fd749-0e07-43b6-8095-373115e81cb3
+20240809	18:34:19	INFO	auth.get /	Login page displayed.	fa0978c8-d317-478c-97b1-1ed190caa77b
+20240809	18:34:19	INFO	HTTP GET	/styles/footer.css	ba617682-98e0-4e9e-a9e7-679094efa877
+20240809	18:34:19	ERROR	app.use 404	Page not found: /styles/footer.css	21113f5e-6006-421b-9781-cdf66d40a55a
+20240809	18:34:21	INFO	HTTP GET	/styles/footer.css	66a08750-a0b2-42e9-a64e-23bd5a187780
+20240809	18:34:21	ERROR	app.use 404	Page not found: /styles/footer.css	63411350-2714-46f0-abf4-19f2805f56b8
+20240809	18:34:23	INFO	HTTP GET	/	75808fe0-630a-4228-aab3-cacbc6d152f7
+20240809	18:34:23	INFO	app.get /	Home page (index.ejs) was displayed.	1e2fb588-e1d2-4327-8502-13c2a2696e57
+20240809	18:34:25	INFO	HTTP GET	/auth/new	a75b293f-c08d-418d-8f7d-431b8645d626
+20240809	18:34:25	INFO	auth.get /new	Registration page displayed.	661fc018-da08-4ecd-855c-05616d38650b
+20240809	18:34:25	INFO	HTTP GET	/styles/footer.css	15f26559-6091-4c5e-8838-42d75a196b16
+20240809	18:34:25	ERROR	app.use 404	Page not found: /styles/footer.css	e3fb02a4-3eaa-4256-96a8-acad15da4ca3
+20240809	18:34:49	INFO	HTTP POST	/auth/new	6bf6f281-72ec-4d90-8ba6-321fdf26ee83
+20240809	18:34:50	INFO	addLogin	New login added for email: brenda@brendabendiksen.com	a2e993d3-0a60-4b38-b40f-4026a1fc6dd7
+20240809	18:34:50	SUCCESS	auth.post /new	User brenda@brendabendiksen.com registered successfully.	f9fea445-fd55-4283-a0cd-264d11d50ffa
+20240809	18:34:50	INFO	HTTP GET	/auth	42a45064-5fef-457d-97fc-2308d9a63216
+20240809	18:34:50	INFO	auth.get /	Login page displayed.	e8ac2c7b-5506-4a2f-8a0e-9d9a21553d86
+20240809	18:34:50	INFO	HTTP GET	/styles/footer.css	b38f176f-fae0-4eac-8991-7138a716babd
+20240809	18:34:50	ERROR	app.use 404	Page not found: /styles/footer.css	08acaca2-38bc-4452-a89f-a9a3220cd46d
+20240809	18:35:05	INFO	HTTP POST	/auth	314938d7-91bc-4fab-8754-dd4b8ca34a5b
+20240809	18:35:05	INFO	getLoginByEmail	Login retrieval attempt for email: brenda@brendabendiksen.com	f681a652-0c6f-4810-818a-a17ed68adeb4
+20240809	18:35:05	SUCCESS	auth.post /	User brenda@brendabendiksen.com logged in successfully.	dc1c22ec-1269-4216-927a-b1c8edc8c4d7
+20240809	18:35:05	INFO	HTTP GET	/search	f6f93325-80c3-4278-b7e6-c7ee3f580d46
+20240809	18:35:05	INFO	auth.api.setToken	JWT token set from session	cc88e71b-c66f-4f2f-b906-dc236a987c1a
+20240809	18:35:05	INFO	auth.api.authenticateJWT	JWT verified successfully	109cb05c-eb53-4370-8c4e-e0f18fe79c31
+20240809	18:35:05	INFO	get /search	Loading search page data	dbcc9846-fab7-40a2-929b-f28061799c4b
+20240809	18:35:05	INFO	get /search	Search page data loaded	d397ffd0-9a7e-4fab-a955-c9f45d5007ee	Results: [object Object]
+20240809	18:35:15	INFO	HTTP POST	/search	b8934f11-8907-441d-9471-fcbc1da4de48
+20240809	18:35:15	INFO	auth.api.authenticateJWT	JWT verified successfully	a14032d7-0929-43b4-ab4f-ec46c5ac9969
+20240809	18:35:15	INFO	auth.api.setToken	JWT token set from session	b3354235-2314-4992-a96d-b24f09f420f1
+20240809	18:35:15	INFO	post /search	Search initiated	10511d55-2e4d-4521-9d0f-696ce36686cf	Search Keyword: "Red Wine"	Database: mongodb
+20240809	18:35:15	INFO	post /search	Search completed	90515d70-4406-4a80-9379-1f428807fe0d	Search Keyword: "Red Wine"	Database: mongodb	Results: 50
+20240809	18:35:39	INFO	HTTP POST	/search	11f7c2e6-cf9a-4a55-94b0-0d8567dcdfb0
+20240809	18:35:39	INFO	auth.api.setToken	JWT token set from session	fff20d7c-49ae-4891-bd25-e4e57e4e4109
+20240809	18:35:39	INFO	auth.api.authenticateJWT	JWT verified successfully	d1e6f4f4-caec-417a-ac94-5d45c7ec361c
+20240809	18:35:39	INFO	post /search	Search initiated	9d9769af-4bc3-4a9f-ade6-a06e50a265cb	Search Keyword: "Fruity and Spicy"	Database: postgres
+20240809	18:35:39	INFO	post /search	Search completed	3de09368-3b96-480c-92cc-92ff4e4b9ae8	Search Keyword: "Fruity and Spicy"	Database: postgres	Results: 3
+20240809	18:35:45	INFO	HTTP POST	/vault/add/350	7fef19c1-51c3-42e8-a156-ad9870cf02c9
+20240809	18:35:45	INFO	authMiddleware.authenticateJWT	JWT verified successfully	b2974f95-7eca-46ea-8c68-63d9ee210936
+20240809	18:35:45	INFO	authMiddleware.setToken	JWT token set from session	e127a01c-c184-4350-b3b8-53e0f22066cd
+20240809	18:35:46	SUCCESS	addWineToVault	Wine 350 added to vault for user brenda@brendabendiksen.com.	cb52acc9-1466-4ef9-a619-fe5a767af937
+20240809	18:35:46	SUCCESS	post /vault/add	Wine 350 added to vault for user brenda@brendabendiksen.com.	24327f7b-4167-4a68-b481-441502375977
+20240809	18:35:54	INFO	HTTP POST	/search/filter	2139106b-c372-4769-a656-03c340aec002
+20240809	18:35:54	INFO	auth.api.setToken	JWT token set from session	7e514826-2446-4df2-8a8f-a653f8daa352
+20240809	18:35:54	INFO	auth.api.authenticateJWT	JWT verified successfully	945f8f2c-9ee4-4eba-a291-fc0a67c969bf
+20240809	18:35:54	INFO	post /search/filter	Filter applied	205d66e8-7b75-4918-b239-be0b60baf766	Filter Type: country	Filter Value: Canada
+20240809	18:35:54	INFO	post /search/filter	Filter completed	4b693128-06b9-4efd-8920-49606277a905	Results: 25	Filter Type: country	Filter Value: Canada
+20240809	18:36:03	INFO	HTTP POST	/vault/add/340	aa390605-72d7-42bd-90a3-029e1d23cf24
+20240809	18:36:03	INFO	authMiddleware.setToken	JWT token set from session	6817edc5-bbaf-46f9-a455-ac2bb6cc5e1d
+20240809	18:36:03	INFO	authMiddleware.authenticateJWT	JWT verified successfully	74f8feee-ee66-44ae-ac06-85301042e03e
+20240809	18:36:03	SUCCESS	addWineToVault	Wine 340 added to vault for user brenda@brendabendiksen.com.	c5f5dff9-b188-449b-9218-5d80ff1b9984
+20240809	18:36:03	SUCCESS	post /vault/add	Wine 340 added to vault for user brenda@brendabendiksen.com.	ffdbce9e-9be1-49ae-81dd-19e47a6d764a
+20240809	18:36:08	INFO	HTTP POST	/search/filter	e6a52ef6-d4f1-43c7-8ec6-0544aec0b291
+20240809	18:36:08	INFO	auth.api.setToken	JWT token set from session	12bb8fd7-fcb7-476d-8f26-e9c07fad7fb6
+20240809	18:36:08	INFO	auth.api.authenticateJWT	JWT verified successfully	623be290-403c-4dac-b16e-f2fbd51685a4
+20240809	18:36:08	INFO	post /search/filter	Filter applied	644f6377-b5d3-4d63-8f4e-e7e507626922	Filter Type: color	Filter Value: Rosé
+20240809	18:36:08	INFO	post /search/filter	Filter completed	b807e78c-dfd5-4768-a71d-df7a638c64db	Results: 3	Filter Type: color	Filter Value: Rosé
+20240809	18:36:13	INFO	HTTP POST	/vault/add/5	6747c631-02e4-4191-836f-be5aadf8c48b
+20240809	18:36:13	INFO	authMiddleware.setToken	JWT token set from session	ff6fede8-91cc-4e76-aca0-1cf66b9ba778
+20240809	18:36:13	INFO	authMiddleware.authenticateJWT	JWT verified successfully	4e33997e-bf03-44d0-80d3-74f584a83b3a
+20240809	18:36:13	SUCCESS	addWineToVault	Wine 5 added to vault for user brenda@brendabendiksen.com.	7362ed4b-591d-47b0-b881-66acb2909c6b
+20240809	18:36:13	SUCCESS	post /vault/add	Wine 5 added to vault for user brenda@brendabendiksen.com.	a824cf9e-a733-4459-9aef-23ba3895e9f0
+20240809	18:36:20	INFO	HTTP POST	/search/filter	ddf53834-50bf-4ae5-bc31-3f22936b63d6
+20240809	18:36:20	INFO	auth.api.setToken	JWT token set from session	65ddcb52-9e33-46a0-99e3-6281520870dd
+20240809	18:36:20	INFO	auth.api.authenticateJWT	JWT verified successfully	6489dd11-670a-4682-932a-9ef72180fbd3
+20240809	18:36:20	INFO	post /search/filter	Filter applied	727d8ac5-d02f-4db9-84ac-8942780a08d5	Filter Type: type	Filter Value: Cabernet Sauvignon
+20240809	18:36:20	INFO	post /search/filter	Filter completed	a6621ee9-e06d-45aa-a8dc-2df2c0d156ed	Results: 23	Filter Type: type	Filter Value: Cabernet Sauvignon
+20240809	18:36:20	INFO	HTTP GET	/images/caymus.png	28dc5f3a-77bf-4d5e-bbb0-8091d0ceb13f
+20240809	18:36:20	ERROR	app.use 404	Page not found: /images/caymus.png	79584950-4c63-46d9-981e-e017a9465eea
+20240809	18:36:23	INFO	HTTP POST	/vault/add/301	ab75a60d-f5be-4d7d-a9f0-cfe771fb9e76
+20240809	18:36:23	INFO	authMiddleware.setToken	JWT token set from session	8efb6a9b-2e0d-4932-9dc1-6f7bb2eef24a
+20240809	18:36:23	INFO	authMiddleware.authenticateJWT	JWT verified successfully	d3456d01-29e2-4a1b-8078-f4d8270a6076
+20240809	18:36:24	SUCCESS	addWineToVault	Wine 301 added to vault for user brenda@brendabendiksen.com.	e87e5462-1a64-458d-a6f1-e5f23d7c2afa
+20240809	18:36:24	SUCCESS	post /vault/add	Wine 301 added to vault for user brenda@brendabendiksen.com.	12bf91a9-2572-47ad-a1f3-46d07bcfe0c0
+20240809	18:36:29	INFO	HTTP GET	/vault	e5a4b913-c789-4bd5-9abd-861062340216
+20240809	18:36:29	INFO	authMiddleware.setToken	JWT token set from session	22b022c3-37be-414a-a06e-abb466a12134
+20240809	18:36:29	INFO	authMiddleware.authenticateJWT	JWT verified successfully	4beb2d6a-1c4b-4661-b88c-164c6dfcc77a
+20240809	18:36:30	INFO	getVaultByUserId	Vault for user brenda@brendabendiksen.com was retrieved.	358a7eaa-459a-4ffb-a408-5a3b17859ca3
+20240809	18:36:30	INFO	get /vault	Vault for user brenda@brendabendiksen.com was displayed.	91a4be47-82e9-43a5-ada0-3031ee62a2a4
+20240809	18:36:49	INFO	HTTP GET	/about	4f15d086-9521-4a8a-aa52-eba2a5123267
+20240809	18:36:49	INFO	app.get /about	About page (about.ejs) was displayed.	a3ec6b83-2257-488d-b2a5-666b29e2beb4
+20240809	18:36:49	INFO	HTTP GET	/images/wine-tasting.jpg	75acc9c0-c7c1-4fd1-b51c-c2df16de28d2
+20240809	18:36:49	ERROR	app.use 404	Page not found: /images/wine-tasting.jpg	d5e860f8-e457-4394-bceb-bc2b91ad3bbf
+20240809	18:36:49	INFO	HTTP GET	/images/wine-cellar.jpg	5e8fa878-2858-4a03-8d63-26c97b00eee4
+20240809	18:36:49	ERROR	app.use 404	Page not found: /images/wine-cellar.jpg	9302d3e8-5aef-47d1-8f29-1c92f6d20cad
+20240809	18:36:53	INFO	HTTP GET	/contact	4e487b42-62c2-429b-a427-213ccfa1be34
+20240809	18:36:53	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	df05624a-a0aa-4923-b2e9-bc8cbc92b39f
+20240809	18:36:55	INFO	HTTP GET	/	5f9f2d35-bb9f-47cb-b933-632a0defba3e
+20240809	18:36:55	INFO	app.get /	Home page (index.ejs) was displayed.	d327a44e-14fc-4f47-a3f2-74ceaf6eacf9
