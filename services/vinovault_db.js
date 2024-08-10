@@ -1,9 +1,9 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: 'vinovaultadmin',
+  user: 'vvadmin',
   host: 'localhost',
   database: 'vinovault',
-  password: 'vinovault2024',
+  password: 'vinovaultpw',
   port: 5432,
 });
 module.exports = pool;
