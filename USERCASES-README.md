@@ -41,8 +41,6 @@ VinoVault is an application designed to help users curate and manage their wine 
 11. **Filter wines by country**: Verify that filtering by country works correctly.
 12. **Filter wines by color**: Ensure that filtering by color works correctly.
 13. **Filter wines by type of wine**: Verify that filtering by type of wine works correctly.
-14. **Filter wines by winery**: Ensure that filtering by winery works correctly.
-15. **Filter wines by multiple filters combined**: (Not currently implemented) Confirm that combining multiple filters works correctly once implemented.
 
 ### User Experience / User Interface
 
