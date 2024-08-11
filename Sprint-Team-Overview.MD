@@ -62,7 +62,7 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
 
 - **Brenda Armstrong**:
   - **Full-Stack Development**: Led the design, development and implementation of both frontend and backend components, ensuring seamless database integration.
-  - **Database Management**: Set up and managed PostgreSQL and MongoDB databases, facilitating complex queries and data management.
+  - **Database Management**: Set up and managed PostgreSQL and MongoDB databases, facilitating complex queries for Search, data management with mock data generated through ClaudeAI and ChatGPT.
   - **Feature Implementation**: Developed critical features including user authentication, JWT, EventLogging, 'extra' Vault bonus feature, and advanced search functionality (FullText and Filtered).
   - **Testing and Debugging**: Conducted extensive testing to ensure robustness, fixing issues promptly.
   - **Documentation**: Authored VinoVault readme.md and Sprint Team Overview.md Documentation
