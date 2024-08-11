@@ -74,6 +74,30 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
   - **Video Demonstration**: Created a video walkthrough to demonstrate the VinoVaults features.  
   - **Documentation Assistance**: Contributed to the project documentation by providing additional insights and ensuring clarity.
 
+## Technologies Used
+
+- **Languages**: Java, JavaScript, HTML, CSS
+- **Frameworks/Libraries**: 
+  - Backend: Node.js, Express
+  - Frontend: Ejs
+- **Databases**: PostgreSQL, MongoDB
+- **AI Assistance**: ChatGPT, ClaudeAI
+- **Tools**: Git, GitHub, Microsoft Teams
+- **Methodologies**: Agile, Scrum
+
+## Outcomes
+
+Our sprint resulted in:
+- Two functional applications
+- Improved full-stack development skills
+- Enhanced Agile practices in a small team setting
+- Strengthened problem-solving and time management abilities
+
 ### Conclusion
 
 Despite the challenges of working in a smaller team, we were able to successfully manage and deliver two high-quality projects by leveraging effective Scrum-based project management, a robust branching strategy, and strong collaboration. By working together and supporting each other's projects, we ensured that both the Java-Console Based E-Commerce Platform and VinoVault Wine Search Engine were completed to a high standard. The experience gained from this sprint has significantly enhanced our skills in full-stack development, project management, and teamwork, preparing us for future professional challenges.
+
+---
+
+*This readme summarizes the work of Ethan Murphy and Brenda Armstrong in SD10 Semester 3.*
+
