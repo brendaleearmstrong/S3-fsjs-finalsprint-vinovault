@@ -1,0 +1,94 @@
+20240812	11:25:43	SUCCESS	app.listen	HTTP server successfully started.	f2547ef6-2826-43bb-b7bc-dd106f66cf6d
+20240812	11:25:54	INFO	HTTP GET	/	772e6187-a43d-492f-b281-29526aa65f2e
+20240812	11:25:54	INFO	app.get /	Home page (index.ejs) was displayed.	6b34a80d-874b-4e5d-b583-619154529cf4
+20240812	11:25:55	INFO	HTTP GET	/favicon.ico	42ae68d3-d0ca-4c68-b292-0502c85ec6f5
+20240812	11:25:55	ERROR	app.use 404	Page not found: /favicon.ico	6c6c49fd-b132-4dec-aab0-f7eafe487cfe
+20240812	11:25:58	INFO	HTTP GET	/auth/new	0267a10d-e2a5-4e3e-a973-93dd04eb8ed8
+20240812	11:25:58	INFO	auth.get /new	Registration page displayed.	5e24f9f8-692e-4cee-a334-f30c5bc1fd86
+20240812	11:25:58	INFO	HTTP GET	/styles/footer.css	97ab703d-ab3f-41ef-a55f-00c7d7f3d59b
+20240812	11:25:58	ERROR	app.use 404	Page not found: /styles/footer.css	c619f72c-df8f-40ac-b1e3-4f2b5e9be017
+20240812	11:26:21	INFO	HTTP POST	/auth/new	400ac1c3-41df-4648-8d28-cd73af763c7a
+20240812	11:26:21	INFO	addLogin	New login added for email: test@test.com	2aef86fe-a2a7-45d0-b8b1-34b73fbf4b30
+20240812	11:26:21	SUCCESS	auth.post /new	User test@test.com registered successfully.	83814b13-ae90-497a-843d-a76bef4ed25b
+20240812	11:26:22	INFO	HTTP GET	/auth	ae7acd79-f8cc-4ac7-a21c-a2a94fbaaf3b
+20240812	11:26:22	INFO	auth.get /	Login page displayed.	5592c118-9847-415e-ada6-2b2208976b45
+20240812	11:26:22	INFO	HTTP GET	/styles/footer.css	28ac0d53-038d-48cc-8306-af14a93f4c9b
+20240812	11:26:22	ERROR	app.use 404	Page not found: /styles/footer.css	8f515f6b-90cb-4878-b520-19e5d8c11527
+20240812	11:26:26	INFO	HTTP POST	/auth	4627238f-2489-4b14-9f95-f2c416f564d8
+20240812	11:26:26	INFO	getLoginByEmail	Login retrieval attempt for email: test@test.com	46afd908-4422-47a3-b985-6e52a697f2b0
+20240812	11:26:26	SUCCESS	auth.post /	User test@test.com logged in successfully.	be10e226-a501-4fea-957d-717b75e8fd89
+20240812	11:26:26	INFO	HTTP GET	/search	854c5b12-0801-445a-8526-c70146073650
+20240812	11:26:26	INFO	auth.api.setToken	JWT token set from session	d09bbde1-c629-4c14-800b-048625a73223
+20240812	11:26:26	INFO	auth.api.authenticateJWT	JWT verified successfully	442bf99b-d24a-4b90-b113-2eb53f3305c9
+20240812	11:26:26	INFO	get /search	Loading search page data	04731487-db8b-4c24-890b-c3ca05596cfa
+20240812	11:26:26	INFO	get /search	Search page data loaded	5756ef2c-f3d6-4c40-9241-c30049b6c65a	Results: [object Object]
+20240812	11:27:29	SUCCESS	app.listen	HTTP server successfully started.	07665f30-7d3f-4025-8fc6-536950929c68
+20240812	11:27:33	INFO	HTTP GET	/auth/exit	9ec42f3e-fabd-4959-8f22-2a6d43ac480b
+20240812	11:27:33	SUCCESS	auth.get /exit	User logged out successfully.	c83ba8bf-f3d8-4c3e-bbe0-e1965130a0a3
+20240812	11:27:33	INFO	HTTP GET	/	bac49c85-147f-4391-b2fe-2b61bc590d52
+20240812	11:27:33	INFO	app.get /	Home page (index.ejs) was displayed.	fc6eff62-9bb6-4e64-995b-1e7ef47fa51d
+20240812	11:27:35	INFO	HTTP GET	/auth/	079180a1-852a-4218-a7ae-81ce1080b7ee
+20240812	11:27:35	INFO	auth.get /	Login page displayed.	50ee58ee-f7c0-4e58-babd-c208844049d0
+20240812	11:27:35	INFO	HTTP GET	/styles/footer.css	b7616612-22a3-4600-a85c-542dc38560dd
+20240812	11:27:36	ERROR	app.use 404	Page not found: /styles/footer.css	0497b76f-005f-4e50-8ab5-908905a7f7c3
+20240812	11:27:37	INFO	HTTP POST	/auth	600ca1b0-0a9a-4922-843b-d25500f18910
+20240812	11:27:38	INFO	getLoginByEmail	Login retrieval attempt for email: test@test.com	9ae650fe-e8e8-47a1-a29f-73bed4c6c870
+20240812	11:27:38	SUCCESS	auth.post /	User test@test.com logged in successfully.	ff5c8556-a198-42b8-8b06-985f727d05a8
+20240812	11:27:38	INFO	HTTP GET	/search	81ee39b8-3f1a-4b73-b2ad-4463ee7a2649
+20240812	11:27:38	INFO	auth.api.authenticateJWT	JWT verified successfully	49d5d8e6-aec3-47bd-b910-6369ab785c05
+20240812	11:27:38	INFO	auth.api.setToken	JWT token set from session	a1211867-0c7d-4ab0-87de-f3acaefb9a26
+20240812	11:27:38	INFO	get /search	Loading search page data	cee6ba22-5ec6-488e-8b04-5493c5f0a57e
+20240812	11:27:38	INFO	get /search	Search page data loaded	24e9b1d3-bcba-4a9f-8f28-d397e9a10f8d	Results: [object Object]
+20240812	11:27:44	INFO	HTTP POST	/search	b50c143e-0bb3-4d59-8380-ecff73541e59
+20240812	11:27:44	INFO	auth.api.setToken	JWT token set from session	88d16cdd-6a3c-4d62-8bce-a2e1f9e0c799
+20240812	11:27:44	INFO	auth.api.authenticateJWT	JWT verified successfully	3cef160d-7ba1-42f3-9a9d-868786d24c5d
+20240812	11:27:44	INFO	post /search	Search initiated	3cd4939a-f1d9-42b8-bda5-e9300684947d	Search Keyword: "rose"	Database: mongodb
+20240812	11:27:45	INFO	post /search	Search completed	e0855cc4-2cc5-483b-a6a2-c3753a60939c	Search Keyword: "rose"	Database: mongodb	Results: 8
+20240812	11:28:06	INFO	HTTP POST	/search	ef9da34f-1334-4986-bf66-2c0903c37cf7
+20240812	11:28:06	INFO	post /search	Search initiated	3f1c4232-471e-4616-b92a-aa5c74a08855	Search Keyword: "spicy wine"	Database: postgres
+20240812	11:28:06	INFO	auth.api.authenticateJWT	JWT verified successfully	3a38e668-ce6d-4a91-81f7-52641f2e48c9
+20240812	11:28:06	INFO	auth.api.setToken	JWT token set from session	7b6bb9b2-2184-4413-a93c-c31448a554b4
+20240812	11:28:06	INFO	post /search	Search completed	6fdb3a9e-b255-404d-8b71-5b183fbb19e3	Search Keyword: "spicy wine"	Database: postgres	Results: 5
+20240812	11:28:16	INFO	HTTP POST	/search	542179d3-204c-4539-9ac0-309b6ec5024b
+20240812	11:28:16	INFO	auth.api.setToken	JWT token set from session	afb2e6a0-1402-444d-9cab-3720f89f47a5
+20240812	11:28:16	INFO	auth.api.authenticateJWT	JWT verified successfully	10d50fbc-e562-41a1-91ec-9c1a7d36e35d
+20240812	11:28:16	INFO	post /search	Search initiated	66cd2073-d5e4-483a-8b70-a97276fd0eaa	Search Keyword: "fruity and spicy"	Database: postgres
+20240812	11:28:16	INFO	post /search	Search completed	c100b570-c78a-4eb2-b4f4-8ee5c6d506ad	Search Keyword: "fruity and spicy"	Database: postgres	Results: 3
+20240812	11:28:20	INFO	HTTP POST	/search/filter	f7bd0aa1-1495-4674-9bca-b23ad02def5a
+20240812	11:28:20	INFO	auth.api.setToken	JWT token set from session	6430b72d-b2cc-4f94-9ead-658388e83240
+20240812	11:28:20	INFO	auth.api.authenticateJWT	JWT verified successfully	8634ea5b-62e7-42dc-83c3-d3fbdb0d5e97
+20240812	11:28:20	INFO	post /search/filter	Filter applied	056311ed-0da7-45fa-b037-f70052f4ed7e	Filter Type: country	Filter Value: Canada
+20240812	11:28:20	INFO	post /search/filter	Filter completed	80574c65-aacc-4c2c-87fe-cd14df41d394	Results: 25	Filter Type: country	Filter Value: Canada
+20240812	11:28:29	INFO	HTTP POST	/search/filter	a37ae115-3c32-4163-a9d6-a37342dc65a7
+20240812	11:28:29	INFO	auth.api.setToken	JWT token set from session	268727bd-3962-4005-95ba-b88df6bf24cc
+20240812	11:28:29	INFO	auth.api.authenticateJWT	JWT verified successfully	dcf8f64b-e3a3-4622-bee7-49ab68d9ea96
+20240812	11:28:29	INFO	post /search/filter	Filter applied	028dc5e4-6cfd-4bbc-9ee5-6f3c74fd07e9	Filter Type: color	Filter Value: Rosé
+20240812	11:28:29	INFO	post /search/filter	Filter completed	e910445f-8321-4cc6-9a32-e7b556a43d96	Results: 3	Filter Type: color	Filter Value: Rosé
+20240812	11:28:33	INFO	HTTP POST	/search/filter	4a3e1278-2442-4f10-8614-a2f82c5fddcb
+20240812	11:28:33	INFO	auth.api.setToken	JWT token set from session	0075a6cb-35a8-4354-bb5c-0b2c7d6124a8
+20240812	11:28:33	INFO	auth.api.authenticateJWT	JWT verified successfully	52b81992-d7a7-4c47-b110-273304a3af23
+20240812	11:28:33	INFO	post /search/filter	Filter applied	dc46488c-24b3-40c1-af04-81fb1e1e8701	Filter Type: color	Filter Value: Sparkling
+20240812	11:28:33	INFO	post /search/filter	Filter completed	4e651bfc-e0ae-4b7b-97c0-15aad511961a	Results: 38	Filter Type: color	Filter Value: Sparkling
+20240812	11:28:45	INFO	HTTP POST	/search/filter	bbc937e8-b80b-4f13-ad83-66fd9a0bb414
+20240812	11:28:45	INFO	auth.api.setToken	JWT token set from session	354cc1aa-9c50-4ca4-b236-0ccca4702006
+20240812	11:28:45	INFO	auth.api.authenticateJWT	JWT verified successfully	374a54b6-c7a4-49c1-8134-50c4b239f4c6
+20240812	11:28:45	INFO	post /search/filter	Filter applied	3042a79a-e4eb-4c0e-bbdc-eed9f9416381	Filter Type: type	Filter Value: Bordeaux Blend
+20240812	11:28:45	INFO	post /search/filter	Filter completed	b10f2c34-66ed-451d-8814-830d84e508a0	Results: 3	Filter Type: type	Filter Value: Bordeaux Blend
+20240812	11:28:50	INFO	HTTP POST	/search/filter	f8b2a309-641e-4589-b579-804b3280e2b4
+20240812	11:28:50	INFO	auth.api.setToken	JWT token set from session	2166cb34-5187-47b0-a656-6efb147d6947
+20240812	11:28:50	INFO	auth.api.authenticateJWT	JWT verified successfully	1a6c6240-ae78-4a1d-acbb-ac252e6e281e
+20240812	11:28:50	INFO	post /search/filter	Filter applied	363b8abb-d9a7-47ed-b2bc-3abfb6982605	Filter Type: type	Filter Value: Cabernet
+20240812	11:28:50	INFO	post /search/filter	Filter completed	0bf2305c-b8c5-46f1-b3ea-2ac359d33264	Results: 1	Filter Type: type	Filter Value: Cabernet
+20240812	11:28:52	INFO	HTTP GET	/vault	79ed3766-23bb-4b0a-b131-4a68779a18ac
+20240812	11:28:52	INFO	authMiddleware.setToken	JWT token set from session	4bc9b4c6-8c05-44ef-9cff-b6e71d43720f
+20240812	11:28:52	INFO	authMiddleware.authenticateJWT	JWT verified successfully	27fae68a-369c-498e-a6b9-a2d71aa229ff
+20240812	11:28:53	INFO	getVaultByUserId	Vault for user test@test.com was retrieved.	0cfad8c5-ef7c-45c4-b685-1011cc032582
+20240812	11:28:53	INFO	get /vault	Vault for user test@test.com was displayed.	18618cde-176c-4600-aae0-1dc780138d65
+20240812	11:29:01	INFO	HTTP GET	/about	4312f39b-a133-4dcf-9fb1-030badfd57d5
+20240812	11:29:01	INFO	app.get /about	About page (about.ejs) was displayed.	67bf328f-981e-407e-b865-669c8f7569d4
+20240812	11:29:05	INFO	HTTP GET	/contact	44d82ddc-6d16-4bf3-b292-b6094da290e5
+20240812	11:29:05	INFO	app.get /contact	Contact Us page (contact.ejs) was displayed.	2e05b8a5-9788-4d6d-ba40-e96f3b160ac4
+20240812	11:29:05	INFO	HTTP GET	/styles/footer.css	d2f8f0db-e9bd-4ecd-a41e-26a14a21a52e
+20240812	11:29:05	ERROR	app.use 404	Page not found: /styles/footer.css	5477dec5-3084-4544-b20e-8c2c6600d8ff
+20240812	11:29:07	INFO	HTTP GET	/	2e26a7ce-db26-4a3a-be72-88dca3383824
+20240812	11:29:07	INFO	app.get /	Home page (index.ejs) was displayed.	52e5fecf-996c-4976-beb9-6089df58c497
