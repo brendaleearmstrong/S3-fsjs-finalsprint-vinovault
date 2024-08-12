@@ -7,7 +7,7 @@
 
 ## Overview
 
-In the final sprint of Semester 3, our team, consisting of just two developers—Ethan Murphy and Brenda Armstrong—successfully delivered two comprehensive projects: the **Java-Console Based E-Commerce Platform** and the **VinoVault Wine Search Engine**. Despite being a smaller team compared to the standard group size of three, we managed to handle all aspects of project development, from planning to execution and deployment. Our team has been working together since our very 1st sprint of Semember 1 and we have built a robust team strategy through trust, collaboration, and effective project management with each member taking the lead on one project while also providing crucial support on the other.
+In the final sprint of Semester 3, our team, consisting of just two developers—Ethan Murphy and Brenda Armstrong—successfully delivered two comprehensive projects: the **Java-Console Based E-Commerce Platform** and the **VinoVault Wine Search Engine**. Despite being a smaller team compared to the standard group size of three, we managed to handle all aspects of project development, from planning to execution and deployment. Our team has been working together since our very 1st sprint of semester 1 and we have built a robust team strategy through trust, collaboration, and effective project management with each member taking the lead on one project while also providing crucial support on the other.
 
 ### Project Scrum Agile Management
 
@@ -44,7 +44,6 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
 
 - **Brenda Armstrong**:
   - **Testing**: Conducted extensive testing to ensure the application functioned as expected and was free of critical bugs.
-  - **Support Development**: Assisted in refining backend services and contributed to the implementation of key features.
   - **Documentation **: Led documentation efforts for System Documentation and Sprint Team Over Readme.md files.
 
 #### VinoVault Wine Search Engine (Brenda Armstrong's Project)
@@ -70,7 +69,6 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
 
 - **Ethan Murphy**:
   - **Testing**: Provided critical testing support to ensure that the VinoVault platform was functional and user-friendly.
-  - **Support Development**: Assisted with the refinement of backend services and contributed to the successful deployment of the platform.
   - **Video Demonstration**: Created a video walkthrough to demonstrate the VinoVaults features.  
   - **Documentation Assistance**: Contributed to the project documentation by providing additional insights and ensuring clarity.
 
