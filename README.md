@@ -1,4 +1,4 @@
-# SD10 Semester 3 Final Sprint
+# SD10 Semester 3 Final Sprint - Brenda Armstrong (Lead Developer) & Ethan Murphy
 
 # VinoVault - Wine Search Engine
 
@@ -17,9 +17,8 @@
 12. [Testing](#testing)
 13. [Data Generation](#data-generation)
 14. [Dependencies](#dependencies)
-15. [Contributing](#contributing)
-16. [License](#license)
-17. [Acknowledgments](#acknowledgments)
+15. [License](#license)
+16. [Acknowledgments](#acknowledgments)
 
 ## Project Overview
 
@@ -32,29 +31,31 @@ VinoVault is a comprehensive wine search engine developed as part of the S3 Fina
 1. **User Authentication**
    - Registration and Login functionality
    - JWT-based authentication
+   - Stored in MongoDB
 
 2. **Search Functionality**
    - Full-text search in both PostgreSQL and MongoDB
-   - Filter search in PostgreSQL (by country, color, type, etc.)
+   - Filter search in PostgreSQL (by country, color, type)
    - Option to choose data source(s) for search
 
 3. **Vault Feature**
    - Personal wine collection for logged-in users
-   - Add/remove wines from the vault
+   - Add wines from the vault - stored in MongoDB
 
 4. **Future Feature: Reviews**
    - User-generated reviews for wines (planned for future implementation)
+   - Review data is loaded in PG for future phase.
 
 5. **Responsive Design**
    - User-friendly interface with CSS enhancements
 
 6. **Logging**
-   - Record of user search activities with timestamps and user IDs
+   - Record of user search activities with timestamps and user IDs in Daily LogEvents file.
 
 ## Technology Stack
 
 - **Backend:** Node.js, Express.js
-- **Frontend:** EJS (Embedded JavaScript templating)
+- **Frontend:** EJS (Embedded JavaScript templating) with CSS
 - **Databases:** 
   - PostgreSQL for structured data and advanced filtering
   - MongoDB for flexible schema and full-text search capabilities
@@ -179,14 +180,15 @@ VinoVault uses JWT for secure authentication. The process is handled in the `ser
 - Available for both PostgreSQL and MongoDB
 - Implemented in `services/p.fulltext.dal.js` and `services/m.fulltext.dal.js`
 - Searches across multiple fields (name, winery, description, etc.)
+- Users can choose to search in PostgreSQL or MongoDB (This is for demo purposes only to show DAL)
 
 ### Filter Search (PostgreSQL only)
 - Allows filtering by country, color, type, etc.
 - Implemented in `services/p.wine.dal.js`
 
-Users can choose to search in PostgreSQL, MongoDB, or both databases simultaneously.
 
-## Vault Feature
+
+## Extra Feature - The Wine Vault 
 
 The Vault feature allows logged-in users to maintain a personal collection of favorite wines. This functionality is implemented in `routes/vault.js` and uses the database services to manage the user's wine collection.
 
@@ -243,10 +245,6 @@ Key dependencies include:
 
 For a full list, see `package.json`.
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
@@ -254,4 +252,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 - Claude AI and ChatGPT for data generation
-- Course instructors and TAs for guidance and support
+- Course instructors for guidance and support
