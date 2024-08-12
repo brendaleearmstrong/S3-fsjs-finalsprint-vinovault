@@ -13,7 +13,7 @@ In the final sprint of Semester 3, our team, consisting of just two developersâ€
 
 Given our small team size, we implemented an Agile approach using Scrum principles to manage the project effectively:
 
-- **Daily Stand-ups**: We held every-other-day meetings via Microsoft Teams to discuss progress, address blockers, and plan the dayâ€™s tasks. This constant communication ensured that both projects were on track and that any issues were resolved promptly.
+- **Bi-Daily Stand-ups**: We held every-other-day meetings via Microsoft Teams to discuss progress, address blockers, and plan the day's tasks. This constant communication ensured that both projects were on track and that any issues were resolved promptly.
 - **GitHub Projects**: We utilized GitHub Projects to manage tasks and track progress. Each project had its own board where tasks were categorized into "BackLog", "To Do," "In Progress," and "Done." This visual workflow allowed us to monitor the status of each feature and ensure timely completion.
 - **Sprint Planning and Retrospective**: At the start of the sprint, we planned the key features and milestones for each project. We conducted a retrospective at the end of the sprint to discuss what went well, what could be improved, and to document lessons learned.
 
@@ -23,7 +23,7 @@ Managing the sprint as a two-person team required efficient collaboration and cl
 
 #### Java-Console Based E-Commerce Platform (Ethan Murphy's Project)
 
-**Project Overview**: 
+**Project Overview**:  
 The **Java-Console Based E-Commerce Platform** is a console-based application designed to simulate a real-world online marketplace where users can register as buyers or sellers, list computer products for sale, and browse available items. The platform includes features for managing user accounts, adding items for sale, purchasing items, and categorizing listings.
 
 - **Repository**: [SD10-S3-SPRINT-2-JAVA](https://github.com/emurphy04/SD10-S3-SPRINT-2-JAVA)
@@ -39,16 +39,16 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
   - **Database Integration**: Integrated PostgreSQL to manage data storage efficiently.
   - **Documentation**: Authored README file.
   - **Video Demonstration**: Created a video walkthrough to demonstrate the platform's features.
-  - **UML Class Diagram**: Created the UML Class Diagram to visually represent the system's architecture.  
+  - **UML Class Diagram**: Created the UML Class Diagram to visually represent the system's architecture.
   - **Branching Strategy**: Managed feature development and bug fixes on separate branches before merging them into the `main` branch, ensuring the stability of the codebase.
 
 - **Brenda Armstrong**:
   - **Testing**: Conducted extensive testing to ensure the application functioned as expected and was free of critical bugs.
-  - **Documentation **: Led documentation efforts for System Documentation and Sprint Team Over Readme.md files.
+  - **Documentation**: Led documentation efforts for System Documentation and Sprint Team Over Readme.md files.
 
 #### VinoVault Wine Search Engine (Brenda Armstrong's Project)
 
-**Project Overview**: 
+**Project Overview**:
 **VinoVault** is a full-stack web application that serves as a comprehensive wine search engine, allowing users to search for wines across multiple databases. It provides a rich and interactive experience for wine enthusiasts, featuring user authentication, a personal wine vault, and advanced search capabilities.
 
 - **Repository**: [S3-fsjs-finalsprint-vinovault](https://github.com/brendaleearmstrong/S3-fsjs-finalsprint-vinovault)
@@ -60,7 +60,7 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
 **Key Responsibilities**:
 
 - **Brenda Armstrong**:
-  - **Full-Stack Development**: Led the branding, design, development and implementation of both frontend and backend components, ensuring seamless database integration. 
+  - **Full-Stack Development**: Led the branding, design, development and implementation of both frontend and backend components, ensuring seamless database integration.
   - **Database Management**: Set up and managed PostgreSQL and MongoDB databases, facilitating complex queries for Search, data management with mock data generated through ClaudeAI and ChatGPT.
   - **Feature Implementation**: Developed critical features including user authentication, JWT, EventLogging, 'extra' Vault bonus feature, and advanced search functionality (FullText and Filtered).
   - **Testing and Debugging**: Conducted extensive testing to ensure robustness, fixing issues promptly.
@@ -69,13 +69,13 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
 
 - **Ethan Murphy**:
   - **Testing**: Provided critical testing support to ensure that the VinoVault platform was functional and user-friendly.
-  - **Video Demonstration**: Created a video walkthrough to demonstrate the VinoVaults features.  
+  - **Video Demonstration**: Created a video walkthrough to demonstrate the VinoVaults features.
   - **Documentation Assistance**: Contributed to the project documentation by providing additional insights and ensuring clarity.
 
 ## Technologies Used
 
 - **Languages**: Java, JavaScript, HTML, CSS
-- **Frameworks/Libraries**: 
+- **Frameworks/Libraries**:
   - Backend: Node.js, Express
   - Frontend: Ejs
 - **Databases**: PostgreSQL, MongoDB
@@ -86,6 +86,7 @@ The **Java-Console Based E-Commerce Platform** is a console-based application de
 ## Outcomes
 
 Our sprint resulted in:
+
 - Two functional applications
 - Improved full-stack development skills
 - Enhanced Agile practices in a small team setting
@@ -98,4 +99,3 @@ Despite the challenges of working in a smaller team, we were able to successfull
 ---
 
 *This readme summarizes the work of Ethan Murphy and Brenda Armstrong in SD10 Semester 3.*
-
