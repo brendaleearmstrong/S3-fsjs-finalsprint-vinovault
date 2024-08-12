@@ -92,12 +92,10 @@ vinovault/
 │   ├── m.auth.dal.js
 │   ├── m.db.js
 │   ├── m.fulltext.dal.js
-│   ├── m.wine.dal.js
 │   ├── p.auth.dal.js
 │   ├── p.db.js
 │   ├── p.fulltext.dal.js
 │   ├── p.keywords.dal.js
-│   └── p.wine.dal.js
 ├── views/
 │   ├── partials/
 │   │   ├── header.ejs
@@ -112,6 +110,7 @@ vinovault/
 │   ├── search.ejs
 │   └── vault.ejs
 ├── tests/
+│   ├── user-testcases.js -- Read for Testing User Stories
 │   ├── testDBConnection.js
 │   ├── testFullSearch.js
 │   └── testMDBConnection.js
