@@ -146,3 +146,51 @@ INSERT INTO Wine (Name, Winery, Region, Country, Type, Color, Price, Rating, Des
 ('Tinhorn Creek Merlot', 'Tinhorn Creek', 'Okanagan Valley', 'Canada', 'Merlot', 'Red', 24.99, 4, 'A smooth and fruity red wine.', '/images/logo.png'),
 ('Cave Spring Cellars Riesling', 'Cave Spring', 'Niagara Peninsula', 'Canada', 'Riesling', 'White', 19.99, 4, 'A crisp and aromatic white wine.', '/images/logo.png');
 
+UPDATE wine
+SET logo = REPLACE(logo, '/images/', '')
+WHERE logo LIKE '/images/%';
+
+select * from wine;
+select distinct winery from wine;
+
+
+UPDATE wine
+SET logo = CASE
+    WHEN winery = 'Antinori' THEN 'antinori.png'
+    WHEN winery = 'Henschke' THEN 'henschke.png'
+    WHEN winery = 'Mission Hill' THEN 'mission_hill.png'
+    WHEN winery = 'Barossa Valley Estate' THEN 'barossa_valley_estate.png'
+    WHEN winery = 'Veuve Clicquot' THEN 'veuve_clicquot.png'
+    WHEN winery = 'Moët & Chandon' THEN 'moet_chandon.png'
+    WHEN winery = 'Marchesi di Barolo' THEN 'marchesi_di_barolo.png'
+    WHEN winery = 'Robert Mondavi' THEN 'robert_mondavi.png'
+    WHEN winery = 'Ridge Vineyards' THEN 'ridge_vineyards.png'
+    WHEN winery = 'Tinhorn Creek' THEN 'tinhorn_creek.png'
+    WHEN winery = 'Concha y Toro' THEN 'concha_y_toro.png'
+    WHEN winery = 'Cloudy Bay' THEN 'cloudy_bay.png'
+    WHEN winery = 'Catena Zapata' THEN 'catena_zapata.png'
+    WHEN winery = 'Cave Spring' THEN 'cave_spring.png'
+    WHEN winery = 'Chateau Ste. Michelle' THEN 'chateau_ste_michelle.png'
+    WHEN winery = 'E. Guigal' THEN 'e_guigal.png'
+    WHEN winery = 'Clos Apalta' THEN 'clos_apalta.png'
+    WHEN winery = 'Beringer' THEN 'beringer.png'
+    WHEN winery = 'Ornellaia' THEN 'ornellaia.png'
+    WHEN winery = 'Torres' THEN 'torres.png'
+    WHEN winery = 'Villa Maria' THEN 'villa_maria.png'
+    WHEN winery = 'Château Margaux' THEN 'chateau_margaux.png'
+    WHEN winery = 'Louis Roederer' THEN 'louis_roederer.png'
+    WHEN winery = 'Penfolds' THEN 'penfolds.png'
+    WHEN winery = 'Jackson-Triggs' THEN 'jackson_triggs.png'
+    WHEN winery = 'Inniskillin' THEN 'inniskillin.png'
+    WHEN winery = 'Domaine de la Romanée-Conti' THEN 'romanee_conti.png'
+    WHEN winery = 'Duckhorn' THEN 'duckhorn.png'
+    WHEN winery = 'Silver Oak' THEN 'silver_oak.png'
+    ELSE logo  -- Keep the original logo if no match is found
+END
+WHERE winery IN (
+    'Antinori', 'Henschke', 'Mission Hill', 'Barossa Valley Estate', 'Veuve Clicquot', 'Moët & Chandon', 
+    'Marchesi di Barolo', 'Robert Mondavi', 'Ridge Vineyards', 'Tinhorn Creek', 'Concha y Toro', 'Cloudy Bay', 
+    'Catena Zapata', 'Cave Spring', 'Chateau Ste. Michelle', 'E. Guigal', 'Clos Apalta', 'Beringer', 
+    'Ornellaia', 'Torres', 'Villa Maria', 'Château Margaux', 'Louis Roederer', 'Penfolds', 'Jackson-Triggs', 
+    'Inniskillin', 'Domaine de la Romanée-Conti', 'Duckhorn', 'Silver Oak'
+);
